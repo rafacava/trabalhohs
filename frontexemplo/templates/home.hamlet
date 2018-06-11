@@ -1,13 +1,29 @@
-<h1>
-    SISTEMA GERENCIADOR DE TREINADORES POKEMON (SIGTP)
-    
-<ul>
-    <li> <a href=@{TreinadorR}> Cadastro de Treinadores
-    <li> <a href=@{PokemonR}> Cadastro de Pokemon
-    <li> <a href=@{ListaTreinadorR}> Lista de Treinadores
+<html>
+    <head>
+        <title>Home - Askcine
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    <body>
+        <h1>
+           Askcine
+        <div class="row">   
+            <div id="wrapper">
+                <ul>
+                    <li> <a href=@{TreinadorR}> Cadastro de Treinadores
+                    <li> <a href=@{PokemonR}> Cadastro de Pokemon
+                    <li> <a href=@{ListaTreinadorR}> Lista de Treinadores
 
-<br>
-<img src=@{StaticR psyduck_jpg}>
+        <br>
 
-<form action=@{LogoutR} method=post>
-    <input type="submit" value="Logout">
+        <div class="row">
+        <div class="columns small-6">6 columns
+        <div class="columns small-6">6 columns
+        <div class="row">
+        <div class="columns medium-6 large-4">12/6/4 columns
+        <div class="columns medium-6 large-8">12/6/8 columns
+
+        <img src=@{StaticR psyduck_jpg}>
+        <form action=@{LogoutR} method=post>
+            <input type="submit" class="btn btn-danger" value="Logout">

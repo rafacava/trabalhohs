@@ -10,3 +10,9 @@ li{
 img{
 	display: block;
 }
+#wrapper>ul{
+	margin: 8rem;
+}
+#wrapper>li{
+	margin-left: 1rem;
+}

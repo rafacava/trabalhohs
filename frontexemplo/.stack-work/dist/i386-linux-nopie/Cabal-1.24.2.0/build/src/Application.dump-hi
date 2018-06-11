@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-11 04:37:10.999065599 UTC
+2018-06-11 07:01:46.136353011 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: 5dfaab7d3c43cf1e3b14d9af3f36c591
+  interface hash: e181fab14097e5ba664c45a5f64fa6e3
   ABI hash: 39d3bfd1af381cd4945e3be73d565d78
   export-list hash: 5d1172e33b6de07e3b8c05ce5f757840
   orphan hash: bf02f56f2170f2c549134d5ffa8695dc
@@ -379,9 +379,9 @@ import  -/  Handler.Common fc54be2c43697237cec0da10296d5cf9
   exports: bda5d49c91d53afe19bbd9dbc347d454
   getFaviconR c944394f7c94bc660fd350737b159c7b
   getRobotsR e8686e388f244a8f1bbe3c45982570d4
-import  -/  Handler.Home c71c533ddaa01eb260805af09fba7aae
+import  -/  Handler.Home 137c21793e791a408c6d734deb1b891c
   exports: 82e327a962b53534023acc041ad04930
-  getHomeR 49ad5c15d6f50e9c2b5d06280e0a89d8
+  getHomeR 2966d38af5b9b264a6dde838db88fbb9
 import  -/  Handler.Login dcb1dff5980476404306ac6b8460e097
   exports: 8ad2ab8ae887fdbed1ebfd05ec7af887
   getAdminR deaf69dc6625af023d9703898bcf2948
