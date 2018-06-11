@@ -1,0 +1,1325 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-11 04:37:10.999065599 UTC
+
+interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
+  interface hash: 5dfaab7d3c43cf1e3b14d9af3f36c591
+  ABI hash: 39d3bfd1af381cd4945e3be73d565d78
+  export-list hash: 5d1172e33b6de07e3b8c05ce5f757840
+  orphan hash: bf02f56f2170f2c549134d5ffa8695dc
+  flag hash: e55c0621b480567136a1040b2b66c368
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Application.appMain
+  Application.develMain
+  Application.getApplicationDev
+  Application.getApplicationRepl
+  Application.makeFoundation
+  Application.makeLogWare
+  Application.shutdownApp
+module dependencies: Foundation Handler.Common Handler.Home
+                     Handler.Login Handler.Pokemon Handler.Treinador Handler.Usuario
+                     Import Import.NoFoundation Model Settings Settings.StaticFiles
+package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
+                      StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp
+                      aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-HFlClSgXxbU7TMoWqS5Yu4
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      asn1-encoding-0.9.5@asn1-encoding-0.9.5-CmDkwNPA51zjuzFcENFZ5
+                      asn1-parse-0.9.4@asn1-parse-0.9.4-HSgo3I4Jg5sAQWRFdyScvb
+                      asn1-types-0.3.2@asn1-types-0.3.2-Ls8owv2hbTfEqG1LKzBcjy
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-CiauZZhskHA6jYy7CqE2mZ
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw
+                      basic-prelude-0.6.1.1@basic-prelude-0.6.1.1-888xsTDtS2CGSoHb1JadEF
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-1D5OUKQ7UrJ7IpOe0di4Un
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      chunked-data-0.3.0@chunked-data-0.3.0-OOunTfArGE2y1nE8RKgW4
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-Iep5jMzxM1u3mGzM17Av1H
+                      classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N
+                      classy-prelude-conduit-1.2.0@classy-prelude-conduit-1.2.0-4VNoIEo9SLt6t7N4PwpkXU
+                      classy-prelude-yesod-1.2.0@classy-prelude-yesod-1.2.0-4tCQqVxZHk5JE3z6jrBT3F
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-1HgInPlmxWUKWaagfkcDtu
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
+                      conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i
+                      conduit-combinators-1.1.1@conduit-combinators-1.1.1-CbpWlJJbANPFWzQzUVNtDU
+                      conduit-extra-1.1.17@conduit-extra-1.1.17-LHyPtC0nGlzDcgVxOcd4h4
+                      connection-0.2.8@connection-0.2.8-7E5s9ndt8OF7NNDH3ifO8K
+                      constraints-0.9.1@constraints-0.9.1-5mmQfXdFR8IpJ6JZxzjTB
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      cookie-0.4.2.1@cookie-0.4.2.1-ImqC1hbvUERAwQQgqhuUAD
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-CtFLLcV33ZSKCmRTVWdrW7
+                      crypto-api-0.13.2@crypto-api-0.13.2-DBhN9RgaKHp5HflQM2s570
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-JSCTZhqOXgH3EkiMgDwxX
+                      crypto-random-0.0.9@crypto-random-0.0.9-381865WP41XFXsmS6fCaFj
+                      cryptonite-0.23@cryptonite-0.23-7SwQljDtwztDJ3Fe01tUO9
+                      cryptonite-conduit-0.2.0@cryptonite-conduit-0.2.0-LH1qspLlLTXKv70D84KCUO
+                      css-text-0.1.2.2@css-text-0.1.2.2-GtPTSZ9vPefILuf2bXZD6W
+                      data-default-0.7.1.1@data-default-0.7.1.1-Atv1ZD6t1rI1MrH9qSGaQC
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-LBT1sjxIvyd63eC0aI9yNO
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      dlist-instances-0.1.1.1@dlist-instances-0.1.1.1-JrfDmjAHlXKJeRjjD0rY07
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.3.1@email-validate-2.3.1-4WsGncp61DkHAczMlRRvml
+                      entropy-0.3.8@entropy-0.3.8-14HIw40nRRY968j6AdY1H4
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI
+                      free-4.12.4@free-4.12.4-C2gBQV0m8J42HxqSLTFyVx
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      hourglass-0.2.10@hourglass-0.2.10-pnbvWmzfcY1rOFETQEmcY
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-AT41KDpP9ayH63FPNXWrvF
+                      http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q
+                      http-client-tls-0.3.5.1@http-client-tls-0.3.5.1-9yHxBE9KmNa1D1xDvn7C4m
+                      http-conduit-2.2.3.2@http-conduit-2.2.3.2-5MsxxcFsbFW2aX71Hx1I7R
+                      http-date-0.0.6.1@http-date-0.0.6.1-AkYFHBFn90lGSerD29arC9
+                      http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY
+                      http2-1.6.3@http2-1.6.3-5WuWRsIVuKR43Sq9Cs2O4Z integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX
+                      keys-3.11@keys-3.11-3rCPtsJiP6i6WPjfB1rcVT
+                      lifted-async-0.9.3@lifted-async-0.9.3-1Yr94BjFrURGjFULK2k39c
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-Ei0JSPdt7KOCD2HIA5jFqV
+                      memory-0.14.8@memory-0.14.8-GdBguxykhKWC3gIuWq62O9
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-6b3z22GcDYZLEl2kkfCUAB
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l
+                      monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      monad-unlift-0.2.0@monad-unlift-0.2.0-JaCplLBosjYCz9UWF6Saxw
+                      mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV
+                      mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy
+                      network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5
+                      pem-0.2.2@pem-0.2.2-CkEwei5500yF2642aAaOAi
+                      persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n
+                      persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS
+                      pointed-5@pointed-5-GlRizu1aJXO3QG4Xelc8BV
+                      postgresql-libpq-0.9.3.1@postgresql-libpq-0.9.3.1-PNtzTLZ1kPBlp0W2VWiJp
+                      postgresql-simple-0.5.3.0@postgresql-simple-0.5.3.0-7wqiM7f7ESv7wSvmAjfLqt
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      profunctors-5.2.1@profunctors-5.2.1-Ga89Nyw0d7LBEIoX4AZ6gT
+                      psqueues-0.2.4.0@psqueues-0.2.4.0-CvAhEbuBRGQCwl61vq8zYS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-GmoeVeJ8L5Y51jMJ5dPk3U
+                      resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      safe-exceptions-0.1.6.0@safe-exceptions-0.1.6.0-8HmohVTen8f1fXhFM1N1R3
+                      say-0.1.0.0@say-0.1.0.0-4kg0VW7izQr10eu93ritVO
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      securemem-0.1.9@securemem-0.1.9-I1DISfcspndD6idpVbMBWq
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-Db8txM8kTsI6Y49CY6g5Jn
+                      shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-4uYtK5a0djFILo2ePfLs47
+                      skein-1.0.9.4@skein-1.0.9.4-H6iwU6ZhWxE28U4xCLTfo3
+                      socks-0.5.5@socks-0.5.5-JArtPcFTnbCItWBjXwWAhO
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-6xuIA5RXrs65yyeq3HWIWP
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-HO0sHb651BeFnnIxljlexR
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      tls-1.3.11@tls-1.3.11-IxCmr8GdEutIrVRgKylzM6
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vault-0.3.0.7@vault-0.3.0.7-FSJCPczyPWW8DwvwP76qt4
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+                      vector-algorithms-0.7.0.1@vector-algorithms-0.7.0.1-1qlx0Hst1Fo5WZd0lT7Iw1
+                      vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1
+                      wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-IWVzgvpaMYRH5pqRQk33K1
+                      wai-extra-3.0.20.0@wai-extra-3.0.20.0-Dj9t4P11I8BnwNE6pZcEP
+                      wai-logger-2.3.0@wai-logger-2.3.0-G2LMsBpHwLV49tDfVWxzX4
+                      warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc
+                      word8-0.1.3@word8-0.1.3-9o1uWQQ6KysJq8GGsVHHit
+                      x509-1.7.2@x509-1.7.2-IixRXIQfpHlXunpaQDNuQ
+                      x509-store-1.6.5@x509-store-1.6.5-LPi8AM9vMZO97SZk6SmtWd
+                      x509-system-1.6.6@x509-system-1.6.6-GUxFbyk0TndCMp8nKvvL3M
+                      x509-validation-1.6.9@x509-validation-1.6.9-4jWSRkWS3kAKZsU0SpJst
+                      xml-conduit-1.5.1@xml-conduit-1.5.1-FiRHhqSLReR4vkwAA3escx
+                      xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
+                      yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
+                      yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
+                      yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
+                      yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
+                      yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
+                      yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-DBhN9RgaKHp5HflQM2s570:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-LBT1sjxIvyd63eC0aI9yNO:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Request
+         mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB:Data.MonoTraversable.Instances
+         network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path.CurrentOS
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+         vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
+family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Block.Base
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.BoxedArray
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Monad
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.MutableBuilder
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.NonEmpty
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Numerical.Subtractive
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.ASCII7
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.UTF16
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.UTF32
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Types.AsciiString
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Types.OffsetSize
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.UArray.Base
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.UTF8.Base
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Wrapped
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Conduit
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Pipe
+                         constraints-0.9.1@constraints-0.9.1-5mmQfXdFR8IpJ6JZxzjTB:Data.Constraint.Forall
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         email-validate-2.3.1@email-validate-2.3.1-4WsGncp61DkHAczMlRRvml:Text.Email.Parser
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Array.Bitmap
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Buildable
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Element
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Keyed
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Mutable
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Tuple
+                         frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Foundation
+                         frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Model
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client
+                         iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR:Data.IP.Range
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX:Data.Functor.Day
+                         keys-3.11@keys-3.11-3rCPtsJiP6i6WPjfB1rcVT:Data.Key
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control
+                         monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Containers
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.MonoTraversable
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.NonNull
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Sequences
+                         mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB:Data.MonoTraversable.Instances
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.BRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Class
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.DLList
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Deque
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.PRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.SRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.URef
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph:Network.URI
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistConfig
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css
+                         shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+                         vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
+                         xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
+                         yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  base-4.9.1.0:Data.Functor 8a9097cd7880f362e85f792ffaba0608
+import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
+import  -/  base-4.9.1.0:GHC.Err 5ae61e3396b64ae1e9577b5419c62419
+import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
+import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 1601f2691692d787667a4c2d73c2ba7a
+import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
+import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger 008c4dec68abf2ff99fefa4fa21abea3
+import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.IO d4f077e535c7dff6d64fdb140cef39ad
+import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.LogStr 2fb92aee958e2818d629552a14b4c735
+import  -/  Foundation ab90e96a29cdf26e1f2943ff1f502d0f
+  AdminR 07ac21936bd98826c206d27add1bff9a
+  App 9af9d6bb321bac94d16a765b17a1952a
+  App 7f5a6b4267100c42ff7adc72509bb54b
+  CadUsuarioR 380b1c8c94ef71c1f75e49d35ff0f6e3
+  FaviconR b1a75f769a1516019cf38ab96669fdd3
+  HomeR d2df0f5bf44aef05766162d223de1c94
+  ListaTreinadorR 21693dbcb02e59f393c5c95e058bc05a
+  LoginR 756d9451138413fd27acf5369be12f0e
+  LogoutR a07e5ee80f3cb0fcb69848060d011ef9
+  PerfilR 86f0d81d1b0ca3f4c6e2b1489d8cae28
+  PerfilUsuarioR b89b380061955205578e00e6011bd717
+  PokedexR 2b9f260f3a823c88c950c32016692af3
+  PokemonR 46d9708653b3386602b33c27cdc26e12
+  RobotsR c42e4b572d573db3dfc411d862d6edea
+  StaticR b26a3d005d7c83749179b6610644a63c
+  TreinadorR f5875ab3cf5df9a20ac333f1e9abe5eb
+  appConnPool 212ffc5190e2c120e00e843283ad8d4f
+  appHttpManager 7f5a6b4267100c42ff7adc72509bb54b
+  appLogger 596420a8e83290b710297c411bf85664
+  appSettings 3f4604d79e0a2eb385d6cd15100b197f
+  appStatic 5e3639df767209354fe8fc8cdf9877a9
+  resourcesApp 25cc9f9db3c21342a34d40192d967616
+import  -/  Handler.Common fc54be2c43697237cec0da10296d5cf9
+  exports: bda5d49c91d53afe19bbd9dbc347d454
+  getFaviconR c944394f7c94bc660fd350737b159c7b
+  getRobotsR e8686e388f244a8f1bbe3c45982570d4
+import  -/  Handler.Home c71c533ddaa01eb260805af09fba7aae
+  exports: 82e327a962b53534023acc041ad04930
+  getHomeR 49ad5c15d6f50e9c2b5d06280e0a89d8
+import  -/  Handler.Login dcb1dff5980476404306ac6b8460e097
+  exports: 8ad2ab8ae887fdbed1ebfd05ec7af887
+  getAdminR deaf69dc6625af023d9703898bcf2948
+  getLoginR d7a9ba8220d179f2e5b830e1a4040230
+  postLoginR 589f5b9f93a60ace3659feb1aefddc75
+  postLogoutR 3addf8e411333d49cdb93e9f52f7d23d
+import  -/  Handler.Pokemon bf274ca8d9662c42a9ec79c726034021
+  exports: 9e7aa0f0ac251b65f64086d2d102d976
+  getPokedexR 4cce7b2afead7f3a024ef160ff4dae24
+  getPokemonR d101cc4210a21a4564211751f8a67fc9
+  postPokemonR cb3718556d61a45af2b978790abde2e6
+import  -/  Handler.Treinador 38bd484169c7b71bed201094eeb141e8
+  exports: 2937720d337fc71028930960397fa923
+  getListaTreinadorR aea07eb8bd164a626175f76b8c331388
+  getPerfilR cbb40589cd2862337e5abf0220b0ed2a
+  getTreinadorR 8b5d9ac6fe88babdc9b53bebe109ca61
+  postPerfilR 494bb2d3fa96692f6900c8269d79a85f
+  postTreinadorR 575e125830f754bcd1f387137c513dd1
+import  -/  Handler.Usuario 70c570894538c47a99ca244b2850f12a
+  exports: 61223422dba2363620dfdcebcfbe516c
+  getCadUsuarioR 20f61edafa3a4f759162f3e6ce9031bd
+  getPerfilUsuarioR b89b92dd61c76596b653d9ac4fc4b02f
+  postCadUsuarioR 7bdbe8695f6996b9b911ccc9413a1703
+import  -/  Import 260d5b61976284bcf51c6076a78f1440
+  exports: 6d04d8ae11dfce663fc8b6a1abb49849
+import  -/  Model cf26c98d28e254239c8dc1ffa5a017dd
+  migrateAll 728cb9e7f2a769294702da28b3d161cf
+import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
+  AppSettings 00a3521109bd86e95bf87471b12220f9
+  appDatabaseConf be9820af8c357cffc60775e71fcc732d
+  appDetailedRequestLogging 7fb927a53c575f46fcfeebea3ef00598
+  appHost 312c74b8b8b0da2c03ffca2a1980d66c
+  appIpFromHeader 8edbd082e062fb86a45ea94ab3832e04
+  appMutableStatic 7123b5a3ccefeb0750baf8e72b849507
+  appPort b8d22260a4c4638e12d48d146bf68d27
+  appStaticDir 007fc506ba9e62a180a7c59965abf4df
+  configSettingsYmlValue 4006d78197c5a7fa9f2d32c1232d741f
+import  -/  ghc-prim-0.5.0.0:GHC.Types 39f94fe158a9efa70c6b9005a1d10fca
+import  -/  http-conduit-2.2.3.2@http-conduit-2.2.3.2-5MsxxcFsbFW2aX71Hx1I7R:Network.HTTP.Client.Conduit bd9ca289eaaec6f908fc6ee75a2495d3
+import  -/  monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger f3e8444de07de57de8a08b617a89b946
+import  -/  path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5:Web.PathPieces 3c36bfc2f20e626adaa0dbda2c26d2e5
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Migration eeffa6f6cb0609b926b4e06fab243592
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Run d7a9f151b512f5fdeeac6f984f06fb31
+import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 35fc8402fe94243fb368bde0239b2ba3
+import  -/  template-haskell-2.11.1.0:Language.Haskell.TH.Syntax 5a6af824d75b112403eae04f8910a6ec
+import  -/  wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C:Network.Wai 22a26cdb2ecc6514b215f86b8e2d17ea
+import  -/  wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C:Network.Wai.Internal be156f3d66e20145e08593731dea0193
+import  -/  wai-extra-3.0.20.0@wai-extra-3.0.20.0-Dj9t4P11I8BnwNE6pZcEP:Network.Wai.Middleware.RequestLogger d408b753fcede93baa42e852828cf1da
+import  -/  wai-logger-2.3.0@wai-logger-2.3.0-G2LMsBpHwLV49tDfVWxzX4:Network.Wai.Logger.Apache 8ee06b6637993a6ef90652d8f740eaa5
+import  -/  warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc:Network.Wai.Handler.Warp 46e8f3b62a0f898429b9160ecb727eff
+import  -/  warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc:Network.Wai.Handler.Warp.Run 34bc35782e53d84ba90e45ed8ef6715a
+import  -/  warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc:Network.Wai.Handler.Warp.Settings 32711f077a93b9b241d4f245aaebb197
+import  -/  yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL:Data.Yaml.Config 46ad7e7d2a5965349f6181741be72d69
+import  -/  yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max:Yesod.Default.Config2 973789887ef087e3dda6552a3b6686da
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Dispatch e8b6afa835d85f15dd053bd492af5db8
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Yesod dc35a5bdc07b8e48a538957cc413edc1
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Dispatch c335cda2c95b52f2be24b46a4810ca7d
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Handler 3d20c5e66378ecdf3c20b0ead6eac5df
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.Run f6b196a686f9219096b15d545a7494e3
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.TH 934f6d85ad9bc168b7e3ec511b565ce3
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 850af6a923eca0c28746c7c972883cdd
+import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static f04923544c94021b30ff15b84da7cb21
+5f1569940f61c84c1246340aa67c0aaf
+  $fYesodDispatchApp ::
+    Yesod.Core.Class.Dispatch.YesodDispatch Foundation.App
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Foundation.App
+                  Foundation.$fYesodApp
+                  Application.$fYesodDispatchApp_$cyesodDispatch -}
+f6365068abfac28c32f091d24e9d13ac
+  $fYesodDispatchApp_$cyesodDispatch ::
+    Yesod.Core.Types.YesodRunnerEnv Foundation.App
+    -> Network.Wai.Application
+  {- Arity: 2,
+     Strictness: <L,U(U,U(U,U(U,U,U,U,U,U,U,U,U,U),U,U,U),U,U,C(U(U,1*U(U,U,U))))><S(LLLLLLLSLLLLLLLL),1*U(U(U,U,U,U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Yesod.Core.Types.YesodRunnerEnv Foundation.App)
+                   (w1 :: Network.Wai.Internal.Request) ->
+                 case w1 of ww { Network.Wai.Internal.Request ww1 ww2 ww3 ww4 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ->
+                 Application.$w$cyesodDispatch
+                   w
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   ww14
+                   ww15
+                   ww16
+                   ww17 }) -}
+e60b6a60cc8fba6108b19ca45fb05f8f
+  $s$fApplicativeLoggingT ::
+    GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative
+                  (\ @ a
+                     (eta :: a)
+                     (eta1 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ()) ->
+                   GHC.Base.const
+                     @ (GHC.Types.IO a)
+                     @ (Language.Haskell.TH.Syntax.Loc
+                        -> Control.Monad.Logger.LogSource
+                        -> Control.Monad.Logger.LogLevel
+                        -> System.Log.FastLogger.LogStr.LogStr
+                        -> GHC.Types.IO ())
+                     (GHC.Base.returnIO @ a eta)
+                     eta1)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                 <GHC.Types.IO>_R <a>_N))
+                  Application.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+                  (Control.Monad.Logger.$fApplicativeLoggingT_$c*>
+                     @ GHC.Types.IO
+                     Application.$s$fApplicativeLoggingT_$dApplicative)
+                  (Control.Monad.Logger.$fApplicativeLoggingT_$c<*
+                     @ GHC.Types.IO
+                     Application.$s$fApplicativeLoggingT_$dApplicative) -}
+7d9fedb254e70f71f5767f9f2ebf05f6
+  $s$fApplicativeLoggingT_$dApplicative ::
+    GHC.Base.Applicative GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fApplicativeIO -}
+76742f3773fde43be8c14efaf5c64686
+  $s$fApplicativeLoggingT_$dFunctor :: GHC.Base.Functor GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fFunctorIO -}
+976d0160356353c5be0e004f56a98641
+  $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*> ::
+    Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (loggerF :: Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b))
+                   (loggerA :: Control.Monad.Logger.LoggingT GHC.Types.IO a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ ((Language.Haskell.TH.Syntax.Loc
+                       -> Control.Monad.Logger.LogSource
+                       -> Control.Monad.Logger.LogLevel
+                       -> System.Log.FastLogger.LogStr.LogStr
+                       -> GHC.Types.IO ())
+                      -> GHC.Types.IO b)
+                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                   (\ (tpl :: (Language.Haskell.TH.Syntax.Loc
+                               -> Control.Monad.Logger.LogSource
+                               -> Control.Monad.Logger.LogLevel
+                               -> System.Log.FastLogger.LogStr.LogStr
+                               -> GHC.Types.IO ())
+                              -> GHC.Types.IO b) ->
+                    tpl)
+                     `cast`
+                   (<(Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ())
+                     -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                  <GHC.Types.IO>_R <b>_N))
+                   (\ (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                   -> Control.Monad.Logger.LogSource
+                                   -> Control.Monad.Logger.LogLevel
+                                   -> System.Log.FastLogger.LogStr.LogStr
+                                   -> GHC.Types.IO ()) ->
+                    GHC.Base.$fApplicativeIO_$sap
+                      @ a
+                      @ b
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ (a -> b)
+                         loggerF
+                         loggerFn)
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ a
+                         loggerA
+                         loggerFn))) -}
+a8d773b0e3a1daf46bcaf4347d57a393
+  $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative ::
+    GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Application.$s$fApplicativeLoggingT_$s$fFunctorLoggingT -}
+0a8047b3dd1f7f059e5e87a4deb153d6
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT ::
+    GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+                  (Control.Monad.Logger.$fFunctorLoggingT_$c<$
+                     @ GHC.Types.IO
+                     Application.$s$fApplicativeLoggingT_$dFunctor) -}
+7b349b8b19b098bd0dffa67d0c491dcf
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> b)
+                   (logger :: Control.Monad.Logger.LoggingT GHC.Types.IO a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ ((Language.Haskell.TH.Syntax.Loc
+                       -> Control.Monad.Logger.LogSource
+                       -> Control.Monad.Logger.LogLevel
+                       -> System.Log.FastLogger.LogStr.LogStr
+                       -> GHC.Types.IO ())
+                      -> GHC.Types.IO b)
+                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                   (\ (tpl :: (Language.Haskell.TH.Syntax.Loc
+                               -> Control.Monad.Logger.LogSource
+                               -> Control.Monad.Logger.LogLevel
+                               -> System.Log.FastLogger.LogStr.LogStr
+                               -> GHC.Types.IO ())
+                              -> GHC.Types.IO b) ->
+                    tpl)
+                     `cast`
+                   (<(Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ())
+                     -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                  <GHC.Types.IO>_R <b>_N))
+                   (\ (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                   -> Control.Monad.Logger.LogSource
+                                   -> Control.Monad.Logger.LogLevel
+                                   -> System.Log.FastLogger.LogStr.LogStr
+                                   -> GHC.Types.IO ()) ->
+                    GHC.Base.$
+                      @ 'GHC.Types.PtrRepLifted
+                      @ (GHC.Types.IO a)
+                      @ (GHC.Types.IO b)
+                      (GHC.Base.$fFunctorIO_$cfmap @ a @ b f)
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ a
+                         logger
+                         loggerFn))) -}
+2b8f117da2b4a8cbb8ded18714fe054f
+  $s$fMonadBaseControlbLoggingT ::
+    Control.Monad.Trans.Control.MonadBaseControl
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl
+                  (Control.Monad.Logger.$fMonadBaseControlbLoggingT_$cliftBaseWith
+                     @ GHC.Types.IO
+                     @ GHC.Types.IO
+                     Control.Monad.Trans.Control.$fMonadBaseControlIOIO)
+                  (Control.Monad.Logger.$fMonadBaseControlbLoggingT_$crestoreM
+                     @ GHC.Types.IO
+                     @ GHC.Types.IO
+                     Control.Monad.Trans.Control.$fMonadBaseControlIOIO) -}
+1f0b8e21611b13935270aa73bd4de53e
+  $s$fMonadBaseControlbLoggingT_$dMonad ::
+    GHC.Base.Monad GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fMonadIO -}
+6484d8abefbfe88f4c9f6bdf58573854
+  $s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl ::
+    Control.Monad.Base.MonadBase
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Application.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT -}
+7ee236bfc3ea79c287b93524caf95b75
+  $s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT ::
+    Control.Monad.Base.MonadBase
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  GHC.Base.$fApplicativeIO
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+                  GHC.Base.$fMonadIO
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO -}
+71e7f454025707e68c6ca0dc5f1dfceb
+  $s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO ::
+    GHC.Types.IO a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Language.Haskell.TH.Syntax.Loc
+                           -> Control.Monad.Logger.LogSource
+                           -> Control.Monad.Logger.LogLevel
+                           -> System.Log.FastLogger.LogStr.LogStr
+                           -> GHC.Types.IO ()) ->
+                  eta1)
+                   `cast`
+                 (Sym (Control.Monad.Logger.N:LoggingT[0]
+                           <GHC.Types.IO>_R <a>_N))) -}
+10fd619c80b0a72bd01836bd7e70e8d1
+  $s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger ::
+    GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT -}
+59d54d7d297c82bb3273841d97acfbaf
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT ::
+    GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+                  (Control.Monad.Logger.$fMonadLoggingT_$c>>=
+                     @ GHC.Types.IO
+                     Application.$s$fMonadBaseControlbLoggingT_$dMonad)
+                  (Control.Monad.Logger.$fMonadLoggingT_$c>>
+                     @ GHC.Types.IO
+                     Application.$s$fMonadBaseControlbLoggingT_$dMonad)
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail -}
+860c4d157a57eea022889bbf60a52be6
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail ::
+    GHC.Base.String -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: GHC.Base.String) ->
+                 Control.Monad.Logger.$fMonadLoggingT1
+                   @ GHC.Types.IO
+                   @ a
+                   Application.$s$fMonadBaseControlbLoggingT_$dMonad
+                   eta) -}
+10477ae0e652fed4995a25ef2d3377a8
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad ::
+    GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Application.$s$fApplicativeLoggingT -}
+d5e43f4cd5094faaeb49b4dc0d85c490
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn ::
+    a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a
+                   (eta :: a)
+                   (eta1 :: Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ())
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ()>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Control.Monad.Logger.N:LoggingT[0]
+                                    <GHC.Types.IO>_R <a>_N))) -}
+230def318338b58ef13d886f62301b23
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Application.$s$fMonadHandlerHandlerT1)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Application.$s$fMonadHandlerHandlerT1) -}
+eaa8cb62b41bf91a083ecd3c13593bbc
+  $s$fMonadHandlerHandlerT1 ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+63a695df3fae3f88ff76e55f9e1b9353
+  $s$fMonadIOLoggingT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO -}
+7ac80646c24636d2a93a5cf56265da14
+  $s$fMonadLoggerLoggingT ::
+    Control.Monad.Logger.MonadLogger
+      (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+                  (Control.Monad.Logger.$fMonadLoggerLoggingT_$cmonadLoggerLog
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO) -}
+b319973e3295e6d9fe304e909996f60c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Application.$trModule2
+                   Application.$trModule1) -}
+e80e4ee49f9a1bb108039645747a545a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Application"#) -}
+de5f9f8ca5a9de276dfd2c52956bcda3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
+2a1a0e65399945f4ab63e86c6d9de522
+  $w$cyesodDispatch ::
+    Yesod.Core.Types.YesodRunnerEnv Foundation.App
+    -> Network.HTTP.Types.Method.Method
+    -> Network.HTTP.Types.Version.HttpVersion
+    -> Data.ByteString.Internal.ByteString
+    -> Data.ByteString.Internal.ByteString
+    -> Network.HTTP.Types.Header.RequestHeaders
+    -> GHC.Types.Bool
+    -> Network.Socket.Types.SockAddr
+    -> [Data.Text.Internal.Text]
+    -> Network.HTTP.Types.URI.Query
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+    -> Data.Vault.Lazy.Vault
+    -> Network.Wai.Internal.RequestBodyLength
+    -> GHC.Base.Maybe Data.ByteString.Internal.ByteString
+    -> GHC.Base.Maybe Data.ByteString.Internal.ByteString
+    -> GHC.Base.Maybe Data.ByteString.Internal.ByteString
+    -> GHC.Base.Maybe Data.ByteString.Internal.ByteString
+    -> (Network.Wai.Internal.Response
+        -> GHC.Types.IO Network.Wai.Internal.ResponseReceived)
+    -> GHC.Types.IO Network.Wai.Internal.ResponseReceived
+  {- Arity: 17,
+     Strictness: <L,U(U,U(U,U(U,U,U,U,U,U,U,U,U,U),U,U,U),U,U,C(U(U,1*U(U,U,U))))><L,U(U,U,U,U)><L,U><L,U><L,U><L,U><L,U><L,U><S,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+63f63b93e65bddd3d19e10047dc5efb6
+  $wmakeLogWare ::
+    GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> Yesod.Core.Types.Logger
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Network.Wai.Middleware #)
+  {- Arity: 4, Strictness: <L,1*U><S,1*U><L,1*U(U,A)><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Bool)
+                   (ww1 :: GHC.Types.Bool)
+                   (ww2 :: Yesod.Core.Types.Logger)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ww1 of wild {
+                   GHC.Types.False
+                   -> Network.Wai.Middleware.RequestLogger.$wmkRequestLogger
+                        (Network.Wai.Middleware.RequestLogger.Apache
+                           (case ww of wild1 {
+                              GHC.Types.False -> Network.Wai.Logger.Apache.FromSocket
+                              GHC.Types.True -> Network.Wai.Logger.Apache.FromFallback }))
+                        GHC.Types.True
+                        (Network.Wai.Middleware.RequestLogger.Logger
+                           (case ww2 of wild1 { Yesod.Core.Types.Logger ds1 ds2 -> ds1 }))
+                        w
+                   GHC.Types.True
+                   -> Network.Wai.Middleware.RequestLogger.$wmkRequestLogger
+                        Application.develMain3
+                        GHC.Types.True
+                        (Network.Wai.Middleware.RequestLogger.Logger
+                           (case ww2 of wild1 { Yesod.Core.Types.Logger ds1 ds2 -> ds1 }))
+                        w }) -}
+dac3dcebf1d266c88ccdbe4d194611a4
+  appMain :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Application.appMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+982c87c718a75e2ab7677da7e80db58a
+  appMain1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+1830dea04af69b4fdf3e0c771a5ecb0a
+  develMain :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Application.develMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8c31394d09cb879d66b8a767847ab333
+  develMain1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Yesod.Default.Config2.develMainHelper1
+                   Application.develMain2
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <(Network.Wai.Handler.Warp.Settings.Settings,
+                               Network.Wai.Application)>_R))) -}
+c56baafd935dbb0e202eb08e522deea0
+  develMain10 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Application.develMain9, Application.develMain11)) -}
+b95b84dc48e3057784f1127171d7276e
+  develMain11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 15#) -}
+181a64d41b2c6cc00ca0e24e910a2e79
+  develMain12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Application"#) -}
+8adb1f1fcaffe75e63e8c4204c98f5db
+  develMain13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
+997c551725d845658efb4380f4bc2fca
+  develMain14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "src/Application.hs"#) -}
+ed5859197e14030f303f8657687e2527
+  develMain15 ::
+    Settings.AppSettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foundation.App #)
+  {- Arity: 2,
+     Strictness: <L,1*U(U,U(U(U,U,U,U),U(U)),U,U,U,U,U,U,U,U,U,U,U,U)><S,U> -}
+a3c410235ad9261bc585ffc863b734d4
+  develMain16 :: [GHC.IO.FilePath]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.IO.FilePath
+                   Yesod.Default.Config2.configSettingsYml
+                   (GHC.Types.[] @ GHC.IO.FilePath)) -}
+5164927ebfa8f5759da80c923f7cb27a
+  develMain2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Network.Wai.Handler.Warp.Settings.Settings,
+           Network.Wai.Application) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Yaml.Config.loadYamlSettings1
+                        @ Settings.AppSettings
+                        Settings.$fFromJSONAppSettings
+                        Application.develMain16
+                        (GHC.Types.[] @ Data.Aeson.Types.Internal.Value)
+                        Data.Yaml.Config.UseEnv
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Application.develMain15 ipv1 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Yesod.Default.Config2.getDevSettings1
+                        (Application.warpSettings ipv3)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case ipv3 of ww { Foundation.App ww1 ww2 ww3 ww4 ww6 ->
+                 case ww1 of ww7 { Settings.AppSettings ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                 case Application.$wmakeLogWare
+                        ww13
+                        ww14
+                        ww6
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case Yesod.Core.Dispatch.toWaiAppPlain1
+                        @ Foundation.App
+                        Application.$fYesodDispatchApp
+                        ww
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 (# ipv8,
+                    (ipv5,
+                     ipv7
+                       (Yesod.Core.Dispatch.defaultMiddlewaresNoLogging
+                          ipv9)) #) } } } } } } }) -}
+317d604e0551ee2c1522e2a41570cd1d
+  develMain3 :: Network.Wai.Middleware.RequestLogger.OutputFormat
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Network.Wai.Middleware.RequestLogger.Detailed
+                   GHC.Types.True) -}
+135bc68c618131b72d6a62ec5e7c4341
+  develMain4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Exception from Warp: "#) -}
+c8244aeaa5991a3955d4a84c1092b8f9
+  develMain5 :: Control.Monad.Logger.LogSource
+  {- Unfolding: (Data.Text.Show.unpackCString# "yesod"#) -}
+234ec5835e44ab4174001973dfc1b5fe
+  develMain6 :: Language.Haskell.TH.Syntax.Loc
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Loc
+                   Application.develMain14
+                   Application.develMain13
+                   Application.develMain12
+                   Application.develMain10
+                   Application.develMain7) -}
+11640601f6784996b674742168fa5ba3
+  develMain7 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Application.develMain9, Application.develMain8)) -}
+bd70d4cdb442c1d49d7d572b819adb00
+  develMain8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 36#) -}
+925e0ac8c3142fe099622ed30abe4f60
+  develMain9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 120#) -}
+010ac39a9244b624fc101965beebb538
+  getApplicationDev ::
+    GHC.Types.IO
+      (Network.Wai.Handler.Warp.Settings.Settings,
+       Network.Wai.Application)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Application.develMain2
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <(Network.Wai.Handler.Warp.Settings.Settings,
+                            Network.Wai.Application)>_R)) -}
+55e157885cf6f8e2050fda0ae6440e68
+  getApplicationRepl ::
+    GHC.Types.IO
+      (GHC.Types.Int, Foundation.App, Network.Wai.Application)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Application.getApplicationRepl1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <(GHC.Types.Int, Foundation.App, Network.Wai.Application)>_R)) -}
+a94fdf87f64f5440b6543621391f12ad
+  getApplicationRepl1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Types.Int, Foundation.App, Network.Wai.Application) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Yaml.Config.loadYamlSettings1
+                        @ Settings.AppSettings
+                        Settings.$fFromJSONAppSettings
+                        Application.develMain16
+                        (GHC.Types.[] @ Data.Aeson.Types.Internal.Value)
+                        Data.Yaml.Config.UseEnv
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Application.develMain15 ipv1 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Yesod.Default.Config2.getDevSettings1
+                        (Application.warpSettings ipv3)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case ipv3 of ww { Foundation.App ww1 ww2 ww3 ww4 ww6 ->
+                 case ww1 of ww7 { Settings.AppSettings ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                 case Application.$wmakeLogWare
+                        ww13
+                        ww14
+                        ww6
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case Yesod.Core.Dispatch.toWaiAppPlain1
+                        @ Foundation.App
+                        Application.$fYesodDispatchApp
+                        ww
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 (# ipv8,
+                    (Network.Wai.Handler.Warp.Settings.settingsPort ipv5, ww,
+                     ipv7
+                       (Yesod.Core.Dispatch.defaultMiddlewaresNoLogging
+                          ipv9)) #) } } } } } } }) -}
+cb432bfbf245199b402ac4a90c442c5c
+  makeFoundation ::
+    Settings.AppSettings -> GHC.Types.IO Foundation.App
+  {- Arity: 2,
+     Strictness: <L,1*U(U,U(U(U,U,U,U),U(U)),U,U,U,U,U,U,U,U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Application.develMain15
+                  `cast`
+                (<Settings.AppSettings>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Foundation.App>_R)) -}
+de2aa44ad20b10bdefc172de4f196ac5
+  makeLogWare ::
+    Foundation.App -> GHC.Types.IO Network.Wai.Middleware
+  {- Arity: 2,
+     Strictness: <S(S(LLLLLLSLLLLLLL)LLLL),1*U(1*U(A,A,A,A,A,1*U,1*U,A,A,A,A,A,A,A),A,A,A,1*U(U,A))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Application.makeLogWare1
+                  `cast`
+                (<Foundation.App>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Network.Wai.Middleware>_R)) -}
+e8f4d1018b76a874c6ebc3c62054652c
+  makeLogWare1 ::
+    Foundation.App
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Network.Wai.Middleware #)
+  {- Arity: 2,
+     Strictness: <S(S(LLLLLLSLLLLLLL)LLLL),1*U(1*U(A,A,A,A,A,1*U,1*U,A,A,A,A,A,A,A),A,A,A,1*U(U,A))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Foundation.App)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Foundation.App ww1 ww2 ww3 ww4 ww6 ->
+                 case ww1 of ww7 { Settings.AppSettings ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
+                 Application.$wmakeLogWare ww13 ww14 ww6 w1 } }) -}
+06fdc5f23fd53ce6a37cfb44d9c3bb98
+  shutdownApp :: Foundation.App -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Application.shutdownApp1
+                  `cast`
+                (<Foundation.App>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f768fdba760fe59b5d3fe1ae5ed3e492
+  shutdownApp1 ::
+    Foundation.App
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foundation.App)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Application.shutdownApp2 eta) -}
+8b8faec5b3d84fd24a51e2ef2355e49c
+  shutdownApp2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s, GHC.Tuple.() #)) -}
+f63bdf464afb7a76e34a23c9475669a0
+  warpSettings ::
+    Foundation.App -> Network.Wai.Handler.Warp.Settings.Settings
+  {- Arity: 1,
+     Strictness: <L,U(U(A,A,A,1*U,1*U,A,A,A,A,A,A,A,A,A),A,A,A,1*U(U,U))>,
+     Unfolding: (\ (foundation :: Foundation.App) ->
+                 let {
+                   lvl61 :: Yesod.Core.Types.Logger
+                   = case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
+                     ds5 }
+                 } in
+                 let {
+                   lvl62 :: Network.Wai.Logger.DateCacheGetter
+                   = case lvl61 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
+                 } in
+                 Network.Wai.Handler.Warp.Settings.Settings
+                   (case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
+                    case ds1 of wild1 { Settings.AppSettings ds7 ds8 ds9 ds10 ds11 ds6 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                    ds11 } })
+                   (case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
+                    case ds1 of wild1 { Settings.AppSettings ds7 ds8 ds9 ds10 ds11 ds6 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ->
+                    ds10 } })
+                   (\ (_req :: GHC.Base.Maybe Network.Wai.Internal.Request)
+                      (e :: GHC.Exception.SomeException)
+                      (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case Network.Wai.Handler.Warp.Settings.defaultShouldDisplayException
+                           e of wild {
+                      GHC.Types.False -> (# eta, GHC.Tuple.() #)
+                      GHC.Types.True
+                      -> case Yesod.Core.Class.Yesod.defaultMessageLoggerSource2
+                                lvl62
+                                Application.develMain6
+                                Application.develMain5
+                                Control.Monad.Logger.LevelError
+                                (case System.Log.FastLogger.LogStr.$w$ctoLogStr1
+                                        (GHC.Base.++
+                                           @ GHC.Types.Char
+                                           Application.develMain4
+                                           (case e of wild1 { GHC.Exception.SomeException e0 $dException e1 ->
+                                            GHC.Show.showsPrec
+                                              @ e0
+                                              (GHC.Exception.$p2Exception @ e0 $dException)
+                                              GHC.Show.shows22
+                                              e1
+                                              (GHC.Types.[]
+                                                 @ GHC.Types.Char) })) of ww { (#,#) ww1 ww2 ->
+                                 System.Log.FastLogger.LogStr.LogStr ww1 ww2 })
+                                eta of ds2 { (#,#) ipv2 ipv3 ->
+                         Yesod.Core.Types.loggerPutStr1 lvl61 ipv3 ipv2 } })
+                     `cast`
+                   (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
+                    ->_R <GHC.Exception.SomeException>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultOnExceptionResponse
+                   Network.Wai.Handler.Warp.Settings.defaultSettings14
+                     `cast`
+                   (<Network.Socket.Types.SockAddr>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings13
+                     `cast`
+                   (<Network.Socket.Types.SockAddr>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings12
+                   (GHC.Base.Nothing @ Network.Wai.Handler.Warp.Timeout.Manager)
+                   Network.Wai.Handler.Warp.Settings.defaultSettings11
+                   Network.Wai.Handler.Warp.Settings.defaultSettings11
+                   Network.Wai.Handler.Warp.Settings.defaultSettings9
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings10
+                     `cast`
+                   (<(forall a. GHC.Types.IO a -> GHC.Types.IO a)
+                     -> GHC.Types.IO ()>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False
+                   Network.Wai.Handler.Warp.Settings.defaultSettings8
+                     `cast`
+                   (<GHC.Types.IO ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings6
+                   Network.Wai.Handler.Warp.Settings.defaultSettings4
+                   Network.Wai.Handler.Warp.Settings.ProxyProtocolNone
+                   Network.Wai.Handler.Warp.Settings.defaultSettings3
+                   GHC.Types.True
+                   Network.Wai.Handler.Warp.Settings.defaultSettings2
+                     `cast`
+                   (<Network.Wai.Internal.Request>_R
+                    ->_R <Network.HTTP.Types.Status.Status>_R
+                    ->_R <GHC.Base.Maybe GHC.Integer.Type.Integer>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings1
+                     `cast`
+                   (<Network.Wai.Internal.Request>_R
+                    ->_R <Data.ByteString.Internal.ByteString>_R
+                    ->_R <GHC.Integer.Type.Integer>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   (GHC.Base.Nothing @ GHC.Types.Int)) -}
+instance Yesod.Core.Class.Dispatch.YesodDispatch [Foundation.App]
+  = Application.$fYesodDispatchApp
+"SPEC/Application $fApplicativeLoggingT @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                  GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT @ GHC.Types.IO
+                                             $dApplicative
+  = Application.$s$fApplicativeLoggingT
+"SPEC/Application $fApplicativeLoggingT_$c<*> @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                        GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT_$c<*> @ GHC.Types.IO
+                                                   $dApplicative
+  = Application.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+"SPEC/Application $fApplicativeLoggingT_$cp1Applicative @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                                  GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT_$cp1Applicative @ GHC.Types.IO
+                                                             $dApplicative
+  = Application.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative
+"SPEC/Application $fFunctorLoggingT @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                          GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT @ GHC.Types.IO $dFunctor
+  = Application.$s$fApplicativeLoggingT_$s$fFunctorLoggingT
+"SPEC/Application $fFunctorLoggingT_$cfmap @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                                 GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT_$cfmap @ GHC.Types.IO
+                                                $dFunctor
+  = Application.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+"SPEC/Application $fMonadBaseControlbLoggingT @ IO @ IO" [ALWAYS] forall ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                                                                                  GHC.Types.IO
+                                                                                                  GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBaseControlbLoggingT @ GHC.Types.IO
+                                                   @ GHC.Types.IO
+                                                   $dMonadBaseControl
+  = Application.$s$fMonadBaseControlbLoggingT
+"SPEC/Application $fMonadBaseControlbLoggingT_$cp1MonadBaseControl @ IO @ IO" [ALWAYS] forall ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                                                                                                       GHC.Types.IO
+                                                                                                                       GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBaseControlbLoggingT_$cp1MonadBaseControl @ GHC.Types.IO
+                                                                        @ GHC.Types.IO
+                                                                        $dMonadBaseControl
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl
+"SPEC/Application $fMonadBasebLoggingT @ IO @ IO" [ALWAYS] forall ($dMonadBase :: Control.Monad.Base.MonadBase
+                                                                                    GHC.Types.IO
+                                                                                    GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBasebLoggingT @ GHC.Types.IO
+                                            @ GHC.Types.IO
+                                            $dMonadBase
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT
+"SPEC/Application $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                                 ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                                  GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Application.$s$fMonadHandlerHandlerT @ site
+"SPEC/Application $fMonadIOLoggingT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                          GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIOLoggingT @ GHC.Types.IO $dMonadIO
+  = Application.$s$fMonadIOLoggingT
+"SPEC/Application $fMonadIOLoggingT_$cliftIO @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                   GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIOLoggingT_$cliftIO @ GHC.Types.IO
+                                                  $dMonadIO
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO
+"SPEC/Application $fMonadIOLoggingT_$cp1MonadLogger @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                          GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIOLoggingT_$cp1MonadLogger @ GHC.Types.IO
+                                                         $dMonadIO
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+"SPEC/Application $fMonadLoggerLoggingT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                              GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggerLoggingT @ GHC.Types.IO $dMonadIO
+  = Application.$s$fMonadLoggerLoggingT
+"SPEC/Application $fMonadLoggingT @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                      GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT @ GHC.Types.IO $dMonad
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT
+"SPEC/Application $fMonadLoggingT_$cfail @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$cfail @ GHC.Types.IO $dMonad
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail
+"SPEC/Application $fMonadLoggingT_$cp1Monad @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                                GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$cp1Monad @ GHC.Types.IO
+                                                 $dMonad
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+"SPEC/Application $fMonadLoggingT_$creturn @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                               GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$creturn @ GHC.Types.IO
+                                                $dMonad
+  = Application.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

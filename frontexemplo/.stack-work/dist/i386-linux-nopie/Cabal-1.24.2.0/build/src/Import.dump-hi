@@ -1,0 +1,2494 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-11 04:36:46.662720117 UTC
+
+interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Import 8002
+  interface hash: 66ea41f17f4562ef6ebb31c33985d499
+  ABI hash: 260d5b61976284bcf51c6076a78f1440
+  export-list hash: 6d04d8ae11dfce663fc8b6a1abb49849
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5e88707c952b9a122ad684fcf4610805
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Aeson.Types.FromJSON..:
+  Data.Aeson.Types.Internal.object
+  Control.Concurrent.Async.pollSTM
+  Control.Concurrent.Async.waitCatchSTM
+  Control.Concurrent.Async.waitSTM
+  Control.Applicative.optional
+  Control.Concurrent.rtsSupportsBoundThreads
+  Control.Monad.<=<
+  Control.Monad.>=>
+  Control.Monad.forever
+  Control.Monad.guard
+  Control.Monad.replicateM_
+  Control.Monad.unless
+  Data.Bool.bool
+  Data.Either.either
+  Data.Either.lefts
+  Data.Either.partitionEithers
+  Data.Either.rights
+  Data.Foldable.asum
+  Data.Function.on
+  Data.Functor.$>
+  Data.Functor.<$>
+  Data.Functor.void
+  Data.Maybe.fromMaybe
+  Data.Maybe.isJust
+  Data.Maybe.isNothing
+  Data.Maybe.listToMaybe
+  Data.Maybe.mapMaybe
+  Data.Maybe.maybe
+  Data.Maybe.maybeToList
+  Data.Ord.comparing
+  Data.Traversable.for
+  Data.Traversable.forM
+  Data.Tuple.curry
+  Data.Tuple.fst
+  Data.Tuple.snd
+  Data.Tuple.swap
+  Data.Tuple.uncurry
+  Debug.Trace.trace
+  Debug.Trace.traceShow
+  GHC.Base.$!
+  GHC.Base.<**>
+  GHC.Base.=<<
+  GHC.Base.ap
+  GHC.Base.asTypeOf
+  GHC.Base.assert
+  GHC.Base.const
+  GHC.Base.flip
+  GHC.Base.join
+  GHC.Base.liftA
+  GHC.Base.liftA2
+  GHC.Base.liftA3
+  GHC.Base.liftM
+  GHC.Base.liftM2
+  GHC.Base.liftM3
+  GHC.Base.liftM4
+  GHC.Base.liftM5
+  GHC.Base.otherwise
+  GHC.Base.until
+  GHC.Base.when
+  GHC.Conc.IO.registerDelay
+  GHC.Conc.Sync.catchSTM
+  GHC.Conc.Sync.newTVar
+  GHC.Conc.Sync.newTVarIO
+  GHC.Conc.Sync.readTVar
+  GHC.Conc.Sync.readTVarIO
+  GHC.Conc.Sync.throwSTM
+  GHC.Conc.Sync.writeTVar
+  GHC.Err.error
+  GHC.IO.Exception.ioError
+  GHC.IO.Exception.userError
+  GHC.IO.Handle.hClose
+  GHC.IO.Handle.FD.stderr
+  GHC.IO.Handle.FD.stdin
+  GHC.IO.Handle.FD.stdout
+  GHC.List.repeat
+  GHC.Num.subtract
+  GHC.Real.^
+  GHC.Real.^^
+  GHC.Real.even
+  GHC.Real.fromIntegral
+  GHC.Real.odd
+  GHC.Real.realToFrac
+  System.IO.Error.alreadyExistsErrorType
+  System.IO.Error.alreadyInUseErrorType
+  System.IO.Error.annotateIOError
+  System.IO.Error.doesNotExistErrorType
+  System.IO.Error.eofErrorType
+  System.IO.Error.fullErrorType
+  System.IO.Error.illegalOperationErrorType
+  System.IO.Error.ioeGetErrorString
+  System.IO.Error.ioeGetErrorType
+  System.IO.Error.ioeGetFileName
+  System.IO.Error.ioeGetHandle
+  System.IO.Error.ioeGetLocation
+  System.IO.Error.ioeSetErrorString
+  System.IO.Error.ioeSetErrorType
+  System.IO.Error.ioeSetFileName
+  System.IO.Error.ioeSetHandle
+  System.IO.Error.ioeSetLocation
+  System.IO.Error.isAlreadyExistsError
+  System.IO.Error.isAlreadyExistsErrorType
+  System.IO.Error.isAlreadyInUseError
+  System.IO.Error.isAlreadyInUseErrorType
+  System.IO.Error.isDoesNotExistError
+  System.IO.Error.isDoesNotExistErrorType
+  System.IO.Error.isEOFError
+  System.IO.Error.isEOFErrorType
+  System.IO.Error.isFullError
+  System.IO.Error.isFullErrorType
+  System.IO.Error.isIllegalOperation
+  System.IO.Error.isIllegalOperationErrorType
+  System.IO.Error.isPermissionError
+  System.IO.Error.isPermissionErrorType
+  System.IO.Error.isUserError
+  System.IO.Error.isUserErrorType
+  System.IO.Error.mkIOError
+  System.IO.Error.modifyIOError
+  System.IO.Error.permissionErrorType
+  System.IO.Error.tryIOError
+  System.IO.Error.userErrorType
+  CorePrelude.equating
+  CorePrelude.getArgs
+  CorePrelude.putStr
+  CorePrelude.putStrLn
+  CorePrelude.readArgs
+  CorePrelude.terror
+  Text.Blaze.Html.toHtml
+  Data.Builder.textToBuilder
+  ClassyPrelude.++
+  ClassyPrelude.<&&>
+  ClassyPrelude.<||>
+  ClassyPrelude.\\
+  ClassyPrelude.alwaysSTM
+  ClassyPrelude.alwaysSucceedsSTM
+  ClassyPrelude.applyDList
+  ClassyPrelude.asByteString
+  ClassyPrelude.asDList
+  ClassyPrelude.asHashMap
+  ClassyPrelude.asHashSet
+  ClassyPrelude.asIntMap
+  ClassyPrelude.asIntSet
+  ClassyPrelude.asLByteString
+  ClassyPrelude.asLText
+  ClassyPrelude.asList
+  ClassyPrelude.asMap
+  ClassyPrelude.asMaybe
+  ClassyPrelude.asSVector
+  ClassyPrelude.asSet
+  ClassyPrelude.asString
+  ClassyPrelude.asText
+  ClassyPrelude.asUVector
+  ClassyPrelude.asVector
+  ClassyPrelude.atomically
+  ClassyPrelude.cancel
+  ClassyPrelude.cancelWith
+  ClassyPrelude.charToLower
+  ClassyPrelude.charToUpper
+  ClassyPrelude.checkSTM
+  ClassyPrelude.fromByteVector
+  ClassyPrelude.hGetChunk
+  ClassyPrelude.hGetContents
+  ClassyPrelude.hPut
+  ClassyPrelude.hashNub
+  ClassyPrelude.intersect
+  ClassyPrelude.link2Async
+  ClassyPrelude.linkAsync
+  ClassyPrelude.map
+  ClassyPrelude.orElseSTM
+  ClassyPrelude.ordNub
+  ClassyPrelude.ordNubBy
+  ClassyPrelude.pollAsync
+  ClassyPrelude.print
+  ClassyPrelude.readFile
+  ClassyPrelude.readFileUtf8
+  ClassyPrelude.readMay
+  ClassyPrelude.retrySTM
+  ClassyPrelude.sortWith
+  ClassyPrelude.tlshow
+  ClassyPrelude.toByteVector
+  ClassyPrelude.traceId
+  ClassyPrelude.traceM
+  ClassyPrelude.traceShowId
+  ClassyPrelude.traceShowM
+  ClassyPrelude.tshow
+  ClassyPrelude.undefined
+  ClassyPrelude.unlessM
+  ClassyPrelude.waitAsync
+  ClassyPrelude.waitCatchAsync
+  ClassyPrelude.whenM
+  ClassyPrelude.writeFile
+  ClassyPrelude.writeFileUtf8
+  ClassyPrelude.yieldThread
+  Data.Conduit..|
+  Data.Conduit.connect
+  Data.Conduit.fuse
+  Data.Conduit.runConduitPure
+  Data.Conduit.runConduitRes
+  Data.Conduit.Internal.Conduit.$$
+  Data.Conduit.Internal.Conduit.$$+
+  Data.Conduit.Internal.Conduit.$$++
+  Data.Conduit.Internal.Conduit.$$+-
+  Data.Conduit.Internal.Conduit.$=
+  Data.Conduit.Internal.Conduit.$=+
+  Data.Conduit.Internal.Conduit.=$
+  Data.Conduit.Internal.Conduit.=$$+
+  Data.Conduit.Internal.Conduit.=$$++
+  Data.Conduit.Internal.Conduit.=$$+-
+  Data.Conduit.Internal.Conduit.=$=
+  Data.Conduit.Internal.Conduit.addCleanup
+  Data.Conduit.Internal.Conduit.await
+  Data.Conduit.Internal.Conduit.awaitForever
+  Data.Conduit.Internal.Conduit.bracketP
+  Data.Conduit.Internal.Conduit.catchC
+  Data.Conduit.Internal.Conduit.closeResumableSource
+  Data.Conduit.Internal.Conduit.fuseBoth
+  Data.Conduit.Internal.Conduit.fuseBothMaybe
+  Data.Conduit.Internal.Conduit.fuseLeftovers
+  Data.Conduit.Internal.Conduit.fuseReturnLeftovers
+  Data.Conduit.Internal.Conduit.fuseUpstream
+  Data.Conduit.Internal.Conduit.handleC
+  Data.Conduit.Internal.Conduit.leftover
+  Data.Conduit.Internal.Conduit.mapInput
+  Data.Conduit.Internal.Conduit.mapOutput
+  Data.Conduit.Internal.Conduit.mapOutputMaybe
+  Data.Conduit.Internal.Conduit.mergeSource
+  Data.Conduit.Internal.Conduit.newResumableConduit
+  Data.Conduit.Internal.Conduit.newResumableSource
+  Data.Conduit.Internal.Conduit.passthroughSink
+  Data.Conduit.Internal.Conduit.runConduit
+  Data.Conduit.Internal.Conduit.sequenceConduits
+  Data.Conduit.Internal.Conduit.sequenceSinks
+  Data.Conduit.Internal.Conduit.sequenceSources
+  Data.Conduit.Internal.Conduit.sourceToList
+  Data.Conduit.Internal.Conduit.toConsumer
+  Data.Conduit.Internal.Conduit.toProducer
+  Data.Conduit.Internal.Conduit.transPipe
+  Data.Conduit.Internal.Conduit.tryC
+  Data.Conduit.Internal.Conduit.unwrapResumable
+  Data.Conduit.Internal.Conduit.unwrapResumableConduit
+  Data.Conduit.Internal.Conduit.yield
+  Data.Conduit.Internal.Conduit.yieldM
+  Data.Conduit.Internal.Conduit.yieldOr
+  Data.Conduit.Lift.catchCatchC
+  Data.Conduit.Lift.catchErrorC
+  Data.Conduit.Lift.catchExceptC
+  Data.Conduit.Lift.distribute
+  Data.Conduit.Lift.errorC
+  Data.Conduit.Lift.evalRWSC
+  Data.Conduit.Lift.evalRWSLC
+  Data.Conduit.Lift.evalStateC
+  Data.Conduit.Lift.evalStateLC
+  Data.Conduit.Lift.exceptC
+  Data.Conduit.Lift.execRWSC
+  Data.Conduit.Lift.execRWSLC
+  Data.Conduit.Lift.execStateC
+  Data.Conduit.Lift.execStateLC
+  Data.Conduit.Lift.execWriterC
+  Data.Conduit.Lift.execWriterLC
+  Data.Conduit.Lift.maybeC
+  Data.Conduit.Lift.readerC
+  Data.Conduit.Lift.runCatchC
+  Data.Conduit.Lift.runErrorC
+  Data.Conduit.Lift.runExceptC
+  Data.Conduit.Lift.runMaybeC
+  Data.Conduit.Lift.runRWSC
+  Data.Conduit.Lift.runRWSLC
+  Data.Conduit.Lift.runReaderC
+  Data.Conduit.Lift.runStateC
+  Data.Conduit.Lift.runStateLC
+  Data.Conduit.Lift.runWriterC
+  Data.Conduit.Lift.runWriterLC
+  Data.Conduit.Lift.rwsC
+  Data.Conduit.Lift.rwsLC
+  Data.Conduit.Lift.stateC
+  Data.Conduit.Lift.stateLC
+  Data.Conduit.Lift.writerC
+  Data.Conduit.Lift.writerLC
+  Conduit.withAcquire
+  Data.Conduit.Combinators.mapAccumS
+  Data.Conduit.Combinators.peekForever
+  Data.Conduit.Combinators.peekForeverE
+  Data.Conduit.Combinators.sinkFileBS
+  Data.Conduit.Combinators.sourceFileBS
+  Data.Conduit.Combinators.Unqualified.allC
+  Data.Conduit.Combinators.Unqualified.allCE
+  Data.Conduit.Combinators.Unqualified.andC
+  Data.Conduit.Combinators.Unqualified.andCE
+  Data.Conduit.Combinators.Unqualified.anyC
+  Data.Conduit.Combinators.Unqualified.anyCE
+  Data.Conduit.Combinators.Unqualified.asumC
+  Data.Conduit.Combinators.Unqualified.awaitNonNull
+  Data.Conduit.Combinators.Unqualified.concatC
+  Data.Conduit.Combinators.Unqualified.concatMapAccumC
+  Data.Conduit.Combinators.Unqualified.concatMapAccumMC
+  Data.Conduit.Combinators.Unqualified.concatMapC
+  Data.Conduit.Combinators.Unqualified.concatMapCE
+  Data.Conduit.Combinators.Unqualified.concatMapMC
+  Data.Conduit.Combinators.Unqualified.conduitVector
+  Data.Conduit.Combinators.Unqualified.decodeBase16C
+  Data.Conduit.Combinators.Unqualified.decodeBase64C
+  Data.Conduit.Combinators.Unqualified.decodeBase64URLC
+  Data.Conduit.Combinators.Unqualified.decodeUtf8C
+  Data.Conduit.Combinators.Unqualified.decodeUtf8LenientC
+  Data.Conduit.Combinators.Unqualified.dropC
+  Data.Conduit.Combinators.Unqualified.dropCE
+  Data.Conduit.Combinators.Unqualified.dropWhileC
+  Data.Conduit.Combinators.Unqualified.dropWhileCE
+  Data.Conduit.Combinators.Unqualified.elemC
+  Data.Conduit.Combinators.Unqualified.elemCE
+  Data.Conduit.Combinators.Unqualified.encodeBase16C
+  Data.Conduit.Combinators.Unqualified.encodeBase64C
+  Data.Conduit.Combinators.Unqualified.encodeBase64URLC
+  Data.Conduit.Combinators.Unqualified.encodeUtf8C
+  Data.Conduit.Combinators.Unqualified.enumFromToC
+  Data.Conduit.Combinators.Unqualified.filterC
+  Data.Conduit.Combinators.Unqualified.filterCE
+  Data.Conduit.Combinators.Unqualified.filterMC
+  Data.Conduit.Combinators.Unqualified.filterMCE
+  Data.Conduit.Combinators.Unqualified.findC
+  Data.Conduit.Combinators.Unqualified.foldC
+  Data.Conduit.Combinators.Unqualified.foldCE
+  Data.Conduit.Combinators.Unqualified.foldMC
+  Data.Conduit.Combinators.Unqualified.foldMCE
+  Data.Conduit.Combinators.Unqualified.foldMapC
+  Data.Conduit.Combinators.Unqualified.foldMapCE
+  Data.Conduit.Combinators.Unqualified.foldMapMC
+  Data.Conduit.Combinators.Unqualified.foldMapMCE
+  Data.Conduit.Combinators.Unqualified.foldlC
+  Data.Conduit.Combinators.Unqualified.foldlCE
+  Data.Conduit.Combinators.Unqualified.headC
+  Data.Conduit.Combinators.Unqualified.headCE
+  Data.Conduit.Combinators.Unqualified.headDefC
+  Data.Conduit.Combinators.Unqualified.intersperseC
+  Data.Conduit.Combinators.Unqualified.iterMC
+  Data.Conduit.Combinators.Unqualified.iterateC
+  Data.Conduit.Combinators.Unqualified.lastC
+  Data.Conduit.Combinators.Unqualified.lastCE
+  Data.Conduit.Combinators.Unqualified.lastDefC
+  Data.Conduit.Combinators.Unqualified.lengthC
+  Data.Conduit.Combinators.Unqualified.lengthCE
+  Data.Conduit.Combinators.Unqualified.lengthIfC
+  Data.Conduit.Combinators.Unqualified.lengthIfCE
+  Data.Conduit.Combinators.Unqualified.lineAsciiC
+  Data.Conduit.Combinators.Unqualified.lineC
+  Data.Conduit.Combinators.Unqualified.linesUnboundedAsciiC
+  Data.Conduit.Combinators.Unqualified.linesUnboundedC
+  Data.Conduit.Combinators.Unqualified.mapAccumWhileC
+  Data.Conduit.Combinators.Unqualified.mapAccumWhileMC
+  Data.Conduit.Combinators.Unqualified.mapC
+  Data.Conduit.Combinators.Unqualified.mapCE
+  Data.Conduit.Combinators.Unqualified.mapMC
+  Data.Conduit.Combinators.Unqualified.mapMCE
+  Data.Conduit.Combinators.Unqualified.mapM_C
+  Data.Conduit.Combinators.Unqualified.mapM_CE
+  Data.Conduit.Combinators.Unqualified.mapWhileC
+  Data.Conduit.Combinators.Unqualified.maximumC
+  Data.Conduit.Combinators.Unqualified.maximumCE
+  Data.Conduit.Combinators.Unqualified.minimumC
+  Data.Conduit.Combinators.Unqualified.minimumCE
+  Data.Conduit.Combinators.Unqualified.notElemC
+  Data.Conduit.Combinators.Unqualified.notElemCE
+  Data.Conduit.Combinators.Unqualified.nullC
+  Data.Conduit.Combinators.Unqualified.nullCE
+  Data.Conduit.Combinators.Unqualified.omapCE
+  Data.Conduit.Combinators.Unqualified.omapMCE
+  Data.Conduit.Combinators.Unqualified.orC
+  Data.Conduit.Combinators.Unqualified.orCE
+  Data.Conduit.Combinators.Unqualified.peekC
+  Data.Conduit.Combinators.Unqualified.peekCE
+  Data.Conduit.Combinators.Unqualified.printC
+  Data.Conduit.Combinators.Unqualified.productC
+  Data.Conduit.Combinators.Unqualified.productCE
+  Data.Conduit.Combinators.Unqualified.repeatC
+  Data.Conduit.Combinators.Unqualified.repeatMC
+  Data.Conduit.Combinators.Unqualified.repeatWhileMC
+  Data.Conduit.Combinators.Unqualified.replicateC
+  Data.Conduit.Combinators.Unqualified.replicateMC
+  Data.Conduit.Combinators.Unqualified.scanlC
+  Data.Conduit.Combinators.Unqualified.scanlMC
+  Data.Conduit.Combinators.Unqualified.sinkBuilder
+  Data.Conduit.Combinators.Unqualified.sinkLazy
+  Data.Conduit.Combinators.Unqualified.sinkLazyBuilder
+  Data.Conduit.Combinators.Unqualified.sinkList
+  Data.Conduit.Combinators.Unqualified.sinkNull
+  Data.Conduit.Combinators.Unqualified.sinkVector
+  Data.Conduit.Combinators.Unqualified.sinkVectorN
+  Data.Conduit.Combinators.Unqualified.slidingWindowC
+  Data.Conduit.Combinators.Unqualified.sourceDirectory
+  Data.Conduit.Combinators.Unqualified.sourceDirectoryDeep
+  Data.Conduit.Combinators.Unqualified.sourceLazy
+  Data.Conduit.Combinators.Unqualified.sourceRandom
+  Data.Conduit.Combinators.Unqualified.sourceRandomGen
+  Data.Conduit.Combinators.Unqualified.sourceRandomGenWith
+  Data.Conduit.Combinators.Unqualified.sourceRandomN
+  Data.Conduit.Combinators.Unqualified.sourceRandomNGen
+  Data.Conduit.Combinators.Unqualified.sourceRandomNGenWith
+  Data.Conduit.Combinators.Unqualified.sourceRandomNWith
+  Data.Conduit.Combinators.Unqualified.sourceRandomWith
+  Data.Conduit.Combinators.Unqualified.stderrC
+  Data.Conduit.Combinators.Unqualified.stdinC
+  Data.Conduit.Combinators.Unqualified.stdoutC
+  Data.Conduit.Combinators.Unqualified.sumC
+  Data.Conduit.Combinators.Unqualified.sumCE
+  Data.Conduit.Combinators.Unqualified.takeC
+  Data.Conduit.Combinators.Unqualified.takeCE
+  Data.Conduit.Combinators.Unqualified.takeExactlyC
+  Data.Conduit.Combinators.Unqualified.takeExactlyCE
+  Data.Conduit.Combinators.Unqualified.takeWhileC
+  Data.Conduit.Combinators.Unqualified.takeWhileCE
+  Data.Conduit.Combinators.Unqualified.unfoldC
+  Data.Conduit.Combinators.Unqualified.unlinesAsciiC
+  Data.Conduit.Combinators.Unqualified.unlinesC
+  Data.Conduit.Combinators.Unqualified.vectorBuilderC
+  Data.Conduit.Combinators.Unqualified.yieldMany
+  Data.Conduit.Binary.sinkFile
+  Data.Conduit.Binary.sinkHandle
+  Data.Conduit.Binary.sinkIOHandle
+  Data.Conduit.Binary.sourceFile
+  Data.Conduit.Binary.sourceHandle
+  Data.Conduit.Binary.sourceIOHandle
+  Control.DeepSeq.$!!
+  Control.DeepSeq.deepseq
+  Control.DeepSeq.force
+  Control.Monad.Catch.catchIOError
+  Control.Monad.Catch.handleIOError
+  Control.Monad.Catch.mask_
+  Control.Monad.Catch.uninterruptibleMask_
+  System.FilePath.Posix.<.>
+  System.FilePath.Posix.</>
+  Foundation.ehAdmin
+  Foundation.ehUsuario
+  Foundation.resourcesApp
+  Model.migrateAll
+  Settings.combineScripts
+  Settings.combineSettings
+  Settings.combineStylesheets
+  Settings.compileTimeAppSettings
+  Settings.configSettingsYmlBS
+  Settings.configSettingsYmlValue
+  Settings.widgetFile
+  Settings.widgetFileSettings
+  Settings.StaticFiles.cloyster_jpg
+  Settings.StaticFiles.css_bootstrap_css
+  Settings.StaticFiles.fonts_glyphicons_halflings_regular_eot
+  Settings.StaticFiles.fonts_glyphicons_halflings_regular_svg
+  Settings.StaticFiles.fonts_glyphicons_halflings_regular_ttf
+  Settings.StaticFiles.fonts_glyphicons_halflings_regular_woff
+  Settings.StaticFiles.psyduck_jpg
+  GHC.Classes.&&
+  GHC.Classes.not
+  GHC.Classes.||
+  Network.HTTP.Client.managerSetInsecureProxy
+  Network.HTTP.Client.managerSetProxy
+  Network.HTTP.Client.managerSetSecureProxy
+  Network.HTTP.Client.responseOpenHistory
+  Network.HTTP.Client.responseTimeoutDefault
+  Network.HTTP.Client.responseTimeoutMicro
+  Network.HTTP.Client.responseTimeoutNone
+  Network.HTTP.Client.withResponseHistory
+  Network.HTTP.Client.Body.brReadSome
+  Network.HTTP.Client.Connection.makeConnection
+  Network.HTTP.Client.Connection.socketConnection
+  Network.HTTP.Client.Cookies.computeCookieString
+  Network.HTTP.Client.Cookies.createCookieJar
+  Network.HTTP.Client.Cookies.defaultPath
+  Network.HTTP.Client.Cookies.destroyCookieJar
+  Network.HTTP.Client.Cookies.domainMatches
+  Network.HTTP.Client.Cookies.evictExpiredCookies
+  Network.HTTP.Client.Cookies.generateCookie
+  Network.HTTP.Client.Cookies.insertCheckedCookie
+  Network.HTTP.Client.Cookies.insertCookiesIntoRequest
+  Network.HTTP.Client.Cookies.isIpAddress
+  Network.HTTP.Client.Cookies.pathMatches
+  Network.HTTP.Client.Cookies.receiveSetCookie
+  Network.HTTP.Client.Cookies.removeExistingCookieFromCookieJar
+  Network.HTTP.Client.Cookies.updateCookieJar
+  Network.HTTP.Client.Manager.defaultProxy
+  Network.HTTP.Client.Manager.noProxy
+  Network.HTTP.Client.Manager.proxyEnvironment
+  Network.HTTP.Client.Manager.proxyEnvironmentNamed
+  Network.HTTP.Client.Manager.proxyFromRequest
+  Network.HTTP.Client.Manager.rawConnectionModifySocket
+  Network.HTTP.Client.Manager.rawConnectionModifySocketSize
+  Network.HTTP.Client.Manager.useProxy
+  Network.HTTP.Client.Request.applyBasicAuth
+  Network.HTTP.Client.Request.applyBasicProxyAuth
+  Network.HTTP.Client.Request.defaultRequest
+  Network.HTTP.Client.Request.getUri
+  Network.HTTP.Client.Request.observedStreamFile
+  Network.HTTP.Client.Request.parseRequest
+  Network.HTTP.Client.Request.parseRequest_
+  Network.HTTP.Client.Request.parseUrl
+  Network.HTTP.Client.Request.parseUrlThrow
+  Network.HTTP.Client.Request.setQueryString
+  Network.HTTP.Client.Request.setRequestIgnoreStatus
+  Network.HTTP.Client.Request.streamFile
+  Network.HTTP.Client.Request.urlEncodedBody
+  Network.HTTP.Client.Conduit.acquireResponse
+  Network.HTTP.Client.Conduit.bodyReaderSource
+  Network.HTTP.Client.Conduit.defaultManagerSettings
+  Network.HTTP.Client.Conduit.httpLbs
+  Network.HTTP.Client.Conduit.httpNoBody
+  Network.HTTP.Client.Conduit.newManager
+  Network.HTTP.Client.Conduit.newManagerSettings
+  Network.HTTP.Client.Conduit.requestBodySource
+  Network.HTTP.Client.Conduit.requestBodySourceChunked
+  Network.HTTP.Client.Conduit.responseClose
+  Network.HTTP.Client.Conduit.responseOpen
+  Network.HTTP.Client.Conduit.withManager
+  Network.HTTP.Client.Conduit.withManagerSettings
+  Network.HTTP.Client.Conduit.withResponse
+  Network.HTTP.Types.Header.hAccept
+  Network.HTTP.Types.Header.hAcceptLanguage
+  Network.HTTP.Types.Header.hAuthorization
+  Network.HTTP.Types.Header.hCacheControl
+  Network.HTTP.Types.Header.hConnection
+  Network.HTTP.Types.Header.hContentEncoding
+  Network.HTTP.Types.Header.hContentLength
+  Network.HTTP.Types.Header.hContentMD5
+  Network.HTTP.Types.Header.hContentType
+  Network.HTTP.Types.Header.hCookie
+  Network.HTTP.Types.Header.hDate
+  Network.HTTP.Types.Header.hIfModifiedSince
+  Network.HTTP.Types.Header.hIfRange
+  Network.HTTP.Types.Header.hLastModified
+  Network.HTTP.Types.Header.hLocation
+  Network.HTTP.Types.Header.hRange
+  Network.HTTP.Types.Header.hReferer
+  Network.HTTP.Types.Header.hServer
+  Network.HTTP.Types.Header.hUserAgent
+  Network.HTTP.Types.Header.parseByteRanges
+  Network.HTTP.Types.Header.renderByteRange
+  Network.HTTP.Types.Header.renderByteRangeBuilder
+  Network.HTTP.Types.Header.renderByteRanges
+  Network.HTTP.Types.Header.renderByteRangesBuilder
+  Network.HTTP.Types.Method.methodConnect
+  Network.HTTP.Types.Method.methodDelete
+  Network.HTTP.Types.Method.methodGet
+  Network.HTTP.Types.Method.methodHead
+  Network.HTTP.Types.Method.methodOptions
+  Network.HTTP.Types.Method.methodPatch
+  Network.HTTP.Types.Method.methodPost
+  Network.HTTP.Types.Method.methodPut
+  Network.HTTP.Types.Method.methodTrace
+  Network.HTTP.Types.Method.parseMethod
+  Network.HTTP.Types.Method.renderMethod
+  Network.HTTP.Types.Method.renderStdMethod
+  Network.HTTP.Types.Status.accepted202
+  Network.HTTP.Types.Status.badGateway502
+  Network.HTTP.Types.Status.badRequest400
+  Network.HTTP.Types.Status.conflict409
+  Network.HTTP.Types.Status.continue100
+  Network.HTTP.Types.Status.created201
+  Network.HTTP.Types.Status.expectationFailed417
+  Network.HTTP.Types.Status.forbidden403
+  Network.HTTP.Types.Status.found302
+  Network.HTTP.Types.Status.gatewayTimeout504
+  Network.HTTP.Types.Status.gone410
+  Network.HTTP.Types.Status.httpVersionNotSupported505
+  Network.HTTP.Types.Status.imATeaPot418
+  Network.HTTP.Types.Status.internalServerError500
+  Network.HTTP.Types.Status.lengthRequired411
+  Network.HTTP.Types.Status.methodNotAllowed405
+  Network.HTTP.Types.Status.mkStatus
+  Network.HTTP.Types.Status.movedPermanently301
+  Network.HTTP.Types.Status.multipleChoices300
+  Network.HTTP.Types.Status.noContent204
+  Network.HTTP.Types.Status.nonAuthoritative203
+  Network.HTTP.Types.Status.notAcceptable406
+  Network.HTTP.Types.Status.notFound404
+  Network.HTTP.Types.Status.notImplemented501
+  Network.HTTP.Types.Status.notModified304
+  Network.HTTP.Types.Status.ok200
+  Network.HTTP.Types.Status.partialContent206
+  Network.HTTP.Types.Status.paymentRequired402
+  Network.HTTP.Types.Status.preconditionFailed412
+  Network.HTTP.Types.Status.proxyAuthenticationRequired407
+  Network.HTTP.Types.Status.requestEntityTooLarge413
+  Network.HTTP.Types.Status.requestTimeout408
+  Network.HTTP.Types.Status.requestURITooLong414
+  Network.HTTP.Types.Status.requestedRangeNotSatisfiable416
+  Network.HTTP.Types.Status.resetContent205
+  Network.HTTP.Types.Status.seeOther303
+  Network.HTTP.Types.Status.serviceUnavailable503
+  Network.HTTP.Types.Status.status100
+  Network.HTTP.Types.Status.status101
+  Network.HTTP.Types.Status.status200
+  Network.HTTP.Types.Status.status201
+  Network.HTTP.Types.Status.status202
+  Network.HTTP.Types.Status.status203
+  Network.HTTP.Types.Status.status204
+  Network.HTTP.Types.Status.status205
+  Network.HTTP.Types.Status.status206
+  Network.HTTP.Types.Status.status300
+  Network.HTTP.Types.Status.status301
+  Network.HTTP.Types.Status.status302
+  Network.HTTP.Types.Status.status303
+  Network.HTTP.Types.Status.status304
+  Network.HTTP.Types.Status.status305
+  Network.HTTP.Types.Status.status307
+  Network.HTTP.Types.Status.status400
+  Network.HTTP.Types.Status.status401
+  Network.HTTP.Types.Status.status402
+  Network.HTTP.Types.Status.status403
+  Network.HTTP.Types.Status.status404
+  Network.HTTP.Types.Status.status405
+  Network.HTTP.Types.Status.status406
+  Network.HTTP.Types.Status.status407
+  Network.HTTP.Types.Status.status408
+  Network.HTTP.Types.Status.status409
+  Network.HTTP.Types.Status.status410
+  Network.HTTP.Types.Status.status411
+  Network.HTTP.Types.Status.status412
+  Network.HTTP.Types.Status.status413
+  Network.HTTP.Types.Status.status414
+  Network.HTTP.Types.Status.status415
+  Network.HTTP.Types.Status.status416
+  Network.HTTP.Types.Status.status417
+  Network.HTTP.Types.Status.status418
+  Network.HTTP.Types.Status.status500
+  Network.HTTP.Types.Status.status501
+  Network.HTTP.Types.Status.status502
+  Network.HTTP.Types.Status.status503
+  Network.HTTP.Types.Status.status504
+  Network.HTTP.Types.Status.status505
+  Network.HTTP.Types.Status.statusIsClientError
+  Network.HTTP.Types.Status.statusIsInformational
+  Network.HTTP.Types.Status.statusIsRedirection
+  Network.HTTP.Types.Status.statusIsServerError
+  Network.HTTP.Types.Status.statusIsSuccessful
+  Network.HTTP.Types.Status.switchingProtocols101
+  Network.HTTP.Types.Status.temporaryRedirect307
+  Network.HTTP.Types.Status.unauthorized401
+  Network.HTTP.Types.Status.unsupportedMediaType415
+  Network.HTTP.Types.Status.useProxy305
+  Network.HTTP.Types.URI.decodePath
+  Network.HTTP.Types.URI.decodePathSegments
+  Network.HTTP.Types.URI.encodePath
+  Network.HTTP.Types.URI.encodePathSegments
+  Network.HTTP.Types.URI.encodePathSegmentsRelative
+  Network.HTTP.Types.URI.extractPath
+  Network.HTTP.Types.URI.parseQuery
+  Network.HTTP.Types.URI.parseQueryText
+  Network.HTTP.Types.URI.parseSimpleQuery
+  Network.HTTP.Types.URI.queryTextToQuery
+  Network.HTTP.Types.URI.queryToQueryText
+  Network.HTTP.Types.URI.renderQuery
+  Network.HTTP.Types.URI.renderQueryBuilder
+  Network.HTTP.Types.URI.renderQueryText
+  Network.HTTP.Types.URI.renderSimpleQuery
+  Network.HTTP.Types.URI.simpleQueryToQuery
+  Network.HTTP.Types.URI.urlDecode
+  Network.HTTP.Types.URI.urlEncode
+  Network.HTTP.Types.URI.urlEncodeBuilder
+  Network.HTTP.Types.Version.http09
+  Network.HTTP.Types.Version.http10
+  Network.HTTP.Types.Version.http11
+  Control.Concurrent.Async.Lifted.Safe.async
+  Control.Concurrent.Async.Lifted.Safe.asyncBound
+  Control.Concurrent.Async.Lifted.Safe.asyncOn
+  Control.Concurrent.Async.Lifted.Safe.asyncOnWithUnmask
+  Control.Concurrent.Async.Lifted.Safe.asyncWithUnmask
+  Control.Concurrent.Async.Lifted.Safe.concurrently
+  Control.Concurrent.Async.Lifted.Safe.mapConcurrently
+  Control.Concurrent.Async.Lifted.Safe.race
+  Control.Concurrent.Async.Lifted.Safe.race_
+  Control.Concurrent.Async.Lifted.Safe.withAsync
+  Control.Concurrent.Async.Lifted.Safe.withAsyncBound
+  Control.Concurrent.Async.Lifted.Safe.withAsyncOn
+  Control.Concurrent.Async.Lifted.Safe.withAsyncOnWithUnmask
+  Control.Concurrent.Async.Lifted.Safe.withAsyncWithUnmask
+  Control.Concurrent.Chan.Lifted.dupChan
+  Control.Concurrent.Chan.Lifted.getChanContents
+  Control.Concurrent.Chan.Lifted.newChan
+  Control.Concurrent.Chan.Lifted.readChan
+  Control.Concurrent.Chan.Lifted.writeChan
+  Control.Concurrent.Chan.Lifted.writeList2Chan
+  Control.Concurrent.Lifted.fork
+  Control.Concurrent.Lifted.forkFinally
+  Control.Concurrent.Lifted.forkOS
+  Control.Concurrent.Lifted.forkOn
+  Control.Concurrent.Lifted.forkOnWithUnmask
+  Control.Concurrent.Lifted.forkWithUnmask
+  Control.Concurrent.Lifted.getNumCapabilities
+  Control.Concurrent.Lifted.isCurrentThreadBound
+  Control.Concurrent.Lifted.killThread
+  Control.Concurrent.Lifted.mkWeakThreadId
+  Control.Concurrent.Lifted.myThreadId
+  Control.Concurrent.Lifted.runInBoundThread
+  Control.Concurrent.Lifted.runInUnboundThread
+  Control.Concurrent.Lifted.setNumCapabilities
+  Control.Concurrent.Lifted.threadCapability
+  Control.Concurrent.Lifted.threadDelay
+  Control.Concurrent.Lifted.threadWaitRead
+  Control.Concurrent.Lifted.threadWaitWrite
+  Control.Concurrent.MVar.Lifted.isEmptyMVar
+  Control.Concurrent.MVar.Lifted.mkWeakMVar
+  Control.Concurrent.MVar.Lifted.modifyMVar
+  Control.Concurrent.MVar.Lifted.modifyMVarMasked
+  Control.Concurrent.MVar.Lifted.modifyMVarMasked_
+  Control.Concurrent.MVar.Lifted.modifyMVar_
+  Control.Concurrent.MVar.Lifted.newEmptyMVar
+  Control.Concurrent.MVar.Lifted.newMVar
+  Control.Concurrent.MVar.Lifted.putMVar
+  Control.Concurrent.MVar.Lifted.readMVar
+  Control.Concurrent.MVar.Lifted.swapMVar
+  Control.Concurrent.MVar.Lifted.takeMVar
+  Control.Concurrent.MVar.Lifted.tryPutMVar
+  Control.Concurrent.MVar.Lifted.tryReadMVar
+  Control.Concurrent.MVar.Lifted.tryTakeMVar
+  Control.Concurrent.MVar.Lifted.withMVar
+  Control.Concurrent.MVar.Lifted.withMVarMasked
+  Control.Concurrent.QSem.Lifted.newQSem
+  Control.Concurrent.QSem.Lifted.signalQSem
+  Control.Concurrent.QSem.Lifted.waitQSem
+  Control.Concurrent.QSemN.Lifted.newQSemN
+  Control.Concurrent.QSemN.Lifted.signalQSemN
+  Control.Concurrent.QSemN.Lifted.waitQSemN
+  Data.IORef.Lifted.atomicModifyIORef
+  Data.IORef.Lifted.atomicModifyIORef'
+  Data.IORef.Lifted.atomicWriteIORef
+  Data.IORef.Lifted.mkWeakIORef
+  Data.IORef.Lifted.modifyIORef
+  Data.IORef.Lifted.modifyIORef'
+  Data.IORef.Lifted.newIORef
+  Data.IORef.Lifted.readIORef
+  Data.IORef.Lifted.writeIORef
+  Control.Monad.Logger.logDebug
+  Control.Monad.Logger.logDebugS
+  Control.Monad.Logger.logError
+  Control.Monad.Logger.logErrorS
+  Control.Monad.Logger.logInfo
+  Control.Monad.Logger.logInfoS
+  Control.Monad.Logger.logOther
+  Control.Monad.Logger.logOtherS
+  Control.Monad.Logger.logWarn
+  Control.Monad.Logger.logWarnS
+  Control.Monad.Trans.Unlift.askRun
+  Control.Monad.Trans.Unlift.askRunBase
+  Control.Monad.Trans.Unlift.askUnlift
+  Control.Monad.Trans.Unlift.askUnliftBase
+  Data.MonoTraversable.headMay
+  Data.MonoTraversable.lastMay
+  Data.MonoTraversable.maximumByMay
+  Data.MonoTraversable.maximumEx
+  Data.MonoTraversable.maximumMay
+  Data.MonoTraversable.minimumByMay
+  Data.MonoTraversable.minimumEx
+  Data.MonoTraversable.minimumMay
+  Data.MonoTraversable.oand
+  Data.MonoTraversable.oconcat
+  Data.MonoTraversable.oconcatMap
+  Data.MonoTraversable.oelem
+  Data.MonoTraversable.ofold
+  Data.MonoTraversable.ofoldM
+  Data.MonoTraversable.ofoldMUnwrap
+  Data.MonoTraversable.ofoldlUnwrap
+  Data.MonoTraversable.ofor
+  Data.MonoTraversable.oforM
+  Data.MonoTraversable.ointercalate
+  Data.MonoTraversable.onotElem
+  Data.MonoTraversable.oor
+  Data.MonoTraversable.oproduct
+  Data.MonoTraversable.osequence_
+  Data.MonoTraversable.osum
+  Data.MonoTraversable.replaceElem
+  Data.MonoTraversable.replaceElemLazyText
+  Data.MonoTraversable.replaceElemStrictText
+  Data.MonoTraversable.Unprefixed.all
+  Data.MonoTraversable.Unprefixed.and
+  Data.MonoTraversable.Unprefixed.any
+  Data.MonoTraversable.Unprefixed.compareLength
+  Data.MonoTraversable.Unprefixed.concat
+  Data.MonoTraversable.Unprefixed.concatMap
+  Data.MonoTraversable.Unprefixed.elem
+  Data.MonoTraversable.Unprefixed.fold
+  Data.MonoTraversable.Unprefixed.foldM
+  Data.MonoTraversable.Unprefixed.foldMap
+  Data.MonoTraversable.Unprefixed.foldMap1Ex
+  Data.MonoTraversable.Unprefixed.foldl'
+  Data.MonoTraversable.Unprefixed.foldl1Ex'
+  Data.MonoTraversable.Unprefixed.foldlM
+  Data.MonoTraversable.Unprefixed.foldr
+  Data.MonoTraversable.Unprefixed.foldr1Ex
+  Data.MonoTraversable.Unprefixed.forM_
+  Data.MonoTraversable.Unprefixed.for_
+  Data.MonoTraversable.Unprefixed.intercalate
+  Data.MonoTraversable.Unprefixed.length
+  Data.MonoTraversable.Unprefixed.length64
+  Data.MonoTraversable.Unprefixed.mapM_
+  Data.MonoTraversable.Unprefixed.notElem
+  Data.MonoTraversable.Unprefixed.null
+  Data.MonoTraversable.Unprefixed.or
+  Data.MonoTraversable.Unprefixed.point
+  Data.MonoTraversable.Unprefixed.product
+  Data.MonoTraversable.Unprefixed.sequence_
+  Data.MonoTraversable.Unprefixed.sum
+  Data.MonoTraversable.Unprefixed.toList
+  Data.MonoTraversable.Unprefixed.traverse_
+  Data.NonNull.<|
+  Data.NonNull.fromNonEmpty
+  Data.NonNull.fromNullable
+  Data.NonNull.head
+  Data.NonNull.impureNonNull
+  Data.NonNull.init
+  Data.NonNull.last
+  Data.NonNull.maximum
+  Data.NonNull.maximumBy
+  Data.NonNull.minimum
+  Data.NonNull.minimumBy
+  Data.NonNull.nReplicate
+  Data.NonNull.ncons
+  Data.NonNull.nfilter
+  Data.NonNull.nfilterM
+  Data.NonNull.nonNull
+  Data.NonNull.nuncons
+  Data.NonNull.ofold1
+  Data.NonNull.ofoldMap1
+  Data.NonNull.ofoldl1'
+  Data.NonNull.ofoldr1
+  Data.NonNull.splitFirst
+  Data.NonNull.tail
+  Data.NonNull.toMinList
+  Data.Sequences.catMaybes
+  Data.Sequences.defaultCons
+  Data.Sequences.defaultFind
+  Data.Sequences.defaultIntersperse
+  Data.Sequences.defaultReverse
+  Data.Sequences.defaultSnoc
+  Data.Sequences.defaultSortBy
+  Data.Sequences.defaultSplitWhen
+  Data.Sequences.group
+  Data.Sequences.groupAll
+  Data.Sequences.initDef
+  Data.Sequences.isInfixOf
+  Data.Sequences.isPrefixOf
+  Data.Sequences.isSuffixOf
+  Data.Sequences.pack
+  Data.Sequences.repack
+  Data.Sequences.replaceSeq
+  Data.Sequences.replaceSeqLazyText
+  Data.Sequences.replaceSeqStrictText
+  Data.Sequences.singleton
+  Data.Sequences.sort
+  Data.Sequences.sortOn
+  Data.Sequences.splitElem
+  Data.Sequences.splitElemStrictBS
+  Data.Sequences.splitSeq
+  Data.Sequences.splitSeqLazyBS
+  Data.Sequences.splitSeqLazyText
+  Data.Sequences.splitSeqStrictText
+  Data.Sequences.stripPrefix
+  Data.Sequences.stripPrefixLazyBS
+  Data.Sequences.stripPrefixStrictBS
+  Data.Sequences.stripSuffix
+  Data.Sequences.stripSuffixLazyBS
+  Data.Sequences.stripSuffixStrictBS
+  Data.Sequences.tailDef
+  Data.Sequences.unpack
+  Data.Sequences.vectorSort
+  Data.Sequences.vectorSortBy
+  Control.Monad.Reader.Class.asks
+  Data.Mutable.BRef.asBRef
+  Data.Mutable.Class.asIORef
+  Data.Mutable.Class.asMutVar
+  Data.Mutable.Class.asSTRef
+  Data.Mutable.DLList.asDLList
+  Data.Mutable.Deque.asBDeque
+  Data.Mutable.Deque.asSDeque
+  Data.Mutable.Deque.asUDeque
+  Data.Mutable.PRef.asPRef
+  Data.Mutable.SRef.asSRef
+  Data.Mutable.URef.asURef
+  Database.Persist.!=.
+  Database.Persist.*=.
+  Database.Persist.+=.
+  Database.Persist.-=.
+  Database.Persist./<-.
+  Database.Persist./=.
+  Database.Persist.<-.
+  Database.Persist.<.
+  Database.Persist.<=.
+  Database.Persist.=.
+  Database.Persist.==.
+  Database.Persist.>.
+  Database.Persist.>=.
+  Database.Persist.limitOffsetOrder
+  Database.Persist.listToJSON
+  Database.Persist.mapToJSON
+  Database.Persist.toJsonText
+  Database.Persist.||.
+  Database.Persist.Class.DeleteCascade.deleteCascadeWhere
+  Database.Persist.Class.PersistEntity.entityIdFromJSON
+  Database.Persist.Class.PersistEntity.entityIdToJSON
+  Database.Persist.Class.PersistEntity.entityValues
+  Database.Persist.Class.PersistEntity.fromPersistValueJSON
+  Database.Persist.Class.PersistEntity.keyValueEntityFromJSON
+  Database.Persist.Class.PersistEntity.keyValueEntityToJSON
+  Database.Persist.Class.PersistEntity.toPersistValueJSON
+  Database.Persist.Class.PersistField.getPersistMap
+  Database.Persist.Class.PersistQuery.selectKeys
+  Database.Persist.Class.PersistQuery.selectKeysList
+  Database.Persist.Class.PersistQuery.selectList
+  Database.Persist.Class.PersistQuery.selectSource
+  Database.Persist.Class.PersistStore.belongsTo
+  Database.Persist.Class.PersistStore.belongsToJust
+  Database.Persist.Class.PersistStore.getEntity
+  Database.Persist.Class.PersistStore.getJust
+  Database.Persist.Class.PersistStore.getJustEntity
+  Database.Persist.Class.PersistStore.insertEntity
+  Database.Persist.Class.PersistStore.insertRecord
+  Database.Persist.Class.PersistStore.liftPersist
+  Database.Persist.Class.PersistUnique.checkUnique
+  Database.Persist.Class.PersistUnique.getByValue
+  Database.Persist.Class.PersistUnique.insertBy
+  Database.Persist.Class.PersistUnique.onlyUnique
+  Database.Persist.Class.PersistUnique.replaceUnique
+  Database.Persist.Sql.Migration.runMigration
+  Database.Persist.Types.Base.entityKeyFields
+  Database.Persist.Types.Base.entityPrimary
+  Database.Persist.Types.Base.fromPersistValueText
+  Database.Persist.Types.Base.keyAndEntityFields
+  Database.Persist.Types.Base.toEmbedEntityDef
+  Database.Persist.TH.derivePersistField
+  Database.Persist.TH.derivePersistFieldJSON
+  Database.Persist.TH.lensPTH
+  Database.Persist.TH.mkDeleteCascade
+  Database.Persist.TH.mkMigrate
+  Database.Persist.TH.mkPersist
+  Database.Persist.TH.mkPersistSettings
+  Database.Persist.TH.mkSave
+  Database.Persist.TH.packPTH
+  Database.Persist.TH.persistFieldFromEntity
+  Database.Persist.TH.persistFileWith
+  Database.Persist.TH.persistLowerCase
+  Database.Persist.TH.persistUpperCase
+  Database.Persist.TH.persistWith
+  Database.Persist.TH.share
+  Database.Persist.TH.sqlOnlySettings
+  Database.Persist.TH.sqlSettings
+  Control.Monad.Primitive.primToIO
+  Control.Monad.Primitive.primToPrim
+  Control.Monad.Primitive.primToST
+  Data.Primitive.MutVar.atomicModifyMutVar
+  Data.Primitive.MutVar.atomicModifyMutVar'
+  Data.Primitive.MutVar.modifyMutVar
+  Data.Primitive.MutVar.modifyMutVar'
+  Data.Primitive.MutVar.newMutVar
+  Data.Primitive.MutVar.readMutVar
+  Data.Primitive.MutVar.writeMutVar
+  Control.Monad.Trans.Resource.runResourceT
+  Data.Acquire.allocateAcquire
+  Data.Acquire.Internal.mkAcquire
+  Data.Acquire.Internal.mkAcquireType
+  Data.Acquire.Internal.withEx
+  Control.Exception.Safe.bracket
+  Control.Exception.Safe.bracketOnError
+  Control.Exception.Safe.bracketOnError_
+  Control.Exception.Safe.bracket_
+  Control.Exception.Safe.catch
+  Control.Exception.Safe.catchAny
+  Control.Exception.Safe.catchAnyDeep
+  Control.Exception.Safe.catchAsync
+  Control.Exception.Safe.catchDeep
+  Control.Exception.Safe.catchIO
+  Control.Exception.Safe.catchJust
+  Control.Exception.Safe.catches
+  Control.Exception.Safe.catchesAsync
+  Control.Exception.Safe.catchesDeep
+  Control.Exception.Safe.finally
+  Control.Exception.Safe.handle
+  Control.Exception.Safe.handleAny
+  Control.Exception.Safe.handleAnyDeep
+  Control.Exception.Safe.handleAsync
+  Control.Exception.Safe.handleDeep
+  Control.Exception.Safe.handleIO
+  Control.Exception.Safe.handleJust
+  Control.Exception.Safe.impureThrow
+  Control.Exception.Safe.isAsyncException
+  Control.Exception.Safe.isSyncException
+  Control.Exception.Safe.onException
+  Control.Exception.Safe.throw
+  Control.Exception.Safe.throwIO
+  Control.Exception.Safe.throwM
+  Control.Exception.Safe.throwString
+  Control.Exception.Safe.throwTo
+  Control.Exception.Safe.toAsyncException
+  Control.Exception.Safe.toSyncException
+  Control.Exception.Safe.try
+  Control.Exception.Safe.tryAny
+  Control.Exception.Safe.tryAnyDeep
+  Control.Exception.Safe.tryAsync
+  Control.Exception.Safe.tryDeep
+  Control.Exception.Safe.tryIO
+  Control.Exception.Safe.tryJust
+  Control.Exception.Safe.withException
+  Say.hSay
+  Say.hSayShow
+  Say.hSayString
+  Say.say
+  Say.sayErr
+  Say.sayErrShow
+  Say.sayErrString
+  Say.sayShow
+  Say.sayString
+  Text.Cassius.cassius
+  Text.Hamlet.hamlet
+  Text.Hamlet.shamlet
+  Text.Hamlet.xhamlet
+  Text.Internal.CssCommon.renderCssUrl
+  Text.Julius.julius
+  Text.Julius.renderJavascriptUrl
+  Text.Lucius.lucius
+  Text.Shakespeare.I18N.mkMessage
+  Text.Shakespeare.I18N.mkMessageFor
+  Text.Shakespeare.I18N.mkMessageVariant
+  Control.Concurrent.STM.TBQueue.isEmptyTBQueue
+  Control.Concurrent.STM.TBQueue.isFullTBQueue
+  Control.Concurrent.STM.TBQueue.newTBQueue
+  Control.Concurrent.STM.TBQueue.newTBQueueIO
+  Control.Concurrent.STM.TBQueue.peekTBQueue
+  Control.Concurrent.STM.TBQueue.readTBQueue
+  Control.Concurrent.STM.TBQueue.tryPeekTBQueue
+  Control.Concurrent.STM.TBQueue.tryReadTBQueue
+  Control.Concurrent.STM.TBQueue.unGetTBQueue
+  Control.Concurrent.STM.TBQueue.writeTBQueue
+  Control.Concurrent.STM.TChan.cloneTChan
+  Control.Concurrent.STM.TChan.dupTChan
+  Control.Concurrent.STM.TChan.isEmptyTChan
+  Control.Concurrent.STM.TChan.newBroadcastTChan
+  Control.Concurrent.STM.TChan.newBroadcastTChanIO
+  Control.Concurrent.STM.TChan.newTChan
+  Control.Concurrent.STM.TChan.newTChanIO
+  Control.Concurrent.STM.TChan.peekTChan
+  Control.Concurrent.STM.TChan.readTChan
+  Control.Concurrent.STM.TChan.tryPeekTChan
+  Control.Concurrent.STM.TChan.tryReadTChan
+  Control.Concurrent.STM.TChan.unGetTChan
+  Control.Concurrent.STM.TChan.writeTChan
+  Control.Concurrent.STM.TMVar.isEmptyTMVar
+  Control.Concurrent.STM.TMVar.mkWeakTMVar
+  Control.Concurrent.STM.TMVar.newEmptyTMVar
+  Control.Concurrent.STM.TMVar.newEmptyTMVarIO
+  Control.Concurrent.STM.TMVar.newTMVar
+  Control.Concurrent.STM.TMVar.newTMVarIO
+  Control.Concurrent.STM.TMVar.putTMVar
+  Control.Concurrent.STM.TMVar.readTMVar
+  Control.Concurrent.STM.TMVar.swapTMVar
+  Control.Concurrent.STM.TMVar.takeTMVar
+  Control.Concurrent.STM.TMVar.tryPutTMVar
+  Control.Concurrent.STM.TMVar.tryReadTMVar
+  Control.Concurrent.STM.TMVar.tryTakeTMVar
+  Control.Concurrent.STM.TQueue.isEmptyTQueue
+  Control.Concurrent.STM.TQueue.newTQueue
+  Control.Concurrent.STM.TQueue.newTQueueIO
+  Control.Concurrent.STM.TQueue.peekTQueue
+  Control.Concurrent.STM.TQueue.readTQueue
+  Control.Concurrent.STM.TQueue.tryPeekTQueue
+  Control.Concurrent.STM.TQueue.tryReadTQueue
+  Control.Concurrent.STM.TQueue.unGetTQueue
+  Control.Concurrent.STM.TQueue.writeTQueue
+  Control.Concurrent.STM.TVar.mkWeakTVar
+  Control.Concurrent.STM.TVar.modifyTVar
+  Control.Concurrent.STM.TVar.modifyTVar'
+  Control.Concurrent.STM.TVar.swapTVar
+  Control.Concurrent.STM.TBChan.estimateFreeSlotsTBChan
+  Control.Concurrent.STM.TBChan.freeSlotsTBChan
+  Control.Concurrent.STM.TBChan.isEmptyTBChan
+  Control.Concurrent.STM.TBChan.isFullTBChan
+  Control.Concurrent.STM.TBChan.newTBChan
+  Control.Concurrent.STM.TBChan.newTBChanIO
+  Control.Concurrent.STM.TBChan.peekTBChan
+  Control.Concurrent.STM.TBChan.readTBChan
+  Control.Concurrent.STM.TBChan.tryPeekTBChan
+  Control.Concurrent.STM.TBChan.tryReadTBChan
+  Control.Concurrent.STM.TBChan.tryWriteTBChan
+  Control.Concurrent.STM.TBChan.unGetTBChan
+  Control.Concurrent.STM.TBChan.writeTBChan
+  Control.Concurrent.STM.TBMChan.closeTBMChan
+  Control.Concurrent.STM.TBMChan.estimateFreeSlotsTBMChan
+  Control.Concurrent.STM.TBMChan.freeSlotsTBMChan
+  Control.Concurrent.STM.TBMChan.isClosedTBMChan
+  Control.Concurrent.STM.TBMChan.isEmptyTBMChan
+  Control.Concurrent.STM.TBMChan.isFullTBMChan
+  Control.Concurrent.STM.TBMChan.newTBMChan
+  Control.Concurrent.STM.TBMChan.newTBMChanIO
+  Control.Concurrent.STM.TBMChan.peekTBMChan
+  Control.Concurrent.STM.TBMChan.readTBMChan
+  Control.Concurrent.STM.TBMChan.tryPeekTBMChan
+  Control.Concurrent.STM.TBMChan.tryReadTBMChan
+  Control.Concurrent.STM.TBMChan.tryWriteTBMChan
+  Control.Concurrent.STM.TBMChan.unGetTBMChan
+  Control.Concurrent.STM.TBMChan.writeTBMChan
+  Control.Concurrent.STM.TBMQueue.closeTBMQueue
+  Control.Concurrent.STM.TBMQueue.estimateFreeSlotsTBMQueue
+  Control.Concurrent.STM.TBMQueue.freeSlotsTBMQueue
+  Control.Concurrent.STM.TBMQueue.isClosedTBMQueue
+  Control.Concurrent.STM.TBMQueue.isEmptyTBMQueue
+  Control.Concurrent.STM.TBMQueue.isFullTBMQueue
+  Control.Concurrent.STM.TBMQueue.newTBMQueue
+  Control.Concurrent.STM.TBMQueue.newTBMQueueIO
+  Control.Concurrent.STM.TBMQueue.peekTBMQueue
+  Control.Concurrent.STM.TBMQueue.readTBMQueue
+  Control.Concurrent.STM.TBMQueue.tryPeekTBMQueue
+  Control.Concurrent.STM.TBMQueue.tryReadTBMQueue
+  Control.Concurrent.STM.TBMQueue.tryWriteTBMQueue
+  Control.Concurrent.STM.TBMQueue.unGetTBMQueue
+  Control.Concurrent.STM.TBMQueue.writeTBMQueue
+  Control.Concurrent.STM.TMChan.closeTMChan
+  Control.Concurrent.STM.TMChan.dupTMChan
+  Control.Concurrent.STM.TMChan.isClosedTMChan
+  Control.Concurrent.STM.TMChan.isEmptyTMChan
+  Control.Concurrent.STM.TMChan.newBroadcastTMChan
+  Control.Concurrent.STM.TMChan.newBroadcastTMChanIO
+  Control.Concurrent.STM.TMChan.newTMChan
+  Control.Concurrent.STM.TMChan.newTMChanIO
+  Control.Concurrent.STM.TMChan.peekTMChan
+  Control.Concurrent.STM.TMChan.readTMChan
+  Control.Concurrent.STM.TMChan.tryPeekTMChan
+  Control.Concurrent.STM.TMChan.tryReadTMChan
+  Control.Concurrent.STM.TMChan.unGetTMChan
+  Control.Concurrent.STM.TMChan.writeTMChan
+  Control.Concurrent.STM.TMQueue.closeTMQueue
+  Control.Concurrent.STM.TMQueue.isClosedTMQueue
+  Control.Concurrent.STM.TMQueue.isEmptyTMQueue
+  Control.Concurrent.STM.TMQueue.newTMQueue
+  Control.Concurrent.STM.TMQueue.newTMQueueIO
+  Control.Concurrent.STM.TMQueue.peekTMQueue
+  Control.Concurrent.STM.TMQueue.readTMQueue
+  Control.Concurrent.STM.TMQueue.tryPeekTMQueue
+  Control.Concurrent.STM.TMQueue.tryReadTMQueue
+  Control.Concurrent.STM.TMQueue.unGetTMQueue
+  Control.Concurrent.STM.TMQueue.writeTMQueue
+  Data.Time.Calendar.Gregorian.fromGregorian
+  Data.Time.Calendar.Gregorian.toGregorian
+  Data.Time.Clock.POSIX.getCurrentTime
+  Data.Time.Format.formatTime
+  Data.Time.Format.Locale.defaultTimeLocale
+  Data.Time.Format.Parse.parseTime
+  Data.Time.Format.Parse.parseTimeM
+  Data.Yaml.Config.applyCurrentEnv
+  Data.Yaml.Config.applyEnvValue
+  Data.Yaml.Config.getCurrentEnv
+  Data.Yaml.Config.ignoreEnv
+  Data.Yaml.Config.loadYamlSettings
+  Data.Yaml.Config.loadYamlSettingsArgs
+  Data.Yaml.Config.requireCustomEnv
+  Data.Yaml.Config.requireEnv
+  Data.Yaml.Config.useCustomEnv
+  Data.Yaml.Config.useEnv
+  Yesod.Default.Config2.configSettingsYml
+  Yesod.Default.Config2.develMainHelper
+  Yesod.Default.Config2.getDevSettings
+  Yesod.Default.Config2.loadAppSettings
+  Yesod.Default.Config2.loadAppSettingsArgs
+  Yesod.Default.Config2.makeYesodLogger
+  Yesod.Core.defaultLayoutSub
+  Yesod.Core.getRouteToParent
+  Yesod.Core.maybeAuthorized
+  Yesod.Core.readIntegral
+  Yesod.Core.runFakeHandler
+  Yesod.Core.showIntegral
+  Yesod.Core.unauthorizedI
+  Yesod.Core.yesodVersion
+  Yesod.Core.Class.Breadcrumbs.breadcrumbs
+  Yesod.Core.Class.Dispatch.subHelper
+  Yesod.Core.Class.Yesod.authorizationCheck
+  Yesod.Core.Class.Yesod.clientSessionBackend
+  Yesod.Core.Class.Yesod.csrfCheckMiddleware
+  Yesod.Core.Class.Yesod.csrfSetCookieMiddleware
+  Yesod.Core.Class.Yesod.customizeSessionCookies
+  Yesod.Core.Class.Yesod.defaultClientSessionBackend
+  Yesod.Core.Class.Yesod.defaultCsrfCheckMiddleware
+  Yesod.Core.Class.Yesod.defaultCsrfMiddleware
+  Yesod.Core.Class.Yesod.defaultCsrfSetCookieMiddleware
+  Yesod.Core.Class.Yesod.defaultErrorHandler
+  Yesod.Core.Class.Yesod.defaultMakeLogger
+  Yesod.Core.Class.Yesod.defaultMessageLoggerSource
+  Yesod.Core.Class.Yesod.defaultShouldLog
+  Yesod.Core.Class.Yesod.defaultShouldLogIO
+  Yesod.Core.Class.Yesod.defaultYesodMiddleware
+  Yesod.Core.Class.Yesod.envClientSessionBackend
+  Yesod.Core.Class.Yesod.formatLogMessage
+  Yesod.Core.Class.Yesod.getApprootText
+  Yesod.Core.Class.Yesod.guessApproot
+  Yesod.Core.Class.Yesod.guessApprootOr
+  Yesod.Core.Class.Yesod.laxSameSiteSessions
+  Yesod.Core.Class.Yesod.loadClientSession
+  Yesod.Core.Class.Yesod.sslOnlyMiddleware
+  Yesod.Core.Class.Yesod.sslOnlySessions
+  Yesod.Core.Class.Yesod.strictSameSiteSessions
+  Yesod.Core.Class.Yesod.widgetToPageContent
+  Yesod.Core.Content.contentTypeTypes
+  Yesod.Core.Content.emptyContent
+  Yesod.Core.Content.repJson
+  Yesod.Core.Content.repPlain
+  Yesod.Core.Content.repXml
+  Yesod.Core.Content.simpleContentType
+  Yesod.Core.Content.typeAtom
+  Yesod.Core.Content.typeCss
+  Yesod.Core.Content.typeFlv
+  Yesod.Core.Content.typeGif
+  Yesod.Core.Content.typeHtml
+  Yesod.Core.Content.typeJavascript
+  Yesod.Core.Content.typeJpeg
+  Yesod.Core.Content.typeJson
+  Yesod.Core.Content.typeOctet
+  Yesod.Core.Content.typeOgv
+  Yesod.Core.Content.typePlain
+  Yesod.Core.Content.typePng
+  Yesod.Core.Content.typeRss
+  Yesod.Core.Content.typeSvg
+  Yesod.Core.Content.typeXml
+  Yesod.Core.Dispatch.defaultMiddlewaresNoLogging
+  Yesod.Core.Dispatch.getGetMaxExpires
+  Yesod.Core.Dispatch.mkDefaultMiddlewares
+  Yesod.Core.Dispatch.toWaiApp
+  Yesod.Core.Dispatch.toWaiAppPlain
+  Yesod.Core.Dispatch.toWaiAppYre
+  Yesod.Core.Dispatch.warp
+  Yesod.Core.Dispatch.warpDebug
+  Yesod.Core.Dispatch.warpEnv
+  Yesod.Core.Handler.addHeader
+  Yesod.Core.Handler.addMessage
+  Yesod.Core.Handler.addMessageI
+  Yesod.Core.Handler.alreadyExpired
+  Yesod.Core.Handler.badMethod
+  Yesod.Core.Handler.cacheSeconds
+  Yesod.Core.Handler.cached
+  Yesod.Core.Handler.cachedBy
+  Yesod.Core.Handler.checkCsrfHeaderNamed
+  Yesod.Core.Handler.checkCsrfHeaderOrParam
+  Yesod.Core.Handler.checkCsrfParamNamed
+  Yesod.Core.Handler.clearSession
+  Yesod.Core.Handler.clearUltDest
+  Yesod.Core.Handler.defaultCsrfCookieName
+  Yesod.Core.Handler.defaultCsrfHeaderName
+  Yesod.Core.Handler.defaultCsrfParamName
+  Yesod.Core.Handler.deleteCookie
+  Yesod.Core.Handler.deleteSession
+  Yesod.Core.Handler.expiresAt
+  Yesod.Core.Handler.fileSource
+  Yesod.Core.Handler.forkHandler
+  Yesod.Core.Handler.getCurrentRoute
+  Yesod.Core.Handler.getExpires
+  Yesod.Core.Handler.getMessage
+  Yesod.Core.Handler.getMessageRender
+  Yesod.Core.Handler.getMessages
+  Yesod.Core.Handler.getPostParams
+  Yesod.Core.Handler.getRequest
+  Yesod.Core.Handler.getSession
+  Yesod.Core.Handler.getUrlRender
+  Yesod.Core.Handler.getUrlRenderParams
+  Yesod.Core.Handler.getYesod
+  Yesod.Core.Handler.getsYesod
+  Yesod.Core.Handler.giveUrlRenderer
+  Yesod.Core.Handler.hamletToRepHtml
+  Yesod.Core.Handler.handlerToIO
+  Yesod.Core.Handler.hasValidCsrfHeaderNamed
+  Yesod.Core.Handler.hasValidCsrfParamNamed
+  Yesod.Core.Handler.invalidArgs
+  Yesod.Core.Handler.invalidArgsI
+  Yesod.Core.Handler.languages
+  Yesod.Core.Handler.lookupBasicAuth
+  Yesod.Core.Handler.lookupBearerAuth
+  Yesod.Core.Handler.lookupCookie
+  Yesod.Core.Handler.lookupCookies
+  Yesod.Core.Handler.lookupFile
+  Yesod.Core.Handler.lookupFiles
+  Yesod.Core.Handler.lookupGetParam
+  Yesod.Core.Handler.lookupGetParams
+  Yesod.Core.Handler.lookupHeader
+  Yesod.Core.Handler.lookupHeaders
+  Yesod.Core.Handler.lookupPostParam
+  Yesod.Core.Handler.lookupPostParams
+  Yesod.Core.Handler.lookupSession
+  Yesod.Core.Handler.lookupSessionBS
+  Yesod.Core.Handler.neverExpires
+  Yesod.Core.Handler.newIdent
+  Yesod.Core.Handler.notAuthenticated
+  Yesod.Core.Handler.notFound
+  Yesod.Core.Handler.notModified
+  Yesod.Core.Handler.permissionDenied
+  Yesod.Core.Handler.permissionDeniedI
+  Yesod.Core.Handler.provideRep
+  Yesod.Core.Handler.provideRepType
+  Yesod.Core.Handler.rawRequestBody
+  Yesod.Core.Handler.redirect
+  Yesod.Core.Handler.redirectToPost
+  Yesod.Core.Handler.redirectUltDest
+  Yesod.Core.Handler.redirectWith
+  Yesod.Core.Handler.replaceOrAddHeader
+  Yesod.Core.Handler.respond
+  Yesod.Core.Handler.respondSource
+  Yesod.Core.Handler.runRequestBody
+  Yesod.Core.Handler.selectRep
+  Yesod.Core.Handler.sendChunk
+  Yesod.Core.Handler.sendChunkBS
+  Yesod.Core.Handler.sendChunkHtml
+  Yesod.Core.Handler.sendChunkLBS
+  Yesod.Core.Handler.sendChunkLazyText
+  Yesod.Core.Handler.sendChunkText
+  Yesod.Core.Handler.sendFile
+  Yesod.Core.Handler.sendFilePart
+  Yesod.Core.Handler.sendFlush
+  Yesod.Core.Handler.sendRawResponse
+  Yesod.Core.Handler.sendRawResponseNoConduit
+  Yesod.Core.Handler.sendResponse
+  Yesod.Core.Handler.sendResponseCreated
+  Yesod.Core.Handler.sendResponseStatus
+  Yesod.Core.Handler.sendStatusJSON
+  Yesod.Core.Handler.sendWaiApplication
+  Yesod.Core.Handler.sendWaiResponse
+  Yesod.Core.Handler.setCookie
+  Yesod.Core.Handler.setCsrfCookie
+  Yesod.Core.Handler.setCsrfCookieWithCookie
+  Yesod.Core.Handler.setEtag
+  Yesod.Core.Handler.setHeader
+  Yesod.Core.Handler.setLanguage
+  Yesod.Core.Handler.setMessage
+  Yesod.Core.Handler.setMessageI
+  Yesod.Core.Handler.setSession
+  Yesod.Core.Handler.setSessionBS
+  Yesod.Core.Handler.setUltDest
+  Yesod.Core.Handler.setUltDestCurrent
+  Yesod.Core.Handler.setUltDestReferer
+  Yesod.Core.Handler.setWeakEtag
+  Yesod.Core.Handler.stripHandlerT
+  Yesod.Core.Handler.waiRequest
+  Yesod.Core.Handler.withUrlRenderer
+  Yesod.Core.Internal.LiteApp.dispatchTo
+  Yesod.Core.Internal.LiteApp.liteApp
+  Yesod.Core.Internal.LiteApp.onMethod
+  Yesod.Core.Internal.LiteApp.onStatic
+  Yesod.Core.Internal.LiteApp.withDynamic
+  Yesod.Core.Internal.LiteApp.withDynamicMulti
+  Yesod.Core.Internal.Run.yesodRender
+  Yesod.Core.Internal.Run.yesodRunner
+  Yesod.Core.Internal.Session.clientSessionDateCacher
+  Yesod.Core.Internal.TH.mkYesod
+  Yesod.Core.Internal.TH.mkYesodData
+  Yesod.Core.Internal.TH.mkYesodDispatch
+  Yesod.Core.Internal.TH.mkYesodSubData
+  Yesod.Core.Internal.TH.mkYesodSubDispatch
+  Yesod.Core.Internal.TH.mkYesodWith
+  Yesod.Core.Internal.Util.formatRFC1123
+  Yesod.Core.Internal.Util.formatRFC822
+  Yesod.Core.Internal.Util.formatW3
+  Yesod.Core.Json.acceptsJson
+  Yesod.Core.Json.array
+  Yesod.Core.Json.defaultLayoutJson
+  Yesod.Core.Json.jsonEncodingOrRedirect
+  Yesod.Core.Json.jsonOrRedirect
+  Yesod.Core.Json.jsonToRepJson
+  Yesod.Core.Json.parseCheckJsonBody
+  Yesod.Core.Json.parseJsonBody
+  Yesod.Core.Json.parseJsonBody_
+  Yesod.Core.Json.provideJson
+  Yesod.Core.Json.requireCheckJsonBody
+  Yesod.Core.Json.requireJsonBody
+  Yesod.Core.Json.returnJson
+  Yesod.Core.Json.returnJsonEncoding
+  Yesod.Core.Widget.addScript
+  Yesod.Core.Widget.addScriptAttrs
+  Yesod.Core.Widget.addScriptEither
+  Yesod.Core.Widget.addScriptRemote
+  Yesod.Core.Widget.addScriptRemoteAttrs
+  Yesod.Core.Widget.addStylesheet
+  Yesod.Core.Widget.addStylesheetAttrs
+  Yesod.Core.Widget.addStylesheetEither
+  Yesod.Core.Widget.addStylesheetRemote
+  Yesod.Core.Widget.addStylesheetRemoteAttrs
+  Yesod.Core.Widget.asWidgetT
+  Yesod.Core.Widget.handlerToWidget
+  Yesod.Core.Widget.ihamletToHtml
+  Yesod.Core.Widget.ihamletToRepHtml
+  Yesod.Core.Widget.setTitle
+  Yesod.Core.Widget.setTitleI
+  Yesod.Core.Widget.whamlet
+  Yesod.Core.Widget.whamletFile
+  Yesod.Core.Widget.whamletFileWithSettings
+  Yesod.Core.Widget.widgetToParentWidget
+  Yesod.Routes.Parse.parseRoutes
+  Yesod.Routes.Parse.parseRoutesFile
+  Yesod.Routes.Parse.parseRoutesFileNoCheck
+  Yesod.Routes.Parse.parseRoutesNoCheck
+  Yesod.Form.Fields.boolField
+  Yesod.Form.Fields.checkBoxField
+  Yesod.Form.Fields.checkboxesField
+  Yesod.Form.Fields.checkboxesFieldList
+  Yesod.Form.Fields.dayField
+  Yesod.Form.Fields.defaultFormMessage
+  Yesod.Form.Fields.doubleField
+  Yesod.Form.Fields.emailField
+  Yesod.Form.Fields.fileAFormOpt
+  Yesod.Form.Fields.fileAFormReq
+  Yesod.Form.Fields.fileField
+  Yesod.Form.Fields.hiddenField
+  Yesod.Form.Fields.htmlField
+  Yesod.Form.Fields.intField
+  Yesod.Form.Fields.mkOptionList
+  Yesod.Form.Fields.multiEmailField
+  Yesod.Form.Fields.multiSelectField
+  Yesod.Form.Fields.multiSelectFieldList
+  Yesod.Form.Fields.optionsEnum
+  Yesod.Form.Fields.optionsPairs
+  Yesod.Form.Fields.optionsPersist
+  Yesod.Form.Fields.optionsPersistKey
+  Yesod.Form.Fields.parseDate
+  Yesod.Form.Fields.passwordField
+  Yesod.Form.Fields.radioField
+  Yesod.Form.Fields.radioFieldList
+  Yesod.Form.Fields.searchField
+  Yesod.Form.Fields.selectField
+  Yesod.Form.Fields.selectFieldList
+  Yesod.Form.Fields.textField
+  Yesod.Form.Fields.textareaField
+  Yesod.Form.Fields.timeField
+  Yesod.Form.Fields.timeFieldTypeText
+  Yesod.Form.Fields.timeFieldTypeTime
+  Yesod.Form.Fields.urlField
+  Yesod.Form.Functions.aFormToForm
+  Yesod.Form.Functions.aopt
+  Yesod.Form.Functions.areq
+  Yesod.Form.Functions.askFiles
+  Yesod.Form.Functions.askParams
+  Yesod.Form.Functions.check
+  Yesod.Form.Functions.checkBool
+  Yesod.Form.Functions.checkM
+  Yesod.Form.Functions.checkMMap
+  Yesod.Form.Functions.convertField
+  Yesod.Form.Functions.customErrorMessage
+  Yesod.Form.Functions.fieldSettingsLabel
+  Yesod.Form.Functions.formToAForm
+  Yesod.Form.Functions.generateFormGet
+  Yesod.Form.Functions.generateFormGet'
+  Yesod.Form.Functions.generateFormPost
+  Yesod.Form.Functions.identifyForm
+  Yesod.Form.Functions.mFormToWForm
+  Yesod.Form.Functions.mopt
+  Yesod.Form.Functions.mreq
+  Yesod.Form.Functions.newFormIdent
+  Yesod.Form.Functions.parseHelper
+  Yesod.Form.Functions.parseHelperGen
+  Yesod.Form.Functions.renderBootstrap
+  Yesod.Form.Functions.renderBootstrap2
+  Yesod.Form.Functions.renderDivs
+  Yesod.Form.Functions.renderDivsNoLabels
+  Yesod.Form.Functions.renderTable
+  Yesod.Form.Functions.runFormGet
+  Yesod.Form.Functions.runFormPost
+  Yesod.Form.Functions.runFormPostNoToken
+  Yesod.Form.Functions.wFormToAForm
+  Yesod.Form.Functions.wFormToMForm
+  Yesod.Form.Functions.wopt
+  Yesod.Form.Functions.wreq
+  Yesod.Form.Input.iopt
+  Yesod.Form.Input.ireq
+  Yesod.Form.Input.runInputGet
+  Yesod.Form.Input.runInputGetResult
+  Yesod.Form.Input.runInputPost
+  Yesod.Form.Input.runInputPostResult
+  Yesod.Feed.newsFeed
+  Yesod.Feed.newsFeedText
+  Yesod.Persist.Core.defaultGetDBRunner
+  Yesod.Persist.Core.defaultRunDB
+  Yesod.Persist.Core.get404
+  Yesod.Persist.Core.getBy404
+  Yesod.Persist.Core.insert400
+  Yesod.Persist.Core.insert400_
+  Yesod.Persist.Core.respondSourceDB
+  Yesod.Persist.Core.runDBSource
+  Yesod.Static.base64md5
+  Yesod.Static.combineScripts'
+  Yesod.Static.combineStylesheets'
+  Yesod.Static.embed
+  Yesod.Static.publicFiles
+  Yesod.Static.static
+  Yesod.Static.staticDevel
+  Yesod.Static.staticFiles
+  Yesod.Static.staticFilesList
+  Yesod.Static.staticFilesMap
+  Yesod.Static.staticFilesMergeMap
+  GHC.Base.$
+  GHC.Prim.seq
+  Data.Aeson.Types.FromJSON.FromJSON{Data.Aeson.Types.FromJSON.parseJSON Data.Aeson.Types.FromJSON.parseJSONList}
+  Data.Aeson.Types.Internal.Value{Data.Aeson.Types.Internal.Array Data.Aeson.Types.Internal.Bool Data.Aeson.Types.Internal.Null Data.Aeson.Types.Internal.Number Data.Aeson.Types.Internal.Object Data.Aeson.Types.Internal.String}
+  Data.Aeson.Types.ToJSON.KeyValue|{Data.Aeson.Types.ToJSON..=}
+  Data.Aeson.Types.ToJSON.ToJSON{Data.Aeson.Types.ToJSON.toEncoding Data.Aeson.Types.ToJSON.toEncodingList Data.Aeson.Types.ToJSON.toJSON Data.Aeson.Types.ToJSON.toJSONList}
+  Control.Concurrent.Async.Async{asyncThreadId}
+  Control.Arrow.Arrow|{Control.Arrow.&&& Control.Arrow.***}
+  Control.Category.Category|{Control.Category.. Control.Category.id}
+  Control.Concurrent.Chan.Chan
+  Control.Concurrent.QSem.QSem
+  Control.Concurrent.QSemN.QSemN
+  Control.Monad.IO.Class.MonadIO{Control.Monad.IO.Class.liftIO}
+  Data.Bifunctor.Bifunctor{Data.Bifunctor.bimap Data.Bifunctor.first Data.Bifunctor.second}
+  Data.Either.Either{Data.Either.Left Data.Either.Right}
+  Data.Foldable.Foldable
+  Data.Functor.Identity.Identity{Data.Functor.Identity.Identity runIdentity}
+  Data.Ord.Down{Data.Ord.Down}
+  Data.Semigroup.Semigroup{Data.Semigroup.<> Data.Semigroup.sconcat Data.Semigroup.stimes}
+  Data.Semigroup.WrappedMonoid
+  Data.String.IsString{Data.String.fromString}
+  Data.Traversable.Traversable{Data.Traversable.mapM Data.Traversable.sequence Data.Traversable.sequenceA Data.Traversable.traverse}
+  Data.Typeable.Internal.Typeable
+  Foreign.Storable.Storable
+  GHC.Base.Alternative{GHC.Base.<|> GHC.Base.empty GHC.Base.many GHC.Base.some}
+  GHC.Base.Applicative{GHC.Base.*> GHC.Base.<* GHC.Base.<*> GHC.Base.pure}
+  GHC.Base.Functor{GHC.Base.<$ GHC.Base.fmap}
+  GHC.Base.Monad{GHC.Base.>> GHC.Base.>>= GHC.Base.fail GHC.Base.return}
+  GHC.Base.MonadPlus{GHC.Base.mplus GHC.Base.mzero}
+  GHC.Base.Monoid{GHC.Base.mappend GHC.Base.mconcat GHC.Base.mempty}
+  GHC.Base.String
+  GHC.Conc.Sync.STM
+  GHC.Conc.Sync.TVar
+  GHC.Conc.Sync.ThreadId
+  GHC.Enum.Bounded{GHC.Enum.maxBound GHC.Enum.minBound}
+  GHC.Enum.Enum{GHC.Enum.enumFrom GHC.Enum.enumFromThen GHC.Enum.enumFromThenTo GHC.Enum.enumFromTo GHC.Enum.fromEnum GHC.Enum.pred GHC.Enum.succ GHC.Enum.toEnum}
+  GHC.Exception.Exception{GHC.Exception.displayException GHC.Exception.fromException GHC.Exception.toException}
+  GHC.Exception.SomeException{GHC.Exception.SomeException}
+  GHC.Float.Floating{GHC.Float.** GHC.Float.acos GHC.Float.acosh GHC.Float.asin GHC.Float.asinh GHC.Float.atan GHC.Float.atanh GHC.Float.cos GHC.Float.cosh GHC.Float.exp GHC.Float.log GHC.Float.logBase GHC.Float.pi GHC.Float.sin GHC.Float.sinh GHC.Float.sqrt GHC.Float.tan GHC.Float.tanh}
+  GHC.Float.RealFloat{GHC.Float.atan2 GHC.Float.decodeFloat GHC.Float.encodeFloat GHC.Float.exponent GHC.Float.floatDigits GHC.Float.floatRadix GHC.Float.floatRange GHC.Float.isDenormalized GHC.Float.isIEEE GHC.Float.isInfinite GHC.Float.isNaN GHC.Float.isNegativeZero GHC.Float.scaleFloat GHC.Float.significand}
+  GHC.Generics.Generic
+  GHC.IO.FilePath
+  GHC.IO.Exception.IOError
+  GHC.IO.Exception.IOErrorType
+  GHC.IO.Exception.IOException
+  GHC.IO.Exception.SomeAsyncException{GHC.IO.Exception.SomeAsyncException}
+  GHC.IO.Handle.Types.Handle
+  GHC.IORef.IORef
+  GHC.Int.Int32
+  GHC.Int.Int64
+  GHC.MVar.MVar
+  GHC.Num.Num{GHC.Num.* GHC.Num.+ GHC.Num.- GHC.Num.abs GHC.Num.fromInteger GHC.Num.negate GHC.Num.signum}
+  GHC.Read.Read
+  GHC.Real.Fractional{GHC.Real./ GHC.Real.fromRational GHC.Real.recip}
+  GHC.Real.Integral{GHC.Real.div GHC.Real.divMod GHC.Real.mod GHC.Real.quot GHC.Real.quotRem GHC.Real.rem GHC.Real.toInteger}
+  GHC.Real.Rational
+  GHC.Real.Real{GHC.Real.toRational}
+  GHC.Real.RealFrac{GHC.Real.ceiling GHC.Real.floor GHC.Real.properFraction GHC.Real.round GHC.Real.truncate}
+  GHC.STRef.STRef
+  GHC.Show.Show{GHC.Show.show GHC.Show.showList GHC.Show.showsPrec}
+  GHC.Word.Word32
+  GHC.Word.Word64
+  CorePrelude.LByteString
+  CorePrelude.LText
+  CorePrelude.SVector
+  CorePrelude.UVector
+  Text.Blaze.Html.Html
+  Text.Blaze.ToMarkup|{Text.Blaze.preEscapedToMarkup}
+  Data.ByteString.Internal.ByteString
+  Data.Builder.BlazeBuilder
+  Data.Builder.Builder{Data.Builder.builderToLazy Data.Builder.flushBuilder}
+  Data.Builder.TextBuilder
+  Data.Builder.ToBuilder{Data.Builder.toBuilder}
+  Data.ChunkedZip.Zip|{Data.ChunkedZip.unzip Data.ChunkedZip.zip Data.ChunkedZip.zipWith}
+  Data.ChunkedZip.Zip3|{Data.ChunkedZip.unzip3 Data.ChunkedZip.zip3 Data.ChunkedZip.zipWith3}
+  Data.ChunkedZip.Zip4|{Data.ChunkedZip.unzip4 Data.ChunkedZip.zip4 Data.ChunkedZip.zipWith4}
+  Data.ChunkedZip.Zip5|{Data.ChunkedZip.unzip5 Data.ChunkedZip.zip5 Data.ChunkedZip.zipWith5}
+  Data.ChunkedZip.Zip6|{Data.ChunkedZip.unzip6 Data.ChunkedZip.zip6 Data.ChunkedZip.zipWith6}
+  Data.ChunkedZip.Zip7|{Data.ChunkedZip.unzip7 Data.ChunkedZip.zip7 Data.ChunkedZip.zipWith7}
+  Data.Conduit.Internal.Conduit.Conduit
+  Data.Conduit.Internal.Conduit.ConduitM
+  Data.Conduit.Internal.Conduit.Consumer
+  Data.Conduit.Internal.Conduit.Flush{Data.Conduit.Internal.Conduit.Chunk Data.Conduit.Internal.Conduit.Flush}
+  Data.Conduit.Internal.Conduit.Producer
+  Data.Conduit.Internal.Conduit.ResumableConduit
+  Data.Conduit.Internal.Conduit.ResumableSource
+  Data.Conduit.Internal.Conduit.Sink
+  Data.Conduit.Internal.Conduit.Source
+  Data.Conduit.Internal.Conduit.ZipConduit{Data.Conduit.Internal.Conduit.ZipConduit getZipConduit}
+  Data.Conduit.Internal.Conduit.ZipSink{Data.Conduit.Internal.Conduit.ZipSink getZipSink}
+  Data.Conduit.Internal.Conduit.ZipSource{Data.Conduit.Internal.Conduit.ZipSource getZipSource}
+  Data.Constraint.Forall.Forall
+  Data.IntMap.Base.IntMap
+  Data.IntSet.Base.IntSet
+  Data.Map.Base.Map
+  Data.Sequence.Seq
+  Data.Set.Base.Set
+  Data.Default.Class.Default{Data.Default.Class.def}
+  Control.DeepSeq.NFData{Control.DeepSeq.rnf}
+  Data.DList.DList
+  Control.Monad.Catch.MonadCatch
+  Control.Monad.Catch.MonadMask{Control.Monad.Catch.mask Control.Monad.Catch.uninterruptibleMask}
+  Control.Monad.Catch.MonadThrow
+  Foundation.App{Foundation.App appConnPool appHttpManager appLogger appSettings appStatic}
+  Foundation.Form
+  Foundation.Handler
+  Foundation.Widget
+  Model.Pokebola{Model.Pokebola pokebolaBola pokebolaCaptura pokebolaPokeid pokebolaTid}
+  Model.PokebolaId
+  Model.Pokemon{Model.Pokemon pokemonGeracao pokemonImagem pokemonNivel pokemonNome pokemonTipo}
+  Model.PokemonId
+  Model.Treinador{Model.Treinador treinadorCidade treinadorDtnasc treinadorNome}
+  Model.TreinadorId
+  Model.Usuario{Model.Usuario usuarioEmail usuarioNome usuarioSenha}
+  Model.UsuarioId
+  Settings.AppSettings{Settings.AppSettings appAnalytics appAuthDummyLogin appCopyright appDatabaseConf appDetailedRequestLogging appHost appIpFromHeader appMutableStatic appPort appReloadTemplates appRoot appShouldLogAll appSkipCombining appStaticDir}
+  GHC.Classes.Eq{GHC.Classes./= GHC.Classes.==}
+  GHC.Classes.Ord{GHC.Classes.< GHC.Classes.<= GHC.Classes.> GHC.Classes.>= GHC.Classes.compare GHC.Classes.max GHC.Classes.min}
+  GHC.Types.IO
+  GHC.Types.Ordering{GHC.Types.EQ GHC.Types.GT GHC.Types.LT}
+  Data.Hashable.Class.Hashable{Data.Hashable.Class.hash Data.Hashable.Class.hashWithSalt}
+  Network.HTTP.Client.HistoriedResponse{hrFinalRequest hrFinalResponse hrRedirects}
+  Network.HTTP.Client.Types.Cookie{Network.HTTP.Client.Types.Cookie cookie_creation_time cookie_domain cookie_expiry_time cookie_host_only cookie_http_only cookie_last_access_time cookie_name cookie_path cookie_persistent cookie_secure_only cookie_value}
+  Network.HTTP.Client.Types.CookieJar
+  Network.HTTP.Client.Types.GivesPopper
+  Network.HTTP.Client.Types.HasHttpManager{Network.HTTP.Client.Types.getHttpManager}
+  Network.HTTP.Client.Types.HttpException{Network.HTTP.Client.Types.HttpExceptionRequest Network.HTTP.Client.Types.InvalidUrlException}
+  Network.HTTP.Client.Types.HttpExceptionContent{Network.HTTP.Client.Types.ConnectionClosed Network.HTTP.Client.Types.ConnectionFailure Network.HTTP.Client.Types.ConnectionTimeout Network.HTTP.Client.Types.HttpZlibException Network.HTTP.Client.Types.IncompleteHeaders Network.HTTP.Client.Types.InternalException Network.HTTP.Client.Types.InvalidChunkHeaders Network.HTTP.Client.Types.InvalidDestinationHost Network.HTTP.Client.Types.InvalidHeader Network.HTTP.Client.Types.InvalidProxyEnvironmentVariable Network.HTTP.Client.Types.InvalidProxySettings Network.HTTP.Client.Types.InvalidStatusLine Network.HTTP.Client.Types.NoResponseDataReceived Network.HTTP.Client.Types.OverlongHeaders Network.HTTP.Client.Types.ProxyConnectException Network.HTTP.Client.Types.ResponseBodyTooShort Network.HTTP.Client.Types.ResponseTimeout Network.HTTP.Client.Types.StatusCodeException Network.HTTP.Client.Types.TlsNotSupported Network.HTTP.Client.Types.TooManyRedirects Network.HTTP.Client.Types.WrongRequestBodyStreamSize}
+  Network.HTTP.Client.Types.Manager
+  Network.HTTP.Client.Types.ManagerSettings{managerConnCount managerIdleConnectionCount managerModifyRequest managerModifyResponse managerRawConnection managerResponseTimeout managerRetryableException managerTlsConnection managerWrapException}
+  Network.HTTP.Client.Types.NeedsPopper
+  Network.HTTP.Client.Types.Popper
+  Network.HTTP.Client.Types.Proxy{Network.HTTP.Client.Types.Proxy proxyHost proxyPort}
+  Network.HTTP.Client.Types.ProxyOverride
+  Network.HTTP.Client.Types.Request{checkResponse cookieJar decompress host method path port proxy queryString redirectCount requestBody requestHeaders requestVersion responseTimeout secure}
+  Network.HTTP.Client.Types.RequestBody{Network.HTTP.Client.Types.RequestBodyBS Network.HTTP.Client.Types.RequestBodyBuilder Network.HTTP.Client.Types.RequestBodyIO Network.HTTP.Client.Types.RequestBodyLBS Network.HTTP.Client.Types.RequestBodyStream Network.HTTP.Client.Types.RequestBodyStreamChunked}
+  Network.HTTP.Client.Types.Response{responseBody responseCookieJar responseHeaders responseStatus responseVersion}
+  Network.HTTP.Client.Types.ResponseTimeout
+  Network.HTTP.Client.Types.StreamFileStatus{Network.HTTP.Client.Types.StreamFileStatus fileSize readSoFar thisChunkSize}
+  Network.HTTP.Types.Header.ByteRange{Network.HTTP.Types.Header.ByteRangeFrom Network.HTTP.Types.Header.ByteRangeFromTo Network.HTTP.Types.Header.ByteRangeSuffix}
+  Network.HTTP.Types.Header.ByteRanges
+  Network.HTTP.Types.Header.Header
+  Network.HTTP.Types.Header.HeaderName
+  Network.HTTP.Types.Header.RequestHeaders
+  Network.HTTP.Types.Header.ResponseHeaders
+  Network.HTTP.Types.Method.Method
+  Network.HTTP.Types.Method.StdMethod{Network.HTTP.Types.Method.CONNECT Network.HTTP.Types.Method.DELETE Network.HTTP.Types.Method.GET Network.HTTP.Types.Method.HEAD Network.HTTP.Types.Method.OPTIONS Network.HTTP.Types.Method.PATCH Network.HTTP.Types.Method.POST Network.HTTP.Types.Method.PUT Network.HTTP.Types.Method.TRACE}
+  Network.HTTP.Types.QueryLike.QueryLike{Network.HTTP.Types.QueryLike.toQuery}
+  Network.HTTP.Types.Status.Status{Network.HTTP.Types.Status.Status statusCode statusMessage}
+  Network.HTTP.Types.URI.Query
+  Network.HTTP.Types.URI.QueryItem
+  Network.HTTP.Types.URI.QueryText
+  Network.HTTP.Types.URI.SimpleQuery
+  Network.HTTP.Types.URI.SimpleQueryItem
+  Network.HTTP.Types.Version.HttpVersion{Network.HTTP.Types.Version.HttpVersion httpMajor httpMinor}
+  GHC.Integer.Type.Integer
+  Control.Concurrent.Async.Lifted.Safe.Concurrently{Control.Concurrent.Async.Lifted.Safe.Concurrently runConcurrently}
+  Control.Concurrent.Async.Lifted.Safe.Pure
+  Control.Monad.Trans.Control.MonadBaseControl{Control.Monad.Trans.Control.StM Control.Monad.Trans.Control.liftBaseWith Control.Monad.Trans.Control.restoreM}
+  Control.Monad.Trans.Control.MonadTransControl{Control.Monad.Trans.Control.StT Control.Monad.Trans.Control.liftWith Control.Monad.Trans.Control.restoreT}
+  Control.Monad.Logger.LogLevel{Control.Monad.Logger.LevelDebug Control.Monad.Logger.LevelError Control.Monad.Logger.LevelInfo Control.Monad.Logger.LevelOther Control.Monad.Logger.LevelWarn}
+  Control.Monad.Logger.MonadLogger
+  Control.Monad.Trans.Unlift.MonadBaseUnlift
+  Control.Monad.Trans.Unlift.MonadTransUnlift
+  Control.Monad.Trans.Unlift.Unlift{Control.Monad.Trans.Unlift.Unlift unlift}
+  Control.Monad.Trans.Unlift.UnliftBase{Control.Monad.Trans.Unlift.UnliftBase unliftBase}
+  Data.Containers.BiPolyMap{Data.Containers.BPMKeyConstraint Data.Containers.mapKeysWith}
+  Data.Containers.HasKeysSet{Data.Containers.KeySet Data.Containers.keysSet}
+  Data.Containers.IsMap{Data.Containers.MapValue Data.Containers.adjustMap Data.Containers.adjustWithKey Data.Containers.alterMap Data.Containers.deleteMap Data.Containers.findWithDefault Data.Containers.insertLookupWithKey Data.Containers.insertMap Data.Containers.insertWith Data.Containers.insertWithKey Data.Containers.lookup Data.Containers.mapFromList Data.Containers.mapToList Data.Containers.mapWithKey Data.Containers.omapKeysWith Data.Containers.singletonMap Data.Containers.unionWith Data.Containers.unionWithKey Data.Containers.unionsWith Data.Containers.updateLookupWithKey Data.Containers.updateMap Data.Containers.updateWithKey}
+  Data.Containers.IsSet{Data.Containers.deleteSet Data.Containers.insertSet Data.Containers.setFromList Data.Containers.setToList Data.Containers.singletonSet}
+  Data.Containers.MonoZip{Data.Containers.ounzip Data.Containers.ozip Data.Containers.ozipWith}
+  Data.Containers.PolyMap{Data.Containers.differenceMap Data.Containers.intersectionMap Data.Containers.intersectionWithMap}
+  Data.Containers.SetContainer{Data.Containers.ContainerKey Data.Containers.difference Data.Containers.intersection Data.Containers.keys Data.Containers.member Data.Containers.notMember Data.Containers.union Data.Containers.unions}
+  Data.MonoTraversable.Element
+  Data.MonoTraversable.GrowingAppend
+  Data.MonoTraversable.MonoComonad{Data.MonoTraversable.oextend Data.MonoTraversable.oextract}
+  Data.MonoTraversable.MonoFoldable{Data.MonoTraversable.headEx Data.MonoTraversable.lastEx Data.MonoTraversable.maximumByEx Data.MonoTraversable.minimumByEx Data.MonoTraversable.oall Data.MonoTraversable.oany Data.MonoTraversable.ocompareLength Data.MonoTraversable.ofoldMap Data.MonoTraversable.ofoldMap1Ex Data.MonoTraversable.ofoldl' Data.MonoTraversable.ofoldl1Ex' Data.MonoTraversable.ofoldlM Data.MonoTraversable.ofoldr Data.MonoTraversable.ofoldr1Ex Data.MonoTraversable.oforM_ Data.MonoTraversable.ofor_ Data.MonoTraversable.olength Data.MonoTraversable.olength64 Data.MonoTraversable.omapM_ Data.MonoTraversable.onull Data.MonoTraversable.otoList Data.MonoTraversable.otraverse_ Data.MonoTraversable.unsafeHead Data.MonoTraversable.unsafeLast}
+  Data.MonoTraversable.MonoFunctor{Data.MonoTraversable.omap}
+  Data.MonoTraversable.MonoPointed{Data.MonoTraversable.opoint}
+  Data.MonoTraversable.MonoTraversable{Data.MonoTraversable.omapM Data.MonoTraversable.otraverse}
+  Data.NonNull.NonNull{toNullable}
+  Data.Sequences.IsSequence{Data.Sequences.break Data.Sequences.drop Data.Sequences.dropWhile Data.Sequences.filter Data.Sequences.filterM Data.Sequences.fromList Data.Sequences.groupAllOn Data.Sequences.groupBy Data.Sequences.index Data.Sequences.indexEx Data.Sequences.initEx Data.Sequences.initMay Data.Sequences.lengthIndex Data.Sequences.partition Data.Sequences.permutations Data.Sequences.replicate Data.Sequences.replicateM Data.Sequences.span Data.Sequences.splitAt Data.Sequences.splitWhen Data.Sequences.subsequences Data.Sequences.tailEx Data.Sequences.tailMay Data.Sequences.take Data.Sequences.takeWhile Data.Sequences.uncons Data.Sequences.unsafeDrop Data.Sequences.unsafeIndex Data.Sequences.unsafeInit Data.Sequences.unsafeSplitAt Data.Sequences.unsafeTail Data.Sequences.unsafeTake Data.Sequences.unsnoc}
+  Data.Sequences.LazySequence{Data.Sequences.fromChunks Data.Sequences.fromStrict Data.Sequences.toChunks Data.Sequences.toStrict}
+  Data.Sequences.SemiSequence{Data.Sequences.Index Data.Sequences.cons Data.Sequences.find Data.Sequences.intersperse Data.Sequences.reverse Data.Sequences.snoc Data.Sequences.sortBy}
+  Data.Sequences.Textual{Data.Sequences.breakLine Data.Sequences.breakWord Data.Sequences.lines Data.Sequences.toCaseFold Data.Sequences.toLower Data.Sequences.toUpper Data.Sequences.unlines Data.Sequences.unwords Data.Sequences.words}
+  Data.Sequences.Utf8{Data.Sequences.decodeUtf8 Data.Sequences.encodeUtf8}
+  Control.Monad.Reader.Class.MonadReader{Control.Monad.Reader.Class.ask}
+  Data.Mutable.BRef.BRef
+  Data.Mutable.BRef.IOBRef
+  Data.Mutable.Class.MutableAtomicRef{Data.Mutable.Class.atomicModifyRef Data.Mutable.Class.atomicModifyRef'}
+  Data.Mutable.Class.MutableCollection{Data.Mutable.Class.CollElement Data.Mutable.Class.newColl}
+  Data.Mutable.Class.MutableContainer{Data.Mutable.Class.MCState}
+  Data.Mutable.Class.MutableDeque
+  Data.Mutable.Class.MutablePopBack{Data.Mutable.Class.popBack}
+  Data.Mutable.Class.MutablePopFront{Data.Mutable.Class.popFront}
+  Data.Mutable.Class.MutablePushBack{Data.Mutable.Class.pushBack}
+  Data.Mutable.Class.MutablePushFront{Data.Mutable.Class.pushFront}
+  Data.Mutable.Class.MutableQueue
+  Data.Mutable.Class.MutableRef{Data.Mutable.Class.RefElement Data.Mutable.Class.modifyRef Data.Mutable.Class.modifyRef' Data.Mutable.Class.newRef Data.Mutable.Class.readRef Data.Mutable.Class.writeRef}
+  Data.Mutable.Class.MutableStack
+  Data.Mutable.DLList.DLList
+  Data.Mutable.Deque.BDeque
+  Data.Mutable.Deque.Deque
+  Data.Mutable.Deque.SDeque
+  Data.Mutable.Deque.UDeque
+  Data.Mutable.PRef.IOPRef
+  Data.Mutable.PRef.PRef
+  Data.Mutable.SRef.IOSRef
+  Data.Mutable.SRef.SRef
+  Data.Mutable.URef.IOURef
+  Data.Mutable.URef.URef
+  Web.PathPieces.PathMultiPiece{Web.PathPieces.fromPathMultiPiece Web.PathPieces.toPathMultiPiece}
+  Web.PathPieces.PathPiece{Web.PathPieces.fromPathPiece Web.PathPieces.toPathPiece}
+  Database.Persist.Class.PersistQuery
+  Database.Persist.Class.PersistStore
+  Database.Persist.Class.PersistUnique
+  Database.Persist.Class.DeleteCascade.DeleteCascade{Database.Persist.Class.DeleteCascade.deleteCascade}
+  Database.Persist.Class.PersistConfig.PersistConfig{Database.Persist.Class.PersistConfig.PersistConfigBackend Database.Persist.Class.PersistConfig.PersistConfigPool Database.Persist.Class.PersistConfig.applyEnv Database.Persist.Class.PersistConfig.createPoolConfig Database.Persist.Class.PersistConfig.loadConfig Database.Persist.Class.PersistConfig.runPool}
+  Database.Persist.Class.PersistEntity.BackendSpecificFilter
+  Database.Persist.Class.PersistEntity.BackendSpecificUpdate
+  Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
+  Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
+  Database.Persist.Class.PersistEntity.Key|{Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
+  Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
+  Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
+  Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
+  Database.Persist.Class.PersistField.PersistField{Database.Persist.Class.PersistField.fromPersistValue Database.Persist.Class.PersistField.toPersistValue}
+  Database.Persist.Class.PersistField.SomePersistField{Database.Persist.Class.PersistField.SomePersistField}
+  Database.Persist.Class.PersistQuery.PersistQueryRead{Database.Persist.Class.PersistQuery.count Database.Persist.Class.PersistQuery.selectFirst Database.Persist.Class.PersistQuery.selectKeysRes Database.Persist.Class.PersistQuery.selectSourceRes}
+  Database.Persist.Class.PersistQuery.PersistQueryWrite{Database.Persist.Class.PersistQuery.deleteWhere Database.Persist.Class.PersistQuery.updateWhere}
+  Database.Persist.Class.PersistStore.HasPersistBackend{Database.Persist.Class.PersistStore.BaseBackend Database.Persist.Class.PersistStore.persistBackend}
+  Database.Persist.Class.PersistStore.IsPersistBackend
+  Database.Persist.Class.PersistStore.PersistCore{Database.Persist.Class.PersistStore.BackendKey}
+  Database.Persist.Class.PersistStore.PersistRecordBackend
+  Database.Persist.Class.PersistStore.PersistStoreRead{Database.Persist.Class.PersistStore.get}
+  Database.Persist.Class.PersistStore.PersistStoreWrite{Database.Persist.Class.PersistStore.delete Database.Persist.Class.PersistStore.insert Database.Persist.Class.PersistStore.insertEntityMany Database.Persist.Class.PersistStore.insertKey Database.Persist.Class.PersistStore.insertMany Database.Persist.Class.PersistStore.insertMany_ Database.Persist.Class.PersistStore.insert_ Database.Persist.Class.PersistStore.replace Database.Persist.Class.PersistStore.repsert Database.Persist.Class.PersistStore.update Database.Persist.Class.PersistStore.updateGet}
+  Database.Persist.Class.PersistStore.ToBackendKey{Database.Persist.Class.PersistStore.fromBackendKey Database.Persist.Class.PersistStore.toBackendKey}
+  Database.Persist.Class.PersistUnique.PersistUniqueRead{Database.Persist.Class.PersistUnique.getBy}
+  Database.Persist.Class.PersistUnique.PersistUniqueWrite{Database.Persist.Class.PersistUnique.deleteBy Database.Persist.Class.PersistUnique.insertUnique Database.Persist.Class.PersistUnique.upsert Database.Persist.Class.PersistUnique.upsertBy}
+  Database.Persist.Sql.Types.SqlPersistT
+  Database.Persist.Sql.Types.Internal.SqlBackend
+  Database.Persist.Types.Base.Attr
+  Database.Persist.Types.Base.Checkmark{Database.Persist.Types.Base.Active Database.Persist.Types.Base.Inactive}
+  Database.Persist.Types.Base.CompositeDef{Database.Persist.Types.Base.CompositeDef compositeAttrs compositeFields}
+  Database.Persist.Types.Base.DBName{Database.Persist.Types.Base.DBName unDBName}
+  Database.Persist.Types.Base.EmbedEntityDef{Database.Persist.Types.Base.EmbedEntityDef embeddedFields embeddedHaskell}
+  Database.Persist.Types.Base.EmbedFieldDef{Database.Persist.Types.Base.EmbedFieldDef emFieldCycle emFieldDB emFieldEmbed}
+  Database.Persist.Types.Base.EntityDef{Database.Persist.Types.Base.EntityDef entityAttrs entityDB entityDerives entityExtra entityFields entityForeigns entityHaskell entityId entitySum entityUniques}
+  Database.Persist.Types.Base.ExtraLine
+  Database.Persist.Types.Base.FieldDef{Database.Persist.Types.Base.FieldDef fieldAttrs fieldDB fieldHaskell fieldReference fieldSqlType fieldStrict fieldType}
+  Database.Persist.Types.Base.FieldType{Database.Persist.Types.Base.FTApp Database.Persist.Types.Base.FTList Database.Persist.Types.Base.FTTypeCon}
+  Database.Persist.Types.Base.ForeignDef{Database.Persist.Types.Base.ForeignDef foreignAttrs foreignConstraintNameDBName foreignConstraintNameHaskell foreignFields foreignNullable foreignRefTableDBName foreignRefTableHaskell}
+  Database.Persist.Types.Base.ForeignFieldDef
+  Database.Persist.Types.Base.HaskellName{Database.Persist.Types.Base.HaskellName unHaskellName}
+  Database.Persist.Types.Base.IsNullable{Database.Persist.Types.Base.NotNullable Database.Persist.Types.Base.Nullable}
+  Database.Persist.Types.Base.OnlyUniqueException{Database.Persist.Types.Base.OnlyUniqueException}
+  Database.Persist.Types.Base.PersistException{Database.Persist.Types.Base.PersistError Database.Persist.Types.Base.PersistForeignConstraintUnmet Database.Persist.Types.Base.PersistInvalidField Database.Persist.Types.Base.PersistMarshalError Database.Persist.Types.Base.PersistMongoDBError Database.Persist.Types.Base.PersistMongoDBUnsupported}
+  Database.Persist.Types.Base.PersistFilter{Database.Persist.Types.Base.BackendSpecificFilter Database.Persist.Types.Base.Eq Database.Persist.Types.Base.Ge Database.Persist.Types.Base.Gt Database.Persist.Types.Base.In Database.Persist.Types.Base.Le Database.Persist.Types.Base.Lt Database.Persist.Types.Base.Ne Database.Persist.Types.Base.NotIn}
+  Database.Persist.Types.Base.PersistUpdate{Database.Persist.Types.Base.Add Database.Persist.Types.Base.Assign Database.Persist.Types.Base.BackendSpecificUpdate Database.Persist.Types.Base.Divide Database.Persist.Types.Base.Multiply Database.Persist.Types.Base.Subtract}
+  Database.Persist.Types.Base.PersistValue{Database.Persist.Types.Base.PersistBool Database.Persist.Types.Base.PersistByteString Database.Persist.Types.Base.PersistDay Database.Persist.Types.Base.PersistDbSpecific Database.Persist.Types.Base.PersistDouble Database.Persist.Types.Base.PersistInt64 Database.Persist.Types.Base.PersistList Database.Persist.Types.Base.PersistMap Database.Persist.Types.Base.PersistNull Database.Persist.Types.Base.PersistObjectId Database.Persist.Types.Base.PersistRational Database.Persist.Types.Base.PersistText Database.Persist.Types.Base.PersistTimeOfDay Database.Persist.Types.Base.PersistUTCTime}
+  Database.Persist.Types.Base.ReferenceDef{Database.Persist.Types.Base.CompositeRef Database.Persist.Types.Base.EmbedRef Database.Persist.Types.Base.ForeignRef Database.Persist.Types.Base.NoReference Database.Persist.Types.Base.SelfReference}
+  Database.Persist.Types.Base.SqlType{Database.Persist.Types.Base.SqlBlob Database.Persist.Types.Base.SqlBool Database.Persist.Types.Base.SqlDay Database.Persist.Types.Base.SqlDayTime Database.Persist.Types.Base.SqlInt32 Database.Persist.Types.Base.SqlInt64 Database.Persist.Types.Base.SqlNumeric Database.Persist.Types.Base.SqlOther Database.Persist.Types.Base.SqlReal Database.Persist.Types.Base.SqlString Database.Persist.Types.Base.SqlTime}
+  Database.Persist.Types.Base.UniqueDef{Database.Persist.Types.Base.UniqueDef uniqueAttrs uniqueDBName uniqueFields uniqueHaskell}
+  Database.Persist.Types.Base.UpdateException{Database.Persist.Types.Base.KeyNotFound Database.Persist.Types.Base.UpsertError}
+  Database.Persist.Types.Base.WhyNullable{Database.Persist.Types.Base.ByMaybeAttr Database.Persist.Types.Base.ByNullableAttr}
+  Database.Persist.TH.EntityJSON{Database.Persist.TH.EntityJSON entityFromJSON entityToJSON}
+  Database.Persist.TH.MkPersistSettings{mpsBackend mpsEntityJSON mpsGenerateLenses mpsGeneric mpsPrefixFields}
+  Control.Monad.Primitive.PrimMonad{Control.Monad.Primitive.PrimState}
+  Data.Primitive.MutVar.MutVar{Data.Primitive.MutVar.MutVar}
+  Data.Primitive.Types.Prim
+  Control.Monad.Trans.Resource.Internal.MonadResource{Control.Monad.Trans.Resource.Internal.liftResourceT}
+  Control.Monad.Trans.Resource.Internal.ResourceT
+  Data.Acquire.Internal.Acquire
+  Data.Acquire.Internal.ReleaseType{Data.Acquire.Internal.ReleaseEarly Data.Acquire.Internal.ReleaseException Data.Acquire.Internal.ReleaseNormal}
+  Control.Exception.Safe.AsyncExceptionWrapper{Control.Exception.Safe.AsyncExceptionWrapper}
+  Control.Exception.Safe.StringException{Control.Exception.Safe.StringException}
+  Control.Exception.Safe.SyncExceptionWrapper{Control.Exception.Safe.SyncExceptionWrapper}
+  Text.Hamlet.HtmlUrl
+  Text.Internal.Css.CssUrl
+  Text.Julius.JavascriptUrl
+  Text.Shakespeare.I18N.Lang
+  Text.Shakespeare.I18N.RenderMessage{Text.Shakespeare.I18N.renderMessage}
+  Text.Shakespeare.I18N.SomeMessage{Text.Shakespeare.I18N.SomeMessage}
+  Text.Shakespeare.I18N.ToMessage{Text.Shakespeare.I18N.toMessage}
+  Control.Concurrent.STM.TArray.TArray
+  Control.Concurrent.STM.TBQueue.TBQueue
+  Control.Concurrent.STM.TChan.TChan
+  Control.Concurrent.STM.TMVar.TMVar
+  Control.Concurrent.STM.TQueue.TQueue
+  Control.Concurrent.STM.TBChan.TBChan
+  Control.Concurrent.STM.TBMChan.TBMChan
+  Control.Concurrent.STM.TBMQueue.TBMQueue
+  Control.Concurrent.STM.TMChan.TMChan
+  Control.Concurrent.STM.TMQueue.TMQueue
+  Data.Text.Internal.Text
+  Data.Time.Calendar.Days.Day{Data.Time.Calendar.Days.ModifiedJulianDay toModifiedJulianDay}
+  Data.Time.Clock.UTC.UTCTime{Data.Time.Clock.UTC.UTCTime utctDay utctDayTime}
+  Control.Monad.Trans.Class.MonadTrans{Control.Monad.Trans.Class.lift}
+  Control.Monad.Trans.Reader.Reader
+  Control.Monad.Trans.Reader.ReaderT{Control.Monad.Trans.Reader.ReaderT runReaderT}
+  Control.Monad.Base.MonadBase{Control.Monad.Base.liftBase}
+  Data.HashMap.Base.HashMap
+  Data.HashSet.HashSet
+  Data.Vector.Vector
+  Data.Vector.Unboxed.Base.Unbox
+  Network.Wai.Application
+  Data.Yaml.Config.EnvUsage
+  Yesod.Default.Config2.MergedValue{Yesod.Default.Config2.MergedValue getMergedValue}
+  Yesod.Core.Class.Breadcrumbs.YesodBreadcrumbs{Yesod.Core.Class.Breadcrumbs.breadcrumb}
+  Yesod.Core.Class.Dispatch.YesodDispatch{Yesod.Core.Class.Dispatch.yesodDispatch}
+  Yesod.Core.Class.Dispatch.YesodSubDispatch{Yesod.Core.Class.Dispatch.yesodSubDispatch}
+  Yesod.Core.Class.Handler.MonadHandler{Yesod.Core.Class.Handler.HandlerSite Yesod.Core.Class.Handler.liftHandlerT}
+  Yesod.Core.Class.Handler.MonadWidget{Yesod.Core.Class.Handler.liftWidgetT}
+  Yesod.Core.Class.Yesod.Yesod{Yesod.Core.Class.Yesod.addStaticContent Yesod.Core.Class.Yesod.approot Yesod.Core.Class.Yesod.authRoute Yesod.Core.Class.Yesod.cleanPath Yesod.Core.Class.Yesod.defaultLayout Yesod.Core.Class.Yesod.defaultMessageWidget Yesod.Core.Class.Yesod.errorHandler Yesod.Core.Class.Yesod.fileUpload Yesod.Core.Class.Yesod.isAuthorized Yesod.Core.Class.Yesod.isWriteRequest Yesod.Core.Class.Yesod.joinPath Yesod.Core.Class.Yesod.jsAttributes Yesod.Core.Class.Yesod.jsLoader Yesod.Core.Class.Yesod.makeLogger Yesod.Core.Class.Yesod.makeSessionBackend Yesod.Core.Class.Yesod.maximumContentLength Yesod.Core.Class.Yesod.messageLoggerSource Yesod.Core.Class.Yesod.shouldLog Yesod.Core.Class.Yesod.shouldLogIO Yesod.Core.Class.Yesod.urlParamRenderOverride Yesod.Core.Class.Yesod.urlRenderOverride Yesod.Core.Class.Yesod.yesodMiddleware Yesod.Core.Class.Yesod.yesodWithInternalState}
+  Yesod.Core.Content.HasContentType{Yesod.Core.Content.getContentType}
+  Yesod.Core.Content.ToContent{Yesod.Core.Content.toContent}
+  Yesod.Core.Content.ToFlushBuilder{Yesod.Core.Content.toFlushBuilder}
+  Yesod.Core.Content.ToTypedContent{Yesod.Core.Content.toTypedContent}
+  Yesod.Core.Handler.Fragment{Yesod.Core.Handler.:#:}
+  Yesod.Core.Handler.ProvidedRep
+  Yesod.Core.Handler.RedirectUrl{Yesod.Core.Handler.toTextUrl}
+  Yesod.Core.Internal.LiteApp.LiteApp{Yesod.Core.Internal.LiteApp.LiteApp unLiteApp}
+  Yesod.Core.Internal.LiteApp.LiteHandler
+  Yesod.Core.Internal.LiteApp.LiteWidget
+  Yesod.Core.Types.Approot{Yesod.Core.Types.ApprootMaster Yesod.Core.Types.ApprootRelative Yesod.Core.Types.ApprootRequest Yesod.Core.Types.ApprootStatic}
+  Yesod.Core.Types.AuthResult{Yesod.Core.Types.AuthenticationRequired Yesod.Core.Types.Authorized Yesod.Core.Types.Unauthorized}
+  Yesod.Core.Types.BottomOfHeadAsync
+  Yesod.Core.Types.Content{Yesod.Core.Types.ContentBuilder Yesod.Core.Types.ContentDontEvaluate Yesod.Core.Types.ContentFile Yesod.Core.Types.ContentSource}
+  Yesod.Core.Types.ContentType
+  Yesod.Core.Types.CssBuilder{Yesod.Core.Types.CssBuilder unCssBuilder}
+  Yesod.Core.Types.DontFullyEvaluate{Yesod.Core.Types.DontFullyEvaluate unDontFullyEvaluate}
+  Yesod.Core.Types.ErrorResponse{Yesod.Core.Types.BadMethod Yesod.Core.Types.InternalError Yesod.Core.Types.InvalidArgs Yesod.Core.Types.NotAuthenticated Yesod.Core.Types.NotFound Yesod.Core.Types.PermissionDenied}
+  Yesod.Core.Types.FileInfo{fileContentType fileMove fileName}
+  Yesod.Core.Types.FileUpload{Yesod.Core.Types.FileUploadDisk Yesod.Core.Types.FileUploadMemory Yesod.Core.Types.FileUploadSource}
+  Yesod.Core.Types.HandlerT
+  Yesod.Core.Types.Header|{Yesod.Core.Types.AddCookie Yesod.Core.Types.DeleteCookie}
+  Yesod.Core.Types.Logger|{loggerSet}
+  Yesod.Core.Types.PageContent{Yesod.Core.Types.PageContent pageBody pageHead pageTitle}
+  Yesod.Core.Types.RepHtml
+  Yesod.Core.Types.RepJson{Yesod.Core.Types.RepJson}
+  Yesod.Core.Types.RepPlain{Yesod.Core.Types.RepPlain}
+  Yesod.Core.Types.RepXml{Yesod.Core.Types.RepXml}
+  Yesod.Core.Types.RequestBodyContents
+  Yesod.Core.Types.ScriptLoadPosition{Yesod.Core.Types.BottomOfBody Yesod.Core.Types.BottomOfHeadAsync Yesod.Core.Types.BottomOfHeadBlocking}
+  Yesod.Core.Types.SessionBackend{Yesod.Core.Types.SessionBackend sbLoadSession}
+  Yesod.Core.Types.SessionMap
+  Yesod.Core.Types.Texts
+  Yesod.Core.Types.TypedContent{Yesod.Core.Types.TypedContent}
+  Yesod.Core.Types.WaiSubsite{Yesod.Core.Types.WaiSubsite runWaiSubsite}
+  Yesod.Core.Types.WaiSubsiteWithAuth{Yesod.Core.Types.WaiSubsiteWithAuth runWaiSubsiteWithAuth}
+  Yesod.Core.Types.WidgetT
+  Yesod.Core.Types.YesodRequest{Yesod.Core.Types.YesodRequest reqAccept reqCookies reqGetParams reqLangs reqSession reqToken reqWaiRequest}
+  Yesod.Core.Widget.ToWidget{Yesod.Core.Widget.toWidget}
+  Yesod.Core.Widget.ToWidgetBody{Yesod.Core.Widget.toWidgetBody}
+  Yesod.Core.Widget.ToWidgetHead{Yesod.Core.Widget.toWidgetHead}
+  Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
+  Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
+  Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.HomeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
+  Yesod.Form.Fields.AutoFocus
+  Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
+  Yesod.Form.Fields.OptionList{Yesod.Form.Fields.OptionList olOptions olReadExternal}
+  Yesod.Form.Fields.Textarea{Yesod.Form.Fields.Textarea unTextarea}
+  Yesod.Form.Functions.FormRender
+  Yesod.Form.Input.FormInput{Yesod.Form.Input.FormInput unFormInput}
+  Yesod.Form.Types.AForm{Yesod.Form.Types.AForm unAForm}
+  Yesod.Form.Types.Enctype{Yesod.Form.Types.Multipart Yesod.Form.Types.UrlEncoded}
+  Yesod.Form.Types.Env
+  Yesod.Form.Types.Field{Yesod.Form.Types.Field fieldEnctype fieldParse fieldView}
+  Yesod.Form.Types.FieldSettings{Yesod.Form.Types.FieldSettings fsAttrs fsId fsLabel fsName fsTooltip}
+  Yesod.Form.Types.FieldView{Yesod.Form.Types.FieldView fvErrors fvId fvInput fvLabel fvRequired fvTooltip}
+  Yesod.Form.Types.FieldViewFunc
+  Yesod.Form.Types.FileEnv
+  Yesod.Form.Types.FormMessage{Yesod.Form.Types.MsgBoolNo Yesod.Form.Types.MsgBoolYes Yesod.Form.Types.MsgCsrfWarning Yesod.Form.Types.MsgDelete Yesod.Form.Types.MsgInputNotFound Yesod.Form.Types.MsgInvalidBool Yesod.Form.Types.MsgInvalidDay Yesod.Form.Types.MsgInvalidEmail Yesod.Form.Types.MsgInvalidEntry Yesod.Form.Types.MsgInvalidHour Yesod.Form.Types.MsgInvalidInteger Yesod.Form.Types.MsgInvalidMinute Yesod.Form.Types.MsgInvalidNumber Yesod.Form.Types.MsgInvalidSecond Yesod.Form.Types.MsgInvalidTimeFormat Yesod.Form.Types.MsgInvalidUrl Yesod.Form.Types.MsgSelectNone Yesod.Form.Types.MsgValueRequired}
+  Yesod.Form.Types.FormResult{Yesod.Form.Types.FormFailure Yesod.Form.Types.FormMissing Yesod.Form.Types.FormSuccess}
+  Yesod.Form.Types.Ints{Yesod.Form.Types.IntCons Yesod.Form.Types.IntSingle}
+  Yesod.Form.Types.MForm
+  Yesod.Form.Types.WForm
+  Yesod.FeedTypes.EntryEnclosure{Yesod.FeedTypes.EntryEnclosure enclosedMimeType enclosedSize enclosedUrl}
+  Yesod.FeedTypes.Feed{Yesod.FeedTypes.Feed feedAuthor feedDescription feedEntries feedLanguage feedLinkHome feedLinkSelf feedLogo feedTitle feedUpdated}
+  Yesod.FeedTypes.FeedEntry{Yesod.FeedTypes.FeedEntry feedEntryContent feedEntryEnclosure feedEntryLink feedEntryTitle feedEntryUpdated}
+  Yesod.Persist.Core.DBRunner{Yesod.Persist.Core.DBRunner runDBRunner}
+  Yesod.Persist.Core.YesodDB
+  Yesod.Persist.Core.YesodPersist{Yesod.Persist.Core.YesodPersistBackend Yesod.Persist.Core.runDB}
+  Yesod.Persist.Core.YesodPersistRunner{Yesod.Persist.Core.getDBRunner}
+  Yesod.Static.CombineSettings{csCombinedFolder csCssPostProcess csCssPreProcess csJsPostProcess csJsPreProcess csStaticDir}
+  Yesod.Static.Static{Yesod.Static.Static}
+  Yesod.Static.StaticRoute
+  GHC.Base.Maybe{GHC.Base.Just GHC.Base.Nothing}
+  GHC.Word.Word8
+  GHC.Prim.RealWorld
+  GHC.Types.Bool{GHC.Types.False GHC.Types.True}
+  GHC.Types.Char
+  GHC.Types.Double
+  GHC.Types.Float
+  GHC.Types.Int
+  GHC.Types.Word
+module dependencies: Foundation Import.NoFoundation Model Settings
+                     Settings.StaticFiles
+package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
+                      StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp
+                      aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-HFlClSgXxbU7TMoWqS5Yu4
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      asn1-encoding-0.9.5@asn1-encoding-0.9.5-CmDkwNPA51zjuzFcENFZ5
+                      asn1-parse-0.9.4@asn1-parse-0.9.4-HSgo3I4Jg5sAQWRFdyScvb
+                      asn1-types-0.3.2@asn1-types-0.3.2-Ls8owv2hbTfEqG1LKzBcjy
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-CiauZZhskHA6jYy7CqE2mZ
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw
+                      basic-prelude-0.6.1.1@basic-prelude-0.6.1.1-888xsTDtS2CGSoHb1JadEF
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-1D5OUKQ7UrJ7IpOe0di4Un
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      chunked-data-0.3.0@chunked-data-0.3.0-OOunTfArGE2y1nE8RKgW4
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-Iep5jMzxM1u3mGzM17Av1H
+                      classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N
+                      classy-prelude-conduit-1.2.0@classy-prelude-conduit-1.2.0-4VNoIEo9SLt6t7N4PwpkXU
+                      classy-prelude-yesod-1.2.0@classy-prelude-yesod-1.2.0-4tCQqVxZHk5JE3z6jrBT3F
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-1HgInPlmxWUKWaagfkcDtu
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
+                      conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i
+                      conduit-combinators-1.1.1@conduit-combinators-1.1.1-CbpWlJJbANPFWzQzUVNtDU
+                      conduit-extra-1.1.17@conduit-extra-1.1.17-LHyPtC0nGlzDcgVxOcd4h4
+                      connection-0.2.8@connection-0.2.8-7E5s9ndt8OF7NNDH3ifO8K
+                      constraints-0.9.1@constraints-0.9.1-5mmQfXdFR8IpJ6JZxzjTB
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      cookie-0.4.2.1@cookie-0.4.2.1-ImqC1hbvUERAwQQgqhuUAD
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-CtFLLcV33ZSKCmRTVWdrW7
+                      crypto-api-0.13.2@crypto-api-0.13.2-DBhN9RgaKHp5HflQM2s570
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-JSCTZhqOXgH3EkiMgDwxX
+                      crypto-random-0.0.9@crypto-random-0.0.9-381865WP41XFXsmS6fCaFj
+                      cryptonite-0.23@cryptonite-0.23-7SwQljDtwztDJ3Fe01tUO9
+                      cryptonite-conduit-0.2.0@cryptonite-conduit-0.2.0-LH1qspLlLTXKv70D84KCUO
+                      css-text-0.1.2.2@css-text-0.1.2.2-GtPTSZ9vPefILuf2bXZD6W
+                      data-default-0.7.1.1@data-default-0.7.1.1-Atv1ZD6t1rI1MrH9qSGaQC
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-LBT1sjxIvyd63eC0aI9yNO
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      dlist-instances-0.1.1.1@dlist-instances-0.1.1.1-JrfDmjAHlXKJeRjjD0rY07
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.3.1@email-validate-2.3.1-4WsGncp61DkHAczMlRRvml
+                      entropy-0.3.8@entropy-0.3.8-14HIw40nRRY968j6AdY1H4
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI
+                      free-4.12.4@free-4.12.4-C2gBQV0m8J42HxqSLTFyVx
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      hourglass-0.2.10@hourglass-0.2.10-pnbvWmzfcY1rOFETQEmcY
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-AT41KDpP9ayH63FPNXWrvF
+                      http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q
+                      http-client-tls-0.3.5.1@http-client-tls-0.3.5.1-9yHxBE9KmNa1D1xDvn7C4m
+                      http-conduit-2.2.3.2@http-conduit-2.2.3.2-5MsxxcFsbFW2aX71Hx1I7R
+                      http-date-0.0.6.1@http-date-0.0.6.1-AkYFHBFn90lGSerD29arC9
+                      http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY
+                      http2-1.6.3@http2-1.6.3-5WuWRsIVuKR43Sq9Cs2O4Z integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX
+                      keys-3.11@keys-3.11-3rCPtsJiP6i6WPjfB1rcVT
+                      lifted-async-0.9.3@lifted-async-0.9.3-1Yr94BjFrURGjFULK2k39c
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-Ei0JSPdt7KOCD2HIA5jFqV
+                      memory-0.14.8@memory-0.14.8-GdBguxykhKWC3gIuWq62O9
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-6b3z22GcDYZLEl2kkfCUAB
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l
+                      monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      monad-unlift-0.2.0@monad-unlift-0.2.0-JaCplLBosjYCz9UWF6Saxw
+                      mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV
+                      mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy
+                      network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5
+                      pem-0.2.2@pem-0.2.2-CkEwei5500yF2642aAaOAi
+                      persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n
+                      persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS
+                      pointed-5@pointed-5-GlRizu1aJXO3QG4Xelc8BV
+                      postgresql-libpq-0.9.3.1@postgresql-libpq-0.9.3.1-PNtzTLZ1kPBlp0W2VWiJp
+                      postgresql-simple-0.5.3.0@postgresql-simple-0.5.3.0-7wqiM7f7ESv7wSvmAjfLqt
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      profunctors-5.2.1@profunctors-5.2.1-Ga89Nyw0d7LBEIoX4AZ6gT
+                      psqueues-0.2.4.0@psqueues-0.2.4.0-CvAhEbuBRGQCwl61vq8zYS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-GmoeVeJ8L5Y51jMJ5dPk3U
+                      resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      safe-exceptions-0.1.6.0@safe-exceptions-0.1.6.0-8HmohVTen8f1fXhFM1N1R3
+                      say-0.1.0.0@say-0.1.0.0-4kg0VW7izQr10eu93ritVO
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      securemem-0.1.9@securemem-0.1.9-I1DISfcspndD6idpVbMBWq
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-Db8txM8kTsI6Y49CY6g5Jn
+                      shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-4uYtK5a0djFILo2ePfLs47
+                      skein-1.0.9.4@skein-1.0.9.4-H6iwU6ZhWxE28U4xCLTfo3
+                      socks-0.5.5@socks-0.5.5-JArtPcFTnbCItWBjXwWAhO
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-6xuIA5RXrs65yyeq3HWIWP
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-HO0sHb651BeFnnIxljlexR
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      tls-1.3.11@tls-1.3.11-IxCmr8GdEutIrVRgKylzM6
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vault-0.3.0.7@vault-0.3.0.7-FSJCPczyPWW8DwvwP76qt4
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+                      vector-algorithms-0.7.0.1@vector-algorithms-0.7.0.1-1qlx0Hst1Fo5WZd0lT7Iw1
+                      vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1
+                      wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-IWVzgvpaMYRH5pqRQk33K1
+                      wai-extra-3.0.20.0@wai-extra-3.0.20.0-Dj9t4P11I8BnwNE6pZcEP
+                      wai-logger-2.3.0@wai-logger-2.3.0-G2LMsBpHwLV49tDfVWxzX4
+                      warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc
+                      word8-0.1.3@word8-0.1.3-9o1uWQQ6KysJq8GGsVHHit
+                      x509-1.7.2@x509-1.7.2-IixRXIQfpHlXunpaQDNuQ
+                      x509-store-1.6.5@x509-store-1.6.5-LPi8AM9vMZO97SZk6SmtWd
+                      x509-system-1.6.6@x509-system-1.6.6-GUxFbyk0TndCMp8nKvvL3M
+                      x509-validation-1.6.9@x509-validation-1.6.9-4jWSRkWS3kAKZsU0SpJst
+                      xml-conduit-1.5.1@xml-conduit-1.5.1-FiRHhqSLReR4vkwAA3escx
+                      xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
+                      yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
+                      yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
+                      yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
+                      yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
+                      yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
+                      yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-DBhN9RgaKHp5HflQM2s570:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-LBT1sjxIvyd63eC0aI9yNO:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Request
+         mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB:Data.MonoTraversable.Instances
+         network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path.CurrentOS
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+         vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
+family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Block.Base
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.BoxedArray
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Monad
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.MutableBuilder
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.NonEmpty
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Numerical.Subtractive
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.ASCII7
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.UTF16
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.String.Encoding.UTF32
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Types.AsciiString
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.Types.OffsetSize
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.UArray.Base
+                         basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw:Basement.UTF8.Base
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Wrapped
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Conduit
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Pipe
+                         constraints-0.9.1@constraints-0.9.1-5mmQfXdFR8IpJ6JZxzjTB:Data.Constraint.Forall
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         email-validate-2.3.1@email-validate-2.3.1-4WsGncp61DkHAczMlRRvml:Text.Email.Parser
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Array.Bitmap
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Buildable
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Element
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Keyed
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Collection.Mutable
+                         foundation-0.0.15@foundation-0.0.15-Cl70JNuHcCuIxk4jr0SplI:Foundation.Tuple
+                         frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Foundation
+                         frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Model
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client
+                         iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-EJjAtfniBUorobFQnk7lR:Data.IP.Range
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-8LTJJ1zQJWB7SfewWXUuqX:Data.Functor.Day
+                         keys-3.11@keys-3.11-3rCPtsJiP6i6WPjfB1rcVT:Data.Key
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control
+                         monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Containers
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.MonoTraversable
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.NonNull
+                         mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Sequences
+                         mono-traversable-instances-0.1.0.0@mono-traversable-instances-0.1.0.0-cMPVlKCPiiIbLvZydxEFB:Data.MonoTraversable.Instances
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.BRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Class
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.DLList
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Deque
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.PRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.SRef
+                         mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.URef
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph:Network.URI
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistConfig
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css
+                         shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+                         vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
+                         xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
+                         yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON fc426f6244607a007ab90ce21ee3f84e
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal 7f24d0ff94444274b4c94d0e40783504
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON 9b6d9905f783ac820e061a74dcd66fb8
+import  -/  base-4.9.1.0:Control.Applicative e7480cada88fc1f91c2d5e3b6a3f11b0
+import  -/  base-4.9.1.0:Control.Arrow 821db283626bee4b31a555a0599ef5ef
+import  -/  base-4.9.1.0:Control.Category 424ff8621e550636736e67d6e79e1995
+import  -/  base-4.9.1.0:Control.Monad a074f462444a9cc98e2a23970e215dab
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 4dedd1241c50db2a5e8998084aaf07d6
+import  -/  base-4.9.1.0:Data.Either edb1cd77a19494df6cb8bdb85bbce818
+import  -/  base-4.9.1.0:Data.Foldable 4052db9dec1666654d2ef8f35e625883
+import  -/  base-4.9.1.0:Data.Functor 8a9097cd7880f362e85f792ffaba0608
+import  -/  base-4.9.1.0:Data.Functor.Identity dedc0fcc410ba206ef953e5293af48d5
+import  -/  base-4.9.1.0:Data.Maybe be0ae93a35220167f7141912bfd2a07d
+import  -/  base-4.9.1.0:Data.Semigroup 2748a67f9d98b8c4d2ac9e1ab65f21a9
+import  -/  base-4.9.1.0:Data.String d7be253c2ca01660c024c46048658932
+import  -/  base-4.9.1.0:Data.Traversable 8f5a1ec2fc495faaac8c37f82113f259
+import  -/  base-4.9.1.0:Data.Tuple 500819451d524af6d8c8b1ac52e34754
+import  -/  base-4.9.1.0:Data.Typeable.Internal 97bdc3f200dd854913b44ab03b17508c
+import  -/  base-4.9.1.0:Foreign.Storable da299905f67b131ad52952f34a712170
+import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
+import  -/  base-4.9.1.0:GHC.Conc.Sync 571fb39f92ce079f03e78ed0a0b2b487
+import  -/  base-4.9.1.0:GHC.Enum 7d0086f9b742394b007c0c548c90017f
+import  -/  base-4.9.1.0:GHC.Err 5ae61e3396b64ae1e9577b5419c62419
+import  -/  base-4.9.1.0:GHC.Exception 67a6eee05c4b890dd88faf0a44d8bb97
+import  -/  base-4.9.1.0:GHC.Float 04c092962d9918e2e4fd4687f1b06e93
+import  -/  base-4.9.1.0:GHC.Generics e48edaf78dacd753ecf7499c55665816
+import  -/  base-4.9.1.0:GHC.IO 52d03c492b6995b59400be3f39069a23
+import  -/  base-4.9.1.0:GHC.IO.Exception 4211f9923b6fa6b42fee3e98429fd0c1
+import  -/  base-4.9.1.0:GHC.IO.Handle.Types 09b087ba9ce56e6c5334b0a610fc5c44
+import  -/  base-4.9.1.0:GHC.IORef b06e179a78c0a0120460732cee54db72
+import  -/  base-4.9.1.0:GHC.Int 4015696ae831b04428ce02ee94101b9a
+import  -/  base-4.9.1.0:GHC.List e83b7af0a5a7198ae5f639ee7353eeb2
+import  -/  base-4.9.1.0:GHC.MVar 9198dc064000bda5562ab92ad1fa1732
+import  -/  base-4.9.1.0:GHC.Num d4fcdd3f6fbc0495573cd3a1936c6e28
+import  -/  base-4.9.1.0:GHC.Read 3d8c91b64a85975b2b733ad39046baa4
+import  -/  base-4.9.1.0:GHC.Real 20bc71c4bd6eb27ca6b2c7e0949f8e59
+import  -/  base-4.9.1.0:GHC.STRef 12d010704279356e6b97ef3370e1f875
+import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
+import  -/  base-4.9.1.0:GHC.Word 1e8a6a96f309ad1ec484481342cf0fac
+import  -/  base-4.9.1.0:Prelude 4d7ee35012f77eace89fe02e109def8f
+import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
+import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze d871f6d9ec91a98e2d712ebdbb9a0caf
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Internal 41d3df59bee85fbb20052a4c2236e1bf
+import  -/  conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Conduit ccd1a95420b4d4c55b618b106c956c1f
+import  -/  constraints-0.9.1@constraints-0.9.1-5mmQfXdFR8IpJ6JZxzjTB:Data.Constraint.Forall 11ec9491e493377033b60e3f30bdd2c7
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base c3d662e4188572ceb02beb793afd4043
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base 401e1005c029be5750ad9f750c13af7b
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 976017841cf1073a66bc199a96d5fe2f
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Sequence 7a8fbc1c1c2425218bd3189683f360e7
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b9d255a553a546c3f
+import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
+import  -/  dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList 22dffe50f890f364a13da093d2b9d273
+import  -/  exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U:Control.Monad.Catch 580f4f81f2d18446ebadc19f859516ab
+import  -/  Foundation ab90e96a29cdf26e1f2943ff1f502d0f
+  exports: f8aeb60222a79ccc3d3a4a0dcfb158ef
+  AdminR 07ac21936bd98826c206d27add1bff9a
+  App 9af9d6bb321bac94d16a765b17a1952a
+  App 7f5a6b4267100c42ff7adc72509bb54b
+  CadUsuarioR 380b1c8c94ef71c1f75e49d35ff0f6e3
+  FaviconR b1a75f769a1516019cf38ab96669fdd3
+  Form 0ae4ca17d3bbd53306625ad7d5298938
+  Handler 88fd4d5f499ddbc87725a62b99ad4cac
+  HomeR d2df0f5bf44aef05766162d223de1c94
+  ListaTreinadorR 21693dbcb02e59f393c5c95e058bc05a
+  LoginR 756d9451138413fd27acf5369be12f0e
+  LogoutR a07e5ee80f3cb0fcb69848060d011ef9
+  PerfilR 86f0d81d1b0ca3f4c6e2b1489d8cae28
+  PerfilUsuarioR b89b380061955205578e00e6011bd717
+  PokedexR 2b9f260f3a823c88c950c32016692af3
+  PokemonR 46d9708653b3386602b33c27cdc26e12
+  RobotsR c42e4b572d573db3dfc411d862d6edea
+  StaticR b26a3d005d7c83749179b6610644a63c
+  TreinadorR f5875ab3cf5df9a20ac333f1e9abe5eb
+  Widget 4962809370a1c9d63ece0e0053c14daf
+  appConnPool 212ffc5190e2c120e00e843283ad8d4f
+  appHttpManager 7f5a6b4267100c42ff7adc72509bb54b
+  appLogger 596420a8e83290b710297c411bf85664
+  appSettings 3f4604d79e0a2eb385d6cd15100b197f
+  appStatic 5e3639df767209354fe8fc8cdf9877a9
+  ehAdmin 606da55588fe7a73a6fdf3d27b92009d
+  ehUsuario 6caa4ad32c548dab457dac91c2368e85
+  resourcesApp 25cc9f9db3c21342a34d40192d967616
+import  -/  Import.NoFoundation c2b11490ddbee728dd1c425ee687e3d4
+  exports: 56469fe9423cc7724e623eb908e9d16d
+import  -/  Model cf26c98d28e254239c8dc1ffa5a017dd
+  Pokebola bbd8548e0bbf374b87309ac6ac73c4fc
+  Pokebola c1835406e7eb3b44559284a6aa3b667a
+  PokebolaBola 7616fc7719325fc96efc441bb67efd61
+  PokebolaCaptura c477fbe385a097c0158aed942430c025
+  PokebolaId 6baa91705e0483450af6d7b6473bb63b
+  PokebolaId 73cb81afc0192527f421c283fe150e74
+  PokebolaKey c1d641b999b0d4392b7007464f7ca16a
+  PokebolaPokeid b4e2d49deb3beccc3a8669dc7407cd37
+  PokebolaTid 38db470dd4a3523874ba0b59c17b148a
+  Pokemon 26babab64975c7f7e86cef59e0acdbd2
+  Pokemon 065ca032f278a1cf7a30c100a7767613
+  PokemonGeracao c9ecfb03b535f1e7b1b505d2e2b7438e
+  PokemonId eaa721c51371667a68e285f389032f1e
+  PokemonId ef2d36039a4b5816e145c7648b9f47e3
+  PokemonImagem b0c4ec7e10cbf4bcb2018deba897aab9
+  PokemonKey 6663692a1e5310394267eeb57b7b0570
+  PokemonNivel 3fdc69ca8d1f2e2296f9557e8f516ffa
+  PokemonNome 22540908b805856a3f1f8f70d27d5634
+  PokemonTipo 80593f22e97c34e28865256f254af735
+  Treinador 42121964b555a5ef5542a0effc3576a4
+  Treinador 2b6231ce86586b7138205ded3e317ac9
+  TreinadorCidade 5b41e571395dbb2687b7411f1b4cb26f
+  TreinadorDtnasc 1dae7ad02e3a726c50d5efb7c2a3cc62
+  TreinadorId bc14313f47a7f88bd2b60c355d25f26a
+  TreinadorId a0a85d344a891de181d57f305430f486
+  TreinadorKey f287a5e2235017b6714ddc5834957b9f
+  TreinadorNome b3dfbf60a1a3a34b7c091149a1466776
+  Usuario 0b3cf6dcf9c2e11daa597a0db78ec4b9
+  Usuario efc63ecaf2ce93a0b2538f690dd08c98
+  UsuarioEmail 22315141398814c425414b38097ec20e
+  UsuarioId dce2dc0f19caf5699252c7bd48f8c7f0
+  UsuarioId 1bc95c724e6d51a720f0edf4ed7dbebe
+  UsuarioKey 69ea5512e4f3f4b56cf88acb037f8f8a
+  UsuarioNome 0b35c41264367c899bdc527b90a69315
+  UsuarioSenha 18bc42937e275362c31592bb1a790ff9
+  migrateAll 728cb9e7f2a769294702da28b3d161cf
+  pokebolaBola d7a22fe71581f7a85fd79101c388aeb3
+  pokebolaCaptura cf56f149da31226f3351a0c31a5047b8
+  pokebolaPokeid 450af563bcb1b54fd6bdc9c6bd3b7ae3
+  pokebolaTid 37530d88d0d12e06073f28f9aed055db
+  pokemonGeracao 7441a026dfe69aa8593f91a44e5ab17d
+  pokemonImagem 9ec838c2892bc0428216beb3a815c219
+  pokemonNivel e321e5cb30da23658e6d0a04bbf655e4
+  pokemonNome eb8b53d65b736d2b344551de283833f9
+  pokemonTipo 12a821dc344f674502a68fa8dc08232b
+  treinadorCidade ef4ab7de7df8e9ab91d16734520accb1
+  treinadorDtnasc d13b048c13019faacc118b960aff1216
+  treinadorNome 83ff567c3588b8a9a3d4662e38bac0ac
+  unPokebolaKey c1835406e7eb3b44559284a6aa3b667a
+  unPokemonKey 065ca032f278a1cf7a30c100a7767613
+  unTreinadorKey 2b6231ce86586b7138205ded3e317ac9
+  unUsuarioKey efc63ecaf2ce93a0b2538f690dd08c98
+  usuarioEmail 74e674b246e36154a231ad70c56b6a85
+  usuarioNome 23a45b42d2f2b4d4b0931854f1847825
+  usuarioSenha 99adc5ff636f38ec5cb216b911dc6bb8
+import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
+  AppSettings 832bad5279a934db96edd7d50ae58d26
+  AppSettings 00a3521109bd86e95bf87471b12220f9
+  appAnalytics eb8996028ac77b649b4c38d6bb672d48
+  appAuthDummyLogin c79e11246f45d0d887104a95ca2d9094
+  appCopyright b0f4c8e378eaf80bf709b169bb2dcb77
+  appDatabaseConf be9820af8c357cffc60775e71fcc732d
+  appDetailedRequestLogging 7fb927a53c575f46fcfeebea3ef00598
+  appHost 312c74b8b8b0da2c03ffca2a1980d66c
+  appIpFromHeader 8edbd082e062fb86a45ea94ab3832e04
+  appMutableStatic 7123b5a3ccefeb0750baf8e72b849507
+  appPort b8d22260a4c4638e12d48d146bf68d27
+  appReloadTemplates d5336ef68634287a77094e4044a1373f
+  appRoot 7691b1fec85d1f988ca755e6b1db1e85
+  appShouldLogAll fb1a2c001862447a2946fc3a9de4ed22
+  appSkipCombining 8a2129431f6b0d24460798956e57e0e8
+  appStaticDir 007fc506ba9e62a180a7c59965abf4df
+  combineScripts bc2bc8d8fd1c04b7f1d7bbdffb48a530
+  combineSettings 9fc77260f22f1cf375fb4a249235657e
+  combineStylesheets ca7b0c5cf8b8c315b2acca92c5293ea9
+  compileTimeAppSettings b1a31bbf58c631423c95d9eb6506c747
+  configSettingsYmlBS cd20da7c603dcf33ef88685306bff580
+  configSettingsYmlValue 4006d78197c5a7fa9f2d32c1232d741f
+  widgetFile e8f15ff11a64e6bd32c91559808da8c0
+  widgetFileSettings c61b01d0ca7a7669825d9801dce5d996
+import  -/  Settings.StaticFiles cfaae35526bd5c22baf5c184ba25cc55
+  cloyster_jpg 7751177108f730b988366efa6630a3ef
+  css_bootstrap_css 398f43fe1bd387580ee2c842266e4bd8
+  fonts_glyphicons_halflings_regular_eot d914b727f0cf3576971537f413b41a2a
+  fonts_glyphicons_halflings_regular_svg f41e5afe9f3e419d6be7f13bdd3b041f
+  fonts_glyphicons_halflings_regular_ttf aa4c1342176de6a89987ad87e1308c78
+  fonts_glyphicons_halflings_regular_woff 8823b3ebf357a9c8467bced852caa632
+  psyduck_jpg 59bf7f3bb83081a5487d77ca28619d2d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 3876ddae268b9e4fd3619d1fe120f418
+import  -/  ghc-prim-0.5.0.0:GHC.Types 39f94fe158a9efa70c6b9005a1d10fca
+import  -/  hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Class 51bae8920c1e25898e20937b63a79d7e
+import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client d5857d71323fcfb2c2d6cca6d4534b6a
+import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Request 4c6632ad3941ad6f0df212041c7dd137
+import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Types ae4d959013ad7c1c4df55801f1567682
+import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Header 0de7edeb238972ae0ca055e876f11353
+import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Method 4c3025926a020fcf7a0a7b6a22899892
+import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Status e6f2a3b7d6a217a5834dc4e958d88fe2
+import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.URI 3c0e0685e1cdd1be69e30e04f736b0b0
+import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Version 4f414d951cf6061b8f5d6fdb12c19678
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 14b729014e67a66e02e24a124bab6dfc
+import  -/  monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control 283a4eaf1bc1e118c33f112f6e7eebf1
+import  -/  monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger f3e8444de07de57de8a08b617a89b946
+import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Containers 2853e58c1611492e106832e051e69ae2
+import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.MonoTraversable 4aa2d934c8674fd5959b8692d072c895
+import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.NonNull a1daa496a897a885bc261485d459364d
+import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Sequences e470d4b03eb7a0ccb7d8103d388d881b
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.BRef 44ad88bf94d5c2bb1f2d6dd8507b52b7
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Class 189ebc82a1e8ae2025f55972bf582298
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.DLList cceb4ef2fcc79e6cd52d85d1a14cd95a
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.Deque 99c8b5c0dfd50d546ccb5ce5a009a8dd
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.PRef b64df58e706add76dbad7d1ef7ea0f6a
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.SRef 9d2611491e43114260e773d5c19f38f9
+import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.URef 285ae1e12e2895d40eaf22f3a6ca8889
+import  -/  path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5:Web.PathPieces 3c36bfc2f20e626adaa0dbda2c26d2e5
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistConfig d778f2eefe62d6055c660d5b1b347d89
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b6facaf1cf4bc1002b2955c55b3cdc6f
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistField 74f8257df2eab12fbbadf1cf109811a8
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistStore 1cc174615a83a94ffa2dad503704ce9b
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Migration eeffa6f6cb0609b926b4e06fab243592
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types a69ef0d69ad4f67646ee5f9099b71b4e
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types.Internal 9c6c4bc426be14b448509df93d3547fb
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Types.Base ddbceefc9b86a76ab45e0bab9a0ec8c7
+import  -/  persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH e09e8dfd161278f38ceaceadb5483043
+import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 7837fbdfc72b0120fa74b13b48373c88
+import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.MutVar fd8ff2fe06b1a93234f3dfe83fc01a6c
+import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource 62a99f2d846db41a261bb92fc1851a66
+import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal cf4e2786055c50184946598c24552716
+import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Data.Acquire.Internal e459212fea851252a57d5830a2f78e76
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Cassius 709c449d0ff6ad0c1074897157a8964f
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet 59b9703276881692902604822dea0dc5
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css dd81a5103a05b4fa107f03b704dce741
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Julius 6cb1507421538ee34214ffb716596e37
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Lucius c9469ee812bb7194f6fa1dc72181ba21
+import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Shakespeare.I18N 44ce675a1a97bbd6d96e61bd0104e6f5
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 5809dbeefea22a3458232277c634c6d3
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 538b691bb4f5e8c88e830078dfd4dfab
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 9fce78f1eec1b6564300c19172cc0651
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.POSIX 02b47c8cc5a7c7e43efefcc446049971
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.UTC c9186cea48da05cf23125aa26509dcfc
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse 59f824d1bd2249461c287883cb87d7ea
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class ceafb012beb5b69968c2c84b20695d53
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader 4712aae943d9e8956cfd5072dd1b87e5
+import  -/  transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH:Control.Monad.Base 018dfea910422eaf9b6688f500ffe829
+import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base b22a3a6467151db3f0e41923b338dbb7
+import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet 6d6841c5895987e88ee06fcc1ac5f298
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 63ff1669b3f5bdf4f0a3f123a5151a32
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base a0f3b7e938340caa0c7dddf478eb3307
+import  -/  wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C:Network.Wai 22a26cdb2ecc6514b215f86b8e2d17ea
+import  -/  yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL:Data.Yaml.Config 46ad7e7d2a5965349f6181741be72d69
+import  -/  yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max:Yesod.Default.Config2 973789887ef087e3dda6552a3b6686da
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler 4b2ff4fdba4ed12ac999a02136d66ab1
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Yesod dc35a5bdc07b8e48a538957cc413edc1
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Content 139aefc2672ae5eb76e0b376e09b6339
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Handler 3d20c5e66378ecdf3c20b0ead6eac5df
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp 3387ac019aab0ff64c707032478f6850
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.Session 23456e64259704fe9fba1caf96a3fe56
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.TH 934f6d85ad9bc168b7e3ec511b565ce3
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.Util c5e0433ee3cafd062afbc5eac40a1026
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 850af6a923eca0c28746c7c972883cdd
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Widget 0fdeed4a224edeada4e540b935bcdc21
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Routes.Class 1ff8c44239847f88ba9e34b380a0df08
+import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Routes.Parse 4b9de11118f49962391afaa5ee55042d
+import  -/  yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU:Yesod.Form.Fields 5c400fdc8a4d1765fdfb7399f2e43a7c
+import  -/  yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU:Yesod.Form.Types e1b09a7f42b7b22202b1bdd49c199c59
+import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc:Yesod.Persist.Core f12ec7e4082c6ecaada745140ab33a5e
+import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static f04923544c94021b30ff15b84da7cb21
+89c7e5998b5d23c3468ef9540449ff4a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Import.$trModule2
+                   Import.$trModule1) -}
+4b5840a9a2dde989e9409584f7514404
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Import"#) -}
+2eb0ab847b727d0ae07365b74933a590
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

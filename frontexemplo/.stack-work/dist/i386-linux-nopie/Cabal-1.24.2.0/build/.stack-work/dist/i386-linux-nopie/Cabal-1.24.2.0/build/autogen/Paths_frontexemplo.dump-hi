@@ -1,0 +1,504 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-11 04:36:28.565880792 UTC
+
+interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Paths_frontexemplo 8002
+  interface hash: 16834dde3240673d8fbada8e378e21ca
+  ABI hash: dd6f5381eb0fa5ee4fc01625a9efb506
+  export-list hash: 2252d2b9f203cf5819f20ae8363fd5b3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7262be47c200264e732682e91c6ca850
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_frontexemplo.getBinDir
+  Paths_frontexemplo.getDataDir
+  Paths_frontexemplo.getDataFileName
+  Paths_frontexemplo.getDynLibDir
+  Paths_frontexemplo.getLibDir
+  Paths_frontexemplo.getLibexecDir
+  Paths_frontexemplo.getSysconfDir
+  Paths_frontexemplo.version
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Exception 8f792280ba8aa20ba213092910a8443b
+import  -/  base-4.9.1.0:Control.Exception.Base 04b3d24edefa87969e5643db38c8bde4
+import  -/  base-4.9.1.0:Data.Version 37879598a9b0de444d0314fc00e33afa
+import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
+import  -/  base-4.9.1.0:GHC.IO 52d03c492b6995b59400be3f39069a23
+import  -/  base-4.9.1.0:GHC.IO.Exception 4211f9923b6fa6b42fee3e98429fd0c1
+import  -/  base-4.9.1.0:Prelude 4d7ee35012f77eace89fe02e109def8f
+import  -/  base-4.9.1.0:System.Environment d0a9b7e14f47b0cdd8640cdbb63c0ab2
+import  -/  ghc-prim-0.5.0.0:GHC.Types 39f94fe158a9efa70c6b9005a1d10fca
+addDependentFile "/home/rafael/.stack/programs/i386-linux/ghc-nopie-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/i386-linux-nopie/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+93b8355bb47b6dd2f359ede49be2daa7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_frontexemplo.$trModule2
+                   Paths_frontexemplo.$trModule1) -}
+b7372e2603359e84db1cd7ef1aff1fe4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Paths_frontexemplo"#) -}
+54709aed68cc597d790dce87e41ae9d3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
+a1a25ec9319e9cffbc593dfa4b786c2e
+  datadir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/share/i386-linux-ghc-8.0.2/frontexemplo-0.0.0"#) -}
+27faa979b7a07ed9e647faef324c6a00
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+bfb2d62a230cfcf3252fdb9fd5debc04
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getBinDir4
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_frontexemplo.getBinDir2
+                   eta) -}
+55dd324b232e335f8c9e6c05510c2c98
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e' -> (# eta, Paths_frontexemplo.getBinDir3 #) }) -}
+c9f6259b9382ccff8d5a54b765f22526
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/bin"#) -}
+4c6c9f43ac920a71ce61a3d6ef1fea92
+  getBinDir4 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getBinDir5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+1a586b2848aa0f9b72289ab12ebd23e3
+  getBinDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getBinDir6) -}
+3e8dcea196c062ed68c1d874a587493e
+  getBinDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_bindir"#) -}
+73637b509efdfaf62dadaf4efc223441
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+4e4c4f6c7d55c68b50de98785c5677ec
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getDataDir_ds
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                           e1 of wild {
+                      GHC.Base.Nothing
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.SomeException
+                           @ GHC.Base.String
+                           e1
+                           eta1
+                      GHC.Base.Just e' -> (# eta1, Paths_frontexemplo.datadir #) })
+                   eta) -}
+8ebe541a56b6fba1b0ea648a6a891b73
+  getDataDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getDataDir3) -}
+33ec06d1803c84d0ce88d0fd353321d8
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_datadir"#) -}
+c50414495b1a612be4227e44a26e3d2d
+  getDataDir_ds :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getDataDir2
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+c7791ecdce72e42d2ccc0cb5dd5bc8e4
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+eb1dc28986c98939300582bc6882ab03
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_frontexemplo.getDataDir_ds
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                        Paths_frontexemplo.getDataFileName2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString# "/"# name) #) }) -}
+55b44dd8c2e86c15a583eb899b83fbb0
+  getDataFileName2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e' -> (# eta, Paths_frontexemplo.datadir #) }) -}
+d75d5ce7bf575076f6d6800a5adff3d2
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+a5c218c8a7675965fc3334b84bfc8106
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getDynLibDir4
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_frontexemplo.getDynLibDir2
+                   eta) -}
+1de3d960784fa6b05d4d62815d1fb9b7
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e'
+                   -> (# eta, Paths_frontexemplo.getDynLibDir3 #) }) -}
+de6eb600c95c5081bd109ba934d7bb07
+  getDynLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/lib/i386-linux-ghc-8.0.2"#) -}
+1e5b12364b288505b7bd87f75d53a726
+  getDynLibDir4 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getDynLibDir5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+1f0587db7f8be280bba81e443d6607eb
+  getDynLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getDynLibDir6) -}
+02e2aca806ebc5ca71138551d494eb48
+  getDynLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_dynlibdir"#) -}
+872b7479a29688e8a5d20ef55257d02e
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+a793f4101800f288ceccae289c824742
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getLibDir4
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_frontexemplo.getLibDir2
+                   eta) -}
+e5837a5d6c3d7e9632183b6f3961467b
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e' -> (# eta, Paths_frontexemplo.getLibDir3 #) }) -}
+e383a6bcebc615546b5db276b1eeacd2
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/lib/i386-linux-ghc-8.0.2/frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
+c72ea267761889b5f239c71a315da246
+  getLibDir4 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getLibDir5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+c9f133f3ae834604df13041681e0d74f
+  getLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getLibDir6) -}
+b6795995b2a796d866afaa1cdb71d882
+  getLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_libdir"#) -}
+81d469510c95993664bf3c70ab4ce5d6
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+9d94f9d362eb267ba58bf297db9353d1
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getLibexecDir4
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_frontexemplo.getLibexecDir2
+                   eta) -}
+c3c8c330c470ac1078ad3baaf81b0ff5
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e'
+                   -> (# eta, Paths_frontexemplo.getLibexecDir3 #) }) -}
+8c02b5089f7c42fecf5daf8a886a70a8
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/libexec"#) -}
+99c3ec24f2b217c8b59c488217733905
+  getLibexecDir4 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getLibexecDir5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+f8d60cc2d4098af750c42b44f835141f
+  getLibexecDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getLibexecDir6) -}
+3010333482caeed13ce5fafdc29a2a13
+  getLibexecDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_libexecdir"#) -}
+74169257ec1fffdd857996cec14fe2e6
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_frontexemplo.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+f0255c19933ae240e1e09ccc50c7ffee
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_frontexemplo.getSysconfDir4
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_frontexemplo.getSysconfDir2
+                   eta) -}
+a303743a589821e49f2fbc8c0724b30a
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Exception.$fExceptionIOException_$cfromException
+                        e1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        e1
+                        eta
+                   GHC.Base.Just e'
+                   -> (# eta, Paths_frontexemplo.getSysconfDir3 #) }) -}
+426e6840d0c3ab85c2b4fcfb956e82b4
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/rafael/trabalhohs/frontexemplo/.stack-work/install/i386-linux-nopie/lts-9.8/8.0.2/etc"#) -}
+24049a04e98f42bfed071a6bd1d8d8f4
+  getSysconfDir4 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_frontexemplo.getSysconfDir5
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+ded0ca95ccfe707b13c2da357fa5d9b5
+  getSysconfDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_frontexemplo.getSysconfDir6) -}
+5201bf8656a442924427fbfe366e83b6
+  getSysconfDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "frontexemplo_sysconfdir"#) -}
+f0de5f404a1b738ca0db83f003f5d500
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_frontexemplo.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+0825347cec84573fedcd836acbcd3856
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_frontexemplo.version4
+                   Paths_frontexemplo.version2) -}
+e997dc4e900de74009a5242631b78696
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_frontexemplo.version4
+                   Paths_frontexemplo.version3) -}
+1e163fdb2307d794788b8f5e36e03740
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_frontexemplo.version4
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+1caea29d9f72a3d1dc2ef29f0e468044
+  version4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
