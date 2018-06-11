@@ -10,7 +10,9 @@
 /lista/treinador               ListaTreinadorR   GET
 
 /pokemon                       PokemonR        GET POST
-/pokedex/#PokemonId          PokedexR        GET
+/pokedex/#PokemonId            PokedexR        GET
+/filme                         FilmeR          GET POST
+/filme/#FilmeId                FilmesR         GET
 
 /usuario/cadastrar         CadUsuarioR      GET POST
 /usuario/#UsuarioId/perfil PerfilUsuarioR   GET

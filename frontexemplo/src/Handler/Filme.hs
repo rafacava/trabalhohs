@@ -9,8 +9,8 @@ module Handler.Filme where
 import Import
 import Database.Persist.Postgresql
 
-formArquivo :: Form (Text,Int,Text,Int,Maybe FileInfo)
-formArquivo = renderDivs $ (,,,,)
+formArquivof :: Form (Text,Int,Text,Int,Maybe FileInfo)
+formArquivof = renderDivs $ (,,,,)
     <$> areq textField "Nome: " Nothing
     <*> areq intField "Ano: " Nothing
     <*> areq textField "Genero: " Nothing
@@ -24,7 +24,7 @@ formArquivo = renderDivs $ (,,,,)
 
 getFilmeR :: Handler Html
 geFilmeR = do 
-    (widget,enctype) <- generateFormPost formArquivo
+    (widget,enctype) <- generateFormPost formArquivof
     defaultLayout $ do
         [whamlet|
             <form action=@{FilmeR} method=post enctype=#{enctype}>
@@ -34,27 +34,27 @@ geFilmeR = do
 
 postFilmeR :: Handler Html 
 postFilmeR = do 
-    ((res,_),_) <- runFormPost formArquivo
+    ((res,_),_) <- runFormPost formArquivof
     case res of 
-        FormSuccess (nome,ger,tip,nivel,Just arq) -> do 
-            pid <- runDB $ insert $ Filme nome ano gen durac (Just $ (fileName arq))
+        FormSuccess (nome,ano,gen,durac,Just arq) -> do 
+            fid <- runDB $ insert $ Filme nome ano gen durac (Just $ (fileName arq))
             liftIO $ fileMove arq ("static/" ++ (unpack $ fileName arq))
-            redirect (FilmesR pid)
-        FormSuccess (nome,ger,tip,nivel,Nothing) -> do 
-            pid <- runDB $ insert $ Filme nome ano gen durac Nothing
-            redirect (FilmesR pid)
+            redirect (FilmesR fid)
+        FormSuccess (nome,ano,gen,durac,Nothing) -> do 
+            fid <- runDB $ insert $ Filme nome ano gen durac Nothing
+            redirect (FilmesR fid)
         _ -> redirect HomeR
 
 
 getFilmesR :: FilmeId -> Handler Html
-getFilmesR pid = do 
-    fm <- runDB $ get404 pid
+getFilmesR fid = do 
+    fm <- runDB $ get404 fid
     imagem <- return $ posterFilme fm
     staticDir <- return $ "../static/"
     defaultLayout $ do 
         [whamlet|
             <h1>
-                Nome do filme #{filmeNome fm}
+                Nome: #{filmeNome fm}
             <h2>
                 Ano: #{show $ filmeAno fm}
             <h2>

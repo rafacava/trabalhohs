@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0306d9e8b80007097eeae3a66dba00caee40c1198c59b4b13285b21a65db65d5
+-- hash: 25bf0f72c2f2994636067b834fcae9ec0943bf8441591ef371fc252ec69b6d5d
 
 name:           frontexemplo
 version:        0.0.0
@@ -70,6 +70,7 @@ library
       Application
       Foundation
       Handler.Common
+      Handler.Filme
       Handler.Home
       Handler.Login
       Handler.Pokemon
