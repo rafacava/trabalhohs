@@ -1,0 +1,20 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/           HomeR       GET
+
+/treinador                     TreinadorR        GET POST
+/perfil/treinador/#TreinadorId PerfilR           GET POST
+/lista/treinador               ListaTreinadorR   GET
+
+/pokemon                       PokemonR        GET POST
+/pokedex/#PokemonId          PokedexR        GET
+
+/usuario/cadastrar         CadUsuarioR      GET POST
+/usuario/#UsuarioId/perfil PerfilUsuarioR   GET
+
+/login                     LoginR           GET POST
+/logout                    LogoutR          POST
+/admin                     AdminR           GET

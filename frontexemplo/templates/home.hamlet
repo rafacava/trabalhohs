@@ -1,0 +1,13 @@
+<h1>
+    SISTEMA GERENCIADOR DE TREINADORES POKEMON (SIGTP)
+    
+<ul>
+    <li> <a href=@{TreinadorR}> Cadastro de Treinadores
+    <li> <a href=@{PokemonR}> Cadastro de Pokemon
+    <li> <a href=@{ListaTreinadorR}> Lista de Treinadores
+
+<br>
+<img src=@{StaticR psyduck_jpg}>
+
+<form action=@{LogoutR} method=post>
+    <input type="submit" value="Logout">

@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+
+li{
+	display: inline;
+	float: left;
+}
+
+img{
+	display: block;
+}
