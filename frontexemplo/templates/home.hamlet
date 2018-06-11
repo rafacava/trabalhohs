@@ -17,13 +17,7 @@
 
         <br>
 
-        <div class="row">
-        <div class="columns small-6">6 columns
-        <div class="columns small-6">6 columns
-        <div class="row">
-        <div class="columns medium-6 large-4">12/6/4 columns
-        <div class="columns medium-6 large-8">12/6/8 columns
-
+        
         <img src=@{StaticR psyduck_jpg}>
         <form action=@{LogoutR} method=post>
             <input type="submit" class="btn btn-danger" value="Logout">
