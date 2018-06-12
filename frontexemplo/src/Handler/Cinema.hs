@@ -14,7 +14,7 @@ formArquivo = renderDivs $ (,,,,)
     <$> areq textField "Nome: " Nothing
     <*> areq intField "telefone: " Nothing
     <*> areq textField "Local: " Nothing
-    <*> areq intField "Duração: " Nothing
+    <*> areq intField "Numero de Salas: " Nothing
     <*> aopt fileField FieldSettings{fsId=Just "hident4",
                                 fsLabel="Imagem do cinema: ",
                                 fsTooltip= Nothing,
@@ -92,7 +92,7 @@ getListaCinemaR = do
                             Telefone
                         
                         <th>
-                            Genero
+                            Local
                         
                         <th>
                             
