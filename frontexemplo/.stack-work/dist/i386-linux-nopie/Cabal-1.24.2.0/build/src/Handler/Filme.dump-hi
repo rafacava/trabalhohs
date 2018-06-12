@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 05:16:57.887093416 UTC
+2018-06-12 05:34:20.860691123 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Filme 8002
-  interface hash: 1021cb932ba1a6647a6b3bbaac9405f3
-  ABI hash: d994dd5515c1210a47f48ae1be0cd82b
-  export-list hash: fd7b343cd2432ea4e5a84547ab7ee07c
-  orphan hash: fbe221297b91fd29093c9ac25c39fbed
+  interface hash: 052e842647bcb677e679ae74d9057c54
+  ABI hash: 45f411899e683955c5c92b43c069368a
+  export-list hash: 413dca10a4a780409803774de2401bc6
+  orphan hash: 93daf67bd486dd1040258a83c1736cd1
   flag hash: 581473958fe447a23d4656a7119025fe
   sig of: Nothing
   used TH splices: True
@@ -17,6 +17,7 @@ exports:
   Handler.Filme.getFilmesR
   Handler.Filme.getListaFilmeR
   Handler.Filme.postFilmeR
+  Handler.Filme.postFilmesR
 module dependencies: Foundation Import Import.NoFoundation Model
                      Settings Settings.StaticFiles
 package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
@@ -348,12 +349,13 @@ import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze.Internal 0bb5ddca2299bfdcfdde0c32d70b90c0
 import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 1601f2691692d787667a4c2d73c2ba7a
-import  -/  Foundation 517ed7178658ddc06b6c6e1bfe84b44e
+import  -/  Foundation 677f13af8b94ceb2d89fb30bf6fcf067
   FilmeR d5779136ae0fda42da662c4401dc7277
   FilmesR 4cfddefe7ba69dbf24121bc57d25a573
   Form 319ffa1e91f9fa43778a0a6a8cae21de
   Handler e5bd6804d648677447a63715502e8ebc
   HomeR d3428ba659d0223265044ee92e8382d5
+  ListaFilmeR f2dfee9cb501fc6559593c2b588dfc1a
 import  -/  Import 42b68c3273ca838a036a462e3e3c245f
   exports: 0744690d7606c2139a6a0475e9d11a62
 import  -/  Model 10863ee26288ab2abd6d1212dcb65762
@@ -403,19 +405,19 @@ import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc
                      @ GHC.Types.IO
                      @ site
                      Handler.Filme.$s$fApplicativeHandlerT_$dMonad) -}
-768eafb0f73ad121bb6b4ddbd4894be6
+b859b10274a88d697efcf0d1c3ab0db9
   $s$fApplicativeHandlerT_$creturn ::
     a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
      Unfolding: InlineRule (1, True, True)
                 (\ @ site
                    @ a
-                   (eta48 :: a)
-                   (eta49 :: Yesod.Core.Types.HandlerData
+                   (eta52 :: a)
+                   (eta53 :: Yesod.Core.Types.HandlerData
                                site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta50 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (GHC.Base.returnIO @ a eta48) `cast` (GHC.Types.N:IO[0] <a>_R)
-                   eta50)
+                   (eta54 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta52) `cast` (GHC.Types.N:IO[0] <a>_R)
+                   eta54)
                   `cast`
                 (forall (site :: <*>_N) (a :: <*>_N).
                  <a>_R
@@ -443,7 +445,7 @@ fd4080d1328503bae6d546322e3763a7
                      @ GHC.Types.IO
                      @ site
                      Handler.Filme.$s$fApplicativeHandlerT_$dMonad) -}
-58debcf3ade24b5e57138b600ac86b55
+c06dc63a3012aaafe0393abf3a54c80d
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -451,7 +453,7 @@ fd4080d1328503bae6d546322e3763a7
      Unfolding: InlineRule (0, True, True)
                 (Handler.Filme.$s$fFunctorAForm_$s$fMonadHandlerT
                    @ Foundation.App) -}
-0d5066972b6f48b81c6f66cb1ab7121d
+36059e7f7ee851117b3a63b94a8750ac
   $s$fFunctorAForm_$s$fMonadHandlerT ::
     GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -471,19 +473,19 @@ fd4080d1328503bae6d546322e3763a7
                      Handler.Filme.$s$fApplicativeHandlerT_$dMonad)
                   (Handler.Filme.$s$fApplicativeHandlerT_$creturn @ site)
                   (Handler.Filme.$s$fFunctorAForm_$s$fMonadHandlerT_$cfail @ site) -}
-8241990cf115a4e56f4953398cee2260
+3e46584fae5cab9e058c28d9193e3952
   $s$fFunctorAForm_$s$fMonadHandlerT_$cfail ::
     GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
   {- Arity: 1, Strictness: <B,U>x,
      Unfolding: InlineRule (1, True, False)
-                (\ @ site @ a (eta48 :: GHC.Base.String) ->
+                (\ @ site @ a (eta52 :: GHC.Base.String) ->
                  Yesod.Core.Types.$fMonadHandlerT1
                    @ site
                    @ GHC.Types.IO
                    @ a
                    Handler.Filme.$s$fApplicativeHandlerT_$dMonad
-                   eta48) -}
-66a6018571dad4164c259dbbebf050c1
+                   eta52) -}
+738a51fa4af079e8148e0069f89cf07c
   $s$fMonadBasebHandlerT ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -501,18 +503,18 @@ fd4080d1328503bae6d546322e3763a7
                      @ site)
                   (Handler.Filme.$s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase
                      @ site) -}
-8a8a7260bf9352babeeeae183e33fbad
+09ef2be6f08f96da0682c6318850d966
   $s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase ::
     GHC.Types.IO α -> Yesod.Core.Types.HandlerT site GHC.Types.IO α
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
      Unfolding: InlineRule (1, True, False)
-                (\ @ site @ α (eta48 :: GHC.Types.IO α) ->
+                (\ @ site @ α (eta52 :: GHC.Types.IO α) ->
                  let {
-                   eta49 :: GHC.Types.IO α = GHC.Base.id @ (GHC.Types.IO α) eta48
+                   eta53 :: GHC.Types.IO α = GHC.Base.id @ (GHC.Types.IO α) eta52
                  } in
                  (\ (ds5 :: Yesod.Core.Types.HandlerData
                               site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
-                  eta49)
+                  eta53)
                    `cast`
                  (Sym (Yesod.Core.Types.N:HandlerT[0]
                            <site>_N <GHC.Types.IO>_N <α>_N))) -}
@@ -528,7 +530,7 @@ df70eee12997d3926ab60a83f9eddde5
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 (\ @ site -> GHC.Base.$fMonadIO) -}
-1b15385225833c97e25b9164c0f448ee
+6b377e3aeb291719d193b93c73974d24
   $s$fMonadBasebHandlerT_$s$fMonadIOHandlerT_$cp1MonadLogger ::
     GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
@@ -563,7 +565,7 @@ d6d44bb18db2e6eb590aa8da76ec4f5f
                   Control.Monad.Catch.$fMonadThrowIO,
                   Control.Monad.Base.$fMonadBaseIOIO,
                   Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
-c11d9237f4d2d384cd42aba4c909dfd4
+3b9a045aadfc77ff6be10a7f23401946
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -574,7 +576,7 @@ c11d9237f4d2d384cd42aba4c909dfd4
                      @ site)
                   (Handler.Filme.$s$fMonadBasebHandlerT_$s$fMonadBasebHandlerT_$cliftBase
                      @ site) -}
-d83dd4bf2f1ed9d899be21e7975731e9
+754415649a77a503c4a2019903d39479
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -585,7 +587,7 @@ d83dd4bf2f1ed9d899be21e7975731e9
                      @ site)
                   (Handler.Filme.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT_$cthrowM
                      @ site) -}
-d9ea72331b9255871061f038734eceda
+ed8d582b92776763d5d4c7298dd6ad09
   $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT_$cthrowM ::
     GHC.Exception.Exception e =>
     e -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
@@ -595,13 +597,13 @@ d9ea72331b9255871061f038734eceda
                 (\ @ site
                    @ e
                    @ a
-                   (eta48 :: GHC.Exception.Exception e)
-                   (x9 :: e)
-                   (eta49 :: Yesod.Core.Types.HandlerData
+                   (eta52 :: GHC.Exception.Exception e)
+                   (x10 :: e)
+                   (eta53 :: Yesod.Core.Types.HandlerData
                                site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta50 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (GHC.IO.throwIO @ e @ a eta48 x9) `cast` (GHC.Types.N:IO[0] <a>_R)
-                   eta50)
+                   (eta54 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.IO.throwIO @ e @ a eta52 x10) `cast` (GHC.Types.N:IO[0] <a>_R)
+                   eta54)
                   `cast`
                 (forall (site :: <*>_N) (e :: <*>_N) (a :: <*>_N).
                  <GHC.Exception.Exception e>_R
@@ -627,7 +629,7 @@ d9ea72331b9255871061f038734eceda
                      @ GHC.Types.IO
                      @ site
                      Handler.Filme.$s$fMonadHandlerHandlerT1) -}
-4a966bef1143bad301ab9b7dc5c77320
+62dbb5f139cfbb12013368b0cd2aa271
   $s$fMonadResourceHandlerT ::
     Control.Monad.Trans.Resource.Internal.MonadResource
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
@@ -648,28 +650,28 @@ d9ea72331b9255871061f038734eceda
                      Control.Monad.IO.Class.$fMonadIOIO
                      Control.Monad.Base.$fMonadBaseIOIO
                      Control.Monad.Catch.$fMonadThrowIO) -}
-b67b9f0a3f98fe075b1c0d00f560b08e
+dd8669e9554d09fd3c5f0339f03adb00
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp1MonadResource ::
     Control.Monad.Catch.MonadThrow
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Filme.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadThrowHandlerT -}
-be49fc54256fd20f55b7a75b82f99207
+d992ec0a453f22d0f50afb77ed37dd4e
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp2MonadResource ::
     Control.Monad.IO.Class.MonadIO
       (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Filme.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT -}
-b5b72a8b33ce205dca0becf84f336684
+aa3b34a75b622f3a7cce7dd0e0fb87ed
   $s$fMonadResourceHandlerT_$s$fMonadResourceHandlerT_$cp4MonadResource ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO (Yesod.Core.Types.HandlerT site GHC.Types.IO)
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Filme.$s$fMonadBasebHandlerT -}
-22892a0561da081b409c112c30c7810b
+2a1c6a784b5e4937310702fcd11afa1b
   $stextField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -712,7 +714,7 @@ e3af5d493787416d7f6e2aa94594a12c
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-6ca1dcc442a552db34e01d3323df767f
+b355b73a4bb183e01aa41823e629a96c
   formArquivo ::
     Foundation.Form
       (Data.Text.Internal.Text, GHC.Types.Int, Data.Text.Internal.Text,
@@ -739,7 +741,7 @@ e3af5d493787416d7f6e2aa94594a12c
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-cd2194af03103ca256edd562d1206ec7
+01b45b560cf9edd57f1175ebcfb83a2b
   formArquivo1 ::
     Text.Blaze.Internal.Markup
     -> (GHC.Base.Maybe
@@ -800,7 +802,7 @@ f8409ea370de0a342969432918632f83
                    (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))],
           Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)
   {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
-e5dd6bdcb2f34a462655394d9d0fa2e2
+fb4fdd8eb87057c834ac75056c95c7b8
   getFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -812,7 +814,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-51a05b066b08f3a4f50472723a76fa0d
+be765c230dd3598fdd990e5543444def
   getFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -836,19 +838,19 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                  case ipv1 of wild { (,) widget enctype ->
                  ((Foundation.$fYesodApp_$cdefaultLayout
                      (let {
-                        x9 :: GHC.Prim.State# GHC.Prim.RealWorld
-                              -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-                                    ((),
-                                     Yesod.Core.Types.GWData
-                                       (Yesod.Routes.Class.Route
-                                          (Yesod.Core.Class.Handler.HandlerSite
-                                             (Yesod.Core.Types.WidgetT
-                                                Foundation.App GHC.Types.IO)))) #)
+                        x10 :: GHC.Prim.State# GHC.Prim.RealWorld
+                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     ((),
+                                      Yesod.Core.Types.GWData
+                                        (Yesod.Routes.Class.Route
+                                           (Yesod.Core.Class.Handler.HandlerSite
+                                              (Yesod.Core.Types.WidgetT
+                                                 Foundation.App GHC.Types.IO)))) #)
                           {- Arity: 1, Strictness: <S,U>,
                              Unfolding: InlineRule (1, True, False)
                                         (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                                          let {
-                                           eta48 :: Text.Blaze.Html.Html
+                                           eta52 :: Text.Blaze.Html.Html
                                            = case enctype of wild1 {
                                                Yesod.Form.Types.UrlEncoded
                                                -> Yesod.Form.Types.$fToMarkupEnctype4
@@ -863,7 +865,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                            -> [(Data.Text.Internal.Text,
                                                                 Data.Text.Internal.Text)]
                                                            -> Data.Text.Internal.Text) ->
-                                                 eta48)
+                                                 eta52)
                                                   `cast`
                                                 (Sym (Yesod.Core.Types.N:Body[0]
                                                           <Yesod.Routes.Class.Route
@@ -914,7 +916,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                              <Foundation.App>_N)))_R)_R) #)) -}
                         = \ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                           let {
-                            eta48 :: Text.Blaze.Html.Html
+                            eta52 :: Text.Blaze.Html.Html
                             = case enctype of wild1 {
                                 Yesod.Form.Types.UrlEncoded -> Yesod.Form.Types.$fToMarkupEnctype4
                                 Yesod.Form.Types.Multipart -> Yesod.Form.Types.$fToMarkupEnctype1 }
@@ -926,7 +928,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                  (\ (ds6 :: Yesod.Routes.Class.Route Foundation.App
                                             -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                                             -> Data.Text.Internal.Text) ->
-                                  eta48)
+                                  eta52)
                                    `cast`
                                  (Sym (Yesod.Core.Types.N:Body[0]
                                            <Yesod.Routes.Class.Route Foundation.App>_R))
@@ -982,15 +984,15 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                 Foundation.App GHC.Types.IO)))) #)
                           {- Arity: 2, Strictness: <L,A>,
                              Unfolding: InlineRule (1, True, True)
-                                        (\ (eta48 :: Yesod.Core.Types.HandlerData
+                                        (\ (eta52 :: Yesod.Core.Types.HandlerData
                                                        Foundation.App
                                                        (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                                           (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                                         x9 eta49) -}
-                        = \ (eta48 :: Yesod.Core.Types.HandlerData
+                                           (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                         x10 eta53) -}
+                        = \ (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
-                          x9
+                          x10
                       } in
                       let {
                         m2 :: Yesod.Core.Types.HandlerData
@@ -1001,7 +1003,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                       (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 1, Strictness: <L,1*U(U,U,U,A,U)>,
                              Unfolding: InlineRule (1, True, False)
-                                        (\ (eta48 :: Yesod.Core.Types.HandlerData
+                                        (\ (eta52 :: Yesod.Core.Types.HandlerData
                                                        Foundation.App
                                                        (Yesod.Core.Types.MonadRoute
                                                           GHC.Types.IO)) ->
@@ -1025,7 +1027,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                 (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                                                      <GHC.Types.IO>_N
                                                                      <Foundation.App>_N))_R)_R)_R)_R))
-                                           (case eta48 of wild1 { Yesod.Core.Types.HandlerData ds6 ds7 dt ds8 dt1 ->
+                                           (case eta52 of wild1 { Yesod.Core.Types.HandlerData ds6 ds7 dt ds8 dt1 ->
                                             Yesod.Core.Types.HandlerData
                                               @ Foundation.App
                                               @ ()
@@ -1035,7 +1037,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                               (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT2
                                                  @ Foundation.App)
                                               dt1 })) -}
-                        = \ (eta48 :: Yesod.Core.Types.HandlerData
+                        = \ (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
                           widget
@@ -1058,7 +1060,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                  (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                                       <GHC.Types.IO>_N
                                                       <Foundation.App>_N))_R)_R)_R)_R))
-                            (case eta48 of wild1 { Yesod.Core.Types.HandlerData ds6 ds7 dt ds8 dt1 ->
+                            (case eta52 of wild1 { Yesod.Core.Types.HandlerData ds6 ds7 dt ds8 dt1 ->
                              Yesod.Core.Types.HandlerData
                                @ Foundation.App
                                @ ()
@@ -1069,7 +1071,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                dt1 })
                       } in
                       let {
-                        lvl126 :: ()
+                        lvl130 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1078,7 +1080,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1108,10 +1110,10 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                         <Foundation.App>_N)))_R)_R)_R))
                                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            eta48
+                            eta52
                       } in
                       let {
-                        lvl127 :: ()
+                        lvl131 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1120,7 +1122,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1144,15 +1146,15 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                    <Foundation.App>_N)))_R)_R)_R))
                                  (Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            lvl126
+                            lvl130
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta48
+                            eta52
                       } in
                       let {
-                        lvl128 :: ()
+                        lvl132 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1161,7 +1163,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1185,15 +1187,15 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                    <Foundation.App>_N)))_R)_R)_R))
                                  (Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            lvl127
+                            lvl131
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta48
+                            eta52
                       } in
                       let {
-                        lvl129 :: ()
+                        lvl133 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1202,7 +1204,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1226,15 +1228,15 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                    <Foundation.App>_N)))_R)_R)_R))
                                  (Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            lvl128
+                            lvl132
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta48
+                            eta52
                       } in
                       let {
-                        lvl130 :: ()
+                        lvl134 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1243,7 +1245,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1256,14 +1258,14 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                               `cast`
                             (Sym (Yesod.Core.Types.N:WidgetT[0]
                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            lvl129
+                            lvl133
                               `cast`
                             (<()>_R
                              ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                            <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                            eta48
+                            eta52
                       } in
-                      (\ (eta48 :: Yesod.Core.Types.HandlerData
+                      (\ (eta52 :: Yesod.Core.Types.HandlerData
                                      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
                        Yesod.Core.Types.$fApplicativeWidgetT3
                          @ GHC.Types.IO
@@ -1286,12 +1288,12 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                                                                 <Foundation.App>_N)))_R)_R)_R))
                               (Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                         lvl130
+                         lvl134
                            `cast`
                          (<()>_R
                           ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                         eta48)
+                         eta52)
                         `cast`
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N))))
@@ -1302,7 +1304,7 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv } }) -}
-74b696fe4b43a803a9e8e49b88604bdf
+3239c91759e67ce190b81b8718eeab7c
   getFilmeR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1315,10 +1317,10 @@ e5dd6bdcb2f34a462655394d9d0fa2e2
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta48 :: Yesod.Core.Types.HandlerData
+                (\ (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Filme.getFilmeR11 eta49) -}
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Filme.getFilmeR11 eta53) -}
 8eb105f904e0d8cc10b3233f8748d7d1
   getFilmeR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -1393,7 +1395,7 @@ e65cfc05acf0e43c89c6419220e9629a
   getFilmeR14 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" method=\"post\" enctype=\""#) -}
-113d9f6671e7d0199e470e3c96b4a68c
+4dd405c74cd3fb69c7a87e3e7f775fe6
   getFilmeR15 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1406,10 +1408,10 @@ e65cfc05acf0e43c89c6419220e9629a
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta48 :: Yesod.Core.Types.HandlerData
+                (\ (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Filme.getFilmeR16 eta49) -}
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Filme.getFilmeR16 eta53) -}
 8aaac145007a830b8547fac32399ab2f
   getFilmeR16 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -1483,7 +1485,7 @@ e65cfc05acf0e43c89c6419220e9629a
 556b32087605fe3f6cce23e7da7057a9
   getFilmeR19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "\">"#) -}
-7c81e805937cd772d647e813e84edd6f
+868885e8b645252f86b2ad926320613f
   getFilmeR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1496,11 +1498,11 @@ e65cfc05acf0e43c89c6419220e9629a
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta48 :: Yesod.Core.Types.HandlerData
+                (\ (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Filme.getFilmeR3 eta49) -}
-9dfd22451021ee31e3b5c361936800e1
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Filme.getFilmeR3 eta53) -}
+386b18a5a336803b40d9f8e760962cc7
   getFilmeR20 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1514,10 +1516,10 @@ e65cfc05acf0e43c89c6419220e9629a
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 3,
      Unfolding: (\ (ds5 :: ())
-                   (eta48 :: Yesod.Core.Types.HandlerData
+                   (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# eta49, Handler.Filme.getFilmeR21 #)) -}
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta53, Handler.Filme.getFilmeR21 #)) -}
 eebb24f28e6a5c51ef881c52049a6b3d
   getFilmeR21 ::
     ((),
@@ -1600,7 +1602,7 @@ e114a104890a7eae35fe1580d77d018e
                    "\n\
                    \<input type=\"submit\" value=\"Cadastrar\">\n\
                    \</form>\n"#) -}
-8bf0fc17866f64cd0d1e97bfa972b4bf
+045e151ea80c62979dcc71fd84c45fdc
   getFilmeR27 ::
     Foundation.Handler (Foundation.Widget, Yesod.Form.Types.Enctype)
   {- Unfolding: (Yesod.Form.Functions.generateFormPost
@@ -1708,7 +1710,7 @@ f075ca51e352de3ba8a92267d146d587
 e64088269870a16296e9fced01cb5880
   getFilmeR6 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "<form action=\""#) -}
-fbb2813ae3ad4252d03f53ad500e3d26
+979890638d5198bb66e87248d5ef4d6f
   getFilmeR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1735,7 +1737,7 @@ fbb2813ae3ad4252d03f53ad500e3d26
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Filme.getFilmeR8) -}
-85b7849156c73cff2d078bf02cd61151
+471e6764fe85ca3c7da047e060eae2de
   getFilmeR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1746,21 +1748,21 @@ fbb2813ae3ad4252d03f53ad500e3d26
                                -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                                -> Data.Text.Internal.Text) ->
                  let {
-                   eta48 :: Data.Text.Internal.Text
+                   eta52 :: Data.Text.Internal.Text
                    = urender
                        Foundation.FilmeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))
                        (GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                  } in
                  let {
-                   eta49 :: Text.Blaze.Internal.ChoiceString
-                   = Text.Blaze.Internal.Text eta48
+                   eta53 :: Text.Blaze.Internal.ChoiceString
+                   = Text.Blaze.Internal.Text eta52
                  } in
                  let {
-                   eta50 :: Text.Blaze.Html.Html
-                   = Text.Blaze.Internal.Content @ () eta49 GHC.Tuple.()
+                   eta54 :: Text.Blaze.Html.Html
+                   = Text.Blaze.Internal.Content @ () eta53 GHC.Tuple.()
                  } in
                  let {
-                   lvl126 :: (Yesod.Routes.Class.Route Foundation.App
+                   lvl130 :: (Yesod.Routes.Class.Route Foundation.App
                               -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                               -> Data.Text.Internal.Text)
                              -> Text.Blaze.Html.Html
@@ -1768,14 +1770,14 @@ fbb2813ae3ad4252d03f53ad500e3d26
                    = \ (ds5 :: Yesod.Routes.Class.Route Foundation.App
                                -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                                -> Data.Text.Internal.Text) ->
-                     eta50
+                     eta54
                  } in
                  let {
-                   lvl127 :: Yesod.Core.Types.GWData
+                   lvl131 :: Yesod.Core.Types.GWData
                                (Yesod.Routes.Class.Route Foundation.App)
                    = Yesod.Core.Types.GWData
                        @ (Yesod.Routes.Class.Route Foundation.App)
-                       lvl126
+                       lvl130
                          `cast`
                        (Sym (Yesod.Core.Types.N:Body[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
@@ -1814,23 +1816,23 @@ fbb2813ae3ad4252d03f53ad500e3d26
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
                  } in
                  let {
-                   lvl128 :: ((),
+                   lvl132 :: ((),
                               Yesod.Core.Types.GWData
                                 (Yesod.Routes.Class.Route
                                    (Yesod.Core.Class.Handler.HandlerSite
                                       (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))))
                    = (GHC.Tuple.(),
-                      lvl127
+                      lvl131
                         `cast`
                       (Yesod.Core.Types.GWData
                          (Yesod.Routes.Class.Route
                             (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                       <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)
                  } in
-                 (\ (eta51 :: Yesod.Core.Types.HandlerData
+                 (\ (eta55 :: Yesod.Core.Types.HandlerData
                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                    (eta52 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                  (# eta52, lvl128 #))
+                    (eta56 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  (# eta56, lvl132 #))
                    `cast`
                  (Trans
                       (<Yesod.Core.Types.HandlerData
@@ -1890,7 +1892,7 @@ a7158966c4e1a5427aeb9b45724e1105
   getFilmesR ::
     Model.FilmeId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-da9b9af53946dda65177a1a127e230b7
+148d32734636e4e414a11be0f53ac050
   getListaFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1902,7 +1904,7 @@ da9b9af53946dda65177a1a127e230b7
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-846955abb8531fe7a1c2ac9c69b5699c
+9f06ec64df60a98b04c23ee8e1825e7c
   getListaFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1936,7 +1938,7 @@ da9b9af53946dda65177a1a127e230b7
                         = Handler.Filme.getListaFilmeR14 ipv1
                       } in
                       let {
-                        lvl126 :: ()
+                        lvl130 :: ()
                                   -> Yesod.Core.Types.HandlerData
                                        Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
                                   -> GHC.Types.IO
@@ -1945,7 +1947,7 @@ da9b9af53946dda65177a1a127e230b7
                                           (Yesod.Routes.Class.Route Foundation.App))
                           {- Arity: 2 -}
                         = \ (ds6 :: ())
-                            (eta48 :: Yesod.Core.Types.HandlerData
+                            (eta52 :: Yesod.Core.Types.HandlerData
                                         Foundation.App
                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
                           Yesod.Core.Types.$fApplicativeWidgetT3
@@ -1982,9 +1984,9 @@ da9b9af53946dda65177a1a127e230b7
                                                                         <Foundation.App>_N)))_R)_R)_R))
                                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                            eta48
+                            eta52
                       } in
-                      (\ (eta48 :: Yesod.Core.Types.HandlerData
+                      (\ (eta52 :: Yesod.Core.Types.HandlerData
                                      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
                        Yesod.Core.Types.$fApplicativeWidgetT3
                          @ GHC.Types.IO
@@ -2007,12 +2009,12 @@ da9b9af53946dda65177a1a127e230b7
                                                                 <Foundation.App>_N)))_R)_R)_R))
                               (Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                         lvl126
+                         lvl130
                            `cast`
                          (<()>_R
                           ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                         <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
-                         eta48)
+                         eta52)
                         `cast`
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N))))
@@ -2060,7 +2062,7 @@ e669458cad573cc028bec80404113d08
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-4cb0d43af480b327ed02e1b9a7b45897
+89df029955d204879c0f3c6bb6fe5697
   getListaFilmeR15 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -2178,7 +2180,7 @@ ed58827ad611a61bc81f79c5d20aa2e7
                    @ Data.Text.Internal.Text
                    @ Data.Text.Internal.Text
                    @~ <Data.Text.Internal.Text>_N) -}
-b5673748b94af7a6a63cb2b82918ff0b
+54f9402104e7c6b83acf5455029f8701
   getListaFilmeR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2191,10 +2193,10 @@ b5673748b94af7a6a63cb2b82918ff0b
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 2, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ (eta48 :: Yesod.Core.Types.HandlerData
+                (\ (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Handler.Filme.getListaFilmeR3 eta49) -}
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Handler.Filme.getListaFilmeR3 eta53) -}
 c7c57153051f96841cf9729af894eebe
   getListaFilmeR20 ::
     (Database.Persist.Class.PersistEntity.PersistEntity Model.Filme,
@@ -2298,7 +2300,7 @@ f7d6e6a47a353daa01c7b49d3078f64b
                    \</tr>\n\
                    \</thead>\n\
                    \<tbody>"#) -}
-6ad1058ef14e13f553401ef35bf43872
+2f1863d5faeba0f055d5c567d6d6f338
   getListaFilmeR7 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2312,10 +2314,10 @@ f7d6e6a47a353daa01c7b49d3078f64b
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 3,
      Unfolding: (\ (ds5 :: ())
-                   (eta48 :: Yesod.Core.Types.HandlerData
+                   (eta52 :: Yesod.Core.Types.HandlerData
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
-                   (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# eta49, Handler.Filme.getListaFilmeR8 #)) -}
+                   (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta53, Handler.Filme.getListaFilmeR8 #)) -}
 7abc6fa854d1b7072c894b6227ca6756
   getListaFilmeR8 ::
     ((),
@@ -2386,7 +2388,7 @@ d009332b2d36ccfd987627184e18883c
                    @ ()
                    Handler.Filme.getListaFilmeR11
                    GHC.Tuple.()) -}
-07f48f15b733aab66474c257c6fb3b26
+3b569d3722fbbdde3bcb40028cb30318
   getListaFilmeR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -2432,6 +2434,79 @@ f24041ea92e594b7b0d210f1f11e1132
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, Text.Blaze.Html.Html #)
   {- Arity: 2, Strictness: <L,U><S,U> -}
+8b95c57083b71a8ef827369b8b7e26d7
+  postFilmesR ::
+    Model.FilmeId -> Foundation.Handler Text.Blaze.Html.Html
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (fid :: Model.FilmeId) ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                           ()
+                   = Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cdelete
+                       @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                       @ Model.Filme
+                       (Handler.Filme.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.App)
+                       Handler.Filme.getListaFilmeR20
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity Model.Filme>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Model.D:R:PersistEntityBackendFilme[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       fid
+                 } in
+                 (\ (eta52 :: Yesod.Core.Types.HandlerData
+                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case Foundation.$fYesodPersistApp1
+                         @ ()
+                         m1
+                           `cast`
+                         (Control.Monad.Trans.Reader.ReaderT
+                            <*>_N
+                            (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
+                            <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
+                            <()>_N)_R
+                         eta52
+                         s of ds5 { (#,#) ipv ipv1 ->
+                  (Handler.Filme.postFilmesR1
+                     `cast`
+                   (Yesod.Core.Types.N:HandlerT[0]
+                        <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
+                     eta52)
+                    `cast`
+                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
+                    ipv })
+                   `cast`
+                 (Trans
+                      (<Yesod.Core.Types.HandlerData
+                          Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
+                      (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
+eb4ef056ecc4c94a6a093e07aa90157d
+  postFilmesR1 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.App GHC.Types.IO Text.Blaze.Html.Html
+  {- Unfolding: (Yesod.Core.Handler.redirect
+                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
+                   @ (Yesod.Routes.Class.Route Foundation.App)
+                   @ Text.Blaze.Html.Html
+                   (Handler.Filme.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   (Yesod.Core.Handler.$fRedirectUrlmasterRoute_$ctoTextUrl
+                      @ Foundation.App)
+                     `cast`
+                   (Sym (Yesod.Core.Handler.N:RedirectUrl[0]
+                             (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
+                                  <GHC.Types.IO>_N <Foundation.App>_N)
+                             <Yesod.Routes.Class.Route Foundation.App>_N))
+                   Foundation.ListaFilmeR
+                     `cast`
+                   (Sym (Foundation.D:R:RouteApp0[0]))) -}
 "SPEC/Handler.Filme $fApplicativeHandlerT @ IO _" [ALWAYS] forall @ site
                                                                   ($dMonad :: GHC.Base.Monad
                                                                                 GHC.Types.IO)

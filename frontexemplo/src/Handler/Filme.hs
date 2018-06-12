@@ -65,6 +65,11 @@ getFilmesR fid = do
                     <img src=#{staticDir ++ img}>
         |]
 
+postFilmesR :: FilmeId -> Handler Html
+postFilmesR fid = do 
+    runDB $ delete fid 
+    redirect ListaFilmeR
+
 
 getListaFilmeR :: Handler Html
 getListaFilmeR = do
@@ -100,6 +105,6 @@ getListaFilmeR = do
                                 #{filmeGenero filme}
                             
                             <td>
-                                <form action=@{PerfilR tid} method=post>
+                                <form action=@{FilmesR fid} method=post>
                                 <input type="submit" value="Apagar">
         |]

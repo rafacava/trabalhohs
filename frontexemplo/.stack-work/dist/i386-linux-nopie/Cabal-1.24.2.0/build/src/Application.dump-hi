@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 05:17:54.148027543 UTC
+2018-06-12 05:34:38.97153075 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: f44a5ddf706f10918ec465b1696e01c1
-  ABI hash: 7dba66c26a70244d897047ac5f83f5b8
+  interface hash: bed0d9ee72cd28f2cc11ce03947a5e59
+  ABI hash: a86fbdf906b3c9f5db48b08bb72c5481
   export-list hash: f479c3efddaca2096f5d15ddc38c9b60
   orphan hash: 788a7151ec98c7c60fb60a9545ca8767
   flag hash: e55c0621b480567136a1040b2b66c368
@@ -353,7 +353,7 @@ import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger 008c4dec68abf2ff99fefa4fa21abea3
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.IO d4f077e535c7dff6d64fdb140cef39ad
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.LogStr 2fb92aee958e2818d629552a14b4c735
-import  -/  Foundation 517ed7178658ddc06b6c6e1bfe84b44e
+import  -/  Foundation 677f13af8b94ceb2d89fb30bf6fcf067
   AdminR f9cbe8f0ab8d25c0f62b1cbbbcbf1f6c
   App 03215b8209b9096636843eb7829752bd
   App 10ce13ad949185b2d6cb6bcf61fe20a7
@@ -378,17 +378,18 @@ import  -/  Foundation 517ed7178658ddc06b6c6e1bfe84b44e
   appLogger 85be53079032a2610437c571ed25d9f2
   appSettings c01168517715806a93efa060a94c389c
   appStatic 2c99f91666bce867613674a0513806a2
-  resourcesApp 65b7a9ed68c00172f61295338005cff6
+  resourcesApp 0c86ebf9ef37b2765b6f264116392397
 import  -/  Handler.Common 6b9cd1dbc3d46ef1fcc51ff7863c21a8
   exports: bda5d49c91d53afe19bbd9dbc347d454
   getFaviconR 0ecdd3fff353e1cc2a89a6aa87f42ccb
   getRobotsR 7eaf4a8c53442b08c784585698ded869
-import  -/  Handler.Filme d994dd5515c1210a47f48ae1be0cd82b
-  exports: fd7b343cd2432ea4e5a84547ab7ee07c
-  getFilmeR e5dd6bdcb2f34a462655394d9d0fa2e2
+import  -/  Handler.Filme 45f411899e683955c5c92b43c069368a
+  exports: 413dca10a4a780409803774de2401bc6
+  getFilmeR fb4fdd8eb87057c834ac75056c95c7b8
   getFilmesR 098a697733158c35e111a9e6f66b9646
-  getListaFilmeR da9b9af53946dda65177a1a127e230b7
+  getListaFilmeR 148d32734636e4e414a11be0f53ac050
   postFilmeR cd04cd22b403026b9393b20c0f168f39
+  postFilmesR 8b95c57083b71a8ef827369b8b7e26d7
 import  -/  Handler.Home 25eeb8ceab779691349b84fd131ca8bd
   exports: 82e327a962b53534023acc041ad04930
   getHomeR 88da9990fdc9b3b396dbdb97f60f11e6
@@ -909,12 +910,12 @@ dac3dcebf1d266c88ccdbe4d194611a4
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U> -}
-edf6bbb9e908ed1b31cb2f2d0a46ec4a
+2640f8ae86defb5d07d8a970c536701f
   develMain :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: InlineRule (0, True, True)
                 Application.develMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-0aa0be7d4301669790316b730cae95a8
+57e802489fa75814356966e06c1b02a3
   develMain1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -956,7 +957,7 @@ a3c410235ad9261bc585ffc863b734d4
                    @ GHC.IO.FilePath
                    Yesod.Default.Config2.configSettingsYml
                    (GHC.Types.[] @ GHC.IO.FilePath)) -}
-0b2c67c74e50b4374c50a2a5fb442350
+460db3eabcf34ff132599dda255fed67
   develMain2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1023,7 +1024,7 @@ bd70d4cdb442c1d49d7d572b819adb00
 1eb6676c848cd9e7973d9c838099546e
   develMain9 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 121#) -}
-702ec9fe7165b5a7452605cb1c129425
+5c01a049ca3d562cc8c127c98003ac9d
   getApplicationDev ::
     GHC.Types.IO
       (Network.Wai.Handler.Warp.Settings.Settings,
@@ -1035,7 +1036,7 @@ bd70d4cdb442c1d49d7d572b819adb00
                 (Sym (GHC.Types.N:IO[0]
                           <(Network.Wai.Handler.Warp.Settings.Settings,
                             Network.Wai.Application)>_R)) -}
-34fc27a6e3f0c9162d788be786d2e24d
+18d6a63df295b6303f8781627fe44f97
   getApplicationRepl ::
     GHC.Types.IO
       (GHC.Types.Int, Foundation.App, Network.Wai.Application)
@@ -1045,7 +1046,7 @@ bd70d4cdb442c1d49d7d572b819adb00
                   `cast`
                 (Sym (GHC.Types.N:IO[0]
                           <(GHC.Types.Int, Foundation.App, Network.Wai.Application)>_R)) -}
-0c3e9159dd3454fee9b15b255e21ae37
+9abda5d55ea37360e70ed3a1bcdd07c7
   getApplicationRepl1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1139,20 +1140,20 @@ bd70d4cdb442c1d49d7d572b819adb00
      Unfolding: InlineRule (1, True, False)
                 (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# s, GHC.Tuple.() #)) -}
-d6aa5370efc725b89b2d96710c044939
+f51735fbb83730f419a8feac6147d76c
   warpSettings ::
     Foundation.App -> Network.Wai.Handler.Warp.Settings.Settings
   {- Arity: 1,
      Strictness: <L,U(U(A,A,A,1*U,1*U,A,A,A,A,A,A,A,A,A),A,A,A,1*U(U,U))>,
      Unfolding: (\ (foundation :: Foundation.App) ->
                  let {
-                   lvl68 :: Yesod.Core.Types.Logger
+                   lvl69 :: Yesod.Core.Types.Logger
                    = case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
                      ds5 }
                  } in
                  let {
-                   lvl69 :: Network.Wai.Logger.DateCacheGetter
-                   = case lvl68 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
+                   lvl70 :: Network.Wai.Logger.DateCacheGetter
+                   = case lvl69 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
                  } in
                  Network.Wai.Handler.Warp.Settings.Settings
                    (case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
@@ -1169,7 +1170,7 @@ d6aa5370efc725b89b2d96710c044939
                       GHC.Types.False -> (# eta, GHC.Tuple.() #)
                       GHC.Types.True
                       -> case Yesod.Core.Class.Yesod.defaultMessageLoggerSource2
-                                lvl69
+                                lvl70
                                 Application.develMain6
                                 Application.develMain5
                                 Control.Monad.Logger.LevelError
@@ -1187,7 +1188,7 @@ d6aa5370efc725b89b2d96710c044939
                                                  @ GHC.Types.Char) })) of ww { (#,#) ww1 ww2 ->
                                  System.Log.FastLogger.LogStr.LogStr ww1 ww2 })
                                 eta of ds2 { (#,#) ipv2 ipv3 ->
-                         Yesod.Core.Types.loggerPutStr1 lvl68 ipv3 ipv2 } })
+                         Yesod.Core.Types.loggerPutStr1 lvl69 ipv3 ipv2 } })
                      `cast`
                    (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
                     ->_R <GHC.Exception.SomeException>_R
