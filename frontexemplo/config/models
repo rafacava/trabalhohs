@@ -3,7 +3,11 @@ Treinador
     cidade Text
     dtnasc Day
 
-
+Cinema
+    nome    Text
+    local   Text
+    imagem  Text Maybe
+    
 Filme
     nome    Text
     ano     Int
