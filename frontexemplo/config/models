@@ -17,6 +17,13 @@ Filme
     duracao Int
     imagem  Text Maybe
 
+Sessao
+    cid     CinemaId
+    fid     FilmeId
+    datas   Day
+    hora    Int
+    min     Int
+    
 Pokemon
     nome    Text
     geracao Int
