@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 05:27:07.897938933 UTC
+2018-06-12 06:10:09.832217432 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Import 8002
-  interface hash: 3d48598b1c97bc476187f64dcd89fe20
-  ABI hash: 42b68c3273ca838a036a462e3e3c245f
-  export-list hash: 0744690d7606c2139a6a0475e9d11a62
+  interface hash: 795ddd4e753137bb6d7af35c1fe40a0c
+  ABI hash: c24f3b6a95e8e2c1be32dbba51e846aa
+  export-list hash: 49070ee65623211ef1f659eb32f5d8f6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e88707c952b9a122ad684fcf4610805
   sig of: Nothing
@@ -1859,7 +1859,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.FilmeR Foundation.FilmesR Foundation.HomeR Foundation.ListaFilmeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.CadUsuarioR Foundation.CinemaR Foundation.CinemasR Foundation.FaviconR Foundation.FilmeR Foundation.FilmesR Foundation.HomeR Foundation.ListaCinemasR Foundation.ListaFilmeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2275,38 +2275,41 @@ import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b
 import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
 import  -/  dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList 22dffe50f890f364a13da093d2b9d273
 import  -/  exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U:Control.Monad.Catch 580f4f81f2d18446ebadc19f859516ab
-import  -/  Foundation 677f13af8b94ceb2d89fb30bf6fcf067
-  exports: 2a06035c85a4b2af3476f5a5bfcd3ec6
-  AdminR f9cbe8f0ab8d25c0f62b1cbbbcbf1f6c
-  App 03215b8209b9096636843eb7829752bd
-  App 10ce13ad949185b2d6cb6bcf61fe20a7
-  CadUsuarioR b458e761b329ec2f4d3b5d9d65f67301
-  FaviconR f11315d936fd36e167404cef291d75ae
-  FilmeR d5779136ae0fda42da662c4401dc7277
-  FilmesR 4cfddefe7ba69dbf24121bc57d25a573
-  Form 319ffa1e91f9fa43778a0a6a8cae21de
-  Handler e5bd6804d648677447a63715502e8ebc
-  HomeR d3428ba659d0223265044ee92e8382d5
-  ListaFilmeR f2dfee9cb501fc6559593c2b588dfc1a
-  ListaTreinadorR aa4ac563c82f9664f3dab4e3c483bb51
-  LoginR d5693d7c2c64111b3df19c3342fb87da
-  LogoutR 47c6e5c79e13070c61757384190d6424
-  PerfilR 1c625b61281b33c21e2f972e651f0a02
-  PerfilUsuarioR 4707d1b20be257ce02926da6e49eb48b
-  PokedexR d61955fa64d49c7a3c8ca327087f9971
-  PokemonR 177fab7b4f41c735427f4f55c164bf52
-  RobotsR 31774d60ddf888460f67c864c890fb6d
-  StaticR 1ec17b29184dd71c34f69eae7b5b09b0
-  TreinadorR 5854d999ea1f9fec9fcf7c3c2049491e
-  Widget efb8ba2793f2edcd47a99f3e6cce21ca
-  appConnPool d2fc4780eb45a41c6096f95329033a6c
-  appHttpManager 10ce13ad949185b2d6cb6bcf61fe20a7
-  appLogger 85be53079032a2610437c571ed25d9f2
-  appSettings c01168517715806a93efa060a94c389c
-  appStatic 2c99f91666bce867613674a0513806a2
-  ehAdmin 1fbef2b9b11aad31d7d956dcb8da110c
-  ehUsuario f5134ab54036cff5760b213be1a2754e
-  resourcesApp 0c86ebf9ef37b2765b6f264116392397
+import  -/  Foundation 8cdfa4129426fcd501f1333bb8db2882
+  exports: 5766c77560b4441306a16fcdea8f9968
+  AdminR 8c10add7a8e41a6ec54d9582bc00bb48
+  App 409a65eae2ed898665ba7df5c84946b1
+  App d1490cdbebd39fa19135bf188b2987b0
+  CadUsuarioR 221dcd13ec69f2f42b4db846b03cd315
+  CinemaR b4770b426fbc081ece4d2b19a05b4b84
+  CinemasR 440e786da94ab43e24942df0b05d041a
+  FaviconR c9b2774acc47546c43ef30c9e017ede5
+  FilmeR 6b5fbbc88403a4f46b5a9ebecc4f6927
+  FilmesR e08ff68604baa89b65c257a08a98bc89
+  Form f3851d2f2c6afaff765c00b67f1a73d9
+  Handler 41ba2f585efe673bfc9317fafd6d899c
+  HomeR 24fb9e855eef61304afa62713289517b
+  ListaCinemasR 947a4cc5a46db576d7dbfc20d303fd75
+  ListaFilmeR cf7b61c7690eeee089ea1557927cc573
+  ListaTreinadorR 9ca83abe9fb7f9c2553a687a3aea2c93
+  LoginR 6647f834ea4d92ce3db62b2a88e78daa
+  LogoutR 3af8d3d37a22dad006ff81a22cd9b9d7
+  PerfilR 9deba1224ca5339a01145ba3677362a1
+  PerfilUsuarioR 83513c5b318920e312cc967922978f8f
+  PokedexR 193b07dc4ff9e1b86d99e6aa08980c22
+  PokemonR e2304f7a34b9c29151cc827803430df1
+  RobotsR 19bb9c3aad728e2dab44e1137edb9b48
+  StaticR 950f74f7da1bc23834f8337b29e9c506
+  TreinadorR e8e31b56e8bed014fb915147d8eb919f
+  Widget f45ba905361c1119ad46a81d14d9ba73
+  appConnPool 964f58170c64f3b7a940ef90a56c189e
+  appHttpManager d1490cdbebd39fa19135bf188b2987b0
+  appLogger 760c2f5b800086beea284959f57d6201
+  appSettings 1db87c38e651234df6de3638a94e3899
+  appStatic 76197ab3588a3b0ca121fc9df2ecd0dc
+  ehAdmin 09cd273f5794fa3898b845e059552f95
+  ehUsuario 2c31d3da1f3f060ed50ebaee5fc2c6ad
+  resourcesApp 3ff9653cfff0733f5cb0ff17f09ca1a8
 import  -/  Import.NoFoundation 9e276037d64973fa78b14472191e3031
   exports: 8383fd01143eab5b3809f09267ea1636
 import  -/  Model 10863ee26288ab2abd6d1212dcb65762

@@ -90,7 +90,7 @@ getListaCinemaR = do
                             
                 
                 <tbody>
-                    $forall (Entity fid filme) <- filmes
+                    $forall (Entity cid cinema) <- cinemas
                         <tr>
                             <td>
                                 <a href=@{CinemasR cid}> 

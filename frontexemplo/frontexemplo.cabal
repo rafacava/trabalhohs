@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 25bf0f72c2f2994636067b834fcae9ec0943bf8441591ef371fc252ec69b6d5d
+-- hash: 3cccfb6334cfeb472aad019222cea62402542f09177612e633232d283a86de15
 
 name:           frontexemplo
 version:        0.0.0
@@ -69,6 +69,7 @@ library
   exposed-modules:
       Application
       Foundation
+      Handler.Cinema
       Handler.Common
       Handler.Filme
       Handler.Home
