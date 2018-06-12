@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-11 04:36:46.662720117 UTC
+2018-06-11 23:55:23.091730905 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Import 8002
-  interface hash: 66ea41f17f4562ef6ebb31c33985d499
-  ABI hash: 260d5b61976284bcf51c6076a78f1440
-  export-list hash: 6d04d8ae11dfce663fc8b6a1abb49849
+  interface hash: a421ab1db949192bd3c23251eee7be21
+  ABI hash: f97de4eb66a89cdd8b368fac9a41466b
+  export-list hash: 9776c7f66141f0d05f37a04415160129
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e88707c952b9a122ad684fcf4610805
   sig of: Nothing
@@ -1603,6 +1603,8 @@ exports:
   Foundation.Form
   Foundation.Handler
   Foundation.Widget
+  Model.Filme{Model.Filme filmeAno filmeDuracao filmeGenero filmeImagem filmeNome}
+  Model.FilmeId
   Model.Pokebola{Model.Pokebola pokebolaBola pokebolaCaptura pokebolaPokeid pokebolaTid}
   Model.PokebolaId
   Model.Pokemon{Model.Pokemon pokemonGeracao pokemonImagem pokemonNivel pokemonNome pokemonTipo}
@@ -1717,9 +1719,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.FilmeAno Model.FilmeDuracao Model.FilmeGenero Model.FilmeId Model.FilmeImagem Model.FilmeNome Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
-  Database.Persist.Class.PersistEntity.Key|{Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
+  Database.Persist.Class.PersistEntity.Key|{Model.FilmeKey Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unFilmeKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
@@ -1855,7 +1857,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.HomeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.FilmeR Foundation.FilmesR Foundation.HomeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2271,93 +2273,111 @@ import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b
 import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
 import  -/  dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList 22dffe50f890f364a13da093d2b9d273
 import  -/  exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U:Control.Monad.Catch 580f4f81f2d18446ebadc19f859516ab
-import  -/  Foundation ab90e96a29cdf26e1f2943ff1f502d0f
-  exports: f8aeb60222a79ccc3d3a4a0dcfb158ef
-  AdminR 07ac21936bd98826c206d27add1bff9a
-  App 9af9d6bb321bac94d16a765b17a1952a
-  App 7f5a6b4267100c42ff7adc72509bb54b
-  CadUsuarioR 380b1c8c94ef71c1f75e49d35ff0f6e3
-  FaviconR b1a75f769a1516019cf38ab96669fdd3
-  Form 0ae4ca17d3bbd53306625ad7d5298938
-  Handler 88fd4d5f499ddbc87725a62b99ad4cac
-  HomeR d2df0f5bf44aef05766162d223de1c94
-  ListaTreinadorR 21693dbcb02e59f393c5c95e058bc05a
-  LoginR 756d9451138413fd27acf5369be12f0e
-  LogoutR a07e5ee80f3cb0fcb69848060d011ef9
-  PerfilR 86f0d81d1b0ca3f4c6e2b1489d8cae28
-  PerfilUsuarioR b89b380061955205578e00e6011bd717
-  PokedexR 2b9f260f3a823c88c950c32016692af3
-  PokemonR 46d9708653b3386602b33c27cdc26e12
-  RobotsR c42e4b572d573db3dfc411d862d6edea
-  StaticR b26a3d005d7c83749179b6610644a63c
-  TreinadorR f5875ab3cf5df9a20ac333f1e9abe5eb
-  Widget 4962809370a1c9d63ece0e0053c14daf
-  appConnPool 212ffc5190e2c120e00e843283ad8d4f
-  appHttpManager 7f5a6b4267100c42ff7adc72509bb54b
-  appLogger 596420a8e83290b710297c411bf85664
-  appSettings 3f4604d79e0a2eb385d6cd15100b197f
-  appStatic 5e3639df767209354fe8fc8cdf9877a9
-  ehAdmin 606da55588fe7a73a6fdf3d27b92009d
-  ehUsuario 6caa4ad32c548dab457dac91c2368e85
-  resourcesApp 25cc9f9db3c21342a34d40192d967616
-import  -/  Import.NoFoundation c2b11490ddbee728dd1c425ee687e3d4
-  exports: 56469fe9423cc7724e623eb908e9d16d
-import  -/  Model cf26c98d28e254239c8dc1ffa5a017dd
-  Pokebola bbd8548e0bbf374b87309ac6ac73c4fc
-  Pokebola c1835406e7eb3b44559284a6aa3b667a
-  PokebolaBola 7616fc7719325fc96efc441bb67efd61
-  PokebolaCaptura c477fbe385a097c0158aed942430c025
-  PokebolaId 6baa91705e0483450af6d7b6473bb63b
-  PokebolaId 73cb81afc0192527f421c283fe150e74
-  PokebolaKey c1d641b999b0d4392b7007464f7ca16a
-  PokebolaPokeid b4e2d49deb3beccc3a8669dc7407cd37
-  PokebolaTid 38db470dd4a3523874ba0b59c17b148a
-  Pokemon 26babab64975c7f7e86cef59e0acdbd2
-  Pokemon 065ca032f278a1cf7a30c100a7767613
-  PokemonGeracao c9ecfb03b535f1e7b1b505d2e2b7438e
-  PokemonId eaa721c51371667a68e285f389032f1e
-  PokemonId ef2d36039a4b5816e145c7648b9f47e3
-  PokemonImagem b0c4ec7e10cbf4bcb2018deba897aab9
-  PokemonKey 6663692a1e5310394267eeb57b7b0570
-  PokemonNivel 3fdc69ca8d1f2e2296f9557e8f516ffa
-  PokemonNome 22540908b805856a3f1f8f70d27d5634
-  PokemonTipo 80593f22e97c34e28865256f254af735
-  Treinador 42121964b555a5ef5542a0effc3576a4
-  Treinador 2b6231ce86586b7138205ded3e317ac9
-  TreinadorCidade 5b41e571395dbb2687b7411f1b4cb26f
-  TreinadorDtnasc 1dae7ad02e3a726c50d5efb7c2a3cc62
-  TreinadorId bc14313f47a7f88bd2b60c355d25f26a
-  TreinadorId a0a85d344a891de181d57f305430f486
-  TreinadorKey f287a5e2235017b6714ddc5834957b9f
-  TreinadorNome b3dfbf60a1a3a34b7c091149a1466776
-  Usuario 0b3cf6dcf9c2e11daa597a0db78ec4b9
-  Usuario efc63ecaf2ce93a0b2538f690dd08c98
-  UsuarioEmail 22315141398814c425414b38097ec20e
-  UsuarioId dce2dc0f19caf5699252c7bd48f8c7f0
-  UsuarioId 1bc95c724e6d51a720f0edf4ed7dbebe
-  UsuarioKey 69ea5512e4f3f4b56cf88acb037f8f8a
-  UsuarioNome 0b35c41264367c899bdc527b90a69315
-  UsuarioSenha 18bc42937e275362c31592bb1a790ff9
+import  -/  Foundation 67b94dcd430045f580e332406091ef8f
+  exports: 4a48832a823c05c72f7b38433e894ee2
+  AdminR 1c05e2a6fe9676dd2802dd98054aa23e
+  App 6c381a9276626097a998a4ba00e8228b
+  App 9dc1dd168458a280b7775be961657b87
+  CadUsuarioR 1714f7281589307ed12a262c30f8015a
+  FaviconR 20808bf29e10e1959331a3197ea4cc04
+  FilmeR aa429787ae7f8747bcde00c35676ec77
+  FilmesR ade929f33487f5dcf70c653ee067091c
+  Form 4c7a8f5faf8090386e4362d01607d751
+  Handler 02dd5d0c8195c31da9cd634b131c6f76
+  HomeR c9cb0c4b780306d80c9b2995fb6c218e
+  ListaTreinadorR e08bc514866d455597af2ad1d3d8db79
+  LoginR cff3b42087011216ac8e1a78dc84cf31
+  LogoutR b07a07725f85ebbc6e8f8a3757f16394
+  PerfilR 451c83f7925020b937cb42d39bbc5e2d
+  PerfilUsuarioR dce4075fe046b214ac3caff4e428e0ac
+  PokedexR 82bced674f009866213df6e2a7e4f794
+  PokemonR 922d3480cd20acdf0c5d61b7183abf01
+  RobotsR 1136b095a732dc387d77941702dbd790
+  StaticR 0d9026d4dda638746fa880b03030ec93
+  TreinadorR 11cdf61b607477a71bc56a908a448f71
+  Widget 26d397d586d7775558d592bc0969e05e
+  appConnPool f584ee8223ec1c52f76adcaa23f8404a
+  appHttpManager 9dc1dd168458a280b7775be961657b87
+  appLogger 83a2aae230384f53da09e341ab9bbe71
+  appSettings 9d78d1a6cc142e54e5077e38c66108c4
+  appStatic 8426e5cf5e1e76992bbfc99237ad17f7
+  ehAdmin 0141de53f06c83eed47d1421939dc393
+  ehUsuario a580817f21e929b26ff5b5f7439ab2e6
+  resourcesApp a035a8a10dff1aa24707073ac107fc5a
+import  -/  Import.NoFoundation d68d363d1691098a560b535c90a0a13a
+  exports: 0ca8e210b87d98f2852c09c27f258213
+import  -/  Model fadf2c6f10f160d35c95663afdd7af2a
+  Filme ebc8d2fe1f28a7807fc676b0a8bb2ed1
+  Filme 0105d29303190e9a0993d782b0a93852
+  FilmeAno 2f3c7566b2ff2580537b7aa95cfd28a6
+  FilmeDuracao 799049c8b3b34d848ade7a76165d9422
+  FilmeGenero 29512847658f3d5e142f6077727f0e63
+  FilmeId 0ea7d60770f2613aff7fd7b34b157426
+  FilmeId 6a42248609ba6fbdd9779313ed69f8d4
+  FilmeImagem 4635b436efcbd1b886d2fb6ac4bc3f28
+  FilmeKey 1e9d271ab992b0b04b5475a26a55e61b
+  FilmeNome 0f00759b99067f637f5c6d74c2bc04f1
+  Pokebola be86ac8966f523bba9ee345bb71fc867
+  Pokebola 2a798e63fb4b749b8ac3efc39f8bdd19
+  PokebolaBola a4026d13ab70f47e29b772e3fe5e9887
+  PokebolaCaptura af491f8cea6b2235d53d79bdfa5c68a3
+  PokebolaId 9edb7894eaa123f73a3c7ad8cb9639b2
+  PokebolaId 43647c9ed92f8b0335a160a7766237d2
+  PokebolaKey 52d77072b15e26b9a057ccfb1ba64ad8
+  PokebolaPokeid 7745cbf90f1529c9e5a9b33cbf6283ed
+  PokebolaTid 1e8f05f77e953bee6780caace714f17b
+  Pokemon 63d18e00dd11d1f0a3d24393171b050a
+  Pokemon 0d27df214f44d9cb370423559d7745da
+  PokemonGeracao 96df464fbfc007618d0c6854ff958167
+  PokemonId d88770a0b70b06d8290b23bc50869645
+  PokemonId 6ace8054dc7d6abb88e0db624bbf5f59
+  PokemonImagem 24846f92c7b3939b5491c68f87278295
+  PokemonKey 29d1d6a703c023e7c0e88237a1964fac
+  PokemonNivel 6c2a5818248e247349063806296710d4
+  PokemonNome 5e9896470ac3ab334b1bccd045700e10
+  PokemonTipo c3b8c64d0e8e53f05a11db526e41a1ab
+  Treinador 8a390ccba116d7970dd2139ec8b377bf
+  Treinador 9a70a1c9ab09dd4b054c1a20e83b98ba
+  TreinadorCidade fb4191ca18bb438725aa767d55d3bfef
+  TreinadorDtnasc 45355a19d3df14752bdab53b7ef41f3c
+  TreinadorId 32dc7204ef1b41bd1988c0d41163693e
+  TreinadorId adc70db1e793d896af1a8351a4e8c7dd
+  TreinadorKey 75f71891de9b6ee9300b2eb2a4427c6d
+  TreinadorNome 75851d1045b8e2c85732c7ada06a3cdd
+  Usuario bb94a57052f915ee40e304e48a52922d
+  Usuario 98427e4ea21ea2e04847270bc05394c9
+  UsuarioEmail 8e739486674a61999fd67eacea5d2cdb
+  UsuarioId 497c7ea13e2e87949f93e45e56b4868e
+  UsuarioId 781cfc89100d2744ee9b33a232fe0497
+  UsuarioKey 7aba20948dc575b65ec570d5bda86149
+  UsuarioNome 6c71aa8db4ba617afe00d6c4b540ef07
+  UsuarioSenha dc10c6ab8013fa8b7e3e1a900a2d9ef8
+  filmeAno 0bf1a5bb0ecf9f7d70e302b55c2768ad
+  filmeDuracao 6deaeac29e3feb386c7c671c084d1dfe
+  filmeGenero 30d201dd5f68fd55fc77e50d2236c774
+  filmeImagem 9417fe0b0edfb28aba5f497dbb9b0091
+  filmeNome 2e3be733a306fbe3904efe1c4942ce1f
   migrateAll 728cb9e7f2a769294702da28b3d161cf
-  pokebolaBola d7a22fe71581f7a85fd79101c388aeb3
-  pokebolaCaptura cf56f149da31226f3351a0c31a5047b8
-  pokebolaPokeid 450af563bcb1b54fd6bdc9c6bd3b7ae3
-  pokebolaTid 37530d88d0d12e06073f28f9aed055db
-  pokemonGeracao 7441a026dfe69aa8593f91a44e5ab17d
-  pokemonImagem 9ec838c2892bc0428216beb3a815c219
-  pokemonNivel e321e5cb30da23658e6d0a04bbf655e4
-  pokemonNome eb8b53d65b736d2b344551de283833f9
-  pokemonTipo 12a821dc344f674502a68fa8dc08232b
-  treinadorCidade ef4ab7de7df8e9ab91d16734520accb1
-  treinadorDtnasc d13b048c13019faacc118b960aff1216
-  treinadorNome 83ff567c3588b8a9a3d4662e38bac0ac
-  unPokebolaKey c1835406e7eb3b44559284a6aa3b667a
-  unPokemonKey 065ca032f278a1cf7a30c100a7767613
-  unTreinadorKey 2b6231ce86586b7138205ded3e317ac9
-  unUsuarioKey efc63ecaf2ce93a0b2538f690dd08c98
-  usuarioEmail 74e674b246e36154a231ad70c56b6a85
-  usuarioNome 23a45b42d2f2b4d4b0931854f1847825
-  usuarioSenha 99adc5ff636f38ec5cb216b911dc6bb8
+  pokebolaBola fedd611c80b1eb8bd52ee391afc193ba
+  pokebolaCaptura 53a18e3e989fc6c661e9eb9073174521
+  pokebolaPokeid ca9595a9a4148b2b9f51778f9e06a548
+  pokebolaTid ba924dc7f25c426879d2188f6f4b5449
+  pokemonGeracao e9cf08e381b27ba79428591f1058dbc1
+  pokemonImagem 1fbff26cc900d2daf3508c5c769d4134
+  pokemonNivel feccbc3e7ad971f81a46df661a7feeae
+  pokemonNome a5e1150ec620232a29eb89a57601d944
+  pokemonTipo ea2c88524f5c1ee00a2225e6f580f9e5
+  treinadorCidade ef77e63eeebfd0826419e0225a5696d3
+  treinadorDtnasc a21d161e89b9efb560e1342c13f45b9c
+  treinadorNome ed6807878f3d98ada36b0a1ce4476fc7
+  unFilmeKey 0105d29303190e9a0993d782b0a93852
+  unPokebolaKey 2a798e63fb4b749b8ac3efc39f8bdd19
+  unPokemonKey 0d27df214f44d9cb370423559d7745da
+  unTreinadorKey 9a70a1c9ab09dd4b054c1a20e83b98ba
+  unUsuarioKey 98427e4ea21ea2e04847270bc05394c9
+  usuarioEmail 848e395143d90df348849912aeb0fdbe
+  usuarioNome 392d3823986c3fcea6ef06aa34b1dc7e
+  usuarioSenha cbe4c1ea3795260df3c02db5b0bbca25
 import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
   AppSettings 832bad5279a934db96edd7d50ae58d26
   AppSettings 00a3521109bd86e95bf87471b12220f9
@@ -2427,15 +2447,12 @@ import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Pe
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Types.Base ddbceefc9b86a76ab45e0bab9a0ec8c7
 import  -/  persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH e09e8dfd161278f38ceaceadb5483043
 import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 7837fbdfc72b0120fa74b13b48373c88
-import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.MutVar fd8ff2fe06b1a93234f3dfe83fc01a6c
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource 62a99f2d846db41a261bb92fc1851a66
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal cf4e2786055c50184946598c24552716
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Data.Acquire.Internal e459212fea851252a57d5830a2f78e76
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Cassius 709c449d0ff6ad0c1074897157a8964f
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet 59b9703276881692902604822dea0dc5
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css dd81a5103a05b4fa107f03b704dce741
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Julius 6cb1507421538ee34214ffb716596e37
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Lucius c9469ee812bb7194f6fa1dc72181ba21
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Shakespeare.I18N 44ce675a1a97bbd6d96e61bd0104e6f5
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 5809dbeefea22a3458232277c634c6d3
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 538b691bb4f5e8c88e830078dfd4dfab

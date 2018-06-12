@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-11 04:36:39.602779666 UTC
+2018-06-11 23:55:13.107856611 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Import.NoFoundation 8002
-  interface hash: b5d341a1177490565099c37d5f69f139
-  ABI hash: c2b11490ddbee728dd1c425ee687e3d4
-  export-list hash: 56469fe9423cc7724e623eb908e9d16d
+  interface hash: 4e1c0bac385388fb4fdf7e2d2aae2830
+  ABI hash: d68d363d1691098a560b535c90a0a13a
+  export-list hash: 0ca8e210b87d98f2852c09c27f258213
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 8904b8f60ff105ace4bfea809119f45d
   sig of: Nothing
@@ -1596,6 +1596,8 @@ exports:
   Control.Monad.Catch.MonadCatch
   Control.Monad.Catch.MonadMask{Control.Monad.Catch.mask Control.Monad.Catch.uninterruptibleMask}
   Control.Monad.Catch.MonadThrow
+  Model.Filme{Model.Filme filmeAno filmeDuracao filmeGenero filmeImagem filmeNome}
+  Model.FilmeId
   Model.Pokebola{Model.Pokebola pokebolaBola pokebolaCaptura pokebolaPokeid pokebolaTid}
   Model.PokebolaId
   Model.Pokemon{Model.Pokemon pokemonGeracao pokemonImagem pokemonNivel pokemonNome pokemonTipo}
@@ -1710,9 +1712,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.FilmeAno Model.FilmeDuracao Model.FilmeGenero Model.FilmeId Model.FilmeImagem Model.FilmeNome Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
-  Database.Persist.Class.PersistEntity.Key|{Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
+  Database.Persist.Class.PersistEntity.Key|{Model.FilmeKey Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unFilmeKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
@@ -2255,63 +2257,79 @@ import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Sequence 7a8fbc1c1c242521
 import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b9d255a553a546c3f
 import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
 import  -/  dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList 22dffe50f890f364a13da093d2b9d273
-import  -/  Model cf26c98d28e254239c8dc1ffa5a017dd
-  exports: a944bd336d248ed532a30ca9762a440e
-  Pokebola bbd8548e0bbf374b87309ac6ac73c4fc
-  Pokebola c1835406e7eb3b44559284a6aa3b667a
-  PokebolaBola 7616fc7719325fc96efc441bb67efd61
-  PokebolaCaptura c477fbe385a097c0158aed942430c025
-  PokebolaId 6baa91705e0483450af6d7b6473bb63b
-  PokebolaId 73cb81afc0192527f421c283fe150e74
-  PokebolaKey c1d641b999b0d4392b7007464f7ca16a
-  PokebolaPokeid b4e2d49deb3beccc3a8669dc7407cd37
-  PokebolaTid 38db470dd4a3523874ba0b59c17b148a
-  Pokemon 26babab64975c7f7e86cef59e0acdbd2
-  Pokemon 065ca032f278a1cf7a30c100a7767613
-  PokemonGeracao c9ecfb03b535f1e7b1b505d2e2b7438e
-  PokemonId eaa721c51371667a68e285f389032f1e
-  PokemonId ef2d36039a4b5816e145c7648b9f47e3
-  PokemonImagem b0c4ec7e10cbf4bcb2018deba897aab9
-  PokemonKey 6663692a1e5310394267eeb57b7b0570
-  PokemonNivel 3fdc69ca8d1f2e2296f9557e8f516ffa
-  PokemonNome 22540908b805856a3f1f8f70d27d5634
-  PokemonTipo 80593f22e97c34e28865256f254af735
-  Treinador 42121964b555a5ef5542a0effc3576a4
-  Treinador 2b6231ce86586b7138205ded3e317ac9
-  TreinadorCidade 5b41e571395dbb2687b7411f1b4cb26f
-  TreinadorDtnasc 1dae7ad02e3a726c50d5efb7c2a3cc62
-  TreinadorId bc14313f47a7f88bd2b60c355d25f26a
-  TreinadorId a0a85d344a891de181d57f305430f486
-  TreinadorKey f287a5e2235017b6714ddc5834957b9f
-  TreinadorNome b3dfbf60a1a3a34b7c091149a1466776
-  Usuario 0b3cf6dcf9c2e11daa597a0db78ec4b9
-  Usuario efc63ecaf2ce93a0b2538f690dd08c98
-  UsuarioEmail 22315141398814c425414b38097ec20e
-  UsuarioId dce2dc0f19caf5699252c7bd48f8c7f0
-  UsuarioId 1bc95c724e6d51a720f0edf4ed7dbebe
-  UsuarioKey 69ea5512e4f3f4b56cf88acb037f8f8a
-  UsuarioNome 0b35c41264367c899bdc527b90a69315
-  UsuarioSenha 18bc42937e275362c31592bb1a790ff9
+import  -/  Model fadf2c6f10f160d35c95663afdd7af2a
+  exports: 76a37bca074f90308b06a89a150b798f
+  Filme ebc8d2fe1f28a7807fc676b0a8bb2ed1
+  Filme 0105d29303190e9a0993d782b0a93852
+  FilmeAno 2f3c7566b2ff2580537b7aa95cfd28a6
+  FilmeDuracao 799049c8b3b34d848ade7a76165d9422
+  FilmeGenero 29512847658f3d5e142f6077727f0e63
+  FilmeId 0ea7d60770f2613aff7fd7b34b157426
+  FilmeId 6a42248609ba6fbdd9779313ed69f8d4
+  FilmeImagem 4635b436efcbd1b886d2fb6ac4bc3f28
+  FilmeKey 1e9d271ab992b0b04b5475a26a55e61b
+  FilmeNome 0f00759b99067f637f5c6d74c2bc04f1
+  Pokebola be86ac8966f523bba9ee345bb71fc867
+  Pokebola 2a798e63fb4b749b8ac3efc39f8bdd19
+  PokebolaBola a4026d13ab70f47e29b772e3fe5e9887
+  PokebolaCaptura af491f8cea6b2235d53d79bdfa5c68a3
+  PokebolaId 9edb7894eaa123f73a3c7ad8cb9639b2
+  PokebolaId 43647c9ed92f8b0335a160a7766237d2
+  PokebolaKey 52d77072b15e26b9a057ccfb1ba64ad8
+  PokebolaPokeid 7745cbf90f1529c9e5a9b33cbf6283ed
+  PokebolaTid 1e8f05f77e953bee6780caace714f17b
+  Pokemon 63d18e00dd11d1f0a3d24393171b050a
+  Pokemon 0d27df214f44d9cb370423559d7745da
+  PokemonGeracao 96df464fbfc007618d0c6854ff958167
+  PokemonId d88770a0b70b06d8290b23bc50869645
+  PokemonId 6ace8054dc7d6abb88e0db624bbf5f59
+  PokemonImagem 24846f92c7b3939b5491c68f87278295
+  PokemonKey 29d1d6a703c023e7c0e88237a1964fac
+  PokemonNivel 6c2a5818248e247349063806296710d4
+  PokemonNome 5e9896470ac3ab334b1bccd045700e10
+  PokemonTipo c3b8c64d0e8e53f05a11db526e41a1ab
+  Treinador 8a390ccba116d7970dd2139ec8b377bf
+  Treinador 9a70a1c9ab09dd4b054c1a20e83b98ba
+  TreinadorCidade fb4191ca18bb438725aa767d55d3bfef
+  TreinadorDtnasc 45355a19d3df14752bdab53b7ef41f3c
+  TreinadorId 32dc7204ef1b41bd1988c0d41163693e
+  TreinadorId adc70db1e793d896af1a8351a4e8c7dd
+  TreinadorKey 75f71891de9b6ee9300b2eb2a4427c6d
+  TreinadorNome 75851d1045b8e2c85732c7ada06a3cdd
+  Usuario bb94a57052f915ee40e304e48a52922d
+  Usuario 98427e4ea21ea2e04847270bc05394c9
+  UsuarioEmail 8e739486674a61999fd67eacea5d2cdb
+  UsuarioId 497c7ea13e2e87949f93e45e56b4868e
+  UsuarioId 781cfc89100d2744ee9b33a232fe0497
+  UsuarioKey 7aba20948dc575b65ec570d5bda86149
+  UsuarioNome 6c71aa8db4ba617afe00d6c4b540ef07
+  UsuarioSenha dc10c6ab8013fa8b7e3e1a900a2d9ef8
+  filmeAno 0bf1a5bb0ecf9f7d70e302b55c2768ad
+  filmeDuracao 6deaeac29e3feb386c7c671c084d1dfe
+  filmeGenero 30d201dd5f68fd55fc77e50d2236c774
+  filmeImagem 9417fe0b0edfb28aba5f497dbb9b0091
+  filmeNome 2e3be733a306fbe3904efe1c4942ce1f
   migrateAll 728cb9e7f2a769294702da28b3d161cf
-  pokebolaBola d7a22fe71581f7a85fd79101c388aeb3
-  pokebolaCaptura cf56f149da31226f3351a0c31a5047b8
-  pokebolaPokeid 450af563bcb1b54fd6bdc9c6bd3b7ae3
-  pokebolaTid 37530d88d0d12e06073f28f9aed055db
-  pokemonGeracao 7441a026dfe69aa8593f91a44e5ab17d
-  pokemonImagem 9ec838c2892bc0428216beb3a815c219
-  pokemonNivel e321e5cb30da23658e6d0a04bbf655e4
-  pokemonNome eb8b53d65b736d2b344551de283833f9
-  pokemonTipo 12a821dc344f674502a68fa8dc08232b
-  treinadorCidade ef4ab7de7df8e9ab91d16734520accb1
-  treinadorDtnasc d13b048c13019faacc118b960aff1216
-  treinadorNome 83ff567c3588b8a9a3d4662e38bac0ac
-  unPokebolaKey c1835406e7eb3b44559284a6aa3b667a
-  unPokemonKey 065ca032f278a1cf7a30c100a7767613
-  unTreinadorKey 2b6231ce86586b7138205ded3e317ac9
-  unUsuarioKey efc63ecaf2ce93a0b2538f690dd08c98
-  usuarioEmail 74e674b246e36154a231ad70c56b6a85
-  usuarioNome 23a45b42d2f2b4d4b0931854f1847825
-  usuarioSenha 99adc5ff636f38ec5cb216b911dc6bb8
+  pokebolaBola fedd611c80b1eb8bd52ee391afc193ba
+  pokebolaCaptura 53a18e3e989fc6c661e9eb9073174521
+  pokebolaPokeid ca9595a9a4148b2b9f51778f9e06a548
+  pokebolaTid ba924dc7f25c426879d2188f6f4b5449
+  pokemonGeracao e9cf08e381b27ba79428591f1058dbc1
+  pokemonImagem 1fbff26cc900d2daf3508c5c769d4134
+  pokemonNivel feccbc3e7ad971f81a46df661a7feeae
+  pokemonNome a5e1150ec620232a29eb89a57601d944
+  pokemonTipo ea2c88524f5c1ee00a2225e6f580f9e5
+  treinadorCidade ef77e63eeebfd0826419e0225a5696d3
+  treinadorDtnasc a21d161e89b9efb560e1342c13f45b9c
+  treinadorNome ed6807878f3d98ada36b0a1ce4476fc7
+  unFilmeKey 0105d29303190e9a0993d782b0a93852
+  unPokebolaKey 2a798e63fb4b749b8ac3efc39f8bdd19
+  unPokemonKey 0d27df214f44d9cb370423559d7745da
+  unTreinadorKey 9a70a1c9ab09dd4b054c1a20e83b98ba
+  unUsuarioKey 98427e4ea21ea2e04847270bc05394c9
+  usuarioEmail 848e395143d90df348849912aeb0fdbe
+  usuarioNome 392d3823986c3fcea6ef06aa34b1dc7e
+  usuarioSenha cbe4c1ea3795260df3c02db5b0bbca25
 import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
   exports: c8ac6e421a7935b6153a393771a8de15
   AppSettings 832bad5279a934db96edd7d50ae58d26
@@ -2352,7 +2370,6 @@ import  -/  ghc-prim-0.5.0.0:GHC.Types 39f94fe158a9efa70c6b9005a1d10fca
 import  -/  hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Class 51bae8920c1e25898e20937b63a79d7e
 import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client d5857d71323fcfb2c2d6cca6d4534b6a
 import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Request 4c6632ad3941ad6f0df212041c7dd137
-import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Types ae4d959013ad7c1c4df55801f1567682
 import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 14b729014e67a66e02e24a124bab6dfc
 import  -/  monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control 283a4eaf1bc1e118c33f112f6e7eebf1
 import  -/  monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger f3e8444de07de57de8a08b617a89b946
@@ -2378,14 +2395,9 @@ import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Pe
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Types.Base ddbceefc9b86a76ab45e0bab9a0ec8c7
 import  -/  persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH e09e8dfd161278f38ceaceadb5483043
 import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 7837fbdfc72b0120fa74b13b48373c88
-import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.MutVar fd8ff2fe06b1a93234f3dfe83fc01a6c
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal cf4e2786055c50184946598c24552716
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Data.Acquire.Internal e459212fea851252a57d5830a2f78e76
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Cassius 709c449d0ff6ad0c1074897157a8964f
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet 59b9703276881692902604822dea0dc5
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css dd81a5103a05b4fa107f03b704dce741
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Julius 6cb1507421538ee34214ffb716596e37
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Lucius c9469ee812bb7194f6fa1dc72181ba21
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 5809dbeefea22a3458232277c634c6d3
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 538b691bb4f5e8c88e830078dfd4dfab
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 9fce78f1eec1b6564300c19172cc0651
@@ -2401,7 +2413,6 @@ import  -/  yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max:Yesod.Default.Config2
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler 4b2ff4fdba4ed12ac999a02136d66ab1
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp 3387ac019aab0ff64c707032478f6850
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 850af6a923eca0c28746c7c972883cdd
-import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Widget 0fdeed4a224edeada4e540b935bcdc21
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Routes.Class 1ff8c44239847f88ba9e34b380a0df08
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static f04923544c94021b30ff15b84da7cb21
 addDependentFile "/home/rafael/.stack/programs/i386-linux/ghc-nopie-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"

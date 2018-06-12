@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-11 04:36:55.782092116 UTC
+2018-06-11 23:55:32.308548194 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Usuario 8002
-  interface hash: c584d2de9375647715d1cedcb7465190
-  ABI hash: 70c570894538c47a99ca244b2850f12a
-  export-list hash: 61223422dba2363620dfdcebcfbe516c
-  orphan hash: 6861faf2150ffadee37d998a653a513b
+  interface hash: 94d63d06c6ea0707ef6ecdd61ef931b8
+  ABI hash: 87364b7fe045dd625f9dfcbc25f92265
+  export-list hash: 3c388eae6bde69849d8cb06a6ae3ed21
+  orphan hash: d0bb525c739773d7ae39b157269cc1b2
   flag hash: 581473958fe447a23d4656a7119025fe
   sig of: Nothing
   used TH splices: True
@@ -343,20 +343,20 @@ import  -/  base-4.9.1.0:Data.Functor 8a9097cd7880f362e85f792ffaba0608
 import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze.Internal 0bb5ddca2299bfdcfdde0c32d70b90c0
-import  -/  Foundation ab90e96a29cdf26e1f2943ff1f502d0f
-  CadUsuarioR 380b1c8c94ef71c1f75e49d35ff0f6e3
-  Form 0ae4ca17d3bbd53306625ad7d5298938
-  Handler 88fd4d5f499ddbc87725a62b99ad4cac
-  HomeR d2df0f5bf44aef05766162d223de1c94
-  PerfilUsuarioR b89b380061955205578e00e6011bd717
-import  -/  Import 260d5b61976284bcf51c6076a78f1440
-  exports: 6d04d8ae11dfce663fc8b6a1abb49849
-import  -/  Model cf26c98d28e254239c8dc1ffa5a017dd
-  Usuario 0b3cf6dcf9c2e11daa597a0db78ec4b9
-  Usuario efc63ecaf2ce93a0b2538f690dd08c98
-  UsuarioId 1bc95c724e6d51a720f0edf4ed7dbebe
-  usuarioEmail 74e674b246e36154a231ad70c56b6a85
-  usuarioNome 23a45b42d2f2b4d4b0931854f1847825
+import  -/  Foundation 67b94dcd430045f580e332406091ef8f
+  CadUsuarioR 1714f7281589307ed12a262c30f8015a
+  Form 4c7a8f5faf8090386e4362d01607d751
+  Handler 02dd5d0c8195c31da9cd634b131c6f76
+  HomeR c9cb0c4b780306d80c9b2995fb6c218e
+  PerfilUsuarioR dce4075fe046b214ac3caff4e428e0ac
+import  -/  Import f97de4eb66a89cdd8b368fac9a41466b
+  exports: 9776c7f66141f0d05f37a04415160129
+import  -/  Model fadf2c6f10f160d35c95663afdd7af2a
+  Usuario bb94a57052f915ee40e304e48a52922d
+  Usuario 98427e4ea21ea2e04847270bc05394c9
+  UsuarioId 781cfc89100d2744ee9b33a232fe0497
+  usuarioEmail 848e395143d90df348849912aeb0fdbe
+  usuarioNome 392d3823986c3fcea6ef06aa34b1dc7e
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistStore 1cc174615a83a94ffa2dad503704ce9b
 import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 35fc8402fe94243fb368bde0239b2ba3
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text e105f5a6b47d676879564e86b510fdbd
@@ -430,7 +430,7 @@ a381149aa815d1ae9eeef21feb94dbe4
                      @ GHC.Types.IO
                      @ site
                      Handler.Usuario.$s$fApplicativeHandlerT_$dMonad) -}
-ec45e1104bd7c5b88ee9650afc8e8f9e
+a5266239afe956c546389d28bcc6eab4
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -657,7 +657,7 @@ ff1e183ba93082120af6f687d8cf4e0e
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Usuario.$s$fMonadBasebHandlerT -}
-4d3588c6488159e2d599cb1ac7d53616
+f9bb42d72bbf7e14b4381fae89cca7b8
   $semailField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -683,7 +683,7 @@ ff1e183ba93082120af6f687d8cf4e0e
                       eta156)
                    (Yesod.Form.Fields.emailField1 @ Foundation.Handler)
                    Yesod.Form.Types.UrlEncoded) -}
-53042d75b343d1058e8c5aae1e2fa9a0
+e080d2e728dab1b1f16b792db1e9c85d
   $spasswordField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -711,7 +711,7 @@ ff1e183ba93082120af6f687d8cf4e0e
                       eta156)
                    (Yesod.Form.Fields.passwordField1 @ Foundation.Handler)
                    Yesod.Form.Types.UrlEncoded) -}
-7224a56ce1d51a6c8935cee9a0c20732
+2099e000800b3358e342b8b9c89ba7cc
   $stextField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -754,7 +754,7 @@ ff1e183ba93082120af6f687d8cf4e0e
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-f40c995d3c63a77c3e908e9bea14fdda
+e86c10d1680bde9b6c48744f28adc1d2
   formUsuario :: Foundation.Form Model.Usuario
   {- Arity: 3, Strictness: <L,U><L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -775,7 +775,7 @@ f40c995d3c63a77c3e908e9bea14fdda
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-f56aa8e568293e8ffa77bb70ece55f82
+77b9a555e3f18fdedd0d50dddf8c7412
   formUsuario1 ::
     Text.Blaze.Internal.Markup
     -> (GHC.Base.Maybe
@@ -812,7 +812,7 @@ f56aa8e568293e8ffa77bb70ece55f82
                    eta105
                    eta106
                    eta107) -}
-dabaaa9f4ef53f57df577c45617734b0
+64816f8964230eb432b1aa0570665cd1
   formUsuario2 ::
     (Yesod.Core.Class.Handler.HandlerSite
        (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO),
@@ -831,7 +831,7 @@ dabaaa9f4ef53f57df577c45617734b0
                    (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))],
           Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)
   {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
-20f61edafa3a4f759162f3e6ce9031bd
+88d247726609c996b9ea55f461771920
   getCadUsuarioR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -843,7 +843,7 @@ dabaaa9f4ef53f57df577c45617734b0
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-377b056f90d89cb68d9a59d312b92127
+6eb70fa5905d8af745e453cec8e74111
   getCadUsuarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1330,7 +1330,7 @@ dabaaa9f4ef53f57df577c45617734b0
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv } }) -}
-9254f1b537c142eb8aad8c2fada94b21
+a161debcd78e809f8f3c9d79829a28a9
   getCadUsuarioR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1347,7 +1347,7 @@ dabaaa9f4ef53f57df577c45617734b0
                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Usuario.getCadUsuarioR11 eta) -}
-d766d8b46eb4b16da1fbd1429a0a6ec7
+991fb36191bdc2161aa66d5cb4f07eec
   getCadUsuarioR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1422,7 +1422,7 @@ c613c60db02be7904b0b9508a75bee87
   getCadUsuarioR14 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" method=\"post\" enctype=\""#) -}
-d8cca119c4578fe6c62b9529dd2db4a7
+cf8a2f2ff3691c1b662dc5b576ed95c3
   getCadUsuarioR15 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1439,7 +1439,7 @@ d8cca119c4578fe6c62b9529dd2db4a7
                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Usuario.getCadUsuarioR16 eta) -}
-6c93a3093b439a268dda7a4ad196a40d
+3711fbcb3e48eb3eefa5a3aca890d5c6
   getCadUsuarioR16 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1513,7 +1513,7 @@ ee3a41d0869cd03c75502f6c676afeeb
 86af313cca1f464b50715bb0053fd00d
   getCadUsuarioR19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "\">"#) -}
-6cc94435723caf39ed8210ae809c2888
+15299d459ab265e0605edaff60059405
   getCadUsuarioR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1530,7 +1530,7 @@ ee3a41d0869cd03c75502f6c676afeeb
                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Usuario.getCadUsuarioR3 eta) -}
-9111cda02f3ce4f3e7c893d1e7792887
+f68a173848ff6d4af52004628e8853e7
   getCadUsuarioR20 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1548,7 +1548,7 @@ ee3a41d0869cd03c75502f6c676afeeb
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta1, Handler.Usuario.getCadUsuarioR21 #)) -}
-c1522149f7339cb88bd7b877373d7a05
+560088827fd30d7ee24afc3d12841280
   getCadUsuarioR21 ::
     ((),
      Yesod.Core.Types.GWData
@@ -1562,7 +1562,7 @@ c1522149f7339cb88bd7b877373d7a05
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-30765e49e386ec4728879f9025fa1a0d
+86dc3f985da17f9818262aeb6339b71c
   getCadUsuarioR22 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -1604,7 +1604,7 @@ c1522149f7339cb88bd7b877373d7a05
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-ec17839c9c00fd5b3b9a3c81e36be798
+12f5201e9980666a9b86085144cfe0c1
   getCadUsuarioR23 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1631,7 +1631,7 @@ ec17839c9c00fd5b3b9a3c81e36be798
                    "\n\
                    \<input type=\"submit\" value=\"OK\">\n\
                    \</form>\n"#) -}
-e668d25916f9ba32592043994bd1b64c
+71fa6127eff692f46ba81178b6ae78ba
   getCadUsuarioR27 ::
     Foundation.Handler (Foundation.Widget, Yesod.Form.Types.Enctype)
   {- Unfolding: (Yesod.Form.Functions.generateFormPost
@@ -1662,7 +1662,7 @@ e668d25916f9ba32592043994bd1b64c
                                                   <GHC.Types.IO>_N <Foundation.App>_N))
                                         <GHC.Types.IO>_N
                                         <()>_N)_N)_N))) -}
-9df665db63e54e946a25390ca1dd8353
+60c2aa8ee0fbc518d7d7e7299a294667
   getCadUsuarioR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1736,7 +1736,7 @@ d4d2ad008a3c2228da0b9aa2b5be5c6a
 b4dffbd1a05448e6d4c56ccb295d5cb1
   getCadUsuarioR6 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "<form action=\""#) -}
-cd5ecd2e920b108bccefb8fbf8ac2d60
+1f2cb2904dc878021b4e7d722902760e
   getCadUsuarioR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1763,7 +1763,7 @@ cd5ecd2e920b108bccefb8fbf8ac2d60
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Usuario.getCadUsuarioR8) -}
-ab0d4f5d45cfd1d28762f309f0c47e05
+950f43498b6856cf3b3e9dec7945ef4b
   getCadUsuarioR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1873,7 +1873,7 @@ ab0d4f5d45cfd1d28762f309f0c47e05
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-c03f62cbe3ae8a3271dab9bfc1e72a76
+74e06275dee415726abb0db2d3f11c5a
   getCadUsuarioR9 ::
     Yesod.Core.Types.WidgetT
       Foundation.App
@@ -1914,7 +1914,7 @@ a59e4d48887fe12734abfd33227a59c0
                    @ ()
                    Handler.Usuario.getCadUsuarioR24
                    GHC.Tuple.()) -}
-b89b92dd61c76596b653d9ac4fc4b02f
+4b2fdfeaa31e38f2cdfb8a5b6a6f10aa
   getPerfilUsuarioR ::
     Model.UsuarioId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -2302,7 +2302,7 @@ b89b92dd61c76596b653d9ac4fc4b02f
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-d0c4e9b46369415c998210786188ad1d
+f56ab73988c6891a3e7b1fb35916f619
   getPerfilUsuarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2324,7 +2324,7 @@ c269092eb24cf197d12ba5da556e55c0
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</h1>\n\
                    \<h2>E-mail: "#) -}
-a1dbaa445772db50f48321bbe7f37f38
+b58cb83641fd999c76628552fbd6b869
   getPerfilUsuarioR11 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2364,7 +2364,7 @@ a1dbaa445772db50f48321bbe7f37f38
                     ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                   <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
                    eta) -}
-ad0d0588f99d27d2ac76f4cac469b1fb
+86b2717ae43ee0af3fb94fefbbaea408
   getPerfilUsuarioR12 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2404,7 +2404,7 @@ ad0d0588f99d27d2ac76f4cac469b1fb
                              (Sym (Yesod.Core.Types.N:WidgetT[0]
                                        <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
                    eta) -}
-6d3971e1771ad764a6ecb3fe12956ac7
+5c5d4db8c46857d26439105ef6a9daee
   getPerfilUsuarioR13 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2422,7 +2422,7 @@ ad0d0588f99d27d2ac76f4cac469b1fb
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta1, Handler.Usuario.getPerfilUsuarioR14 #)) -}
-06fda2783228d1874cf5096bfec8b144
+428da165f5da4c53e196544cb5a40c1e
   getPerfilUsuarioR14 ::
     ((),
      Yesod.Core.Types.GWData
@@ -2436,7 +2436,7 @@ ad0d0588f99d27d2ac76f4cac469b1fb
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-82f6a13726b81d2b9e9b10ae2443ea7b
+bdd1d4657a4a0286d3c0aed6d58b7428
   getPerfilUsuarioR15 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -2478,7 +2478,7 @@ ad0d0588f99d27d2ac76f4cac469b1fb
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-a7c979ab712119bb7440f88d275c5d41
+42e55a430d6628b4176afdc8de1acb76
   getPerfilUsuarioR16 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2503,7 +2503,7 @@ b10a2052e79bb14c74409b29f4d3140c
   getPerfilUsuarioR19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\"> Voltar</a>\n"#) -}
-c276d200790bdea2aeed67b4bb693bf9
+0b2e5942f7f33ee17862e1f35880ebaf
   getPerfilUsuarioR2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2564,7 +2564,7 @@ c276d200790bdea2aeed67b4bb693bf9
                         (Yesod.Routes.Class.Route
                            (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                      <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R) #)) -}
-245840424369f23c7ab2168b3bd10145
+d8a61e41a48a39c1802e68f16d43af92
   getPerfilUsuarioR20 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2591,7 +2591,7 @@ c276d200790bdea2aeed67b4bb693bf9
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Usuario.getPerfilUsuarioR21) -}
-b5ad74ce4ba835f834fd26cfd7dd4efa
+c8dee9c98bedb4f3764710f1cdc76486
   getPerfilUsuarioR21 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2701,7 +2701,7 @@ b5ad74ce4ba835f834fd26cfd7dd4efa
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-b3f321e7fc2cd945fe4aacbd1ca122b9
+9948cb74f137d2ecda3506b527dd6a51
   getPerfilUsuarioR22 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2718,7 +2718,7 @@ b3f321e7fc2cd945fe4aacbd1ca122b9
                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Usuario.getPerfilUsuarioR23 eta) -}
-c82220db71118382cce764536accd059
+27b069c9535cf3c312c445a3d96d500f
   getPerfilUsuarioR23 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2794,7 +2794,7 @@ dc8a15885e3f1e95a588b57e913b2460
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</h2>\n\
                    \<a href=\""#) -}
-65115401b80188bbbc22e38cfb68bed7
+ea4427a72a59dd585c136d2bcf383b41
   getPerfilUsuarioR27 ::
     Database.Persist.Class.PersistEntity.Key Model.Usuario
     -> Control.Monad.Trans.Reader.ReaderT
@@ -2817,7 +2817,7 @@ dc8a15885e3f1e95a588b57e913b2460
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendUsuario[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-6d9820fe6943bfc6b6f6899419760edb
+b641f5693e009298f61223267fe7762e
   getPerfilUsuarioR28 ::
     (Database.Persist.Class.PersistEntity.PersistEntity Model.Usuario,
      Database.Persist.Sql.Types.Internal.SqlBackend
@@ -2852,7 +2852,7 @@ cb691be9566bb62641bfca086fdc2a20
 cdea0df221a6bb5efe13742c5d33fa87
   getPerfilUsuarioR5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "<h1> Nome: "#) -}
-37a01b7f2c84736b207a437d6ce6b6ca
+09e4e281d53d25562201e70ce56acff8
   getPerfilUsuarioR6 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2869,7 +2869,7 @@ cdea0df221a6bb5efe13742c5d33fa87
                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Usuario.getPerfilUsuarioR7 eta) -}
-1189ab87dc85d6bc45d1e10b0afdb14b
+c4bf1d572a52d913845ff0132642bb67
   getPerfilUsuarioR7 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2968,7 +2968,7 @@ f1b6d7c1c54f95f24c2aa150da078adb
                    @ ()
                    Handler.Usuario.getPerfilUsuarioR24
                    GHC.Tuple.()) -}
-7bdbe8695f6996b9b911ccc9413a1703
+a39d6fca3cb94a53e1cfe5e6fcff55f7
   postCadUsuarioR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2980,7 +2980,7 @@ f1b6d7c1c54f95f24c2aa150da078adb
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-cdac904aa9112d83853080bfb2dfc713
+fcfdd96306e2de3455a7d4a0d0f6c239
   postCadUsuarioR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -3049,7 +3049,7 @@ cdac904aa9112d83853080bfb2dfc713
                         `cast`
                       (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                         ipv2 } } } } }) -}
-2a69d0159d5983c9a3d1b8350e8d5c4e
+32b04c893603dc64fac88ffd3b9693f0
   postCadUsuarioR2 ::
     Model.Usuario
     -> Control.Monad.Trans.Reader.ReaderT
@@ -3070,7 +3070,7 @@ cdac904aa9112d83853080bfb2dfc713
                          <*>_N
                          (Sym (Model.D:R:PersistEntityBackendUsuario[0]))
                          (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-42cfba9fb64b54a030de36cd8adb4c7b
+08fa9669502f6499c0069566774ba3c6
   postCadUsuarioR3 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html
@@ -3087,7 +3087,7 @@ cdac904aa9112d83853080bfb2dfc713
                                   <GHC.Types.IO>_N <Foundation.App>_N)
                              <Yesod.Routes.Class.Route Foundation.App>_N))
                    Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-7b0a2d5066cdc78d23811cecc03f8f9e
+3949c36e1cb341155ca40e7910927d60
   postCadUsuarioR4 ::
     Foundation.Handler
       ((Yesod.Form.Types.FormResult Model.Usuario, Foundation.Widget),

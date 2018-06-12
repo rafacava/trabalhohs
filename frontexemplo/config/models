@@ -4,6 +4,13 @@ Treinador
     dtnasc Day
 
 
+Filme
+    nome    Text
+    ano     Int
+    genero  Text
+    duracao Int
+    imagem  Text Maybe
+
 Pokemon
     nome    Text
     geracao Int
