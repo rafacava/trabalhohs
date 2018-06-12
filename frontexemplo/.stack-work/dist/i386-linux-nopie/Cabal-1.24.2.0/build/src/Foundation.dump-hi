@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-11 23:55:21.182303573 UTC
+2018-06-12 05:27:02.499887699 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Foundation [family instance module] 8002
-  interface hash: 6891dabc064b4bc55d186c0300ae5b4d
-  ABI hash: 67b94dcd430045f580e332406091ef8f
-  export-list hash: 4a48832a823c05c72f7b38433e894ee2
+  interface hash: 0d4cf0aff0c6263ea382489fdab83034
+  ABI hash: 677f13af8b94ceb2d89fb30bf6fcf067
+  export-list hash: 2a06035c85a4b2af3476f5a5bfcd3ec6
   orphan hash: 135c4510e58ab58da42d91badbe7a131
   flag hash: d49001dd74596c7d780bfa1e4f9324eb
   sig of: Nothing
@@ -19,7 +19,7 @@ exports:
   Foundation.Form
   Foundation.Handler
   Foundation.Widget
-  Yesod.Routes.Class.Route{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.FilmeR Foundation.FilmesR Foundation.HomeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR}
+  Yesod.Routes.Class.Route{Foundation.AdminR Foundation.CadUsuarioR Foundation.FaviconR Foundation.FilmeR Foundation.FilmesR Foundation.HomeR Foundation.ListaFilmeR Foundation.ListaTreinadorR Foundation.LoginR Foundation.LogoutR Foundation.PerfilR Foundation.PerfilUsuarioR Foundation.PokedexR Foundation.PokemonR Foundation.RobotsR Foundation.StaticR Foundation.TreinadorR}
 module dependencies: Import.NoFoundation Model Settings
                      Settings.StaticFiles
 package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
@@ -354,15 +354,15 @@ import  -/  base-4.9.1.0:Text.Read e5e492eef793a61c503520d4fa64782b
 import  -/  base-4.9.1.0:Text.Read.Lex f54ccdfc98a68777bda9d774aad6ed9c
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b9d255a553a546c3f
-import  -/  Import.NoFoundation d68d363d1691098a560b535c90a0a13a
-  exports: 0ca8e210b87d98f2852c09c27f258213
-import  -/  Model fadf2c6f10f160d35c95663afdd7af2a
-  FilmeId 6a42248609ba6fbdd9779313ed69f8d4
-  PokemonId 6ace8054dc7d6abb88e0db624bbf5f59
-  TreinadorId adc70db1e793d896af1a8351a4e8c7dd
-  Usuario bb94a57052f915ee40e304e48a52922d
-  Usuario 98427e4ea21ea2e04847270bc05394c9
-  UsuarioId 781cfc89100d2744ee9b33a232fe0497
+import  -/  Import.NoFoundation 9e276037d64973fa78b14472191e3031
+  exports: 8383fd01143eab5b3809f09267ea1636
+import  -/  Model 10863ee26288ab2abd6d1212dcb65762
+  FilmeId 5060073462e171c0057e48aa8fd01ed0
+  PokemonId 125867fa0e67df3a91dec573d8e4f20f
+  TreinadorId 721378050dd8afd9729f66a764b9ca2a
+  Usuario dc01355b6b395e8b67261e8ee9820372
+  Usuario a3e56dc71afded99b38deb24bab63c4d
+  UsuarioId a6ace6d7a07de75b80c630dcdd623e38
 import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
   AppSettings 00a3521109bd86e95bf87471b12220f9
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 3876ddae268b9e4fd3619d1fe120f418
@@ -389,7 +389,7 @@ import  -/  yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU:Yesod.For
 import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-4ZnSn6wFGPBBm9cdlnNUzc:Yesod.Persist.Core f12ec7e4082c6ecaada745140ab33a5e
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static f04923544c94021b30ff15b84da7cb21
 addDependentFile "config/routes"
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fEqRoute ::
     GHC.Classes.Eq (Yesod.Routes.Class.Route Foundation.App)
   DFunId
@@ -398,7 +398,7 @@ addDependentFile "config/routes"
                   @ (Yesod.Routes.Class.Route Foundation.App)
                   Foundation.$fEqRoute_$c==
                   Foundation.$fEqRoute_$c/= -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fEqRoute_$c/= ::
     Yesod.Routes.Class.Route Foundation.App
     -> Yesod.Routes.Class.Route Foundation.App -> GHC.Types.Bool
@@ -409,7 +409,7 @@ addDependentFile "config/routes"
                  case Foundation.$fEqRoute_$c== a b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fEqRoute_$c== ::
     Yesod.Routes.Class.Route Foundation.App
     -> Yesod.Routes.Class.Route Foundation.App -> GHC.Types.Bool
@@ -578,7 +578,7 @@ addDependentFile "config/routes"
                                        (Trans
                                             (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
                                             (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) } }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fHasHttpManagerApp ::
     Network.HTTP.Client.Types.HasHttpManager Foundation.App
   DFunId
@@ -590,7 +590,7 @@ addDependentFile "config/routes"
                   `cast`
                 (Sym (Network.HTTP.Client.Types.N:HasHttpManager[0]
                           <Foundation.App>_N)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fParseRouteApp :: Yesod.Routes.Class.ParseRoute Foundation.App
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -598,7 +598,7 @@ addDependentFile "config/routes"
                   @ Foundation.App
                   Foundation.$fRenderRouteApp
                   Foundation.$fParseRouteApp_$cparseRoute -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fParseRouteApp_$cparseRoute ::
     ([Data.Text.Internal.Text],
      [(Data.Text.Internal.Text, Data.Text.Internal.Text)])
@@ -609,7 +609,7 @@ addDependentFile "config/routes"
                           [(Data.Text.Internal.Text, Data.Text.Internal.Text)])) ->
                  case w of ww { (,) ww1 ww2 ->
                  Foundation.$w$cparseRoute ww1 ww2 }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute ::
     GHC.Read.Read (Yesod.Routes.Class.Route Foundation.App)
   DFunId
@@ -620,7 +620,7 @@ addDependentFile "config/routes"
                   Foundation.$fReadRoute_$creadList
                   Foundation.$fReadRoute_$creadPrec
                   Foundation.$fReadRoute_$creadListPrec -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -642,7 +642,7 @@ addDependentFile "config/routes"
                    eta
                    @ b
                    eta1) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute10 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> Text.ParserCombinators.ReadP.P b1)
@@ -652,9 +652,9 @@ addDependentFile "config/routes"
                    (k1 :: Yesod.Routes.Class.Route Foundation.App
                           -> Text.ParserCombinators.ReadP.P b1) ->
                  let {
-                   lvl88 :: Text.ParserCombinators.ReadP.P b1
+                   lvl90 :: Text.ParserCombinators.ReadP.P b1
                    = let {
-                       lvl89 :: Text.ParserCombinators.ReadP.P b1
+                       lvl91 :: Text.ParserCombinators.ReadP.P b1
                        = Foundation.$woptional3
                            11#
                            @ b1
@@ -670,13 +670,13 @@ addDependentFile "config/routes"
                           Text.Read.Lex.Ident a2
                           -> case GHC.Base.eqString a2 Foundation.$fReadRoute11 of wild1 {
                                GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
-                               GHC.Types.True -> lvl89 } })
+                               GHC.Types.True -> lvl91 } })
                  } in
                  let {
                    k :: () -> Text.ParserCombinators.ReadP.P b1
                      {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl88) -}
-                   = \ (w4 :: ()) -> lvl88
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl90) -}
+                   = \ (w4 :: ()) -> lvl90
                  } in
                  Text.ParserCombinators.ReadP.Look
                    @ b1
@@ -689,7 +689,7 @@ addDependentFile "config/routes"
 ccfb3054f0b2d61c8aad333e97535d8b
   $fReadRoute11 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PerfilR"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute12 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> Text.ParserCombinators.ReadP.P b1)
@@ -699,9 +699,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    (k1 :: Yesod.Routes.Class.Route Foundation.App
                           -> Text.ParserCombinators.ReadP.P b1) ->
                  let {
-                   lvl88 :: Text.ParserCombinators.ReadP.P b1
+                   lvl90 :: Text.ParserCombinators.ReadP.P b1
                    = let {
-                       lvl89 :: Text.ParserCombinators.ReadP.P b1
+                       lvl91 :: Text.ParserCombinators.ReadP.P b1
                        = Foundation.$woptional4
                            11#
                            @ b1
@@ -717,13 +717,13 @@ ccfb3054f0b2d61c8aad333e97535d8b
                           Text.Read.Lex.Ident a2
                           -> case GHC.Base.eqString a2 Foundation.$fReadRoute13 of wild1 {
                                GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
-                               GHC.Types.True -> lvl89 } })
+                               GHC.Types.True -> lvl91 } })
                  } in
                  let {
                    k :: () -> Text.ParserCombinators.ReadP.P b1
                      {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl88) -}
-                   = \ (w4 :: ()) -> lvl88
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl90) -}
+                   = \ (w4 :: ()) -> lvl90
                  } in
                  Text.ParserCombinators.ReadP.Look
                    @ b1
@@ -736,7 +736,7 @@ ccfb3054f0b2d61c8aad333e97535d8b
 967312651c35de043c286a34df08b006
   $fReadRoute13 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "StaticR"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute14 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -746,9 +746,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute55
+                   Foundation.$fReadRoute59
                    Foundation.$fReadRoute15) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute15 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -758,9 +758,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute52
+                   Foundation.$fReadRoute56
                    Foundation.$fReadRoute16) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute16 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -770,9 +770,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute49
+                   Foundation.$fReadRoute53
                    Foundation.$fReadRoute17) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute17 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -782,9 +782,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute46
+                   Foundation.$fReadRoute50
                    Foundation.$fReadRoute18) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute18 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -794,9 +794,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute43
+                   Foundation.$fReadRoute47
                    Foundation.$fReadRoute19) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute19 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -806,9 +806,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute40
+                   Foundation.$fReadRoute44
                    Foundation.$fReadRoute20) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP
@@ -820,7 +820,7 @@ ccfb3054f0b2d61c8aad333e97535d8b
                      `cast`
                    (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute20 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -830,9 +830,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute37
+                   Foundation.$fReadRoute41
                    Foundation.$fReadRoute21) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute21 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -842,9 +842,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute34
+                   Foundation.$fReadRoute38
                    Foundation.$fReadRoute22) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute22 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -854,9 +854,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute31
+                   Foundation.$fReadRoute35
                    Foundation.$fReadRoute23) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute23 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -866,9 +866,9 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute28
+                   Foundation.$fReadRoute32
                    Foundation.$fReadRoute24) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute24 ::
     [(GHC.Base.String,
       Text.ParserCombinators.ReadPrec.ReadPrec
@@ -878,19 +878,31 @@ ccfb3054f0b2d61c8aad333e97535d8b
                    @ (GHC.Base.String,
                       Text.ParserCombinators.ReadPrec.ReadPrec
                         (Yesod.Routes.Class.Route Foundation.App))
-                   Foundation.$fReadRoute25
+                   Foundation.$fReadRoute29
+                   Foundation.$fReadRoute25) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute25 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec
+        (Yesod.Routes.Class.Route Foundation.App))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec
+                        (Yesod.Routes.Class.Route Foundation.App))
+                   Foundation.$fReadRoute26
                    (GHC.Types.[]
                       @ (GHC.Base.String,
                          Text.ParserCombinators.ReadPrec.ReadPrec
                            (Yesod.Routes.Class.Route Foundation.App)))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute25 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute26 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute27,
-                  Foundation.$fReadRoute26
+     Unfolding: ((Foundation.$fReadRoute28,
+                  Foundation.$fReadRoute27
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -898,8 +910,8 @@ ccfb3054f0b2d61c8aad333e97535d8b
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute26 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute27 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -913,17 +925,17 @@ ccfb3054f0b2d61c8aad333e97535d8b
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta
                    Foundation.AdminR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-ed0f3463507f50710aaa5c35af6af3ab
-  $fReadRoute27 :: [GHC.Types.Char]
+eb45800182164842ac4e5df26924b629
+  $fReadRoute28 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "AdminR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute28 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute29 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute30,
-                  Foundation.$fReadRoute29
+     Unfolding: ((Foundation.$fReadRoute31,
+                  Foundation.$fReadRoute30
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -931,22 +943,7 @@ ed0f3463507f50710aaa5c35af6af3ab
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute29 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (Yesod.Routes.Class.Route Foundation.App
-        -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
-     Unfolding: InlineRule (2, True, True)
-                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
-                   @ b
-                   (eta :: Yesod.Routes.Class.Route Foundation.App
-                           -> Text.ParserCombinators.ReadP.P b) ->
-                 eta
-                   Foundation.LogoutR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP
@@ -1108,17 +1105,32 @@ ed0f3463507f50710aaa5c35af6af3ab
                    `cast`
                  (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
                            <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-8399b91d0b9548c84f9fc25d1645602d
-  $fReadRoute30 :: [GHC.Types.Char]
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute30 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Yesod.Routes.Class.Route Foundation.App
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Yesod.Routes.Class.Route Foundation.App
+                           -> Text.ParserCombinators.ReadP.P b) ->
+                 eta
+                   Foundation.LogoutR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
+7ed8b7121a85c1313ce0eb90901bdc1d
+  $fReadRoute31 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "LogoutR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute31 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute32 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute33,
-                  Foundation.$fReadRoute32
+     Unfolding: ((Foundation.$fReadRoute34,
+                  Foundation.$fReadRoute33
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1126,8 +1138,8 @@ ed0f3463507f50710aaa5c35af6af3ab
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute32 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute33 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1141,17 +1153,17 @@ ed0f3463507f50710aaa5c35af6af3ab
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta
                    Foundation.LoginR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-ea90d4595e1035bdbb6d9355e6194678
-  $fReadRoute33 :: [GHC.Types.Char]
+c793ee13b5c4c9e538e74f1b245e36b7
+  $fReadRoute34 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "LoginR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute34 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute35 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute36,
-                  Foundation.$fReadRoute35
+     Unfolding: ((Foundation.$fReadRoute37,
+                  Foundation.$fReadRoute36
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1159,8 +1171,8 @@ ea90d4595e1035bdbb6d9355e6194678
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute35 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute36 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1176,17 +1188,17 @@ ea90d4595e1035bdbb6d9355e6194678
                    Foundation.CadUsuarioR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-0e287304c16da44e9d11a25590354229
-  $fReadRoute36 :: [GHC.Types.Char]
+57f1e1ed215393f0bc43971502eecdf7
+  $fReadRoute37 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "CadUsuarioR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute37 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute38 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute39,
-                  Foundation.$fReadRoute38
+     Unfolding: ((Foundation.$fReadRoute40,
+                  Foundation.$fReadRoute39
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1194,8 +1206,8 @@ ea90d4595e1035bdbb6d9355e6194678
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute38 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute39 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1208,11 +1220,10 @@ ea90d4595e1035bdbb6d9355e6194678
                    (eta :: Yesod.Routes.Class.Route Foundation.App
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta
-                   Foundation.FilmeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-d7eb04712a94d847ee41fa6c21c167e4
-  $fReadRoute39 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "FilmeR"#) -}
-9dc1dd168458a280b7775be961657b87
+                   Foundation.ListaFilmeR
+                     `cast`
+                   (Sym (Foundation.D:R:RouteApp0[0]))) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute4 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> Text.ParserCombinators.ReadP.P b1)
@@ -1222,9 +1233,9 @@ d7eb04712a94d847ee41fa6c21c167e4
                    (k1 :: Yesod.Routes.Class.Route Foundation.App
                           -> Text.ParserCombinators.ReadP.P b1) ->
                  let {
-                   lvl88 :: Text.ParserCombinators.ReadP.P b1
+                   lvl90 :: Text.ParserCombinators.ReadP.P b1
                    = let {
-                       lvl89 :: Text.ParserCombinators.ReadP.P b1
+                       lvl91 :: Text.ParserCombinators.ReadP.P b1
                        = Foundation.$woptional
                            11#
                            @ b1
@@ -1242,13 +1253,13 @@ d7eb04712a94d847ee41fa6c21c167e4
                           Text.Read.Lex.Ident a2
                           -> case GHC.Base.eqString a2 Foundation.$fReadRoute5 of wild1 {
                                GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
-                               GHC.Types.True -> lvl89 } })
+                               GHC.Types.True -> lvl91 } })
                  } in
                  let {
                    k :: () -> Text.ParserCombinators.ReadP.P b1
                      {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl88) -}
-                   = \ (w4 :: ()) -> lvl88
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl90) -}
+                   = \ (w4 :: ()) -> lvl90
                  } in
                  Text.ParserCombinators.ReadP.Look
                    @ b1
@@ -1258,14 +1269,17 @@ d7eb04712a94d847ee41fa6c21c167e4
                     (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
                       @ b1
                       k)) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute40 ::
+8720bc64e1b8179eedffb9f0ac8a31a1
+  $fReadRoute40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ListaFilmeR"#) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute41 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute42,
-                  Foundation.$fReadRoute41
+     Unfolding: ((Foundation.$fReadRoute43,
+                  Foundation.$fReadRoute42
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1273,8 +1287,41 @@ d7eb04712a94d847ee41fa6c21c167e4
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute41 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute42 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Yesod.Routes.Class.Route Foundation.App
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Yesod.Routes.Class.Route Foundation.App
+                           -> Text.ParserCombinators.ReadP.P b) ->
+                 eta
+                   Foundation.FilmeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
+d01f5415e3fecd22043e3d5cb390e39d
+  $fReadRoute43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FilmeR"#) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute44 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec
+       (Yesod.Routes.Class.Route Foundation.App))
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fReadRoute46,
+                  Foundation.$fReadRoute45
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <Yesod.Routes.Class.Route Foundation.App>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute45 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1288,17 +1335,17 @@ d7eb04712a94d847ee41fa6c21c167e4
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta
                    Foundation.PokemonR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-86c66685306e08a97080c9b96884c7da
-  $fReadRoute42 :: [GHC.Types.Char]
+72765a784198fe2ce331c72902b190c8
+  $fReadRoute46 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PokemonR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute43 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute47 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute45,
-                  Foundation.$fReadRoute44
+     Unfolding: ((Foundation.$fReadRoute49,
+                  Foundation.$fReadRoute48
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1306,8 +1353,8 @@ d7eb04712a94d847ee41fa6c21c167e4
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute44 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute48 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1323,17 +1370,20 @@ d7eb04712a94d847ee41fa6c21c167e4
                    Foundation.ListaTreinadorR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-7c058ddcdd4f9451907980e534539c9d
-  $fReadRoute45 :: [GHC.Types.Char]
+e5318bc9f480a49beec79e38f656f0df
+  $fReadRoute49 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ListaTreinadorR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute46 ::
+0c2f02c6f7cbd793c3bf647dc429fedd
+  $fReadRoute5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "PerfilUsuarioR"#) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute50 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute48,
-                  Foundation.$fReadRoute47
+     Unfolding: ((Foundation.$fReadRoute52,
+                  Foundation.$fReadRoute51
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1341,8 +1391,8 @@ d7eb04712a94d847ee41fa6c21c167e4
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute47 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute51 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1358,17 +1408,17 @@ d7eb04712a94d847ee41fa6c21c167e4
                    Foundation.TreinadorR
                      `cast`
                    (Sym (Foundation.D:R:RouteApp0[0]))) -}
-c3f86b9b1039e78af75c8796b2cd8f9b
-  $fReadRoute48 :: [GHC.Types.Char]
+69d3c3ca062e1ce67bb056357e45f8cd
+  $fReadRoute52 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "TreinadorR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute49 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute53 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute51,
-                  Foundation.$fReadRoute50
+     Unfolding: ((Foundation.$fReadRoute55,
+                  Foundation.$fReadRoute54
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1376,11 +1426,8 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-0c2f02c6f7cbd793c3bf647dc429fedd
-  $fReadRoute5 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "PerfilUsuarioR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute50 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute54 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1393,17 +1440,17 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                    (eta :: Yesod.Routes.Class.Route Foundation.App
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-95f7cc70dccaf444245181bc517530e5
-  $fReadRoute51 :: [GHC.Types.Char]
+f906c7788f5730a7d83ef1fb3de9c075
+  $fReadRoute55 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "HomeR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute52 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute56 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute54,
-                  Foundation.$fReadRoute53
+     Unfolding: ((Foundation.$fReadRoute58,
+                  Foundation.$fReadRoute57
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1411,8 +1458,8 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute53 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute57 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (Yesod.Routes.Class.Route Foundation.App
@@ -1426,17 +1473,17 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                            -> Text.ParserCombinators.ReadP.P b) ->
                  eta
                    Foundation.RobotsR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-01b778dd5c35ac1440d014471719f92a
-  $fReadRoute54 :: [GHC.Types.Char]
+c979ea464d2584e066ae398abe909e62
+  $fReadRoute58 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "RobotsR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute55 ::
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute59 ::
     ([GHC.Types.Char],
      Text.ParserCombinators.ReadPrec.ReadPrec
        (Yesod.Routes.Class.Route Foundation.App))
   {- Strictness: m,
-     Unfolding: ((Foundation.$fReadRoute57,
-                  Foundation.$fReadRoute56
+     Unfolding: ((Foundation.$fReadRoute61,
+                  Foundation.$fReadRoute60
                     `cast`
                   (Trans
                        (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1444,39 +1491,7 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                                       <Yesod.Routes.Class.Route Foundation.App>_R))
                        (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))))) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute56 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (Yesod.Routes.Class.Route Foundation.App
-        -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
-     Unfolding: InlineRule (2, True, True)
-                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
-                   @ b
-                   (eta :: Yesod.Routes.Class.Route Foundation.App
-                           -> Text.ParserCombinators.ReadP.P b) ->
-                 eta
-                   Foundation.FaviconR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-0c21c4f2db0c8503631a3bef89b42be8
-  $fReadRoute57 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "FaviconR"#) -}
-9dc1dd168458a280b7775be961657b87
-  $fReadRoute58 ::
-    Text.ParserCombinators.ReadP.P
-      [Yesod.Routes.Class.Route Foundation.App]
-  {- Unfolding: (GHC.Read.list1
-                   @ (Yesod.Routes.Class.Route Foundation.App)
-                   Foundation.$fReadRoute2
-                     `cast`
-                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
-                             <Yesod.Routes.Class.Route Foundation.App>_R))
-                   GHC.Read.$fRead()5
-                   @ [Yesod.Routes.Class.Route Foundation.App]
-                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
-                      @ [Yesod.Routes.Class.Route Foundation.App])) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute6 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> Text.ParserCombinators.ReadP.P b1)
@@ -1486,9 +1501,9 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                    (k1 :: Yesod.Routes.Class.Route Foundation.App
                           -> Text.ParserCombinators.ReadP.P b1) ->
                  let {
-                   lvl88 :: Text.ParserCombinators.ReadP.P b1
+                   lvl90 :: Text.ParserCombinators.ReadP.P b1
                    = let {
-                       lvl89 :: Text.ParserCombinators.ReadP.P b1
+                       lvl91 :: Text.ParserCombinators.ReadP.P b1
                        = Foundation.$woptional1
                            11#
                            @ b1
@@ -1504,13 +1519,13 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                           Text.Read.Lex.Ident a2
                           -> case GHC.Base.eqString a2 Foundation.$fReadRoute7 of wild1 {
                                GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
-                               GHC.Types.True -> lvl89 } })
+                               GHC.Types.True -> lvl91 } })
                  } in
                  let {
                    k :: () -> Text.ParserCombinators.ReadP.P b1
                      {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl88) -}
-                   = \ (w4 :: ()) -> lvl88
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl90) -}
+                   = \ (w4 :: ()) -> lvl90
                  } in
                  Text.ParserCombinators.ReadP.Look
                    @ b1
@@ -1520,10 +1535,42 @@ c3f86b9b1039e78af75c8796b2cd8f9b
                     (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
                       @ b1
                       k)) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute60 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Yesod.Routes.Class.Route Foundation.App
+        -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Yesod.Routes.Class.Route Foundation.App
+                           -> Text.ParserCombinators.ReadP.P b) ->
+                 eta
+                   Foundation.FaviconR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
+bcef74bbe61d879635412e0cbca87ab0
+  $fReadRoute61 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FaviconR"#) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
+  $fReadRoute62 ::
+    Text.ParserCombinators.ReadP.P
+      [Yesod.Routes.Class.Route Foundation.App]
+  {- Unfolding: (GHC.Read.list1
+                   @ (Yesod.Routes.Class.Route Foundation.App)
+                   Foundation.$fReadRoute2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Yesod.Routes.Class.Route Foundation.App>_R))
+                   GHC.Read.$fRead()5
+                   @ [Yesod.Routes.Class.Route Foundation.App]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Yesod.Routes.Class.Route Foundation.App])) -}
 c559cde1d96f9f7f3c442cdcbe38d05f
   $fReadRoute7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "FilmesR"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> Text.ParserCombinators.ReadP.P b1)
@@ -1533,9 +1580,9 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                    (k1 :: Yesod.Routes.Class.Route Foundation.App
                           -> Text.ParserCombinators.ReadP.P b1) ->
                  let {
-                   lvl88 :: Text.ParserCombinators.ReadP.P b1
+                   lvl90 :: Text.ParserCombinators.ReadP.P b1
                    = let {
-                       lvl89 :: Text.ParserCombinators.ReadP.P b1
+                       lvl91 :: Text.ParserCombinators.ReadP.P b1
                        = Foundation.$woptional2
                            11#
                            @ b1
@@ -1553,13 +1600,13 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                           Text.Read.Lex.Ident a2
                           -> case GHC.Base.eqString a2 Foundation.$fReadRoute9 of wild1 {
                                GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
-                               GHC.Types.True -> lvl89 } })
+                               GHC.Types.True -> lvl91 } })
                  } in
                  let {
                    k :: () -> Text.ParserCombinators.ReadP.P b1
                      {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl88) -}
-                   = \ (w4 :: ()) -> lvl88
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl90) -}
+                   = \ (w4 :: ()) -> lvl90
                  } in
                  Text.ParserCombinators.ReadP.Look
                    @ b1
@@ -1572,15 +1619,15 @@ c559cde1d96f9f7f3c442cdcbe38d05f
 237f3d880d3e0cfee6a6195999231a39
   $fReadRoute9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PokedexR"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute_$creadList ::
     Text.ParserCombinators.ReadP.ReadS
       [Yesod.Routes.Class.Route Foundation.App]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [Yesod.Routes.Class.Route Foundation.App]
-                   Foundation.$fReadRoute58) -}
-9dc1dd168458a280b7775be961657b87
+                   Foundation.$fReadRoute62) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       [Yesod.Routes.Class.Route Foundation.App]
@@ -1594,7 +1641,7 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                                     <[Yesod.Routes.Class.Route Foundation.App]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                <[Yesod.Routes.Class.Route Foundation.App]>_R))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec
       (Yesod.Routes.Class.Route Foundation.App)
@@ -1604,7 +1651,7 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                           <Yesod.Routes.Class.Route Foundation.App>_R)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fReadRoute_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS
@@ -1627,7 +1674,7 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                       @ (Yesod.Routes.Class.Route Foundation.App)
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ (Yesod.Routes.Class.Route Foundation.App)))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRenderMessageAppFormMessage ::
     Text.Shakespeare.I18N.RenderMessage
       Foundation.App Yesod.Form.Types.FormMessage
@@ -1638,7 +1685,7 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                   `cast`
                 (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
                           <Foundation.App>_N <Yesod.Form.Types.FormMessage>_N)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRenderMessageAppFormMessage_$crenderMessage ::
     Foundation.App
     -> [Text.Shakespeare.I18N.Lang]
@@ -1650,7 +1697,7 @@ c559cde1d96f9f7f3c442cdcbe38d05f
                    (ds1 :: [Text.Shakespeare.I18N.Lang])
                    (eta :: Yesod.Form.Types.FormMessage) ->
                  Yesod.Form.I18n.English.englishFormMessage eta) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRenderRouteApp :: Yesod.Routes.Class.RenderRoute Foundation.App
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1682,74 +1729,81 @@ e4f0b0567bbed2f1d310abe2ff6c2de7
 212ed5b2d15cc73afec0919b1bde3c47
   $fRenderRouteApp12 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "cadastrar"#) -}
-1daf8de4b48fdde24283401970df7f04
-  $fRenderRouteApp13 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "filme"#) -}
-117a23654ab40ca3a730dbb6896c2769
+4bf1656f8116157b1a24c640c3f59ec1
+  $fRenderRouteApp13 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Foundation.$fRenderRouteApp16
+                   Foundation.$fRenderRouteApp14) -}
+3b42b10277cf2677d2dc3694f459f9c1
   $fRenderRouteApp14 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp13
+                   Foundation.$fRenderRouteApp15
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-776268157c5b853b2942be61f91838cf
+bb3df1f63306a78bda5635673aa64992
   $fRenderRouteApp15 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "pokedex"#) -}
-02011814ce9913f3b4b31216a6cd66e6
-  $fRenderRouteApp16 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp17
-                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-e44435ed0acbc571a5500a79f9bc8480
+  {- Unfolding: (Data.Text.Show.unpackCString# "filme"#) -}
+c0bb279adced2e446d407fec5be640c0
+  $fRenderRouteApp16 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "lista"#) -}
+c1608e09eace90ee322b24d6c4d8d9b3
   $fRenderRouteApp17 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "pokemon"#) -}
-36bbd937d85107de0e143b9c35937129
+  {- Unfolding: (Data.Text.Show.unpackCString# "pokedex"#) -}
+4383859d905a6a9c925258928f5209da
   $fRenderRouteApp18 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp21
-                   Foundation.$fRenderRouteApp19) -}
-d4f97037a0612e1dd2e6ec5bab646480
-  $fRenderRouteApp19 :: [Data.Text.Internal.Text]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp20
+                   Foundation.$fRenderRouteApp19
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+4546dfdd86d9ba957da2ad6d19bf41db
+  $fRenderRouteApp19 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "pokemon"#) -}
 65f3a468bd70c69691c8d9631ddb1c19
   $fRenderRouteApp2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "admin"#) -}
-d11075d1a2de79e31fe355ab7032610d
-  $fRenderRouteApp20 :: Data.Text.Internal.Text
+8f1ad5c0a79b60bad7f1eb7463fb2c63
+  $fRenderRouteApp20 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Foundation.$fRenderRouteApp16
+                   Foundation.$fRenderRouteApp21) -}
+646739401deae9fa1344d9c3c89c97d5
+  $fRenderRouteApp21 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Foundation.$fRenderRouteApp22
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+d64498743e7f8b938ad7a5abb0e962c2
+  $fRenderRouteApp22 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "treinador"#) -}
-0b8c3a6b032d3c33e700154ac7e4b593
-  $fRenderRouteApp21 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "lista"#) -}
-8c30ae859bafbc6746dc19e4949a1745
-  $fRenderRouteApp22 :: [Data.Text.Internal.Text]
+594441395a7cb0c5c1a47a6a08d88ef8
+  $fRenderRouteApp23 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp23
+                   Foundation.$fRenderRouteApp24
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-5f4cf6d0e5eb41358aab39a67d786a6e
-  $fRenderRouteApp23 :: Data.Text.Internal.Text
+8d6a56ec826d93883635a65552527bfa
+  $fRenderRouteApp24 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "robots.txt"#) -}
-c429dcc759573d414e55724fedfe9b0d
-  $fRenderRouteApp24 :: [Data.Text.Internal.Text]
+30b0948f407a572e8c2e608447150d46
+  $fRenderRouteApp25 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
-                   Foundation.$fRenderRouteApp25
+                   Foundation.$fRenderRouteApp26
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-47bc905e08a089c60e3dc9e0af945ec8
-  $fRenderRouteApp25 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString# "favicon.ico"#) -}
-a9d49215c0a04413dce0448874045a8a
+606bf6aa585afa04079e1ba6f8a06d2c
   $fRenderRouteApp26 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "favicon.ico"#) -}
+959c52671db0c21c9f834191914a1121
+  $fRenderRouteApp27 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "static"#) -}
 54715b608770e68b9eeae7259c5c4151
   $fRenderRouteApp3 :: [Data.Text.Internal.Text]
@@ -1784,7 +1838,7 @@ a1ed15e61d36a7cf7c5d254cf093da2f
 13d295c1ba72198b8b93b64d4614712c
   $fRenderRouteApp9 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "usuario"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRenderRouteApp_$crenderRoute ::
     Yesod.Routes.Class.Route Foundation.App
     -> ([Data.Text.Internal.Text],
@@ -1799,20 +1853,20 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                            (Yesod.Static.D:R:RouteStatic0[0]) of wild1 { Yesod.Static.StaticRoute x2 y ->
                       (GHC.Types.:
                          @ Data.Text.Internal.Text
-                         Foundation.$fRenderRouteApp26
+                         Foundation.$fRenderRouteApp27
                          x2,
                        y) }
                    Foundation.FaviconR
-                   -> (Foundation.$fRenderRouteApp24,
+                   -> (Foundation.$fRenderRouteApp25,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.RobotsR
-                   -> (Foundation.$fRenderRouteApp22,
+                   -> (Foundation.$fRenderRouteApp23,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.HomeR
                    -> (GHC.Types.[] @ Data.Text.Internal.Text,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.TreinadorR
-                   -> (Foundation.$fRenderRouteApp19,
+                   -> (Foundation.$fRenderRouteApp21,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.PerfilR dyn
                    -> (GHC.Types.:
@@ -1820,7 +1874,7 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                          Foundation.$fRenderRouteApp8
                          (GHC.Types.:
                             @ Data.Text.Internal.Text
-                            Foundation.$fRenderRouteApp20
+                            Foundation.$fRenderRouteApp22
                             (GHC.Types.:
                                @ Data.Text.Internal.Text
                                (Web.PathPieces.$fPathPieceInt64_$ctoPathPiece
@@ -1836,15 +1890,15 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                                (GHC.Types.[] @ Data.Text.Internal.Text))),
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.ListaTreinadorR
-                   -> (Foundation.$fRenderRouteApp18,
+                   -> (Foundation.$fRenderRouteApp20,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.PokemonR
-                   -> (Foundation.$fRenderRouteApp16,
+                   -> (Foundation.$fRenderRouteApp18,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.PokedexR dyn
                    -> (GHC.Types.:
                          @ Data.Text.Internal.Text
-                         Foundation.$fRenderRouteApp15
+                         Foundation.$fRenderRouteApp17
                          (GHC.Types.:
                             @ Data.Text.Internal.Text
                             (Web.PathPieces.$fPathPieceInt64_$ctoPathPiece
@@ -1865,7 +1919,7 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                    Foundation.FilmesR dyn
                    -> (GHC.Types.:
                          @ Data.Text.Internal.Text
-                         Foundation.$fRenderRouteApp13
+                         Foundation.$fRenderRouteApp15
                          (GHC.Types.:
                             @ Data.Text.Internal.Text
                             (Web.PathPieces.$fPathPieceInt64_$ctoPathPiece
@@ -1879,6 +1933,9 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                                               (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
                                               (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))))
                             (GHC.Types.[] @ Data.Text.Internal.Text)),
+                       GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
+                   Foundation.ListaFilmeR
+                   -> (Foundation.$fRenderRouteApp13,
                        GHC.Types.[] @ (Data.Text.Internal.Text, Data.Text.Internal.Text))
                    Foundation.CadUsuarioR
                    -> (Foundation.$fRenderRouteApp10,
@@ -1911,7 +1968,7 @@ a1ed15e61d36a7cf7c5d254cf093da2f
                    -> (Foundation.$fRenderRouteApp1,
                        GHC.Types.[]
                          @ (Data.Text.Internal.Text, Data.Text.Internal.Text)) }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRouteAttrsApp :: Yesod.Routes.Class.RouteAttrs Foundation.App
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1923,7 +1980,7 @@ caa0604c413a30c61b5f2624e7c5b49d
   $fRouteAttrsApp1 :: Data.Set.Base.Set Data.Text.Internal.Text
   {- Unfolding: (Foundation.$fRouteAttrsApp_$sfromList
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fRouteAttrsApp_$crouteAttrs ::
     Yesod.Routes.Class.Route Foundation.App
     -> Data.Set.Base.Set Data.Text.Internal.Text
@@ -1997,7 +2054,7 @@ c979dc7f99af8fe87d941cc56ece4874
     -> Data.Set.Base.Set Data.Text.Internal.Text
     -> Data.Set.Base.Set Data.Text.Internal.Text
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><S,1*U> -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fShowRoute ::
     GHC.Show.Show (Yesod.Routes.Class.Route Foundation.App)
   DFunId
@@ -2007,108 +2064,114 @@ c979dc7f99af8fe87d941cc56ece4874
                   Foundation.$fShowRoute_$cshowsPrec
                   Foundation.$fShowRoute_$cshow
                   Foundation.$fShowRoute_$cshowList -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fShowRoute1 ::
     Yesod.Routes.Class.Route Foundation.App -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (Foundation.$fShowRoute_$cshowsPrec
                    Foundation.$fShowRoute2) -}
-0d87cef894c127ea9964193a8b7092da
-  $fShowRoute10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "PokedexR "#) -}
-c305f8549e69077c5b25a198543e9deb
-  $fShowRoute11 :: GHC.Show.ShowS
+413e1b9e7f8b2ed927222cdf43055e07
+  $fShowRoute10 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute42) -}
-de63bb9bb2389a27a544e5878603534c
+                   Foundation.$fReadRoute43) -}
+11c1d69b55710a4ab2b2207150c70cb9
+  $fShowRoute11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "PokedexR "#) -}
+e6915f6621955fd78505ab579ae073c5
   $fShowRoute12 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute45) -}
-659f4e8171bf7d9e0b40ea217bd326d2
-  $fShowRoute13 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "PerfilR "#) -}
-70378d208daf54185a48482f2fd6e2ad
-  $fShowRoute14 :: GHC.Show.ShowS
+                   Foundation.$fReadRoute46) -}
+cb3c73d039766eeabb18d789a3732548
+  $fShowRoute13 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute48) -}
-035904493f7f2cc23769128273435c1c
+                   Foundation.$fReadRoute49) -}
+c3a7399158db44e7c853385bca7ed2be
+  $fShowRoute14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "PerfilR "#) -}
+991be778ae0079bf95aa03364a97e801
   $fShowRoute15 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute51) -}
-d639a823bb929f461543a1a1c410a867
+                   Foundation.$fReadRoute52) -}
+4e43efbdd419c776fa57ae8e941f4274
   $fShowRoute16 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute54) -}
-65f3e3bc1c6b0ba8710e1d73842049bf
+                   Foundation.$fReadRoute55) -}
+b53aafb70bd1515a4fbc298d65dc5cf8
   $fShowRoute17 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute57) -}
-471d49797c454b5cc7ea3ab519e1d9a4
-  $fShowRoute18 :: [GHC.Types.Char]
+                   Foundation.$fReadRoute58) -}
+884262db36ac1243dc65b754bc7798ce
+  $fShowRoute18 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Foundation.$fReadRoute61) -}
+6c6d6afbac20300a89dc60355b0a6f66
+  $fShowRoute19 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "StaticR "#) -}
 140296ec422616f18b7ae15fa8786756
   $fShowRoute2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-829559348fe6974a80e701023b713dd0
+7ce4439dcde41c67bf5d716a5dca6ff6
   $fShowRoute3 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute27) -}
-e2c49d2ee778f54afc177837a201851f
+                   Foundation.$fReadRoute28) -}
+f241ec75028441d0a74d432eabc528ee
   $fShowRoute4 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute30) -}
-39e2a4f6cd1dffeae460e50fedc1cc85
+                   Foundation.$fReadRoute31) -}
+c2958e48ab25535ae89f9ded5a40eef7
   $fShowRoute5 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute33) -}
+                   Foundation.$fReadRoute34) -}
 42acb90301e34716d22751a9b2284e3f
   $fShowRoute6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "PerfilUsuarioR "#) -}
-b3dc57e2178040daf9a35c56f227bf55
+8b4ee90d79ac3e160eeeb37499652d90
   $fShowRoute7 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute36) -}
-ec3eeecbedde848822582ae51004ef27
-  $fShowRoute8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "FilmesR "#) -}
-f09f3ff687f7162cdf820423830ea0e4
-  $fShowRoute9 :: GHC.Show.ShowS
+                   Foundation.$fReadRoute37) -}
+b5fdd1bcf087fd10c6432569c84bce12
+  $fShowRoute8 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   Foundation.$fReadRoute39) -}
-9dc1dd168458a280b7775be961657b87
+                   Foundation.$fReadRoute40) -}
+2c8aa9d1c84d495a4685026d2b2bd488
+  $fShowRoute9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FilmesR "#) -}
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fShowRoute_$cshow ::
     Yesod.Routes.Class.Route Foundation.App -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U> -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fShowRoute_$cshowList ::
     [Yesod.Routes.Class.Route Foundation.App] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ (Yesod.Routes.Class.Route Foundation.App)
                    Foundation.$fShowRoute1) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fShowRoute_$cshowsPrec ::
     GHC.Types.Int
     -> Yesod.Routes.Class.Route Foundation.App -> GHC.Show.ShowS
@@ -2125,7 +2188,7 @@ f09f3ff687f7162cdf820423830ea0e4
                         -> \ (x1 :: GHC.Base.String) ->
                            GHC.Base.++
                              @ GHC.Types.Char
-                             Foundation.$fShowRoute18
+                             Foundation.$fShowRoute19
                              (case b1
                                      `cast`
                                    (Yesod.Static.D:R:RouteStatic0[0]) of ww2 { Yesod.Static.StaticRoute ww3 ww4 ->
@@ -2137,7 +2200,7 @@ f09f3ff687f7162cdf820423830ea0e4
                              GHC.Show.shows7
                              (GHC.Base.++
                                 @ GHC.Types.Char
-                                Foundation.$fShowRoute18
+                                Foundation.$fShowRoute19
                                 (case b1
                                         `cast`
                                       (Yesod.Static.D:R:RouteStatic0[0]) of ww2 { Yesod.Static.StaticRoute ww3 ww4 ->
@@ -2146,11 +2209,34 @@ f09f3ff687f7162cdf820423830ea0e4
                                    ww3
                                    ww4
                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1) })) } }
-                   Foundation.FaviconR -> Foundation.$fShowRoute17
-                   Foundation.RobotsR -> Foundation.$fShowRoute16
-                   Foundation.HomeR -> Foundation.$fShowRoute15
-                   Foundation.TreinadorR -> Foundation.$fShowRoute14
+                   Foundation.FaviconR -> Foundation.$fShowRoute18
+                   Foundation.RobotsR -> Foundation.$fShowRoute17
+                   Foundation.HomeR -> Foundation.$fShowRoute16
+                   Foundation.TreinadorR -> Foundation.$fShowRoute15
                    Foundation.PerfilR b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = Model.$w$cshowsPrec4 11# b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute14 (g x1)
+                        GHC.Types.True
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Foundation.$fShowRoute14
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))) } }
+                   Foundation.ListaTreinadorR -> Foundation.$fShowRoute13
+                   Foundation.PokemonR -> Foundation.$fShowRoute12
+                   Foundation.PokedexR b1
                    -> case a of wild1 { GHC.Types.I# x ->
                       let {
                         g :: GHC.Base.String -> GHC.Base.String
@@ -2161,7 +2247,7 @@ f09f3ff687f7162cdf820423830ea0e4
                              (GHC.Prim.>=# x 11#) of wild2 {
                         GHC.Types.False
                         -> \ (x1 :: GHC.Base.String) ->
-                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute13 (g x1)
+                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute11 (g x1)
                         GHC.Types.True
                         -> \ (x1 :: GHC.Base.String) ->
                            GHC.Types.:
@@ -2169,44 +2255,21 @@ f09f3ff687f7162cdf820423830ea0e4
                              GHC.Show.shows7
                              (GHC.Base.++
                                 @ GHC.Types.Char
-                                Foundation.$fShowRoute13
+                                Foundation.$fShowRoute11
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))) } }
-                   Foundation.ListaTreinadorR -> Foundation.$fShowRoute12
-                   Foundation.PokemonR -> Foundation.$fShowRoute11
-                   Foundation.PokedexR b1
-                   -> case a of wild1 { GHC.Types.I# x ->
-                      let {
-                        g :: GHC.Base.String -> GHC.Base.String
-                        = Model.$w$cshowsPrec2 11# b1
-                      } in
-                      case GHC.Prim.tagToEnum#
-                             @ GHC.Types.Bool
-                             (GHC.Prim.>=# x 11#) of wild2 {
-                        GHC.Types.False
-                        -> \ (x1 :: GHC.Base.String) ->
-                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute10 (g x1)
-                        GHC.Types.True
-                        -> \ (x1 :: GHC.Base.String) ->
-                           GHC.Types.:
-                             @ GHC.Types.Char
-                             GHC.Show.shows7
-                             (GHC.Base.++
-                                @ GHC.Types.Char
-                                Foundation.$fShowRoute10
-                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))) } }
-                   Foundation.FilmeR -> Foundation.$fShowRoute9
+                   Foundation.FilmeR -> Foundation.$fShowRoute10
                    Foundation.FilmesR b1
                    -> case a of wild1 { GHC.Types.I# x ->
                       let {
                         g :: GHC.Base.String -> GHC.Base.String
-                        = Model.$w$cshowsPrec 11# b1
+                        = Model.$w$cshowsPrec1 11# b1
                       } in
                       case GHC.Prim.tagToEnum#
                              @ GHC.Types.Bool
                              (GHC.Prim.>=# x 11#) of wild2 {
                         GHC.Types.False
                         -> \ (x1 :: GHC.Base.String) ->
-                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute8 (g x1)
+                           GHC.Base.++ @ GHC.Types.Char Foundation.$fShowRoute9 (g x1)
                         GHC.Types.True
                         -> \ (x1 :: GHC.Base.String) ->
                            GHC.Types.:
@@ -2214,14 +2277,15 @@ f09f3ff687f7162cdf820423830ea0e4
                              GHC.Show.shows7
                              (GHC.Base.++
                                 @ GHC.Types.Char
-                                Foundation.$fShowRoute8
+                                Foundation.$fShowRoute9
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))) } }
+                   Foundation.ListaFilmeR -> Foundation.$fShowRoute8
                    Foundation.CadUsuarioR -> Foundation.$fShowRoute7
                    Foundation.PerfilUsuarioR b1
                    -> case a of wild1 { GHC.Types.I# x ->
                       let {
                         g :: GHC.Base.String -> GHC.Base.String
-                        = Model.$w$cshowsPrec4 11# b1
+                        = Model.$w$cshowsPrec5 11# b1
                       } in
                       case GHC.Prim.tagToEnum#
                              @ GHC.Types.Bool
@@ -2241,7 +2305,7 @@ f09f3ff687f7162cdf820423830ea0e4
                    Foundation.LoginR -> Foundation.$fShowRoute5
                    Foundation.LogoutR -> Foundation.$fShowRoute4
                    Foundation.AdminR -> Foundation.$fShowRoute3 }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp :: Yesod.Core.Class.Yesod.Yesod Foundation.App
   DFunId
   {- Inline: [ALWAYS] CONLIKE,
@@ -2271,7 +2335,7 @@ f09f3ff687f7162cdf820423830ea0e4
                   Foundation.$fYesodApp_$cyesodMiddleware
                   Foundation.$fYesodApp_$cyesodWithInternalState
                   Foundation.$fYesodApp_$cdefaultMessageWidget -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp1 ::
     Text.Blaze.Html.Html
     -> Text.Hamlet.HtmlUrl (Yesod.Routes.Class.Route Foundation.App)
@@ -2287,7 +2351,7 @@ f09f3ff687f7162cdf820423830ea0e4
                    (eta :: Yesod.Core.Types.HandlerData
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
                  let {
-                   lvl88 :: Text.Hamlet.Render
+                   lvl90 :: Text.Hamlet.Render
                               (Yesod.Routes.Class.Route Foundation.App)
                             -> Text.Blaze.Internal.MarkupM ()
                      {- Arity: 1 -}
@@ -2308,11 +2372,11 @@ f09f3ff687f7162cdf820423830ea0e4
                              (body _render)))
                  } in
                  let {
-                   lvl89 :: Yesod.Core.Types.GWData
+                   lvl91 :: Yesod.Core.Types.GWData
                               (Yesod.Routes.Class.Route Foundation.App)
                    = Yesod.Core.Types.GWData
                        @ (Yesod.Routes.Class.Route Foundation.App)
-                       lvl88
+                       lvl90
                          `cast`
                        (Sym (Yesod.Core.Types.N:Body[0]
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
@@ -2351,13 +2415,13 @@ f09f3ff687f7162cdf820423830ea0e4
                                  <Yesod.Routes.Class.Route Foundation.App>_R))
                  } in
                  let {
-                   lvl90 :: ((),
+                   lvl92 :: ((),
                              Yesod.Core.Types.GWData
                                (Yesod.Routes.Class.Route
                                   (Yesod.Core.Class.Handler.HandlerSite
                                      (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))))
                    = (GHC.Tuple.(),
-                      lvl89
+                      lvl91
                         `cast`
                       (Yesod.Core.Types.GWData
                          (Yesod.Routes.Class.Route
@@ -2461,7 +2525,7 @@ f09f3ff687f7162cdf820423830ea0e4
                       (eta1 :: Yesod.Core.Types.HandlerData
                                  Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                       (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                    (# eta2, lvl90 #))
+                    (# eta2, lvl92 #))
                      `cast`
                    (<()>_R
                     ->_R Trans
@@ -2478,7 +2542,7 @@ f09f3ff687f7162cdf820423830ea0e4
                              (Sym (Yesod.Core.Types.N:WidgetT[0]
                                        <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
                    eta) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp10 ::
     Yesod.Core.Content.ToTypedContent res =>
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO res
@@ -2506,7 +2570,7 @@ f09f3ff687f7162cdf820423830ea0e4
                    ww4
                    ww6
                    w3 }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp11 ::
     Foundation.App
     -> Control.Monad.Logger.LogSource
@@ -2555,7 +2619,7 @@ ad216c2f677ca2ae9bc7878a2091067a
                     ->_R <Network.Wai.Parse.FileInfo ()>_R
                     ->_R <GHC.Types.IO Data.ByteString.Internal.ByteString>_R
                     ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp15 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2569,7 +2633,7 @@ ad216c2f677ca2ae9bc7878a2091067a
 1dd4ddfb1990a3f2ac510e033fd5c0e7
   $fYesodApp16 :: GHC.Integer.Type.Integer
   {- Unfolding: (7200000000000000) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp17 ::
     Foundation.App
     -> Yesod.Core.Types.Logger
@@ -2591,7 +2655,7 @@ ad216c2f677ca2ae9bc7878a2091067a
                    (w5 :: System.Log.FastLogger.LogStr.LogStr)
                    (w6 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Foundation.$w$cmessageLoggerSource w1 w2 w3 w4 w5 w6) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp18 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2673,7 +2737,7 @@ c0180e0e94b023cd0115fffa7cdaa998
                    @ ()
                    Foundation.$fYesodApp3
                    GHC.Tuple.()) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp20 ::
     Data.Text.Internal.Text
     -> Data.Text.Internal.Text
@@ -2832,14 +2896,14 @@ c843f6d3e44fc0ffe2600e195f655d01
                         (GHC.Prim.<=# dt2 0#) of wild1 {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False } }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp27 ::
     GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Base.Just
                    @ (Yesod.Routes.Class.Route Foundation.App)
                    Foundation.LoginR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp28 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2989,7 +3053,7 @@ c7cbd8f6b4a9a832431a394b5afe69d7
                    (GHC.ForeignPtr.PlainForeignPtr ipv1)
                    0#
                    (GHC.Prim.word2Int# ds4) } }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp37 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Network.Wai.Internal.Request
@@ -2997,7 +3061,7 @@ c7cbd8f6b4a9a832431a394b5afe69d7
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    (Yesod.Core.Class.Yesod.$dmdefaultLayout_$s$fMonadHandlerHandlerT
                       @ Foundation.App)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp38 ::
     Yesod.Routes.Class.Route Foundation.App
     -> GHC.Types.Bool
@@ -3018,7 +3082,7 @@ c7cbd8f6b4a9a832431a394b5afe69d7
                    Foundation.CadUsuarioR -> (# eta1, Yesod.Core.Types.Authorized #)
                    Foundation.LoginR -> (# eta1, Yesod.Core.Types.Authorized #)
                    Foundation.AdminR -> Foundation.$fYesodApp39 eta eta1 }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp39 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -3154,7 +3218,7 @@ e3ab89f705d658e4d4cfafd80ebc5d47
   $fYesodApp4 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text Foundation.$fYesodApp5) -}
-8ad97e877a4be7930a6cad115fcb8723
+a5192e277f7ea6fe01d760c9eaf81124
   $fYesodApp40 :: Model.Usuario
   {- Strictness: x -}
 f1cfe20e54c3b00b4fa1d0ee7fdddfff
@@ -3165,10 +3229,10 @@ d190825804fce2aa2f59bfd019d7be85
   $fYesodApp42 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "VC NAO PERMISSAO"#) -}
-adecc90d4f100bebf86ae89ddee5c8c8
+3e7acc6725d570fb873af2234f7442ba
   $fYesodApp43 :: Model.Usuario
   {- Strictness: x -}
-b3c90821d27660caae3530bbd7680637
+a336b284cd6bdf7994e73b8bde1d451e
   $fYesodApp44 :: Text.ParserCombinators.ReadP.P Model.Usuario
   {- Unfolding: ((GHC.Read.parens1
                     @ Model.Usuario
@@ -3188,7 +3252,7 @@ b3c90821d27660caae3530bbd7680637
 357def59d0927cf6b957a2f4bbfcbde2
   $fYesodApp45 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "_USR"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp46 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -3237,7 +3301,7 @@ a473f02c766dd85dbd995b8e5e20c655
 9405966277e667f3ad5014134ffddb17
   $fYesodApp9 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "<h1>"#) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$caddStaticContent ::
     Data.Text.Internal.Text
     -> Data.Text.Internal.Text
@@ -3276,14 +3340,14 @@ a473f02c766dd85dbd995b8e5e20c655
                                           (Yesod.Routes.Class.Route Foundation.App,
                                            [(Data.Text.Internal.Text,
                                              Data.Text.Internal.Text)]))>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cauthRoute ::
     Foundation.App
     -> GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
      Unfolding: InlineRule (1, True, True)
                 (\ (ds :: Foundation.App) -> Foundation.$fYesodApp27) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$ccleanPath ::
     Foundation.App
     -> [Data.Text.Internal.Text]
@@ -3293,13 +3357,13 @@ a473f02c766dd85dbd995b8e5e20c655
      Unfolding: InlineRule (2, True, True)
                 (\ (w :: Foundation.App) (w1 :: [Data.Text.Internal.Text]) ->
                  Foundation.$w$ccleanPath w1) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cdefaultLayout ::
     Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO ()
     -> Yesod.Core.Types.HandlerT
          Foundation.App GHC.Types.IO Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cdefaultMessageWidget ::
     Text.Blaze.Html.Html
     -> Text.Hamlet.HtmlUrl (Yesod.Routes.Class.Route Foundation.App)
@@ -3313,12 +3377,12 @@ a473f02c766dd85dbd995b8e5e20c655
                          (Yesod.Routes.Class.Route Foundation.App)>_R
                  ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <()>_N)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cerrorHandler ::
     Yesod.Core.Types.ErrorResponse
     -> Yesod.Core.Types.HandlerT
          Foundation.App GHC.Types.IO Yesod.Core.Types.TypedContent
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cfileUpload ::
     Foundation.App
     -> Network.Wai.Internal.RequestBodyLength
@@ -3328,7 +3392,7 @@ a473f02c766dd85dbd995b8e5e20c655
                 (\ (w :: Foundation.App)
                    (w1 :: Network.Wai.Internal.RequestBodyLength) ->
                  Foundation.$w$cfileUpload w1) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cisAuthorized ::
     Yesod.Routes.Class.Route Foundation.App
     -> GHC.Types.Bool
@@ -3348,7 +3412,7 @@ a473f02c766dd85dbd995b8e5e20c655
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Yesod.Core.Types.AuthResult>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cisWriteRequest ::
     Yesod.Routes.Class.Route Foundation.App
     -> Yesod.Core.Types.HandlerT
@@ -3368,7 +3432,7 @@ a473f02c766dd85dbd995b8e5e20c655
                            ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
                           (Sym (Yesod.Core.Types.N:HandlerT[0]
                                     <Foundation.App>_N <GHC.Types.IO>_N <GHC.Types.Bool>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cjoinPath ::
     Foundation.App
     -> Data.Text.Internal.Text
@@ -3383,7 +3447,7 @@ a473f02c766dd85dbd995b8e5e20c655
                    (w2 :: [Data.Text.Internal.Text])
                    (w3 :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]) ->
                  Foundation.$w$cjoinPath w1 w2 w3) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cmakeLogger ::
     Foundation.App -> GHC.Types.IO Yesod.Core.Types.Logger
   {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(A,A,A,A,1*U)><S,U>,
@@ -3392,7 +3456,7 @@ a473f02c766dd85dbd995b8e5e20c655
                   `cast`
                 (<Foundation.App>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Yesod.Core.Types.Logger>_R)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cmakeSessionBackend ::
     Foundation.App
     -> GHC.Types.IO (GHC.Base.Maybe Yesod.Core.Types.SessionBackend)
@@ -3403,7 +3467,7 @@ a473f02c766dd85dbd995b8e5e20c655
                 (<Foundation.App>_R
                  ->_R Sym (GHC.Types.N:IO[0]
                                <GHC.Base.Maybe Yesod.Core.Types.SessionBackend>_R)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cmaximumContentLength ::
     Foundation.App
     -> GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)
@@ -3413,7 +3477,7 @@ a473f02c766dd85dbd995b8e5e20c655
                 (\ (w :: Foundation.App)
                    (w1 :: GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)) ->
                  GHC.Base.Just @ GHC.Word.Word64 Foundation.$fYesodApp19) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cmessageLoggerSource ::
     Foundation.App
     -> Yesod.Core.Types.Logger
@@ -3434,7 +3498,7 @@ a473f02c766dd85dbd995b8e5e20c655
                  ->_R <Control.Monad.Logger.LogLevel>_R
                  ->_R <System.Log.FastLogger.LogStr.LogStr>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cshouldLogIO ::
     Foundation.App
     -> Control.Monad.Logger.LogSource
@@ -3448,7 +3512,7 @@ a473f02c766dd85dbd995b8e5e20c655
                  ->_R <Control.Monad.Logger.LogSource>_R
                  ->_R <Control.Monad.Logger.LogLevel>_R
                  ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$curlParamRenderOverride ::
     Foundation.App
     -> Yesod.Routes.Class.Route Foundation.App
@@ -3460,7 +3524,7 @@ a473f02c766dd85dbd995b8e5e20c655
                    (route :: Yesod.Routes.Class.Route Foundation.App)
                    (params :: [(Data.Text.Internal.Text, Data.Text.Internal.Text)]) ->
                  GHC.Base.Nothing @ Data.ByteString.Builder.Internal.Builder) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cyesodMiddleware ::
     Yesod.Core.Content.ToTypedContent res =>
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO res
@@ -3479,7 +3543,7 @@ a473f02c766dd85dbd995b8e5e20c655
                            ->_R Sym (GHC.Types.N:IO[0] <res>_R))
                           (Sym (Yesod.Core.Types.N:HandlerT[0]
                                     <Foundation.App>_N <GHC.Types.IO>_N <res>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$cyesodWithInternalState ::
     Foundation.App
     -> GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)
@@ -3519,12 +3583,12 @@ a473f02c766dd85dbd995b8e5e20c655
                   Control.Monad.Catch.$fMonadThrowIO,
                   Control.Monad.Base.$fMonadBaseIOIO,
                   Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$s$dmapproot :: Yesod.Core.Types.Approot Foundation.App
   {- HasNoCafRefs,
      Unfolding: InlineRule (-1, True, True)
                 (Yesod.Core.Types.ApprootRelative @ Foundation.App) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$s$dmjsAttributes ::
     Foundation.App
     -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -3533,7 +3597,7 @@ a473f02c766dd85dbd995b8e5e20c655
                 (\ (ds :: Foundation.App) ->
                  GHC.Types.[]
                    @ (Data.Text.Internal.Text, Data.Text.Internal.Text)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$s$dmjsLoader ::
     Foundation.App
     -> Yesod.Core.Types.ScriptLoadPosition Foundation.App
@@ -3541,7 +3605,7 @@ a473f02c766dd85dbd995b8e5e20c655
      Unfolding: InlineRule (-1, True, True)
                 (\ (ds :: Foundation.App) ->
                  Yesod.Core.Types.BottomOfBody @ Foundation.App) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$s$dmshouldLog ::
     Foundation.App
     -> Control.Monad.Logger.LogSource
@@ -3553,7 +3617,7 @@ a473f02c766dd85dbd995b8e5e20c655
                    (eta2 :: Control.Monad.Logger.LogSource)
                    (eta3 :: Control.Monad.Logger.LogLevel) ->
                  Yesod.Core.Class.Yesod.defaultShouldLog eta2 eta3) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_$s$dmurlRenderOverride ::
     Foundation.App
     -> Yesod.Routes.Class.Route Foundation.App
@@ -3578,7 +3642,7 @@ a473f02c766dd85dbd995b8e5e20c655
                      @ GHC.Types.IO
                      @ site
                      Foundation.$fYesodApp_$d(%,,,,%)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodApp_m1 ::
     Yesod.Core.Types.HandlerT
       Foundation.App
@@ -3588,7 +3652,7 @@ a473f02c766dd85dbd995b8e5e20c655
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    (Foundation.$fYesodApp_$s$fMonadHandlerHandlerT @ Foundation.App)
                    Foundation.$fYesodApp45) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp :: Yesod.Persist.Core.YesodPersist Foundation.App
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3596,7 +3660,7 @@ a473f02c766dd85dbd995b8e5e20c655
                   @ Foundation.App
                   Foundation.$fYesodPersistApp_$cp1YesodPersist
                   Foundation.$fYesodPersistApp_$crunDB -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp1 ::
     Yesod.Persist.Core.YesodDB Foundation.App a
     -> Yesod.Core.Types.HandlerData
@@ -3679,7 +3743,7 @@ b24ece952ce43e60c546c18247399e1a
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp4 ::
     Yesod.Core.Types.HandlerT
       Foundation.App
@@ -3690,7 +3754,7 @@ b24ece952ce43e60c546c18247399e1a
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    (Foundation.$fYesodApp_$s$fMonadHandlerHandlerT
                       @ Foundation.App)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$cp1YesodPersist ::
     GHC.Base.Monad (Yesod.Persist.Core.YesodDB Foundation.App)
   {- Strictness: m,
@@ -3703,7 +3767,7 @@ b24ece952ce43e60c546c18247399e1a
                       <*>_N
                       (Sym (Foundation.D:R:YesodPersistBackendApp[0]))
                       <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_N)_N)_R -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$crunDB ::
     Yesod.Persist.Core.YesodDB Foundation.App a
     -> Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO a
@@ -3719,7 +3783,7 @@ b24ece952ce43e60c546c18247399e1a
                            ->_R Sym (GHC.Types.N:IO[0] <a>_R))
                           (Sym (Yesod.Core.Types.N:HandlerT[0]
                                     <Foundation.App>_N <GHC.Types.IO>_N <a>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$dApplicative ::
     GHC.Base.Applicative
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -3775,7 +3839,7 @@ b24ece952ce43e60c546c18247399e1a
                            ->_R Sym (GHC.Types.N:IO[0] <a>_R))
                           (Sym (Yesod.Core.Types.N:HandlerT[0]
                                     <site>_N <GHC.Types.IO>_N <a>_N))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fApplicativeReaderT ::
     GHC.Base.Applicative
       (Control.Monad.Trans.Reader.ReaderT
@@ -3817,7 +3881,7 @@ b24ece952ce43e60c546c18247399e1a
                      @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                      @ r
                      Foundation.$fYesodPersistApp_$dApplicative) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fApplicativeReaderT_$c<*> ::
     Control.Monad.Trans.Reader.ReaderT
       r (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO) (a -> b)
@@ -3871,7 +3935,7 @@ b24ece952ce43e60c546c18247399e1a
                          @ a
                          v
                          r1))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fApplicativeReaderT_$cp1Applicative ::
     GHC.Base.Functor
       (Control.Monad.Trans.Reader.ReaderT
@@ -3879,7 +3943,7 @@ b24ece952ce43e60c546c18247399e1a
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Foundation.$fYesodPersistApp_$s$fFunctorReaderT -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fApplicativeReaderT_$cpure ::
     a
     -> Control.Monad.Trans.Reader.ReaderT
@@ -3923,7 +3987,7 @@ b24ece952ce43e60c546c18247399e1a
                      @ GHC.Types.IO
                      @ site
                      Foundation.$fYesodPersistApp_$dMonad) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fFunctorReaderT ::
     GHC.Base.Functor
       (Control.Monad.Trans.Reader.ReaderT
@@ -3934,7 +3998,7 @@ b24ece952ce43e60c546c18247399e1a
                        r (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))
                   (Foundation.$fYesodPersistApp_$s$fFunctorReaderT_$cfmap @ r)
                   (Foundation.$fYesodPersistApp_$s$fFunctorReaderT_$c<$ @ r) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fFunctorReaderT_$c<$ ::
     a
     -> Control.Monad.Trans.Reader.ReaderT
@@ -4003,7 +4067,7 @@ b24ece952ce43e60c546c18247399e1a
                                <r>_R
                                <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
                                <a>_N)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fFunctorReaderT_$cfmap ::
     (a -> b)
     -> Control.Monad.Trans.Reader.ReaderT
@@ -4187,7 +4251,7 @@ d5d61b02894e1b002a6c751ad7bda8b0
                    @ a
                    Foundation.$fYesodPersistApp_$dMonad
                    eta) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fMonadReaderT ::
     GHC.Base.Monad
       (Control.Monad.Trans.Reader.ReaderT
@@ -4201,7 +4265,7 @@ d5d61b02894e1b002a6c751ad7bda8b0
                   (Foundation.$fYesodPersistApp_$s$fMonadReaderT_$c>> @ r)
                   (Foundation.$fYesodPersistApp_$s$fApplicativeReaderT_$cpure @ r)
                   (Foundation.$fYesodPersistApp_$s$fMonadReaderT_$cfail @ r) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fMonadReaderT_$c>> ::
     Control.Monad.Trans.Reader.ReaderT
       r (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO) a
@@ -4256,7 +4320,7 @@ d5d61b02894e1b002a6c751ad7bda8b0
                          @ b
                          k
                          r1))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fMonadReaderT_$c>>= ::
     Control.Monad.Trans.Reader.ReaderT
       r (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO) a
@@ -4314,7 +4378,7 @@ d5d61b02894e1b002a6c751ad7bda8b0
                          @ b
                          (k a1)
                          r1))) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fMonadReaderT_$cfail ::
     GHC.Base.String
     -> Control.Monad.Trans.Reader.ReaderT
@@ -4334,7 +4398,7 @@ d5d61b02894e1b002a6c751ad7bda8b0
                                <r>_R
                                <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
                                <a>_N)) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $fYesodPersistApp_$s$fMonadReaderT_$cp1Monad ::
     GHC.Base.Applicative
       (Control.Monad.Trans.Reader.ReaderT
@@ -4612,13 +4676,13 @@ e8577982f1e11fda7f33fa2b23a35476
                    Control.Monad.Logger.LevelWarn -> $j GHC.Prim.void#
                    Control.Monad.Logger.LevelError -> $j GHC.Prim.void#
                    Control.Monad.Logger.LevelOther a1 -> $j GHC.Prim.void# }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $w$cparseRoute ::
     [Data.Text.Internal.Text]
     -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
     -> GHC.Base.Maybe (Yesod.Routes.Class.Route Foundation.App)
   {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   $w$cyesodMiddleware ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO res
     -> Yesod.Core.Types.YesodRequest
@@ -4641,7 +4705,7 @@ e8577982f1e11fda7f33fa2b23a35476
     -> Data.Set.Base.Set Data.Text.Internal.Text
     -> Data.Set.Base.Set Data.Text.Internal.Text
   {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
-e73e5a9401e5cd5995553c54759457fb
+d469d1af680370512d332f3e3ddcc935
   $woptional ::
     GHC.Prim.Int#
     -> forall b.
@@ -4649,7 +4713,7 @@ e73e5a9401e5cd5995553c54759457fb
         -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
-cdd4e131b00332fb8c28e7678c832aaa
+73889ccd9b1e3ec64c5c40845b52847f
   $woptional1 ::
     GHC.Prim.Int#
     -> forall b.
@@ -4657,7 +4721,7 @@ cdd4e131b00332fb8c28e7678c832aaa
         -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
-e69966d858b676afbc9ab1f3c9b0ba50
+2deaeea0df76dba09e4ce01701677b58
   $woptional2 ::
     GHC.Prim.Int#
     -> forall b.
@@ -4665,7 +4729,7 @@ e69966d858b676afbc9ab1f3c9b0ba50
         -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
-2257846baab92db45824604607c3ecdb
+ada384a175766de1d0800dd5ea3327a8
   $woptional3 ::
     GHC.Prim.Int#
     -> forall b.
@@ -4693,31 +4757,31 @@ e69966d858b676afbc9ab1f3c9b0ba50
           Data.ByteString.Builder.Internal.BuildSignal r #)
   {- Arity: 5, HasNoCafRefs,
      Strictness: <S,1*U><L,C(C1(U(U,U)))><S,U><L,U><S,U>, Inline: [0] -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   data App
     = App {appSettings :: Settings.AppSettings,
            appStatic :: Yesod.Static.Static,
            appConnPool :: Database.Persist.Sql.Types.ConnectionPool,
            appHttpManager :: Network.HTTP.Client.Types.Manager,
            appLogger :: Yesod.Core.Types.Logger}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   axiom D:R:RouteApp0::
       Yesod.Routes.Class.Route Foundation.App = Foundation.R:RouteApp
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   axiom D:R:YesodPersistBackendApp::
       Yesod.Persist.Core.YesodPersistBackend Foundation.App
         = Database.Persist.Sql.Types.Internal.SqlBackend
-4c7a8f5faf8090386e4362d01607d751
+319ffa1e91f9fa43778a0a6a8cae21de
   type Form a =
     Text.Blaze.Html.Html
     -> Yesod.Form.Types.MForm
          Foundation.Handler
          (Yesod.Form.Types.FormResult a, Foundation.Widget)
-02dd5d0c8195c31da9cd634b131c6f76
+e5bd6804d648677447a63715502e8ebc
   type Handler =
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO
     :: GHC.Types.* -> *
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   data instance Yesod.Routes.Class.Route Foundation.App
     = StaticR (Yesod.Routes.Class.Route Yesod.Static.Static)
     | FaviconR
@@ -4730,16 +4794,17 @@ e69966d858b676afbc9ab1f3c9b0ba50
     | PokedexR Model.PokemonId
     | FilmeR
     | FilmesR Model.FilmeId
+    | ListaFilmeR
     | CadUsuarioR
     | PerfilUsuarioR Model.UsuarioId
     | LoginR
     | LogoutR
     | AdminR
     RecFlag: Recursive
-26d397d586d7775558d592bc0969e05e
+efb8ba2793f2edcd47a99f3e6cce21ca
   type Widget =
     Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO ()
-f584ee8223ec1c52f76adcaa23f8404a
+d2fc4780eb45a41c6096f95329033a6c
   appConnPool ::
     Foundation.App -> Database.Persist.Sql.Types.ConnectionPool
   RecSel Left Foundation.App
@@ -4748,7 +4813,7 @@ f584ee8223ec1c52f76adcaa23f8404a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Foundation.App) ->
                  case ds of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 -> ds3 }) -}
-9dc1dd168458a280b7775be961657b87
+10ce13ad949185b2d6cb6bcf61fe20a7
   appHttpManager ::
     Foundation.App -> Network.HTTP.Client.Types.Manager
   RecSel Left Foundation.App
@@ -4757,7 +4822,7 @@ f584ee8223ec1c52f76adcaa23f8404a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Foundation.App) ->
                  case ds of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 -> ds4 }) -}
-83a2aae230384f53da09e341ab9bbe71
+85be53079032a2610437c571ed25d9f2
   appLogger :: Foundation.App -> Yesod.Core.Types.Logger
   RecSel Left Foundation.App
   {- Arity: 1, HasNoCafRefs,
@@ -4765,7 +4830,7 @@ f584ee8223ec1c52f76adcaa23f8404a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Foundation.App) ->
                  case ds of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 -> ds5 }) -}
-9d78d1a6cc142e54e5077e38c66108c4
+c01168517715806a93efa060a94c389c
   appSettings :: Foundation.App -> Settings.AppSettings
   RecSel Left Foundation.App
   {- Arity: 1, HasNoCafRefs,
@@ -4773,7 +4838,7 @@ f584ee8223ec1c52f76adcaa23f8404a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Foundation.App) ->
                  case ds of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 -> ds1 }) -}
-8426e5cf5e1e76992bbfc99237ad17f7
+2c99f91666bce867613674a0513806a2
   appStatic :: Foundation.App -> Yesod.Static.Static
   RecSel Left Foundation.App
   {- Arity: 1, HasNoCafRefs,
@@ -4781,7 +4846,7 @@ f584ee8223ec1c52f76adcaa23f8404a
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Foundation.App) ->
                  case ds of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 -> ds2 }) -}
-0141de53f06c83eed47d1421939dc393
+1fbef2b9b11aad31d7d956dcb8da110c
   ehAdmin :: Foundation.Handler Yesod.Core.Types.AuthResult
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -4795,7 +4860,7 @@ f584ee8223ec1c52f76adcaa23f8404a
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.AuthResult>_N))) -}
-a580817f21e929b26ff5b5f7439ab2e6
+f5134ab54036cff5760b213be1a2754e
   ehUsuario :: Foundation.Handler Yesod.Core.Types.AuthResult
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -4809,778 +4874,810 @@ a580817f21e929b26ff5b5f7439ab2e6
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.AuthResult>_N))) -}
-a035a8a10dff1aa24707073ac107fc5a
+0c86ebf9ef37b2765b6f264116392397
   resourcesApp ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp109
+                   Foundation.resourcesApp113
                    Foundation.resourcesApp1) -}
-3597c71c6ac084981818cb0e25a7b87d
+707613c40444766daa509f61a3e8eb8b
   resourcesApp1 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp104
+                   Foundation.resourcesApp108
                    Foundation.resourcesApp2) -}
-3142acfa9502e7e64d4f72329649ccd4
+488adb08633d1c2c846dd25db54ef0b6
   resourcesApp10 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp56
+                   Foundation.resourcesApp65
                    Foundation.resourcesApp11) -}
-796ef22d5206600ad7e508e8aeed414f
+c5321851aedd3e78869da4e094d05ed1
   resourcesApp100 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute54
-                   Foundation.resourcesApp101
-                   Foundation.resourcesApp18
+                   Foundation.$fReadRoute52
+                   Foundation.resourcesApp89
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-e0115c6807515b8cd0b5c8468920f8a7
-  resourcesApp101 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp102
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-545595cfe29fbd4927ff5e63de5f1471
-  resourcesApp102 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.Static
-                   @ GHC.Base.String
-                   Foundation.resourcesApp103) -}
-599fd7a9766812746b7ee7cbf0b6cce9
-  resourcesApp103 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "robots.txt"#) -}
-6736c07b7709856011a40ca7195388cb
-  resourcesApp104 ::
+3e54e1c1e088f57e873ad9bb8321d52a
+  resourcesApp101 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp105) -}
-fe9d9faeb8422d8e35f1f8d1fa79c113
-  resourcesApp105 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp102) -}
+9341f0874bc055a03dbfd9e6f6461870
+  resourcesApp102 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute57
-                   Foundation.resourcesApp106
-                   Foundation.resourcesApp18
+                   Foundation.$fReadRoute55
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))
+                   Foundation.resourcesApp19
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-d7093d7eab0fadef6c1bdb581b157aaa
-  resourcesApp106 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp107
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-cf8ff0aa53ade4ae3b0b3fe0ac502073
-  resourcesApp107 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.Static
-                   @ GHC.Base.String
-                   Foundation.resourcesApp108) -}
-c5b3a8f4158e6c3eca34ae42ff82d161
-  resourcesApp108 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "favicon.ico"#) -}
-e84de874a83c4702b1a306e72058596d
-  resourcesApp109 ::
+24e89443490e8e4dff46e3f5233fa14a
+  resourcesApp103 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp110) -}
-750f5d46f347ea7a41a85c247972fda3
+                   Foundation.resourcesApp104) -}
+d1f8f360c2ed754b72ac54efbbb4e1aa
+  resourcesApp104 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   Foundation.$fReadRoute58
+                   Foundation.resourcesApp105
+                   Foundation.resourcesApp19
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+69fb39447e615cbfe8364b06ff5c7462
+  resourcesApp105 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp106
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+258f6486165656cd3456b917d84492d1
+  resourcesApp106 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.Static
+                   @ GHC.Base.String
+                   Foundation.resourcesApp107) -}
+4602b4246604926de7c47c6632f2a201
+  resourcesApp107 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "robots.txt"#) -}
+693cfff585c0a42e31c505fff9909b70
+  resourcesApp108 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   Foundation.resourcesApp109) -}
+8982174072823d630943d2ce3bd653db
+  resourcesApp109 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   Foundation.$fReadRoute61
+                   Foundation.resourcesApp110
+                   Foundation.resourcesApp19
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+84a191e7f4edf4da5d4a098f9ca5775e
   resourcesApp11 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp50
+                   Foundation.resourcesApp57
                    Foundation.resourcesApp12) -}
-b97236f344f6eea12b172855f2a82fb3
-  resourcesApp110 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+68df500428655e5b53bbdcf8640dc28d
+  resourcesApp110 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp111
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+b9303c640eca0a6c0b7c6290375092e4
+  resourcesApp111 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.Static
+                   @ GHC.Base.String
+                   Foundation.resourcesApp112) -}
+1f5045fe484fc67fc92f05ac309f6424
+  resourcesApp112 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "favicon.ico"#) -}
+bd112b6452fe12c93530069eee10f99a
+  resourcesApp113 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   Foundation.resourcesApp114) -}
+7a9fb532ea0da6807947217139d2ec2f
+  resourcesApp114 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
                    Foundation.$fReadRoute13
-                   Foundation.resourcesApp114
-                   Foundation.resourcesApp111
+                   Foundation.resourcesApp118
+                   Foundation.resourcesApp115
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-25a476409d41744522846496e4000aad
-  resourcesApp111 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
+31b3ceae6eac8eec041eb0e6b252a8a2
+  resourcesApp115 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
   {- Strictness: m2,
      Unfolding: (Yesod.Routes.TH.Types.Subsite
                    @ GHC.Base.String
-                   Foundation.resourcesApp113
-                   Foundation.resourcesApp112) -}
-95b2788c2739cc42a3830cf9dd667002
-  resourcesApp112 :: [GHC.Types.Char]
+                   Foundation.resourcesApp117
+                   Foundation.resourcesApp116) -}
+c69c0a0b9448b53d0b92221cc26ca88f
+  resourcesApp116 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "appStatic"#) -}
-298410d03795c4b9de5ae7f8dc8bf632
-  resourcesApp113 :: [GHC.Types.Char]
+9efdc9f9b39cb7a4f456408c23d88db2
+  resourcesApp117 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Static"#) -}
-5e95bb9885e2c6f9594c5e9917c0e05d
-  resourcesApp114 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+7c92352713bf7697a40bd5fa193bea00
+  resourcesApp118 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp115
+                   Foundation.resourcesApp119
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-c2467465c16e3b15a6bd39715ec416a8
-  resourcesApp115 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+2d17426b512fa50a717d479da3ff4790
+  resourcesApp119 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp116) -}
-37aa5dc8202204fe7f57ddbddeacd26d
-  resourcesApp116 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "static"#) -}
-3984f8caea27b78a12d6b05b8bff818c
+                   Foundation.resourcesApp120) -}
+9a93dc0dbffbd36aece44337d5e50f85
   resourcesApp12 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp39
+                   Foundation.resourcesApp51
                    Foundation.resourcesApp13) -}
-b284ebd281d94f2be59d9a3fb2e3e112
+56501556d34bc6c38282806533949699
+  resourcesApp120 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "static"#) -}
+87c69a89ef133a0a3997bcff18823dcf
   resourcesApp13 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp32
+                   Foundation.resourcesApp40
                    Foundation.resourcesApp14) -}
-bbfb900ae4acddf8b0680cba6e5a9edb
+062fefe2a347190be20c0aab433c2398
   resourcesApp14 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp24
+                   Foundation.resourcesApp33
                    Foundation.resourcesApp15) -}
-2e6ad14a913f55fb27461bde2d864ee8
+7fa7469988725f304d1e6cc5c6b059cd
   resourcesApp15 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp16
+                   Foundation.resourcesApp25
+                   Foundation.resourcesApp16) -}
+ed51b8ad8b25e41efd6b8e5f1cca4c00
+  resourcesApp16 ::
+    [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
+                   Foundation.resourcesApp17
                    (GHC.Types.[]
                       @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String))) -}
-5207bd7e54a83dadebaf38236264e8f7
-  resourcesApp16 ::
+d4123f441b16483e4081de1df42eeb1b
+  resourcesApp17 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp17) -}
-37bfb45edac6f4e19a55cc7d8ec2e0a2
-  resourcesApp17 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp18) -}
+be2e17a413453f0b0027e8f1505c60ac
+  resourcesApp18 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute27
-                   Foundation.resourcesApp21
-                   Foundation.resourcesApp18
+                   Foundation.$fReadRoute28
+                   Foundation.resourcesApp22
+                   Foundation.resourcesApp19
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-107daecae0cab4a0f1ac1d5ea8a1df7f
-  resourcesApp18 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
+55c34faf684c5094292b62df659e23a1
+  resourcesApp19 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Methods
                    @ GHC.Base.String
                    (GHC.Base.Nothing @ GHC.Base.String)
-                   Foundation.resourcesApp19) -}
-82379eefa3421fd12248e97d40d312e5
-  resourcesApp19 :: [GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Foundation.resourcesApp20
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-29bcea96556a11c21aa9fd9d8ed78ada
+                   Foundation.resourcesApp20) -}
+b5b8d5755297fb93f7230e6914ae5d21
   resourcesApp2 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp99
+                   Foundation.resourcesApp103
                    Foundation.resourcesApp3) -}
-c47df82cf52d676a5d7a11eb8bfb6cf4
-  resourcesApp20 :: [GHC.Types.Char]
+c9b657a436eafbc445d50f26419e1d3f
+  resourcesApp20 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Foundation.resourcesApp21
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+ad17bbfe0998876377f0084170eeaad9
+  resourcesApp21 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "GET"#) -}
-42b3454e3c013a49766012c9af3a024e
-  resourcesApp21 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+ee54a89f3f69b8faf0ce4d6f995affce
+  resourcesApp22 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp22
+                   Foundation.resourcesApp23
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-2fcb861a620b253a4662d5ee288e7b47
-  resourcesApp22 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+c021123b8a4e803aac1b32845f7e20bf
+  resourcesApp23 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp23) -}
-d8cd65155689c86594e72a19e0082b70
-  resourcesApp23 :: [GHC.Types.Char]
+                   Foundation.resourcesApp24) -}
+7a90e67c45caf843cfb79ae37e5a4d57
+  resourcesApp24 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "admin"#) -}
-c0ef936ed86270651e5e4a284e8579a1
-  resourcesApp24 ::
+ffd3d4220d6d15943df0887f7f0e66cb
+  resourcesApp25 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp25) -}
-b011bc1e749fbc36d1faa74eccf9bd0e
-  resourcesApp25 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp26) -}
+21ff8feb1b771f6a262b8be22d464a59
+  resourcesApp26 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute30
-                   Foundation.resourcesApp29
-                   Foundation.resourcesApp26
+                   Foundation.$fReadRoute31
+                   Foundation.resourcesApp30
+                   Foundation.resourcesApp27
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-8d20e9475de891ee3628dbe7079f66a7
-  resourcesApp26 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
+65f3a4c5501186c03edc294877ab35f3
+  resourcesApp27 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Methods
                    @ GHC.Base.String
                    (GHC.Base.Nothing @ GHC.Base.String)
-                   Foundation.resourcesApp27) -}
-bb8c02a07260f5af19188a7ab37ef62c
-  resourcesApp27 :: [GHC.Base.String]
+                   Foundation.resourcesApp28) -}
+e2e9ddbfa7eedf308741d5e35487832e
+  resourcesApp28 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Foundation.resourcesApp28
+                   Foundation.resourcesApp29
                    (GHC.Types.[] @ GHC.Base.String)) -}
-c107ec7815d372a1187a42fa63df34ef
-  resourcesApp28 :: [GHC.Types.Char]
+782a5abb97e81b047d133cabf1314753
+  resourcesApp29 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "POST"#) -}
-884a6d1b7eaa2f4e0e1931ab6771f096
-  resourcesApp29 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp30
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-fd17858e65b5b17897e6f3f7462df527
+4395b81436e88ad810fc72079115249d
   resourcesApp3 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp97
+                   Foundation.resourcesApp101
                    Foundation.resourcesApp4) -}
-d0617b74f5ffc09f5d01e06fcf60aacd
-  resourcesApp30 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+ae2d8a7b9d615e8dda19cb6e574213dc
+  resourcesApp30 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp31
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+ea5cf7662fa922d3d0015d0088166794
+  resourcesApp31 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp31) -}
-02476b94048a971c223bc0b3d0a075f2
-  resourcesApp31 :: [GHC.Types.Char]
+                   Foundation.resourcesApp32) -}
+885bd2d44d5012cdc71a4363bdb1b975
+  resourcesApp32 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "logout"#) -}
-1ca59ede0e5da30fec166312034ee1e4
-  resourcesApp32 ::
+5fa6eec070123bd36dc18f06c8ea73fa
+  resourcesApp33 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp33) -}
-d33cb443182c2824045989c1d1f236a0
-  resourcesApp33 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp34) -}
+2af1fe9b9403157cb6839cfefaff336c
+  resourcesApp34 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute33
-                   Foundation.resourcesApp36
-                   Foundation.resourcesApp34
+                   Foundation.$fReadRoute34
+                   Foundation.resourcesApp37
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-479f0a7c0a7312450363f5d5cfe9540e
-  resourcesApp34 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
+10cafeee8dd94c44f2261c2880397c59
+  resourcesApp35 :: Yesod.Routes.TH.Types.Dispatch GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Methods
                    @ GHC.Base.String
                    (GHC.Base.Nothing @ GHC.Base.String)
-                   Foundation.resourcesApp35) -}
-151f9ba4a9c546c68498fd64cbee0cac
-  resourcesApp35 :: [GHC.Base.String]
+                   Foundation.resourcesApp36) -}
+64b1b07b643397b86ba63f85250cd3fb
+  resourcesApp36 :: [GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Base.String
-                   Foundation.resourcesApp20
-                   Foundation.resourcesApp27) -}
-b1be8b5257d149cc3d6f3875d1e5d90f
-  resourcesApp36 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+                   Foundation.resourcesApp21
+                   Foundation.resourcesApp28) -}
+3cccca5b23661576e9f985b47288efa1
+  resourcesApp37 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp37
+                   Foundation.resourcesApp38
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-1f751078a3612568ff0f4d55b40b1ffc
-  resourcesApp37 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+10ef35677555c893e6e6ea8be0045f42
+  resourcesApp38 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp38) -}
-d500c86cc8d3b9cfb5186b7465626c46
-  resourcesApp38 :: [GHC.Types.Char]
+                   Foundation.resourcesApp39) -}
+f6ff6aea092e7b8557441f355a510a97
+  resourcesApp39 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "login"#) -}
-6afa6d104a74957a0682d097bafc393c
-  resourcesApp39 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   Foundation.resourcesApp40) -}
-f6b3b62b94c664c9b82a98f1877b7d23
+0128238cbda435267898bd4d40d31e0e
   resourcesApp4 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp95
+                   Foundation.resourcesApp99
                    Foundation.resourcesApp5) -}
-43152fbad669c942ef345590d9dd38a0
-  resourcesApp40 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+a45500e9d9d4ffeb66ba22f383edcd46
+  resourcesApp40 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   Foundation.resourcesApp41) -}
+9433e68bf9fcf1cf17c340b5da8ba399
+  resourcesApp41 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
                    Foundation.$fReadRoute5
-                   Foundation.resourcesApp41
-                   Foundation.resourcesApp18
+                   Foundation.resourcesApp42
+                   Foundation.resourcesApp19
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-c9a5864ed6b6db637a4c4be522ce23ce
-  resourcesApp41 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp48
-                   Foundation.resourcesApp42) -}
-b643f9dfc64b7becfcac16e894eb308b
+15f5e5bb0d365f3bf15c6bd9a05ea06d
   resourcesApp42 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp46
+                   Foundation.resourcesApp49
                    Foundation.resourcesApp43) -}
-3c2427dd7166f38d0737e7344c7e88fc
+bba827cd40090c25a8a5064a371d7c34
   resourcesApp43 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp44
+                   Foundation.resourcesApp47
+                   Foundation.resourcesApp44) -}
+a98bcaaba41bc27ab732c963bc96d92a
+  resourcesApp44 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp45
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-d3848413df79fed230ef2c12d59bb7ec
-  resourcesApp44 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+eb24b3a57d594521eead92666b2281c1
+  resourcesApp45 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp45) -}
-6b672e2ba7372f35fc33ff5049e45e3f
-  resourcesApp45 :: [GHC.Types.Char]
+                   Foundation.resourcesApp46) -}
+d9490159fb9895c02756f2e6a4daec7d
+  resourcesApp46 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "perfil"#) -}
-b154d4535803dc3a030ba6636c5eaed0
-  resourcesApp46 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+c5955a0d726f4255b8b56fafe9986ba8
+  resourcesApp47 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m2,
      Unfolding: (Yesod.Routes.TH.Types.Dynamic
                    @ GHC.Base.String
-                   Foundation.resourcesApp47) -}
-783cb6a86cfd94fb48ef9529e5ca9c3d
-  resourcesApp47 :: [GHC.Types.Char]
+                   Foundation.resourcesApp48) -}
+39c9fb50c8973453d0b5b3669c40e00b
+  resourcesApp48 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "UsuarioId"#) -}
-83d5c672b6a9ccf994f4a9116ef43592
-  resourcesApp48 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+e2607714f6d07675426087b46e6aaec1
+  resourcesApp49 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp49) -}
-12e1f67a033906ca3a7f127ed4754041
-  resourcesApp49 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "usuario"#) -}
-4ef4455ad492b150caaf28be280bf9ee
+                   Foundation.resourcesApp50) -}
+f5c08ff991a3a55a5a6c82aefa2c0a42
   resourcesApp5 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp88
+                   Foundation.resourcesApp92
                    Foundation.resourcesApp6) -}
-c60335db85a9dbcd3de1d496789ffd47
-  resourcesApp50 ::
+f7b01ff10a94fbd6084ecc343e40ac37
+  resourcesApp50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "usuario"#) -}
+4da4ec46912c0a6ce867c3ab98b51541
+  resourcesApp51 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp51) -}
-7ea8a20bf0bb8f62f70886b0ef5301f2
-  resourcesApp51 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp52) -}
+ea8b78644d3aab4674e3d60f9273c66b
+  resourcesApp52 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute36
-                   Foundation.resourcesApp52
-                   Foundation.resourcesApp34
+                   Foundation.$fReadRoute37
+                   Foundation.resourcesApp53
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-2134982c67cebc32664de9679961f40f
-  resourcesApp52 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp48
-                   Foundation.resourcesApp53) -}
-d27fa813ee5ca59b8b215ca4267aab90
+b27b6d2892b1bd3b2763012f4fe10af0
   resourcesApp53 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp54
+                   Foundation.resourcesApp49
+                   Foundation.resourcesApp54) -}
+3ef661befa5b199d954bdf24e398ae4a
+  resourcesApp54 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp55
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-a2d6219c02bc7dfe71ac96d37e824fce
-  resourcesApp54 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+5ccce967d3cd78925aca08a608479b3e
+  resourcesApp55 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp55) -}
-c6435917b8f56d1ab49806d09b5b9ad4
-  resourcesApp55 :: [GHC.Types.Char]
+                   Foundation.resourcesApp56) -}
+6c07c22623859350f621d8b6200698e7
+  resourcesApp56 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "cadastrar"#) -}
-a30449a0981752befc61de77a637aa21
-  resourcesApp56 ::
+68dbd5c09b0036ad3c1f9ee0a68cc367
+  resourcesApp57 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp57) -}
-8f936c4b55c43fec52baabf03aff1444
-  resourcesApp57 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp58) -}
+dd4f044eb35cb586da8ce8bca739be08
+  resourcesApp58 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute7
-                   Foundation.resourcesApp58
-                   Foundation.resourcesApp18
+                   Foundation.$fReadRoute40
+                   Foundation.resourcesApp59
+                   Foundation.resourcesApp19
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-7f7eb4898a71e93004477676588d6fdc
-  resourcesApp58 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp62
-                   Foundation.resourcesApp59) -}
-8bb9d8a7a4bda06380bc1a542375145c
+1b70caefe1b605c1415bdad486f19d39
   resourcesApp59 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp60
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-94fbce9b3db38b2d4a269b7cc7730736
+                   Foundation.resourcesApp63
+                   Foundation.resourcesApp60) -}
+7381b2741953bcbfac9e05de37d45c3b
   resourcesApp6 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp80
+                   Foundation.resourcesApp86
                    Foundation.resourcesApp7) -}
-7a2fc8330ac424da272c2fbb4d94abb2
-  resourcesApp60 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+5a5dfdf5a3f83c97e06ae5a167eb5978
+  resourcesApp60 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
-     Unfolding: (Yesod.Routes.TH.Types.Dynamic
-                   @ GHC.Base.String
-                   Foundation.resourcesApp61) -}
-6dbd2230ff4eb78c99973812d4f53448
-  resourcesApp61 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "FilmeId"#) -}
-c6c1cf331a434dc16981aea69968fdb0
-  resourcesApp62 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp61
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+991f6bdf42a9683d67193ac2c2cd3af2
+  resourcesApp61 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp63) -}
-c0281b6584defdfa07242f254d28f5c3
-  resourcesApp63 :: [GHC.Types.Char]
+                   Foundation.resourcesApp62) -}
+1963900b38d78b006cfbc7db5c9e6331
+  resourcesApp62 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "filme"#) -}
-3726066c7f4980966774ebc93a189b8f
-  resourcesApp64 ::
+f93af1f85336917d718a97d214abf310
+  resourcesApp63 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.Static
+                   @ GHC.Base.String
+                   Foundation.resourcesApp64) -}
+7fcba0ac632c894827214ff0a9149f4d
+  resourcesApp64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "lista"#) -}
+05bc5a5db5e62128448674e129b0ca14
+  resourcesApp65 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp65) -}
-344e0cdc45978f7b57f59ac9953c8877
-  resourcesApp65 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp66) -}
+4480d9defb8a75c8ea4b473e7467fc4f
+  resourcesApp66 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute39
-                   Foundation.resourcesApp66
-                   Foundation.resourcesApp34
+                   Foundation.$fReadRoute7
+                   Foundation.resourcesApp67
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-e40241214b5790b318cc867ff5661cec
-  resourcesApp66 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+53eacc04952ddc8207e6b849ccae0dea
+  resourcesApp67 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp62
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-0e7a4d3059cecc385fa9a9879a645bc9
-  resourcesApp67 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
+                   Foundation.resourcesApp61
                    Foundation.resourcesApp68) -}
-a47cdbc80151d8cf141e6e6259fde73b
-  resourcesApp68 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   Foundation.$fReadRoute9
-                   Foundation.resourcesApp69
-                   Foundation.resourcesApp18
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-1af38623e77a91d92936ba6c1061b432
-  resourcesApp69 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+4fb8ba50e40401f991304d30bc0345c6
+  resourcesApp68 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp73
+                   Foundation.resourcesApp69
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+83a729f211008ee59bf6408aff0fa46c
+  resourcesApp69 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m2,
+     Unfolding: (Yesod.Routes.TH.Types.Dynamic
+                   @ GHC.Base.String
                    Foundation.resourcesApp70) -}
-f4fa85b1403e8f722fbb913b04814e47
+ad20502d32e2ea0dd884150c4ff28a06
   resourcesApp7 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp75
+                   Foundation.resourcesApp81
                    Foundation.resourcesApp8) -}
-d4eab003588b9683320344239436b1f0
-  resourcesApp70 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp71
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-244c56b086c4ccc0795085830c0c6509
-  resourcesApp71 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m2,
-     Unfolding: (Yesod.Routes.TH.Types.Dynamic
-                   @ GHC.Base.String
-                   Foundation.resourcesApp72) -}
-a06cfc7b30e7c8529e55c526312b8f2c
-  resourcesApp72 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "PokemonId"#) -}
-a85f5801f2d86c8df044173a5753d954
-  resourcesApp73 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.Static
-                   @ GHC.Base.String
-                   Foundation.resourcesApp74) -}
-a4d3efe828636de0a8f58e43c55e47c2
-  resourcesApp74 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "pokedex"#) -}
-1ffdecf63253a0c8658b071ab651a7cf
-  resourcesApp75 ::
+ffd579313f2dc117414cc75aef6c957a
+  resourcesApp70 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FilmeId"#) -}
+2fc5a1c03f882482909b11efd2627d29
+  resourcesApp71 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp76) -}
-3eae6a8f1cae777f49b56cc0819f6acc
-  resourcesApp76 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp72) -}
+3b81afe5ad717c77425e27d8dc35a5ab
+  resourcesApp72 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute42
-                   Foundation.resourcesApp77
-                   Foundation.resourcesApp34
+                   Foundation.$fReadRoute43
+                   Foundation.resourcesApp60
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-700d81c8d41e3494c56566f687d7589e
-  resourcesApp77 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+dc324f24c236ab53c3b60b6400fbb94d
+  resourcesApp73 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   Foundation.resourcesApp74) -}
+2dd65923a9cb6ad07b3e15242d5df74d
+  resourcesApp74 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   Foundation.$fReadRoute9
+                   Foundation.resourcesApp75
+                   Foundation.resourcesApp19
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+e409e0675efbbd01ed6aa3c1fe9569b9
+  resourcesApp75 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp78
+                   Foundation.resourcesApp79
+                   Foundation.resourcesApp76) -}
+3070bc5e8a2aabc953a9ab9b0ca07413
+  resourcesApp76 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp77
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-54b1ac2ff91bd289b28c05542309044a
-  resourcesApp78 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+55327538e99349d52147c7258bdad650
+  resourcesApp77 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m2,
+     Unfolding: (Yesod.Routes.TH.Types.Dynamic
+                   @ GHC.Base.String
+                   Foundation.resourcesApp78) -}
+3bcdf1417824f5d35fe29108caae84ed
+  resourcesApp78 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "PokemonId"#) -}
+32e2db135e45245505d1b7f960b3fa31
+  resourcesApp79 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
-                   Foundation.resourcesApp79) -}
-0906bba622b61d04866c6ca252cb4380
-  resourcesApp79 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "pokemon"#) -}
-e33561d32202702fb6e1eddc9e490d0a
+                   Foundation.resourcesApp80) -}
+184e481ac89749b2af05d63f1854cf86
   resourcesApp8 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp67
+                   Foundation.resourcesApp73
                    Foundation.resourcesApp9) -}
-a01f03f1ad946817a8925fa38cbb6a4e
-  resourcesApp80 ::
+a6a43e02fb719d1f7193e53d16f188e1
+  resourcesApp80 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "pokedex"#) -}
+c1ccae1d064c91c3226455cb24d90421
+  resourcesApp81 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp81) -}
-db73d3b9e4619dd348f1230bdacbca63
-  resourcesApp81 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp82) -}
+3819cf5fbf830ce1f029bc0d3b4fa9ce
+  resourcesApp82 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute45
-                   Foundation.resourcesApp82
-                   Foundation.resourcesApp18
+                   Foundation.$fReadRoute46
+                   Foundation.resourcesApp83
+                   Foundation.resourcesApp35
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-c1598b9def884f88626f2e26220c909e
-  resourcesApp82 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp86
-                   Foundation.resourcesApp83) -}
-962cc17631db9be5a461df9d5d1c3dd4
+b04fdc83d7ee736647280881a6542b38
   resourcesApp83 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
                    Foundation.resourcesApp84
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-7cc0a0f148434d6d1cbaa8eca372adbd
+aee82fde4ec05fd66310692e8eb38ee5
   resourcesApp84 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.Static
                    @ GHC.Base.String
                    Foundation.resourcesApp85) -}
-088eb99be744d5ed3f6498e350bece8f
+147920434e6603c8a293dcf13fea65c8
   resourcesApp85 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "treinador"#) -}
-613512cd5a9ed79869fb7cd7474ab835
-  resourcesApp86 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.Static
-                   @ GHC.Base.String
-                   Foundation.resourcesApp87) -}
-ab44297012011ef280c134b17699c38c
-  resourcesApp87 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "lista"#) -}
-6e2997d87018a51dd5e2d85983bd5bf3
-  resourcesApp88 ::
+  {- Unfolding: (GHC.CString.unpackCString# "pokemon"#) -}
+e1cfdf899f95af643aabdc6622306de4
+  resourcesApp86 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,
      Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
                    @ GHC.Base.String
-                   Foundation.resourcesApp89) -}
-4b04ab6b440c2af5db806d98a9512982
-  resourcesApp89 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+                   Foundation.resourcesApp87) -}
+3f113289d3e50480ec5c814419b1d52d
+  resourcesApp87 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
   {- Strictness: m,
      Unfolding: (Yesod.Routes.TH.Types.Resource
                    @ GHC.Base.String
-                   Foundation.$fReadRoute11
-                   Foundation.resourcesApp90
-                   Foundation.resourcesApp34
+                   Foundation.$fReadRoute49
+                   Foundation.resourcesApp88
+                   Foundation.resourcesApp19
                    (GHC.Types.[] @ GHC.Base.String)
                    GHC.Types.True) -}
-983bc8b01c0c497d6e71ced6a6168939
+078aa3ff5f938cad27761cfb9692442a
+  resourcesApp88 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp63
+                   Foundation.resourcesApp89) -}
+d60a8d060e5f3af579ac39dddc850feb
+  resourcesApp89 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp90
+                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
+d4f436b31501605838fde2452dc4e40a
   resourcesApp9 ::
     [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.ResourceTree GHC.Base.String)
-                   Foundation.resourcesApp64
+                   Foundation.resourcesApp71
                    Foundation.resourcesApp10) -}
-760b2cabcd4f91333ddc6235590a97bd
-  resourcesApp90 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp44
+8f09c1374d3c6827e0cd2032679012f6
+  resourcesApp90 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.Static
+                   @ GHC.Base.String
                    Foundation.resourcesApp91) -}
-1b8912757e1ea2b618565277f8845a25
-  resourcesApp91 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+cbf5aaa93e8d9bede3893c63e5998955
+  resourcesApp91 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "treinador"#) -}
+e4255c6e26362fced84029778bfa32f7
+  resourcesApp92 ::
+    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
+                   @ GHC.Base.String
+                   Foundation.resourcesApp93) -}
+c6439729633c43cb71b73a8a5f16a034
+  resourcesApp93 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Yesod.Routes.TH.Types.Resource
+                   @ GHC.Base.String
+                   Foundation.$fReadRoute11
+                   Foundation.resourcesApp94
+                   Foundation.resourcesApp35
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Types.True) -}
+307cadbc7ff6fe958ced66b991b0694f
+  resourcesApp94 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp84
-                   Foundation.resourcesApp92) -}
-6e9dd6c08d24322715bf1e4cfc80147b
-  resourcesApp92 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+                   Foundation.resourcesApp45
+                   Foundation.resourcesApp95) -}
+fe19f4498254f7bda241e91ee6f3ffe8
+  resourcesApp95 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
-                   Foundation.resourcesApp93
+                   Foundation.resourcesApp90
+                   Foundation.resourcesApp96) -}
+2dfdf8cc3512e67d1f656b91356939f7
+  resourcesApp96 :: [Yesod.Routes.TH.Types.Piece GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Yesod.Routes.TH.Types.Piece GHC.Base.String)
+                   Foundation.resourcesApp97
                    (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))) -}
-1d004f3bd7fcf9d85399225bc1b40c69
-  resourcesApp93 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
+82ec36c39bfc1268e11116eca1d360a8
+  resourcesApp97 :: Yesod.Routes.TH.Types.Piece GHC.Base.String
   {- Strictness: m2,
      Unfolding: (Yesod.Routes.TH.Types.Dynamic
                    @ GHC.Base.String
-                   Foundation.resourcesApp94) -}
-1c996e12f88eca9be3b4c253663be7c8
-  resourcesApp94 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "TreinadorId"#) -}
-6155093606e1782af08ccafb0da205cd
-  resourcesApp95 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
-                   Foundation.resourcesApp96) -}
-cef680bce49650afa27aa907477b7fe2
-  resourcesApp96 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   Foundation.$fReadRoute48
-                   Foundation.resourcesApp83
-                   Foundation.resourcesApp34
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-245c2419457004ca63652f1f72c66a1e
-  resourcesApp97 ::
-    Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
-  {- Strictness: m1,
-     Unfolding: (Yesod.Routes.TH.Types.ResourceLeaf
-                   @ GHC.Base.String
                    Foundation.resourcesApp98) -}
-65fe305f92bf268c78d5045d7cbfdecd
-  resourcesApp98 :: Yesod.Routes.TH.Types.Resource GHC.Base.String
-  {- Strictness: m,
-     Unfolding: (Yesod.Routes.TH.Types.Resource
-                   @ GHC.Base.String
-                   Foundation.$fReadRoute51
-                   (GHC.Types.[] @ (Yesod.Routes.TH.Types.Piece GHC.Base.String))
-                   Foundation.resourcesApp18
-                   (GHC.Types.[] @ GHC.Base.String)
-                   GHC.Types.True) -}
-7f4b295afc365fa186476c5cc9b6e44f
+940b7c2a685a8b966c13f2718cdb91b2
+  resourcesApp98 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TreinadorId"#) -}
+8ce737d87ee9b14e4bd78a6164aea30e
   resourcesApp99 ::
     Yesod.Routes.TH.Types.ResourceTree GHC.Base.String
   {- Strictness: m1,

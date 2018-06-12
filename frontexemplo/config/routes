@@ -13,7 +13,8 @@
 /pokemon                       PokemonR        GET POST
 /pokedex/#PokemonId            PokedexR        GET
 /filme                         FilmeR          GET POST
-/filme/#FilmeId                FilmesR         GET
+/filme/#FilmeId                FilmesR         GET POST
+/lista/filme                   ListaFilmeR     GET
 
 /usuario/cadastrar         CadUsuarioR      GET POST
 /usuario/#UsuarioId/perfil PerfilUsuarioR   GET

@@ -64,3 +64,42 @@ getFilmesR fid = do
                 $maybe img <- imagem 
                     <img src=#{staticDir ++ img}>
         |]
+
+
+getListaFilmeR :: Handler Html
+getListaFilmeR = do
+    filmes <- runDB $ selectList [] [Asc FilmeNome]
+    defaultLayout $ do 
+        [whamlet|
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        
+                        <th> 
+                            Ano
+                        
+                        <th>
+                            Genero
+                        
+                        <th>
+                            
+                
+                <tbody>
+                    $forall (Entity fid filme) <- filmes
+                        <tr>
+                            <td>
+                                <a href=@{FilmesR fid}> 
+                                    #{filmeNome filme}
+                            
+                            <td>
+                                #{show $ filmeAno filme}
+                            
+                            <td>
+                                #{filmeGenero filme}
+                            
+                            <td>
+                                <form action=@{PerfilR tid} method=post>
+                                <input type="submit" value="Apagar">
+        |]
