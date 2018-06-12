@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 06:50:16.664016451 UTC
+2018-06-12 07:11:09.726856236 UTC
 
 interface main@main:Main 8002
-  interface hash: 4f4244e39871f9810465b1fdcf92900a
+  interface hash: 481bd6646b79da884585835470cb6e26
   ABI hash: 11b1915240a2d5502be18e33d20fcd52
   export-list hash: 40d9ebb84659fcd0e90c8adfd55ff195
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -338,7 +338,7 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  base-4.9.1.0:Prelude 4d7ee35012f77eace89fe02e109def8f
-import  -/  frontexemplo-0.0.0@frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application 9b719f8c09c7df09657a5a4a9c7c6992
+import  -/  frontexemplo-0.0.0@frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application b4eb58277c85274d438721bd40e264cc
 import  -/  ghc-prim-0.5.0.0:GHC.Types 39f94fe158a9efa70c6b9005a1d10fca
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module

@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 06:48:59.572543102 UTC
+2018-06-12 07:09:04.688504334 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Cinema 8002
-  interface hash: 4027bf40825b68f45a094fd7d4dbd804
-  ABI hash: aca0c8db1d7637e620917040fa34acd8
-  export-list hash: 18a53690e2db62813efbc56d4596f8d8
-  orphan hash: 986d193c9b93b5748bc54c5807af77ce
+  interface hash: 02adb1d5556e470908488e513b55438a
+  ABI hash: c04d6029f6b05d47f373fe553d434623
+  export-list hash: ea340ce00b6691895416782f1c31a86c
+  orphan hash: 04074facfb62f36d59f001a66de33067
   flag hash: 581473958fe447a23d4656a7119025fe
   sig of: Nothing
   used TH splices: True
@@ -348,22 +348,22 @@ import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze.Internal 0bb5ddca2299bfdcfdde0c32d70b90c0
 import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 1601f2691692d787667a4c2d73c2ba7a
-import  -/  Foundation 915c395e6b560b233a314239adee046c
-  CinemaR f39f5f9c2e8ccf19f9070b3b01048f95
-  CinemasR a4ec662f28c4c12fe4de89c43a68d81b
-  Form 676beddde3a1b83cf0d21a0a6e675bd9
-  Handler 7fb01b7228f1ea3f2a2502301bb01172
-  HomeR ad131b9bd601e207e5d2dfc073741150
-import  -/  Import 190a282d5e3ba71764de6ee952f94228
-  exports: 477b854e7975e4b1b2d6596024ea32e7
-import  -/  Model 8dad478308ca67c38f06e7e75a92f639
-  Cinema 0bdfc70e8bf53c7ad42ff9096b6b6c4f
-  CinemaId 24afd82fd45eae58f9abcd808e3a8e71
-  CinemaNome 03f7599417a299c243a6129d2e056694
-  cinemaImagem 5b69bd48d2f30701f5b84256b7206c34
-  cinemaLocal 58f0c47536c40f725de586714192eea0
-  cinemaNome f39959994d23aa43f46e0105e8382e40
-  cinemaTelefone a2d6f75a2b7fd7aef94901d53e26a618
+import  -/  Foundation fcb93ffd9d61229385b5cb477bb7ea49
+  CinemaR 0a0f1d2f7e58f7fd845055232523883b
+  CinemasR d437d3dc9a4275d7c12c7c95d0998093
+  Form d83c9e8f23e1a8e07f4aaf9bbc6c11c9
+  Handler 38d9bdf6157526480770a127a6a2608d
+  HomeR 63bb97858ecb78720ccc4861e69537aa
+import  -/  Import 1cb9a05ec7bd7ef6ebb68bec4de437c9
+  exports: 9d8570053efaa2a080bf4ef58dae16c0
+import  -/  Model fc1b8c94037637fb21e382fac81afe23
+  Cinema 5b6002ebee292818973328edcb38f96e
+  CinemaId 76bc834f921bab0539fb6a5c7878479d
+  CinemaNome 9c599e7fafb0e700211a080b3d8ddddf
+  cinemaImagem ce1a94e143d2032221e5c49c78217e61
+  cinemaLocal a612c588b79544f540ebc42f5c84da18
+  cinemaNome 4182dbf266ccaae458c86dd1bde8ad50
+  cinemaTelefone d844fa21682d7ed2db84c2542b4ade31
 import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Sequences e470d4b03eb7a0ccb7d8103d388d881b
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b6facaf1cf4bc1002b2955c55b3cdc6f
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistQuery 122145d0e61dbe45d2503bdbc1a32641
@@ -443,7 +443,7 @@ d160972ceb07d5c07b42c382dab67ec1
                      @ GHC.Types.IO
                      @ site
                      Handler.Cinema.$s$fApplicativeHandlerT_$dMonad) -}
-96945e7a091a1ec39e9b7eb5934f0999
+2b5f57402ae0f62a34a0b4e62e6643e2
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -670,7 +670,7 @@ c0e2e767304bce4daa99a6bd7f81a7ec
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Cinema.$s$fMonadBasebHandlerT -}
-0b6a64ca7ced63a1e3b7f3a0855d7040
+3b6bb555ac50a80172e4dd9e8551c021
   $stextField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -713,7 +713,7 @@ e8548259223fef4cde7d9006168b4a68
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-88daf4210e6e88044b41cee7b90fcc59
+0b36618261d124483d72c264224f3298
   formArquivo ::
     Foundation.Form
       (Data.Text.Internal.Text, GHC.Types.Int, Data.Text.Internal.Text,
@@ -740,7 +740,7 @@ e8548259223fef4cde7d9006168b4a68
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-a8e99e4f50997af06e2535343b1d5222
+06039e59e85119b1b036aaeed5f452d5
   formArquivo1 ::
     Text.Blaze.Internal.Markup
     -> (GHC.Base.Maybe
@@ -781,7 +781,7 @@ a8e99e4f50997af06e2535343b1d5222
                    eta105
                    eta106
                    eta107) -}
-82ceadfa9f53c92c71dccf6842a61ba7
+74b37bffe505c472990ee16c02ef3465
   formArquivo2 ::
     (Yesod.Core.Class.Handler.HandlerSite
        (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO),
@@ -802,7 +802,7 @@ a8e99e4f50997af06e2535343b1d5222
                    (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))],
           Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)
   {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
-b7451bbd7569d85c14b80bfb82859963
+559ecfb392893f33472df3b86314dd94
   getCinemaR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -814,7 +814,7 @@ b7451bbd7569d85c14b80bfb82859963
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-2f590cd3c10d057c03f6052becb1074c
+591331ab478c400389c78a0c5363fa61
   getCinemaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1304,7 +1304,7 @@ b7451bbd7569d85c14b80bfb82859963
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv } }) -}
-0ce628970bb6b322f61aeb519131ecaa
+b03735712c57d84d2a9e6959a272a02f
   getCinemaR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1321,7 +1321,7 @@ b7451bbd7569d85c14b80bfb82859963
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cinema.getCinemaR11 eta49) -}
-3f3221281bc35d3603a69585b5ad5392
+831baf535d19f7fbf336dbf6eea0765e
   getCinemaR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1396,7 +1396,7 @@ b7451bbd7569d85c14b80bfb82859963
   getCinemaR14 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" method=\"post\" enctype=\""#) -}
-e846ec968c7d754f9a9f2f0df295ae5e
+2d1647f68bb3fd1a641840cb4a64e41e
   getCinemaR15 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1413,7 +1413,7 @@ e846ec968c7d754f9a9f2f0df295ae5e
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cinema.getCinemaR16 eta49) -}
-9de8a9a7f4b0d062a31c459223586bbd
+57c089a2630977cbaf7325cb33f847f2
   getCinemaR16 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1487,7 +1487,7 @@ c06d883e17ce47ee3214eb6488269a4b
 07b61b2c6b1029004f69ed75f897ba66
   getCinemaR19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "\">"#) -}
-b9bbbe53fb2072c46549a5b47ce3e047
+3810fc25b275afd9d5a3ea78d935c722
   getCinemaR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1504,7 +1504,7 @@ b9bbbe53fb2072c46549a5b47ce3e047
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cinema.getCinemaR3 eta49) -}
-d592c1eb38b4c9d457a27b381657cb4f
+ac0291502a90e6b1578ae7a29e4a7c2c
   getCinemaR20 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1522,7 +1522,7 @@ d592c1eb38b4c9d457a27b381657cb4f
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta49, Handler.Cinema.getCinemaR21 #)) -}
-d8b4b3bd2eaf3a67cbca30b089959a74
+9a76daae2c73f720e0408caac96ec847
   getCinemaR21 ::
     ((),
      Yesod.Core.Types.GWData
@@ -1536,7 +1536,7 @@ d8b4b3bd2eaf3a67cbca30b089959a74
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-e158dbb5cc9a111dd3cadd776550a193
+419f9878ae1650bfe43b75752fbcee1f
   getCinemaR22 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -1578,7 +1578,7 @@ e158dbb5cc9a111dd3cadd776550a193
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-bfbc852888e218b4ee3bbdc614bcb90d
+7f2c269e53813a84750efaa2aafa5e9f
   getCinemaR23 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1605,7 +1605,7 @@ a90058d57c5f5933ad3d4e6d998c7a49
                    "\n\
                    \<input type=\"submit\" value=\"Cadastrar\">\n\
                    \</form>\n"#) -}
-186b1323f026e1d4a268864495d1ef3a
+47fa84fdb723588e85fe6450e7129ece
   getCinemaR27 ::
     Foundation.Handler (Foundation.Widget, Yesod.Form.Types.Enctype)
   {- Unfolding: (Yesod.Form.Functions.generateFormPost
@@ -1640,7 +1640,7 @@ a90058d57c5f5933ad3d4e6d998c7a49
                                                   <GHC.Types.IO>_N <Foundation.App>_N))
                                         <GHC.Types.IO>_N
                                         <()>_N)_N)_N))) -}
-8e03c2f470c238c47fe955a175a106a6
+d6809c78da84e74de4831f120566dda4
   getCinemaR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1713,7 +1713,7 @@ a90058d57c5f5933ad3d4e6d998c7a49
 56b05da5d1935ba60736ecc4ceda5973
   getCinemaR6 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "<form action=\""#) -}
-820e62a51f781517340278903ce35867
+56ebfc72a4daccdfb7fb11e37c340d96
   getCinemaR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1740,7 +1740,7 @@ a90058d57c5f5933ad3d4e6d998c7a49
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Cinema.getCinemaR8) -}
-7d5fe0be640bad4feff660a7ec1a45e3
+bc9a9a68fb14ec998b68b21e4d239e11
   getCinemaR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1850,7 +1850,7 @@ a90058d57c5f5933ad3d4e6d998c7a49
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-103fcb20332eb6e58d1535eddf16bba8
+b3c70aebf5d3ea60a810f39810ea715e
   getCinemaR9 ::
     Yesod.Core.Types.WidgetT
       Foundation.App
@@ -1891,11 +1891,11 @@ d44f5f10a55e84ae26cb2491a681de78
                    @ ()
                    Handler.Cinema.getCinemaR24
                    GHC.Tuple.()) -}
-0d9dbc33ffe1b3f654c3ec6e7027d572
+fefce977853a4840ee5858b76cae93c6
   getCinemasR ::
     Model.CinemaId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-387231af5c92b21725a462d04c4a0c53
+57b17c235334328164fdf6df50c3f8a9
   getListaCinemaR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1907,7 +1907,7 @@ d44f5f10a55e84ae26cb2491a681de78
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-3b24f55eaf296ea8e1251a0aa47ae24e
+2d6f9694431e421f466fda94a49b58c8
   getListaCinemaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2028,7 +2028,7 @@ d44f5f10a55e84ae26cb2491a681de78
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-6335ae8e8f6c6a81efef2af70ab749d9
+33c0702d62630792889ee28ac8c2b52b
   getListaCinemaR10 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2054,7 +2054,7 @@ c1a1ba2c4eb6696828810a9d6aaa7f3f
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</tbody>\n\
                    \</table>\n"#) -}
-1f28f72a3a76b39a79f33fde0a8c8ab9
+fd7ee7e29519b55843ae48ee08e90f32
   getListaCinemaR14 ::
     [Database.Persist.Class.PersistEntity.Entity Model.Cinema]
     -> Yesod.Core.Types.HandlerData
@@ -2065,7 +2065,7 @@ c1a1ba2c4eb6696828810a9d6aaa7f3f
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-cd618739b999296642b0213ac6c246dd
+17b9d573a4ea238999be1ea5e1ab2306
   getListaCinemaR15 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -2146,7 +2146,7 @@ cd618739b999296642b0213ac6c246dd
                                 <GHC.Types.IO>_N
                                 <[Database.Persist.Class.PersistEntity.Entity
                                     Model.Cinema]>_N)))) -}
-18aa510340dae97504b052f34f9b9473
+250eb3beee1674b9cd52d67dda6ef8cf
   getListaCinemaR16 ::
     [Database.Persist.Class.PersistEntity.SelectOpt Model.Cinema]
   {- HasNoCafRefs,
@@ -2156,7 +2156,7 @@ cd618739b999296642b0213ac6c246dd
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.SelectOpt
                            Model.Cinema))) -}
-cf0bfa6a091ccfb544e1c49e31a757ce
+490bdc0757f92d9b6989ffa8f8dddb3e
   getListaCinemaR17 ::
     Database.Persist.Class.PersistEntity.SelectOpt Model.Cinema
   {- HasNoCafRefs,
@@ -2166,7 +2166,7 @@ cf0bfa6a091ccfb544e1c49e31a757ce
                    Handler.Cinema.getListaCinemaR18
                      `cast`
                    (Sym (Model.D:R:EntityFieldCinematyp0[0]) <Data.Text.Internal.Text>_N)) -}
-25c7922ca8cd34ab410d32f07ae644e1
+d6bef7c5c9fd17830e2f74c2f54cc726
   getListaCinemaR18 ::
     Model.R:EntityFieldCinematyp Data.Text.Internal.Text
   {- HasNoCafRefs,
@@ -2186,7 +2186,7 @@ fcf55c9c17b2e5b410afc61189c8cbf1
                    @ Data.Text.Internal.Text
                    @ Data.Text.Internal.Text
                    @~ <Data.Text.Internal.Text>_N) -}
-7da6f53bc801fc589caa6b97259b37ef
+3217ddda531f57fb45ad97884035b109
   getListaCinemaR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2203,7 +2203,7 @@ fcf55c9c17b2e5b410afc61189c8cbf1
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Cinema.getListaCinemaR3 eta49) -}
-fa7c6a62030f199d0bc6897fa41536ef
+035cb6d057973cd27552c99176bfbdf8
   getListaCinemaR20 ::
     (Database.Persist.Class.PersistEntity.PersistEntity Model.Cinema,
      Database.Persist.Sql.Types.Internal.SqlBackend
@@ -2225,7 +2225,7 @@ babebff08dbe51e6313443378d49b55d
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-699ae36b7bfee9093b904d62a9183974
+ee8c5984453454f4d4f3cc229583aef1
   getListaCinemaR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2306,7 +2306,7 @@ babebff08dbe51e6313443378d49b55d
                    \</tr>\n\
                    \</thead>\n\
                    \<tbody>"#) -}
-b5fd4fcb5f557197c7d65235bc1d3471
+a7cce023a4910158d7a543ad0d122405
   getListaCinemaR7 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2324,7 +2324,7 @@ b5fd4fcb5f557197c7d65235bc1d3471
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta49 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta49, Handler.Cinema.getListaCinemaR8 #)) -}
-4ab4d35c91fd35e9750d330523cd8044
+e881ef1a4ac0bd7dde9450e60c4d7548
   getListaCinemaR8 ::
     ((),
      Yesod.Core.Types.GWData
@@ -2338,7 +2338,7 @@ b5fd4fcb5f557197c7d65235bc1d3471
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-2286e12ad12773f8a2e5402c1382fef1
+0a1ad28d017976c6c9e3db0fafdb7a13
   getListaCinemaR9 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -2394,7 +2394,7 @@ dab77f27f107d0dbec187807371a9eb3
                    @ ()
                    Handler.Cinema.getListaCinemaR11
                    GHC.Tuple.()) -}
-02a6d44be2ffeb29cf7e93cfdba2b24e
+d1b4a36f7b2cc63a656ea8caa7782e9d
   getListaCinemaR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -2421,7 +2421,7 @@ dab77f27f107d0dbec187807371a9eb3
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Cinema))
                    Handler.Cinema.getListaCinemaR16) -}
-a4f5e683243d7271e8b81001df6bc013
+bd1137bb9d6c8c4be383d1a999d99bc9
   postCinemaR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2433,7 +2433,7 @@ a4f5e683243d7271e8b81001df6bc013
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-7f1cd0af95b506d90e807d416dadde6b
+688023c921ab72c0d37e236c5364b6bd
   postCinemaR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)

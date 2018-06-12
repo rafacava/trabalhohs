@@ -8,14 +8,22 @@
     <body>
         <h1>
            Askcine
-        <div class="row">   
-            <div id="wrapper">
-                <ul>
-                    <li> <a href=@{TreinadorR}> Cadastro de Treinadores
-                    <li> <a href=@{PokemonR}> Cadastro de Pokemon
-                    <li> <a href=@{ListaTreinadorR}> Lista de Treinadores
-
-        <br>
+        <div class="container">   
+            <div class="row">
+                <div class="col-sm">
+                    <ul>
+                        <li> <a href=@{TreinadorR}> Cadastro de Treinadores
+                        <li> <a href=@{PokemonR}> Cadastro de Pokemon
+                        <li> <a href=@{ListaTreinadorR}> Lista de Treinadores
+                <div class="col-sm">
+                    <ul>
+                        <li> <a href=@{FilmeR}> Cadastro de Filmes
+                        <li> <a href=@{CinemaR}> Cadastro de Cinemas
+                <div class="col-sm">
+                    <ul>
+                        <li> <a href=@{ListaFilmeR}> Lista de Filmes
+                        <li> <a href=@{ListaCinemaR}> Lista de Cinemas
+                        
 
         
         <img src=@{StaticR psyduck_jpg}>
