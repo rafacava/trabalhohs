@@ -50,7 +50,7 @@ postCinemaR = do
     case res of 
         FormSuccess (nome,telefone,local,nsalas,Just arq) -> do 
             cid <- runDB $ insert $ Cinema nome telefone local nsalas (Just $ (fileName arq))
-            liftIO $ fileMove arq ("static/" ++ (unpack $ fileName arq))
+            liftIO $ fileMove arq ("static/imgs/cinemas" ++ (unpack $ fileName arq))
             redirect (CinemasR cid)
         FormSuccess (nome,telefone,local,nsalas,Nothing) -> do 
             cid <- runDB $ insert $ Cinema nome telefone local nsalas Nothing
@@ -62,7 +62,7 @@ getCinemasR :: CinemaId -> Handler Html
 getCinemasR cid = do 
     fm <- runDB $ get404 cid
     imagem <- return $ cinemaImagem fm
-    staticDir <- return $ "../static/"
+    staticDir <- return $ "../static/imgs/cinemas"
     defaultLayout $ do 
         [whamlet|
             <h1>

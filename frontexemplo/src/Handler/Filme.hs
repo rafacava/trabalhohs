@@ -50,7 +50,7 @@ postFilmeR = do
     case res of 
         FormSuccess (nome,ano,genero,duracao,Just arq) -> do 
             fid <- runDB $ insert $ Filme nome ano genero duracao (Just $ (fileName arq))
-            liftIO $ fileMove arq ("static/filmes" ++ (unpack $ fileName arq))
+            liftIO $ fileMove arq ("static/imgs/filmes" ++ (unpack $ fileName arq))
             redirect (FilmesR fid)
         FormSuccess (nome,ano,genero,duracao,Nothing) -> do 
             fid <- runDB $ insert $ Filme nome ano genero duracao Nothing
@@ -62,7 +62,7 @@ getFilmesR :: FilmeId -> Handler Html
 getFilmesR fid = do 
     fm <- runDB $ get404 fid
     imagem <- return $ filmeImagem fm
-    staticDir <- return $ "../static/filmes"
+    staticDir <- return $ "../static/imgs/filmes"
     defaultLayout $ do 
         [whamlet|
         <html>
