@@ -9,8 +9,8 @@ module Handler.Filme where
 import Import
 import Database.Persist.Postgresql
 
-formArquivof :: Form (Text,Int,Text,Int,Maybe FileInfo)
-formArquivof = renderDivs $ (,,,,)
+formArquivo :: Form (Text,Int,Text,Int,Maybe FileInfo)
+formArquivo = renderDivs $ (,,,,)
     <$> areq textField "Nome: " Nothing
     <*> areq intField "Ano: " Nothing
     <*> areq textField "Genero: " Nothing
@@ -23,25 +23,26 @@ formArquivof = renderDivs $ (,,,,)
                                 Nothing
 
 getFilmeR :: Handler Html
-geFilmeR = do 
-    (widget,enctype) <- generateFormPost formArquivof
+getFilmeR = do 
+    (widget,enctype) <- generateFormPost formArquivo
     defaultLayout $ do
         [whamlet|
             <form action=@{FilmeR} method=post enctype=#{enctype}>
                 ^{widget}
-                <input type="submit" value="Cadastrar Filme">
+                <input type="submit" value="Cadastrar">
         |]
+
 
 postFilmeR :: Handler Html 
 postFilmeR = do 
-    ((res,_),_) <- runFormPost formArquivof
+    ((res,_),_) <- runFormPost formArquivo
     case res of 
-        FormSuccess (nome,ano,gen,durac,Just arq) -> do 
-            fid <- runDB $ insert $ Filme nome ano gen durac (Just $ (fileName arq))
+        FormSuccess (nome,ano,genero,duracao,Just arq) -> do 
+            fid <- runDB $ insert $ Filme nome ano genero duracao (Just $ (fileName arq))
             liftIO $ fileMove arq ("static/" ++ (unpack $ fileName arq))
             redirect (FilmesR fid)
-        FormSuccess (nome,ano,gen,durac,Nothing) -> do 
-            fid <- runDB $ insert $ Filme nome ano gen durac Nothing
+        FormSuccess (nome,ano,genero,duracao,Nothing) -> do 
+            fid <- runDB $ insert $ Filme nome ano genero duracao Nothing
             redirect (FilmesR fid)
         _ -> redirect HomeR
 
@@ -49,7 +50,7 @@ postFilmeR = do
 getFilmesR :: FilmeId -> Handler Html
 getFilmesR fid = do 
     fm <- runDB $ get404 fid
-    imagem <- return $ posterFilme fm
+    imagem <- return $ filmeImagem fm
     staticDir <- return $ "../static/"
     defaultLayout $ do 
         [whamlet|
