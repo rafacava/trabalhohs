@@ -9,10 +9,12 @@ module Handler.Cinema where
 import Import
 import Database.Persist.Postgresql
 
-formArquivo :: Form (Text,Text,Maybe FileInfo)
+formArquivo :: Form (Text,Int,Text,Int,Maybe FileInfo)
 formArquivo = renderDivs $ (,,,,)
     <$> areq textField "Nome: " Nothing
-    <*> areq textField "Localização: " Nothing
+    <*> areq intField "telefone: " Nothing
+    <*> areq textField "Local: " Nothing
+    <*> areq intField "Duração: " Nothing
     <*> aopt fileField FieldSettings{fsId=Just "hident4",
                                 fsLabel="Imagem do cinema: ",
                                 fsTooltip= Nothing,
@@ -35,43 +37,38 @@ postCinemaR :: Handler Html
 postCinemaR = do 
     ((res,_),_) <- runFormPost formArquivo
     case res of 
-        FormSuccess (nome,local,Just arq) -> do 
-            cid <- runDB $ insert $ Cinema nome local (Just $ (fileName arq))
+        FormSuccess (nome,telefone,local,nsalas,Just arq) -> do 
+            cid <- runDB $ insert $ Cinema nome telefone local nsalas (Just $ (fileName arq))
             liftIO $ fileMove arq ("static/" ++ (unpack $ fileName arq))
-            redirect (CinemasR fid)
-        FormSuccess (nome,local,Nothing) -> do 
-            cid <- runDB $ insert $ Cinema nome local Nothing
-            redirect (CinemasR fid)
+            redirect (CinemasR cid)
+        FormSuccess (nome,telefone,local,nsalas,Nothing) -> do 
+            cid <- runDB $ insert $ Cinema nome telefone local nsalas Nothing
+            redirect (CinemasR cid)
         _ -> redirect HomeR
 
 
 getCinemasR :: CinemaId -> Handler Html
-getCinemasR fid = do 
-    cm <- runDB $ get404 fid
-    imagem <- return $ cinemaImagem cm
+getCinemasR cid = do 
+    fm <- runDB $ get404 cid
+    imagem <- return $ cinemaImagem fm
     staticDir <- return $ "../static/"
     defaultLayout $ do 
         [whamlet|
             <h1>
-                Nome: #{cinemaNome cm}
+                Nome: #{cinemaNome fm}
             <h2>
-                Ano: #{show $ cinemaAno cm}
+                Telefone: #{show $ cinemaTelefone fm}
             <h2>
-                Genero: #{cinemaGenero cm} 
+                Local: #{cinemaLocal fm} 
             <h2>
                 $maybe img <- imagem 
                     <img src=#{staticDir ++ img}>
         |]
 
-postCinemasR :: CinemaId -> Handler Html
-postCinemasR cid = do 
-    runDB $ delete cid 
-    redirect ListaCinemaR
-
 
 getListaCinemaR :: Handler Html
 getListaCinemaR = do
-    cinemas <- runDB $ selectList [] [Asc cinemaNome]
+    cinemas <- runDB $ selectList [] [Asc CinemaNome]
     defaultLayout $ do 
         [whamlet|
             <table>
@@ -81,10 +78,10 @@ getListaCinemaR = do
                             Nome
                         
                         <th> 
-                            Local
+                            Telefone
                         
                         <th>
-                            Imagem
+                            Genero
                         
                         <th>
                             
@@ -96,11 +93,12 @@ getListaCinemaR = do
                                 <a href=@{CinemasR cid}> 
                                     #{cinemaNome cinema}
                             
+                            <td>
+                                #{show $ cinemaTelefone cinema}
                             
                             <td>
                                 #{cinemaLocal cinema}
                             
                             <td>
-                                <form action=@{CinemaR cid} method=post>
-                                <input type="submit" value="Apagar">
+                                a
         |]

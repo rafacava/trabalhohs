@@ -4,10 +4,12 @@ Treinador
     dtnasc Day
 
 Cinema
-    nome    Text
-    local   Text
-    imagem  Text Maybe
-    
+    nome     Text
+    telefone Int
+    local    Text
+    nsalas   Int
+    imagem   Text Maybe
+
 Filme
     nome    Text
     ano     Int

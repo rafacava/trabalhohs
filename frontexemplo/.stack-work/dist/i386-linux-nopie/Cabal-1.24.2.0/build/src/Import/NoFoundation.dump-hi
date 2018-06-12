@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 05:07:05.726908791 UTC
+2018-06-12 06:32:07.998688354 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Import.NoFoundation 8002
-  interface hash: b826fb2e9c51866acdc4f304609faaf7
-  ABI hash: 9e276037d64973fa78b14472191e3031
-  export-list hash: 8383fd01143eab5b3809f09267ea1636
+  interface hash: b6656f887e8655e66a805a35fd6754cc
+  ABI hash: 3a4ecf41776d59eefaf3947aa7cd7064
+  export-list hash: d4ee3ce1e0b023f5b1b972ee901ccd9e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 8904b8f60ff105ace4bfea809119f45d
   sig of: Nothing
@@ -1596,7 +1596,7 @@ exports:
   Control.Monad.Catch.MonadCatch
   Control.Monad.Catch.MonadMask{Control.Monad.Catch.mask Control.Monad.Catch.uninterruptibleMask}
   Control.Monad.Catch.MonadThrow
-  Model.Cinema{Model.Cinema cinemaImagem cinemaLocal cinemaNome}
+  Model.Cinema{Model.Cinema cinemaImagem cinemaLocal cinemaNome cinemaNsalas cinemaTelefone}
   Model.CinemaId
   Model.Filme{Model.Filme filmeAno filmeDuracao filmeGenero filmeImagem filmeNome}
   Model.FilmeId
@@ -1714,7 +1714,7 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
-  Database.Persist.Class.PersistEntity.EntityField|{Model.CinemaId Model.CinemaImagem Model.CinemaLocal Model.CinemaNome Model.FilmeAno Model.FilmeDuracao Model.FilmeGenero Model.FilmeId Model.FilmeImagem Model.FilmeNome Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.CinemaId Model.CinemaImagem Model.CinemaLocal Model.CinemaNome Model.CinemaNsalas Model.CinemaTelefone Model.FilmeAno Model.FilmeDuracao Model.FilmeGenero Model.FilmeId Model.FilmeImagem Model.FilmeNome Model.PokebolaBola Model.PokebolaCaptura Model.PokebolaId Model.PokebolaPokeid Model.PokebolaTid Model.PokemonGeracao Model.PokemonId Model.PokemonImagem Model.PokemonNivel Model.PokemonNome Model.PokemonTipo Model.TreinadorCidade Model.TreinadorDtnasc Model.TreinadorId Model.TreinadorNome Model.UsuarioEmail Model.UsuarioId Model.UsuarioNome Model.UsuarioSenha}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
   Database.Persist.Class.PersistEntity.Key|{Model.CinemaKey Model.FilmeKey Model.PokebolaKey Model.PokemonKey Model.TreinadorKey Model.UsuarioKey unCinemaKey unFilmeKey unPokebolaKey unPokemonKey unTreinadorKey unUsuarioKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
@@ -2259,91 +2259,95 @@ import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Sequence 7a8fbc1c1c242521
 import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b9d255a553a546c3f
 import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 95836b8d9ba32bd3c49ccd9c9aa07935
 import  -/  dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList 22dffe50f890f364a13da093d2b9d273
-import  -/  Model 10863ee26288ab2abd6d1212dcb65762
-  exports: ef95f79efcf02f96fab1480067229e4a
-  Cinema 4e5ab149e60ae4a24e25697d206399e4
-  Cinema 5522d7cc995507a3e9f2e82510ed3504
-  CinemaId d13746215016ed9f6e465a81b44b5703
-  CinemaId 0f3cc8cd592e01d6e4181f5a105dcf40
-  CinemaImagem c96da5b605b17091f8b0ada1efa0d93c
-  CinemaKey be7829324433c9da21bb31927b02826c
-  CinemaLocal 4a8a748824768c2770db2aba8ae4afc4
-  CinemaNome b41030b67d4f56be64d457bc359a95f1
-  Filme de428248684949d780974865e4f184c1
-  Filme c50bcc4c13837332d22cc49e9107b6a2
-  FilmeAno 34f99dc0c321f766504fd65aa244841b
-  FilmeDuracao 0fc367b3b8e037806ad74156ece64d8d
-  FilmeGenero ead83838db35d776d8b5ca370691d987
-  FilmeId 84f417811b0e01b2824face9b029677f
-  FilmeId 5060073462e171c0057e48aa8fd01ed0
-  FilmeImagem 075035f998ea84641c131ee9206c7184
-  FilmeKey c1e2ab5aa86ffac4ef7ddb53c76728f4
-  FilmeNome 2b3d212f47372c3fcc78bc1636c1bfc8
-  Pokebola 707b8d8cd4f4a38a4046ae0c405f1a25
-  Pokebola e03054f76b11be42b8450acf160d3702
-  PokebolaBola 96c628bd37e10d4adb2c981c992f4d5e
-  PokebolaCaptura fa3c2b3d280dd5d79f26dc65a5654cce
-  PokebolaId 8c129874d8b66479fd364d19acf2e6a9
-  PokebolaId cb3dc66562c9cfd6daabc48177a183d1
-  PokebolaKey 08c01b2dd5ccb3adf448862b60855ab1
-  PokebolaPokeid 6d56ef80bff142e5c48bb2135dc4e6ee
-  PokebolaTid 2961fc319e63be7aad00898b60af9cac
-  Pokemon 62f0b42fbad048c3d993647e6d23ea88
-  Pokemon 959242b351380ddbbde0818e161aa650
-  PokemonGeracao 2b8583cf52dc32af4ee5f06724ea1511
-  PokemonId 30710c037701761ee2d6c18956361efa
-  PokemonId 125867fa0e67df3a91dec573d8e4f20f
-  PokemonImagem b6f49b2f596c95e0231fb6cf6d28dd13
-  PokemonKey c5c670d8f098b576c495bee5d5ab9550
-  PokemonNivel 47bdfd00a4f4e74a34979a9a52f99c5f
-  PokemonNome 4e4226a31732a698cc6d672605710275
-  PokemonTipo 10b3dc63355eefbc741fbfd6d2836363
-  Treinador 9989ab9e3efeadcc85b2f7068195fdef
-  Treinador b168f52c4b43ba8d96c6f8fedae8df12
-  TreinadorCidade c5f3dc627f3e0afa52976dce940ee191
-  TreinadorDtnasc 153d34418e52bb3616df2e1a70caa753
-  TreinadorId 85e62eae9c9165456cde25979ca6faf6
-  TreinadorId 721378050dd8afd9729f66a764b9ca2a
-  TreinadorKey a07b22ded867bd9c50894fe8bfc0bfcf
-  TreinadorNome 7b841d4b92b8db144980f2f569add9ef
-  Usuario dc01355b6b395e8b67261e8ee9820372
-  Usuario a3e56dc71afded99b38deb24bab63c4d
-  UsuarioEmail c3cfc74352e9182cb51740bea4805cd4
-  UsuarioId 989070d0048370aa075042b9da08dc77
-  UsuarioId a6ace6d7a07de75b80c630dcdd623e38
-  UsuarioKey 506965de66bdb3355888a525e7806c21
-  UsuarioNome d70c538fe5563b195b1b8e4fff566f6e
-  UsuarioSenha e3012d009e038b6556940842248f089f
-  cinemaImagem 82d1f5b7fe6bac6a3b2a247f38099f02
-  cinemaLocal 013ef0e342f2cb0e4f37ffe7e7f2b975
-  cinemaNome 1721f1720e2eb86ecfb71477e534977b
-  filmeAno 674a149e84c1a40b5793e9a9fa3086f2
-  filmeDuracao 8ccbc2708bc2dc09e2dc33fff58e7dbe
-  filmeGenero 6aeeca7e9ac22cadcf318a5e3ab3d8ea
-  filmeImagem 3bd92cffb062ce72e359048f5821c576
-  filmeNome 9878a48ea1739b74c50b2309b717d3b5
+import  -/  Model 8dad478308ca67c38f06e7e75a92f639
+  exports: 129573cccaf018bf735e3b8a76306fe2
+  Cinema 0bdfc70e8bf53c7ad42ff9096b6b6c4f
+  Cinema e099bbf4427c27802a155f7a733af2bf
+  CinemaId b5ed423a863fdfa05da1ee30876542e3
+  CinemaId 24afd82fd45eae58f9abcd808e3a8e71
+  CinemaImagem 1a784425240224f49b0b6069feef3114
+  CinemaKey f35f05ac71ca28e17fff6cfc8842cbf9
+  CinemaLocal bd862f4fde24c1043e4615873c813f92
+  CinemaNome 03f7599417a299c243a6129d2e056694
+  CinemaNsalas daf096373ea79f08a7550d07f7a50931
+  CinemaTelefone 2f8bc05ec290b6df7dc5465aef1d722f
+  Filme b5f2ef570e76f5a842f77673f53cdfde
+  Filme 612f008ba83a66b52bddfc594412e3a1
+  FilmeAno 73dbd5bc04a6e11a60b3e8525dbf8c7a
+  FilmeDuracao 5db3e0fabf4b6cee15989687b8f0dda0
+  FilmeGenero 14762f8a568a25cf4c83859b0a509db3
+  FilmeId 3de4ed883778f38ef0340203654cc1f7
+  FilmeId fcb6d8bac865ab7c6a7513ac37f7bf73
+  FilmeImagem 0ac94275992be5ef6f3aa44230c8751d
+  FilmeKey 479c109321f1bad7eb52044962e57716
+  FilmeNome 1997e8903d91c07b347f804c0fe8f152
+  Pokebola 44205a53e7dd41a2b37da9b1e79c3552
+  Pokebola 593bbf228050dd433fc3d66662a1d7af
+  PokebolaBola 983ff747e85a613082e1fe8b4623697a
+  PokebolaCaptura 723a65e3c83c676928e8e8954f24648e
+  PokebolaId 0d7952ab7ca64aa06b0b91e69dfb4753
+  PokebolaId 5383b739c082ebe2172c23adc952c1df
+  PokebolaKey 3d68a845bdfe0bfc7ec0d220bdd2760a
+  PokebolaPokeid 57a6736768ddfe18d185e142eb1bb9c0
+  PokebolaTid a502f7fda7fccaa2855e223165e42c1a
+  Pokemon 9b737b4fde3f2c3ce64a26bf4b5bfa13
+  Pokemon 52b445f5279b384887afe41cc636ab82
+  PokemonGeracao 2d71d500e55a6d87eb614e81b370b550
+  PokemonId 27abaad93239a2085b1ad7f41d528812
+  PokemonId 53398fa924035c655327f9d7750aa591
+  PokemonImagem ecdd4cb1096bfa137dae6cddf1bf6ee4
+  PokemonKey becc57fbdb2d573509894b4d2ceac89a
+  PokemonNivel 437eb984f7a23d3e55828dfeb868b584
+  PokemonNome f52d9ca76ed0ef864f7a13425e1216c2
+  PokemonTipo 94314d65c01d0b8f41e45f6b901808b7
+  Treinador 915dbc118c4c6ea81149ae5819ee2387
+  Treinador d24a4831530ecb562724e1cba6ebcd5d
+  TreinadorCidade 6fe35b3333329da14a0ba228bb3ce7c7
+  TreinadorDtnasc d7584afbfd1db64950de7790f0d84f6d
+  TreinadorId 32f4219bc31126e824c3b3971adef8d2
+  TreinadorId 3457b3e871369bfe3daf0e2fbe33f163
+  TreinadorKey d756e0e42ed2626e4b1acdda6a44cc80
+  TreinadorNome a9c3b970a610acde87a235ea87a138a5
+  Usuario 88e1e383b027581daa564ea028d92dc0
+  Usuario 7bac0b23d6dd69d20c8af848ca179e06
+  UsuarioEmail e6035ed6a91e49b94d2f49b0c7c91f71
+  UsuarioId 4619746ab081cdedf8b2559284840f9d
+  UsuarioId 5643f89554c39fd5f44010f4bb16ab2f
+  UsuarioKey a1440520d2993bd1f0395cb71bef5cd1
+  UsuarioNome 0d5cd2574e3cb05184cc2d0e226be29c
+  UsuarioSenha a6f6cd252e07586b992bf42c4c07929a
+  cinemaImagem 5b69bd48d2f30701f5b84256b7206c34
+  cinemaLocal 58f0c47536c40f725de586714192eea0
+  cinemaNome f39959994d23aa43f46e0105e8382e40
+  cinemaNsalas 45722f2966b56afb67a45ce6b560988f
+  cinemaTelefone a2d6f75a2b7fd7aef94901d53e26a618
+  filmeAno 93ab2bb1ac5159ae62da2de730965bb7
+  filmeDuracao d85051d322f51cc770a3e2a88e68ae2d
+  filmeGenero ecd10d5ff3dc1be8e6f28de5fdc93376
+  filmeImagem 742970ffd4f804c26c65f145cb91b6ed
+  filmeNome a78aa71042caf9ed0094713ac8172bd0
   migrateAll 728cb9e7f2a769294702da28b3d161cf
-  pokebolaBola 4c28b0611402de14c7721f12e63016ad
-  pokebolaCaptura 564c50067049c908c4097c2b060887ce
-  pokebolaPokeid 8d381a60d60e9fe2c4a5d172df176900
-  pokebolaTid 0f1f2bf9c887774387a61f064ddc6834
-  pokemonGeracao 189df0a1fdc78da4251386f3b3e3e725
-  pokemonImagem 82bca1b9f49d4f566240cf13664616de
-  pokemonNivel 4068a860cb3011130601479fe05d594c
-  pokemonNome 85a100201e819b58e61e9b4311fcac4a
-  pokemonTipo 4b27cf7a4108e7cd5b9d30b13ec9d2d2
-  treinadorCidade b22612e7c8dba5075647bf3e2cd8018b
-  treinadorDtnasc 0048aeebbf51f150031bf6086ecef4ed
-  treinadorNome cab383167ac982428034a151aef07997
-  unCinemaKey 5522d7cc995507a3e9f2e82510ed3504
-  unFilmeKey c50bcc4c13837332d22cc49e9107b6a2
-  unPokebolaKey e03054f76b11be42b8450acf160d3702
-  unPokemonKey 959242b351380ddbbde0818e161aa650
-  unTreinadorKey b168f52c4b43ba8d96c6f8fedae8df12
-  unUsuarioKey a3e56dc71afded99b38deb24bab63c4d
-  usuarioEmail 48225058798387fad4a0939e34ccb789
-  usuarioNome f6fc05171dbb5b51247948ecc1555668
-  usuarioSenha 7ab99f38529e0dc398a339cea466a9bb
+  pokebolaBola 2430005724bb1d08cee9e0eda8e14294
+  pokebolaCaptura eb88e448c579f249c20b7a2f1fdd0384
+  pokebolaPokeid c1736008938fd6b0efa2d4e209ed4ec9
+  pokebolaTid 9152d7d2cbb0f06399a3f8637da4cafb
+  pokemonGeracao 87cfd937a4ba3f39de48dd4c8692003c
+  pokemonImagem 5eeac991bee8c3751a51f505d0b48e4c
+  pokemonNivel 61b78cb1041a7fb39e140b72a202d2fe
+  pokemonNome 4c763b0b71218a05d38344a5ca7f1a47
+  pokemonTipo a82f8a06fc5be38665536531ed13b06a
+  treinadorCidade 840acfba44de62f3d7ecb64e0b14ecd4
+  treinadorDtnasc 996b3072f1da6062fda0e2ac6a20d052
+  treinadorNome df7b40d676341f05099ae66a5108e737
+  unCinemaKey e099bbf4427c27802a155f7a733af2bf
+  unFilmeKey 612f008ba83a66b52bddfc594412e3a1
+  unPokebolaKey 593bbf228050dd433fc3d66662a1d7af
+  unPokemonKey 52b445f5279b384887afe41cc636ab82
+  unTreinadorKey d24a4831530ecb562724e1cba6ebcd5d
+  unUsuarioKey 7bac0b23d6dd69d20c8af848ca179e06
+  usuarioEmail 3bf5b0233f59c1fa661a44bc5f117d9b
+  usuarioNome 4744e2116f68ae9bb3dcd76fa192e75e
+  usuarioSenha d7d58e04964c2b245142f708ff91d8b0
 import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
   exports: c8ac6e421a7935b6153a393771a8de15
   AppSettings 832bad5279a934db96edd7d50ae58d26

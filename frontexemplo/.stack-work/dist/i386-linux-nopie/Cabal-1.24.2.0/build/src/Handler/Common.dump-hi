@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 06:10:10.522305983 UTC
+2018-06-12 06:49:01.296408876 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Common 8002
-  interface hash: 2320f7d8aaa2922d77f609600da0d4f3
-  ABI hash: c5428bda4d39c51b85109af815488516
+  interface hash: 944ecd2e292f2ed45a1adce84d8946cc
+  ABI hash: 74424057d8030b4bd6c01ba691aa38c7
   export-list hash: bda5d49c91d53afe19bbd9dbc347d454
   orphan hash: f2f2ec804e061705c6a7ec5b39820331
   flag hash: 52437d215b053f1675b91544bebf2d26
@@ -342,10 +342,10 @@ import  -/  base-4.9.1.0:GHC.IO.Unsafe 8976663b2802b615673a29125433e606
 import  -/  base-4.9.1.0:GHC.Num d4fcdd3f6fbc0495573cd3a1936c6e28
 import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Unsafe d9963231306c15a2b1275e12479c9d1b
 import  -/  file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK:Data.FileEmbed c1d107db652d94112a643588a5d032ee
-import  -/  Foundation 8cdfa4129426fcd501f1333bb8db2882
-  Handler 41ba2f585efe673bfc9317fafd6d899c
-import  -/  Import c24f3b6a95e8e2c1be32dbba51e846aa
-  exports: 49070ee65623211ef1f659eb32f5d8f6
+import  -/  Foundation 915c395e6b560b233a314239adee046c
+  Handler 7fb01b7228f1ea3f2a2502301bb01172
+import  -/  Import 190a282d5e3ba71764de6ee952f94228
+  exports: 477b854e7975e4b1b2d6596024ea32e7
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Content 139aefc2672ae5eb76e0b376e09b6339
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Handler 3d20c5e66378ecdf3c20b0ead6eac5df
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 850af6a923eca0c28746c7c972883cdd
@@ -389,7 +389,7 @@ addDependentFile "config/favicon.ico"
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-72a96c3b7739fdb749eb1fabd6414b77
+f47cf0eb8f5183a981b56dcd3565e80c
   getFaviconR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -403,7 +403,7 @@ addDependentFile "config/favicon.ico"
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-dceb1cab1971d1f5ebc813e104fdae9d
+0c7981e6f1fa48b60ecdb5067cefbb2e
   getFaviconR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -466,14 +466,14 @@ f64828a00e3549722ba25994a1ec4261
 eddbaae7e8198eb53715888fab467c41
   getFaviconR5 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2592000#) -}
-80a4ef5d64130f8ffb170c8df074cc6e
+71c4d5a089e60ba7a58baccc2625507c
   getFaviconR_m1 ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
   {- Unfolding: (Yesod.Core.Handler.cacheSeconds
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
                    (Handler.Common.$s$fMonadHandlerHandlerT @ Foundation.App)
                    Handler.Common.getFaviconR5) -}
-d831901125e29a03d241b31030a17391
+1e0de0346add8d40e2f478bee74c424d
   getRobotsR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,A><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -487,7 +487,7 @@ d831901125e29a03d241b31030a17391
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-c90c0b9d0d1498b7b2592a8f8051d473
+f0770df5b1707883efc5d24901bd3317
   getRobotsR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
