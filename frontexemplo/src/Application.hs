@@ -42,6 +42,7 @@ import Handler.Treinador
 import Handler.Login
 import Handler.Usuario
 import Handler.Filme
+import Handler.Cinema
 import Handler.Pokemon
 
 -- This line actually creates our YesodDispatch instance. It is the second half
