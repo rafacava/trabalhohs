@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 07:23:38.076283059 UTC
+2018-06-12 11:05:57.630924748 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: ad22f44dff566677cf35699321bcb680
+  interface hash: 1cb6fc070e055d7f929d0601140ebce2
   ABI hash: b4eb58277c85274d438721bd40e264cc
   export-list hash: b89cffa25af8994d413f661b705e1e3a
   orphan hash: 70a80cce149fb8c57d676a278b0b0a5e
@@ -392,9 +392,9 @@ import  -/  Handler.Common 33b1d24533bbf6c3d1e1a2da4383148a
   exports: bda5d49c91d53afe19bbd9dbc347d454
   getFaviconR abf3c7774d8470e19962be3c5d2b686e
   getRobotsR e6338ea11b3a04e014d8c93eb2d2bdc7
-import  -/  Handler.Filme d943568f38a91cb04a02a4da993f52c7
+import  -/  Handler.Filme ac9f490968d6936bd92adcf957513a9d
   exports: d590f97c52609bc79c543fbf670fcfff
-  getFilmeR 26ebb3ebf2547a433f85e83e434624bd
+  getFilmeR 84fa4a58be17b203c2ee47c61ae2c234
   getFilmesR 3cbf14f3f4aa70820da07fa934362047
   getListaFilmeR 9df72cba0111fdc210e3f498e47dfcc4
   postFilmeR 08b4aaa7c40d86b15242929f61f2bd20
