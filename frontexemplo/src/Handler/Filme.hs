@@ -65,16 +65,25 @@ getFilmesR fid = do
     staticDir <- return $ "../static/"
     defaultLayout $ do 
         [whamlet|
-            <h1>
-                Nome: #{filmeNome fm}
-            <h2>
-                Ano: #{show $ filmeAno fm}
-            <h2>
-                Genero: #{filmeGenero fm} 
-            <h2>
-                $maybe img <- imagem 
-                    <img src=#{staticDir ++ img}>
-        |]
+        <html>
+        <head>
+            <title>Cadastre um Filme - Askcine
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+        <body>
+            <div class="container">
+                <h1>
+                    Nome: #{filmeNome fm}
+                <h3>
+                    Ano: #{show $ filmeAno fm}
+                <h3>
+                    Genero: #{filmeGenero fm} 
+                <div class="col-sm">
+                    $maybe img <- imagem 
+                        <img src=#{staticDir ++ img}>
+            |]
 
 postFilmesR :: FilmeId -> Handler Html
 postFilmesR fid = do 
@@ -87,35 +96,45 @@ getListaFilmeR = do
     filmes <- runDB $ selectList [] [Asc FilmeNome]
     defaultLayout $ do 
         [whamlet|
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Nome
-                        
-                        <th> 
-                            Ano
-                        
-                        <th>
-                            Genero
-                        
-                        <th>
-                            
-                
-                <tbody>
-                    $forall (Entity fid filme) <- filmes
+        <html>
+        <head>
+            <title>Lista de filmes - Askcine
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+        <body>
+            <div class="container">
+                <h1>Lista de Filmes
+                <table>
+                    <thead>
                         <tr>
-                            <td>
-                                <a href=@{FilmesR fid}> 
-                                    #{filmeNome filme}
+                            <th>
+                                Nome
                             
-                            <td>
-                                #{show $ filmeAno filme}
+                            <th> 
+                                Ano
                             
-                            <td>
-                                #{filmeGenero filme}
+                            <th>
+                                Genero
                             
-                            <td>
-                                <form action=@{FilmesR fid} method=post>
-                                <input type="submit" value="Apagar">
+                            <th>
+                                
+                    
+                    <tbody>
+                        $forall (Entity fid filme) <- filmes
+                            <tr>
+                                <td>
+                                    <a href=@{FilmesR fid}> 
+                                        #{filmeNome filme}
+                                
+                                <td>
+                                    #{show $ filmeAno filme}
+                                
+                                <td>
+                                    #{filmeGenero filme}
+                                
+                                <td>
+                                    <form action=@{FilmesR fid} method=post>
+                                    <input type="submit" value="Apagar">
         |]
