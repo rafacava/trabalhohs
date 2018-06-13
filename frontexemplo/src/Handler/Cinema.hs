@@ -79,12 +79,15 @@ getCinemasR cid = do
 
 getListaCinemaR :: Handler Html
 getListaCinemaR = do
-    cinemas <- runDB $ selectList [] [Asc CinemaNome]
+    
+    cinemas <- runDB $ selectList [] [Asc CinemaId]
     defaultLayout $ do 
         [whamlet|
             <table>
                 <thead>
                     <tr>
+                        <th>
+                            Id
                         <th>
                             Nome
                         
@@ -99,7 +102,11 @@ getListaCinemaR = do
                 
                 <tbody>
                     $forall (Entity cid cinema) <- cinemas
+   
                         <tr>
+                            <td>
+                            <button value="#{show $ cinemaTelefone cinema}">#{cinemaNome cinema}
+                            
                             <td>
                                 <a href=@{CinemasR cid}> 
                                     #{cinemaNome cinema}
