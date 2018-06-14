@@ -86,8 +86,8 @@ getFilmesR fid = do
             |]
 
 postFilmesR :: FilmeId -> Handler Html
-postFilmesR fid = do 
-    runDB $ delete fid 
+postFilmesR tida = do 
+    runDB $ delete tida 
     redirect ListaFilmeR
 
 
@@ -136,5 +136,5 @@ getListaFilmeR = do
                                 
                                 <td>
                                     <form action=@{FilmesR fid} method=post>
-                                    <input type="submit" value="Apagar">
+                                        <input type="submit" value="Apagar">
         |]

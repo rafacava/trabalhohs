@@ -20,9 +20,35 @@ getCadUsuarioR = do
     (widget,enctype) <- generateFormPost formUsuario
     defaultLayout $ do 
         [whamlet|
-            <form action=@{CadUsuarioR} method=post enctype=#{enctype}>
-                ^{widget}
-                <input type="submit" value="OK">
+
+                <!doctype html>
+                <html lang="en">
+
+                <head>
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+                    crossorigin="anonymous">
+                    <style>
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                <body>
+
+                <div class="container-fluid">
+                    <div class="jumbotron col-sm-6 text-center col-centered">
+                        <h1 style="color:black;">Cadastre um usuario
+                            <br>
+                            <p><h3 style="color:black;">Preencha os todos os campos:
+                            <div class="container">
+                                 <div class="row text-center">
+                                      <form action=@{CadUsuarioR} method=post enctype=#{enctype}>
+                                     ^{widget}
+                                      <input type="submit" value="OK">
         |]
 
 postCadUsuarioR :: Handler Html
@@ -40,11 +66,37 @@ getPerfilUsuarioR uid = do
     usu <- runDB $ get404 uid
     defaultLayout $ do 
         [whamlet|
-            <h1> 
-                Nome: #{usuarioNome usu}
+                <!doctype html>
+                <html lang="en">
 
-            <h2>
-                E-mail: #{usuarioEmail usu}
+                <head>
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <a href=@{HomeR}> Voltar
-        |]
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+                    crossorigin="anonymous">
+                    <style>
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                <body>
+
+                <div class="container-fluid">
+                    <div class="jumbotron col-sm-6 text-center col-centered">
+                    <h1 style="color:black;">Menu de Opções
+                        <br>
+                        <p><h3 style="color:black;">As seguintes ações serão possiveis:
+                        <div class="container">
+                        <div class="row text-center">
+                            <br>
+                            <h1> 
+                                Nome: #{usuarioNome usu}
+
+                            <h2>
+                                E-mail: #{usuarioEmail usu}
+
+                            <a href=@{HomeR}> Voltar
+             |]

@@ -17,7 +17,6 @@
 /filme/#FilmeId                FilmesR         GET POST
 /lista/filme                   ListaFilmeR     GET
 
-
 /cinema/#CinemaId/sessao                 SessaoR         GET POST
 /cinema/#CinemaId/sessao/#SessaoId       PaginaSessaoR   GET
 

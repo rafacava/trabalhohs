@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 07:15:44.715994621 UTC
+2018-06-14 19:44:33.439460573 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: f79f15735eb676deda86cf020007c439
+  interface hash: 62c2f8ec44fe167cbb1b9b6acd6c3292
   ABI hash: e3b823f6436828a1a0907ad42a95c8d7
   export-list hash: 6393b026be37f3892d70847e5215e81e
   orphan hash: 1dc58bb34cd7e6aabbb0479253cb8151
@@ -394,22 +394,22 @@ import  -/  Handler.Common 9004ea3c69c373deae0758cc85942105
   exports: bda5d49c91d53afe19bbd9dbc347d454
   getFaviconR 85ce1f78fdae89fa4f3ff07eabe67b3d
   getRobotsR 05eb0627717e1aa1a9ba2e647ee6b99d
-import  -/  Handler.Filme e3065b1a181f6c5c0b7c416a7ab42a5d
+import  -/  Handler.Filme 5bdaedf5cc04a22fb00f1d2c0c99d140
   exports: 5361dd479d8aad5f48ad4678342a8d25
   getFilmeR a583a8eecddf45c0d775f94fa9f21901
   getFilmesR 2f6efea121195124c0e7f4236cfa070a
   getListaFilmeR 5ebea2396384b42b51bb8ce641d98dfc
   postFilmeR 94cebc34c5ab7041434d8fdd388940e3
-  postFilmesR 80e34818583e2e6121809e87c5aea6ae
-import  -/  Handler.Home 910cba5b11649cc47955dfdf49e731d2
+  postFilmesR d1fe7c98101c2b1acf0a9a9f44a76a48
+import  -/  Handler.Home 02f1bffa54b09b954bcb3529fc8cefe0
   exports: 82e327a962b53534023acc041ad04930
-  getHomeR 0a25015b17bf4deac803ecd3ed2a90ac
-import  -/  Handler.Login c754b340b19a0d148eaeed7551745d4b
-  exports: a1e438465301ed3349e156eed19c10e2
-  getAdminR 20ee03b4a01cc8a035ef7af5d144e556
+  getHomeR 84b81596a39eff79d2e7b5dcbd0aa2d1
+import  -/  Handler.Login c988777f865e63db615bf4f32476563b
+  exports: 757dde10e174e5a2c21ee3b6ece3e5e7
+  getAdminR 68c0d318f6179a39cd5e9ea71f1c6be3
   getLoginR 365cc2c7339257860c0b375e2f532763
   postLoginR 1edc692e59b6a81845cf9a8684e3edaf
-  postLogoutR 74a36041805660aa6deb7c4350346be2
+  postLogoutR 5973c28774ed6310ef469ce0734d9ec1
 import  -/  Handler.Pokemon a5c07b937db34fb453e85c7cec36edc9
   exports: 356212e66a52267832f4009979efcc5e
   getPokedexR 16db199b0faad55c51ebd9d3b6afc59d
@@ -427,10 +427,10 @@ import  -/  Handler.Treinador 9744313b51f6847cc2a8e49728fea722
   getTreinadorR 0d9519453293b7ab0d4900e16958c522
   postPerfilR dca8b6ee04c55062dae38013b0635ee6
   postTreinadorR 1a95b51f78a8fee7078a213f2cd8454d
-import  -/  Handler.Usuario 1d481a0a5e389256c5bc73e64170b2fe
+import  -/  Handler.Usuario d70b5e1b7afa953f55a5c31935c9b95a
   exports: d3b27c5d3e4b00a98168a837aceaed2c
-  getCadUsuarioR 29fbdde24ded2fc67409a3e783ec9291
-  getPerfilUsuarioR 7cef3bb85d247eb7dde6aa84dc11df21
+  getCadUsuarioR 36804f8a45b8db9fd3fbe7a0519a9969
+  getPerfilUsuarioR c5a2261dffb39883a95eccb34460e2af
   postCadUsuarioR c077776b88c8d596b9940e40a3ccf57f
 import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
   exports: ae0b514ccb6b5e96d11fc70f081e9789
