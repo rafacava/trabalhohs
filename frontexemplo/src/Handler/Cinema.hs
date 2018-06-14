@@ -110,7 +110,7 @@ getListaCinemaR = do
                 <body>
 
                 <div class="container-fluid">
-                    <div class="jumbotron col-sm-6 text-center col-centered">
+                    <div class="jumbotron col-sm-9 text-center col-centered">
                         <h1 style="color:black;">Lista de cinemas
                             <br>
                             <p><h3 style="color:black;">Todos os cinemas Cadastrados:
@@ -147,5 +147,5 @@ getListaCinemaR = do
                                                         <td>
                                                             <form action=@{CinemasR cid} method=post>
                                                                 <input type="submit" value="Apagar">
-                                                            <p href=@{SessaoR cid}>Nova Sessao
+                                                            <a href=@{SessaoR cid}>Nova Sessao
             |]
