@@ -90,41 +90,61 @@ getListaCinemaR = do
     cinemas <- runDB $ selectList [] [Asc CinemaId]
     defaultLayout $ do 
         [whamlet|
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Id
-                        <th>
-                            Nome
-                        
-                        <th> 
-                            Telefone
-                        
-                        <th>
-                            Local
-                        
-                        <th>
-                            
-                
-                <tbody>
-                    $forall (Entity cid cinema) <- cinemas
-   
-                        <tr>
-                            <td>
-                            <button value="#{show $ cinemaTelefone cinema}">#{cinemaNome cinema}
-                            
-                            <td>
-                                <a href=@{CinemasR cid}> 
-                                    #{cinemaNome cinema}
-                            
-                            <td>
-                                #{show $ cinemaTelefone cinema}
-                            
-                            <td>
-                                #{cinemaLocal cinema}
-                            
-                            <td>
-                            <form action=@{CinemasR cid} method=post>
-                                <input type="submit" value="Apagar">
+
+                <!doctype html>
+                <html lang="en">
+
+                <head>
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+                    crossorigin="anonymous">
+                    <style>
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                <body>
+
+                <div class="container-fluid">
+                    <div class="jumbotron col-sm-6 text-center col-centered">
+                        <h1 style="color:black;">Lista de cinemas
+                            <br>
+                            <p><h3 style="color:black;">Todos os cinemas Cadastrados:
+                            <div class="container">
+                                 <div class="row text-center">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Nome
+                                                    
+                                                    <th> 
+                                                        Local
+                                                    
+                                                    <th>
+                                                        Telefone
+                                                    
+                                                    <th>
+                                                        
+                                            
+                                            <tbody>
+                                                $forall (Entity cid cinema) <- cinemas
+                                                    <tr>
+                                                        <td>
+                                                            <a href=@{FilmesR fid}> 
+                                                                #{cinemaNome cinema}
+                                                        
+                                                        <td>
+                                                            #{show $ cinemaTelefone cinema}
+                                                        
+                                                        <td>
+                                                            #{cinemaLocal cinema}
+                                                        
+                                                        <td>
+                                                            <form action=@{CinemasR cid} method=post>
+                                                                <input type="submit" value="Apagar">
         |]
