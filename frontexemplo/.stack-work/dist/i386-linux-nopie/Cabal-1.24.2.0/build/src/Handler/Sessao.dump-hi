@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 06:59:12.0944345 UTC
+2018-06-14 07:15:24.109717865 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Sessao 8002
-  interface hash: 9781365a7ce6de5c0a7b5985e10f7f53
-  ABI hash: f397d26ceaf600e8ddae9b066dd4e6c0
+  interface hash: a854885b00d220d97d9766f120ecd357
+  ABI hash: 5bcaed89028c94ad0ee3f15a818c1cb9
   export-list hash: 1a20af85986b3b0623aa0e172ee1abb1
   orphan hash: 46c4753266d68d34ec6e38af5c94c4d0
   flag hash: 581473958fe447a23d4656a7119025fe
@@ -349,6 +349,7 @@ import  -/  Foundation 64c6fbf96d33ebd491062dbdf80ca707
   Form 064b47048c83667d0293c9860545be25
   Handler 479ce961ea7dca1b3e1a7f6de24da3ed
   HomeR 0251977f749a5ae77e1ccf8de469365e
+  PaginaSessaoR 28564037c1525d3128132ff13523802d
   SessaoR 044825ef72d72007157a6b04be8890e5
 import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
   exports: ae0b514ccb6b5e96d11fc70f081e9789
@@ -1170,10 +1171,10 @@ e5c239036310cbfc2766c134286ff1c9
   getSessaoR ::
     Model.CinemaId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-3f289107b23356eeeac27778b5e089a8
+0893a3424f03d701c4d7452525319285
   postSessaoR ::
     Model.CinemaId -> Foundation.Handler Text.Blaze.Html.Html
-  {- Arity: 3, Strictness: <L,1*U(U)><L,U><S,U>,
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
                 Handler.Sessao.postSessaoR1
                   `cast`
@@ -1186,305 +1187,14 @@ e5c239036310cbfc2766c134286ff1c9
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Text.Blaze.Html.Html>_N))) -}
-5666294a311a8c609838a375711c512c
+ba546d8cf73957c5b869e58f7220e159
   postSessaoR1 ::
     Model.CinemaId
     -> Yesod.Core.Types.HandlerData
          Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, Text.Blaze.Html.Html #)
-  {- Arity: 3, Strictness: <L,1*U(U)><L,U><S,U>,
-     Unfolding: (\ (cid :: Model.CinemaId)
-                   (r :: Yesod.Core.Types.HandlerData
-                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case (Handler.Sessao.postSessaoR7
-                         `cast`
-                       (Yesod.Core.Types.N:HandlerT[0]
-                            <Foundation.App>_N
-                            <GHC.Types.IO>_N
-                            <((Yesod.Form.Types.FormResult
-                                 (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo),
-                               Foundation.Widget),
-                              Yesod.Form.Types.Enctype)>_N)
-                         r)
-                        `cast`
-                      (GHC.Types.N:IO[0]
-                           <((Yesod.Form.Types.FormResult
-                                (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo),
-                              Foundation.Widget),
-                             Yesod.Form.Types.Enctype)>_R)
-                        s of ds1 { (#,#) ipv ipv1 ->
-                 case ipv1 of wild { (,) ds ds2 ->
-                 case ds of wild1 { (,) res ds3 ->
-                 case res of wild2 {
-                   DEFAULT
-                   -> (Handler.Sessao.postSessaoR6
-                         `cast`
-                       (Yesod.Core.Types.N:HandlerT[0]
-                            <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                         r)
-                        `cast`
-                      (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
-                        ipv
-                   Yesod.Form.Types.FormSuccess ds4
-                   -> case ds4 of wild3 { (,) hora ds5 ->
-                      case ds5 of wild4 {
-                        GHC.Base.Nothing
-                        -> case Foundation.$fYesodPersistApp1
-                                  @ (Database.Persist.Class.PersistEntity.Key Model.Sessao)
-                                  (Handler.Sessao.postSessaoR3
-                                     (case hora of dt { GHC.Types.I# dt1 ->
-                                      case cid
-                                             `cast`
-                                           (Trans
-                                                (Model.D:R:KeyCinema0[0])
-                                                (Trans
-                                                     (Model.N:R:KeyCinema[0])
-                                                     (Trans
-                                                          (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
-                                                          (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of nt { GHC.Int.I64# ipv2 ->
-                                      Model.Sessao
-                                        dt1
-                                        nt
-                                          `cast`
-                                        (Trans
-                                             (Sym (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0]))
-                                             (Trans
-                                                  (Sym (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0]))
-                                                  (Trans
-                                                       (Sym (Model.N:R:KeyCinema[0]))
-                                                       (Sym (Model.D:R:KeyCinema0[0])))))
-                                        (GHC.Base.Nothing @ Data.Text.Internal.Text) } }))
-                                    `cast`
-                                  (Control.Monad.Trans.Reader.ReaderT
-                                     <*>_N
-                                     (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                     <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                     <Database.Persist.Class.PersistEntity.Key Model.Sessao>_N)_R
-                                  r
-                                  ipv of ds6 { (#,#) ipv2 ipv3 ->
-                           (Handler.Sessao.postSessaoR6
-                              `cast`
-                            (Yesod.Core.Types.N:HandlerT[0]
-                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                              r)
-                             `cast`
-                           (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
-                             ipv2 }
-                        GHC.Base.Just arq
-                        -> case Foundation.$fYesodPersistApp1
-                                  @ (Database.Persist.Class.PersistEntity.Key Model.Sessao)
-                                  (Handler.Sessao.postSessaoR3
-                                     (case hora of dt { GHC.Types.I# dt1 ->
-                                      case cid
-                                             `cast`
-                                           (Trans
-                                                (Model.D:R:KeyCinema0[0])
-                                                (Trans
-                                                     (Model.N:R:KeyCinema[0])
-                                                     (Trans
-                                                          (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0])
-                                                          (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0])))) of nt { GHC.Int.I64# ipv2 ->
-                                      Model.Sessao
-                                        dt1
-                                        nt
-                                          `cast`
-                                        (Trans
-                                             (Sym (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0]))
-                                             (Trans
-                                                  (Sym (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0]))
-                                                  (Trans
-                                                       (Sym (Model.N:R:KeyCinema[0]))
-                                                       (Sym (Model.D:R:KeyCinema0[0])))))
-                                        (GHC.Base.Just
-                                           @ Data.Text.Internal.Text
-                                           (case arq of wild5 { Yesod.Core.Types.FileInfo ds6 ds7 ds8 ds9 ->
-                                            ds6 })) } }))
-                                    `cast`
-                                  (Control.Monad.Trans.Reader.ReaderT
-                                     <*>_N
-                                     (Sub (Sym (Foundation.D:R:YesodPersistBackendApp[0])))
-                                     <Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO>_R
-                                     <Database.Persist.Class.PersistEntity.Key Model.Sessao>_N)_R
-                                  r
-                                  ipv of ds6 { (#,#) ipv2 ipv3 ->
-                           case arq of wild5 { Yesod.Core.Types.FileInfo ds7 ds8 ds9 ds10 ->
-                           case ds7 of wild6 { Data.Text.Internal.Text dt dt1 dt2 ->
-                           case (ds10
-                                   (GHC.Base.++
-                                      @ GHC.Types.Char
-                                      Handler.Sessao.postSessaoR2
-                                      (let {
-                                         end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
-                                       } in
-                                       letrec {
-                                         $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
-                                           {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
-                                         = \ (ww :: GHC.Prim.Int#) ->
-                                           case GHC.Prim.tagToEnum#
-                                                  @ GHC.Types.Bool
-                                                  (GHC.Prim.>=# ww end) of wild7 {
-                                             GHC.Types.False
-                                             -> case GHC.Prim.indexWord16Array#
-                                                       dt
-                                                       ww of r# { DEFAULT ->
-                                                case GHC.Prim.tagToEnum#
-                                                       @ GHC.Types.Bool
-                                                       (GHC.Prim.geWord# r# 55296##) of wild8 {
-                                                  GHC.Types.False
-                                                  -> GHC.Types.:
-                                                       @ GHC.Types.Char
-                                                       (GHC.Types.C#
-                                                          (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
-                                                       ($wunfold (GHC.Prim.+# ww 1#))
-                                                  GHC.Types.True
-                                                  -> case GHC.Prim.tagToEnum#
-                                                            @ GHC.Types.Bool
-                                                            (GHC.Prim.leWord# r# 56319##) of wild9 {
-                                                       GHC.Types.False
-                                                       -> GHC.Types.:
-                                                            @ GHC.Types.Char
-                                                            (GHC.Types.C#
-                                                               (GHC.Prim.chr#
-                                                                  (GHC.Prim.word2Int# r#)))
-                                                            ($wunfold (GHC.Prim.+# ww 1#))
-                                                       GHC.Types.True
-                                                       -> case GHC.Prim.indexWord16Array#
-                                                                 dt
-                                                                 (GHC.Prim.+#
-                                                                    ww
-                                                                    1#) of r#1 { DEFAULT ->
-                                                          GHC.Types.:
-                                                            @ GHC.Types.Char
-                                                            (GHC.Types.C#
-                                                               (GHC.Prim.chr#
-                                                                  (GHC.Prim.+#
-                                                                     (GHC.Prim.+#
-                                                                        (GHC.Prim.uncheckedIShiftL#
-                                                                           (GHC.Prim.-#
-                                                                              (GHC.Prim.word2Int#
-                                                                                 r#)
-                                                                              55296#)
-                                                                           10#)
-                                                                        (GHC.Prim.-#
-                                                                           (GHC.Prim.word2Int# r#1)
-                                                                           56320#))
-                                                                     65536#)))
-                                                            ($wunfold (GHC.Prim.+# ww 2#)) } } } }
-                                             GHC.Types.True -> GHC.Types.[] @ GHC.Types.Char }
-                                       } in
-                                       $wunfold dt1)))
-                                  `cast`
-                                (GHC.Types.N:IO[0] <()>_R)
-                                  ipv2 of ds11 { (#,#) ipv4 ipv5 ->
-                           (Handler.Sessao.postSessaoR6
-                              `cast`
-                            (Yesod.Core.Types.N:HandlerT[0]
-                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)
-                              r)
-                             `cast`
-                           (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
-                             ipv4 } } } } } } } } } }) -}
-cc86e745b5d15da9bc4bcebde5340a41
-  postSessaoR2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "static/"#) -}
-8cfb813231f2382bafac3397de4189e3
-  postSessaoR3 ::
-    Model.Sessao
-    -> Control.Monad.Trans.Reader.ReaderT
-         Database.Persist.Sql.Types.Internal.SqlBackend
-         (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-         (Database.Persist.Class.PersistEntity.Key Model.Sessao)
-  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$fPersistStoreWriteSqlBackend_$cinsert
-                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                   @ Model.Sessao
-                   (Handler.Sessao.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
-                      @ Foundation.App)
-                   Handler.Sessao.postSessaoR4
-                     `cast`
-                   (GHC.Classes.(%,%)
-                      <Database.Persist.Class.PersistEntity.PersistEntity Model.Sessao>_N
-                      ((Data.Type.Equality.~)
-                         <*>_N
-                         (Sym (Model.D:R:PersistEntityBackendSessao[0]))
-                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R) -}
-beba5ae8199c8c5244093156d5cddba6
-  postSessaoR4 ::
-    (Database.Persist.Class.PersistEntity.PersistEntity Model.Sessao,
-     Database.Persist.Sql.Types.Internal.SqlBackend
-     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
-  {- Strictness: m,
-     Unfolding: ((Model.$fPersistEntitySessao,
-                  Handler.Sessao.postSessaoR5
-                    `cast`
-                  (Sym (Data.Type.Equality.N:~[0]
-                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
-492d8cb10a602c24ba3f17e9575b370c
-  postSessaoR5 ::
-    Database.Persist.Sql.Types.Internal.SqlBackend
-    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.Eq#
-                   @ *
-                   @ *
-                   @ Database.Persist.Sql.Types.Internal.SqlBackend
-                   @ Database.Persist.Sql.Types.Internal.SqlBackend
-                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-e29be78f69165e270f29430fb3b0ec15
-  postSessaoR6 ::
-    Yesod.Core.Types.HandlerT
-      Foundation.App GHC.Types.IO Text.Blaze.Html.Html
-  {- Unfolding: (Yesod.Core.Handler.redirect
-                   @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                   @ (Yesod.Routes.Class.Route Foundation.App)
-                   @ Text.Blaze.Html.Html
-                   (Handler.Sessao.$s$fMonadHandlerHandlerT @ Foundation.App)
-                   (Yesod.Core.Handler.$fRedirectUrlmasterRoute_$ctoTextUrl
-                      @ Foundation.App)
-                     `cast`
-                   (Sym (Yesod.Core.Handler.N:RedirectUrl[0]
-                             (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
-                                  <GHC.Types.IO>_N <Foundation.App>_N)
-                             <Yesod.Routes.Class.Route Foundation.App>_N))
-                   Foundation.HomeR `cast` (Sym (Foundation.D:R:RouteApp0[0]))) -}
-e9da2c0d3b094c9d327aee89c9aec59b
-  postSessaoR7 ::
-    Foundation.Handler
-      ((Yesod.Form.Types.FormResult
-          (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo),
-        Foundation.Widget),
-       Yesod.Form.Types.Enctype)
-  {- Unfolding: (Yesod.Form.Functions.runFormPost
-                   @ Foundation.Handler
-                   @ (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo)
-                   @ Foundation.Widget
-                   Foundation.$fRenderMessageAppFormMessage_$crenderMessage
-                     `cast`
-                   (Sym (Text.Shakespeare.I18N.N:RenderMessage[0]
-                             (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
-                                  <GHC.Types.IO>_N <Foundation.App>_N)
-                             <Yesod.Form.Types.FormMessage>_N))
-                   (Handler.Sessao.$s$fMonadResourceHandlerT @ Foundation.App)
-                   (Handler.Sessao.$s$fMonadHandlerHandlerT @ Foundation.App)
-                   Handler.Sessao.formSess1
-                     `cast`
-                   (<Text.Blaze.Html.Html>_R
-                    ->_R Sym (Control.Monad.Trans.RWS.Lazy.N:RWST[0]
-                                  <(GHC.Base.Maybe (Yesod.Form.Types.Env, Yesod.Form.Types.FileEnv),
-                                    Yesod.Core.Class.Handler.HandlerSite Foundation.Handler,
-                                    [Text.Shakespeare.I18N.Lang])>_R
-                                  <Yesod.Form.Types.Enctype>_N
-                                  <Yesod.Form.Types.Ints>_N
-                                  <Foundation.Handler>_R
-                                  ((,)
-                                     <Yesod.Form.Types.FormResult
-                                        (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo)>_N
-                                     (Yesod.Core.Types.WidgetT
-                                        (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
-                                                  <GHC.Types.IO>_N <Foundation.App>_N))
-                                        <GHC.Types.IO>_N
-                                        <()>_N)_N)_N))) -}
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U> -}
 "SPEC/Handler.Sessao $fApplicativeHandlerT @ IO _" [ALWAYS] forall @ site
                                                                    ($dMonad :: GHC.Base.Monad
                                                                                  GHC.Types.IO)

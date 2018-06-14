@@ -49,10 +49,10 @@ postSessaoR cid = do
         FormSuccess (hora,Just arq) -> do 
             sessid <- runDB $ insert $ Sessao hora cid(Just $ (fileName arq))
             liftIO $ fileMove arq ("static/" ++ (unpack $ fileName arq))
-            redirect HomeR
+            redirect (PaginaSessaoR cid sessid)
         FormSuccess (hora,Nothing) -> do 
             sessid <- runDB $ insert $ Sessao hora cid Nothing
-            redirect HomeR
+            redirect (PaginaSessaoR cid sessid)
         _ -> redirect HomeR
 
 getPaginaSessaoR :: CinemaId -> SessaoId -> Handler Html
