@@ -21,7 +21,7 @@
 /cinema/#CinemaId/sessao/#SessaoId       PaginaSessaoR   GET
 
 /cinema                        CinemaR          GET POST
-/cinema/#CinemaId              CinemasR         GET
+/cinema/#CinemaId              CinemasR         GET POST
 /lista/cinema                  ListaCinemaR    GET
 
 /usuario/cadastrar         CadUsuarioR      GET POST
