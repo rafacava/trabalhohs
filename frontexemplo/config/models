@@ -1,8 +1,3 @@
-Treinador 
-    nome   Text
-    cidade Text
-    dtnasc Day
-
 Cinema
     nome     Text
     telefone Int
@@ -21,19 +16,6 @@ Sessao
     hora    Int
     cid     CinemaId
     imagem  Text Maybe
-    
-Pokemon
-    nome    Text
-    geracao Int
-    tipo    Text
-    nivel   Int
-    imagem  Text Maybe
-
-Pokebola
-    tid     TreinadorId
-    pokeid  PokemonId
-    captura Day
-    bola    Text
 
 Usuario
     nome    Text
