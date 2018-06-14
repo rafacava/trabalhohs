@@ -135,7 +135,7 @@ getListaCinemaR = do
                                                 $forall (Entity cid cinema) <- cinemas
                                                     <tr>
                                                         <td>
-                                                            <a href=@{FilmesR fid}> 
+                                                            <a href=@{CinemasR cid}> 
                                                                 #{cinemaNome cinema}
                                                         
                                                         <td>
@@ -147,6 +147,5 @@ getListaCinemaR = do
                                                         <td>
                                                             <form action=@{CinemasR cid} method=post>
                                                                 <input type="submit" value="Apagar">
-                                                            <a href=@{SessaoR cid}
-                                                                Nova Sessao
-        |]
+                                                            <p href=@{SessaoR cid}>Nova Sessao
+            |]

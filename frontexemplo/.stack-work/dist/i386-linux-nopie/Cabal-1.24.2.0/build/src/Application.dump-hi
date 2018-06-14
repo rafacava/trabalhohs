@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 20:28:16.535025521 UTC
+2018-06-14 20:50:32.282696004 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: 25eb259e52287e638b29d4343f566401
+  interface hash: 7d23fd45fc810332e7dde08e9669236f
   ABI hash: 471bac3cb1f0dd9e305ac09cbcb48477
   export-list hash: f11915d1ad75af8b2dc1d34e2bd61af2
   orphan hash: 7e4b0af8f49b3a9c2e729d0934712130
@@ -379,11 +379,11 @@ import  -/  Foundation 05c84efc913cd7841892726bcf3bf698
   appSettings 1391ad167cfa514ea4f1708cde4685d4
   appStatic 4bc8ebb9c2e7b585a5ade0229f7dccb3
   resourcesApp 51b6bda46748df27c9cda84bdd2ede05
-import  -/  Handler.Cinema a191596bb733451684b91dc95eedd790
+import  -/  Handler.Cinema 9e0cb1418c8b33378f794cc4195493ce
   exports: 5da9411b3906366bd3c160af6142cdc6
   getCinemaR 7f8fc4cee13de73b808c123606c912f3
   getCinemasR 1f1606fc508ca1db5a8e0d2218846880
-  getListaCinemaR edafec2201c03aa8b7bb46b9070e9fca
+  getListaCinemaR 1b93837b6d43ad3760d0c877e06e807a
   postCinemaR e4fe82bdc6b5fb4e6bd93d94a82c436c
   postCinemasR 2d4f31fb93e6b4c81a29beba93847530
 import  -/  Handler.Common 7d2a9f3d14f0fb4fe67d18c5979bc73d
