@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dde6397dd05db904301d948a791e29f8a0ec6dbbb638ab7ed70bf20540a7513c
+-- hash: a1092398886d44554fc70c4297c797885c2054a29eba69895c4717d450a3ee67
 
 name:           frontexemplo
 version:        0.0.0
@@ -74,9 +74,7 @@ library
       Handler.Filme
       Handler.Home
       Handler.Login
-      Handler.Pokemon
       Handler.Sessao
-      Handler.Treinador
       Handler.Usuario
       Import
       Import.NoFoundation

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 07:15:24.109717865 UTC
+2018-06-14 20:27:44.940641504 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Sessao 8002
-  interface hash: a854885b00d220d97d9766f120ecd357
-  ABI hash: 5bcaed89028c94ad0ee3f15a818c1cb9
+  interface hash: e9b4e9c82128aae7719a5bba43a4ec79
+  ABI hash: d84699f133d93d7ec87503b8a0a5208d
   export-list hash: 1a20af85986b3b0623aa0e172ee1abb1
   orphan hash: 46c4753266d68d34ec6e38af5c94c4d0
   flag hash: 581473958fe447a23d4656a7119025fe
@@ -345,20 +345,20 @@ import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze.Internal 0bb5ddca2299bfdcfdde0c32d70b90c0
 import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 1601f2691692d787667a4c2d73c2ba7a
-import  -/  Foundation 64c6fbf96d33ebd491062dbdf80ca707
-  Form 064b47048c83667d0293c9860545be25
-  Handler 479ce961ea7dca1b3e1a7f6de24da3ed
-  HomeR 0251977f749a5ae77e1ccf8de469365e
-  PaginaSessaoR 28564037c1525d3128132ff13523802d
-  SessaoR 044825ef72d72007157a6b04be8890e5
-import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
-  exports: ae0b514ccb6b5e96d11fc70f081e9789
-import  -/  Model f3fe301cbc8b355acb80ba14273a550e
-  CinemaId 76bc834f921bab0539fb6a5c7878479d
-  Sessao ae304bb1c5a7dfcdd7c409345e1d0343
-  SessaoId 16b20ed017c387fe112f54d5a90b969e
-  sessaoHora 518901704c4d976bd503494a7cfe77d6
-  sessaoImagem 988b0f2e30ecdf10852f0df2e58782d4
+import  -/  Foundation 05c84efc913cd7841892726bcf3bf698
+  Form f63311892d664b855dbaeeb79e9d8ed7
+  Handler b0d2064a402a4608aff89b36248eddad
+  HomeR 5c613226d610c8357b199c0fef994a62
+  PaginaSessaoR 01663b50cc550d6b47d57b8352c3add5
+  SessaoR f13a7a7828967330e945e54b92d31bdf
+import  -/  Import 0938802c1fa0b3f5ec70e69fe5fc6559
+  exports: a7162b2dd4363f5936a896c4c7971dc5
+import  -/  Model 0101e798ed12d30dca0588c1901d7755
+  CinemaId ed2fdd4f1c38d28bfee197db479cd5e0
+  Sessao 98b97d8492fa58bdd5baa0fbe90c2926
+  SessaoId c92669145b48ba98bdf77c6ae4ca3339
+  sessaoHora 496ce50df8cdcf6dc8b901c4dd844284
+  sessaoImagem 0ff0387c02ce280ab8415ae9e94a45eb
 import  -/  mono-traversable-1.0.2.1@mono-traversable-1.0.2.1-7cD9xrLpSxs61tMXUUbUIV:Data.Sequences e470d4b03eb7a0ccb7d8103d388d881b
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistStore 1cc174615a83a94ffa2dad503704ce9b
 import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 35fc8402fe94243fb368bde0239b2ba3
@@ -669,13 +669,13 @@ e94a4fce6ff90da2b2ccc29b3df49258
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-722d6d4914267210c14ac69cfd3e82a1
+9897f6447de0810a8a4c43d5679eb394
   $wgetPaginaSessaoR ::
     Model.SessaoId
     -> Yesod.Core.Types.HandlerT
          Foundation.App GHC.Types.IO Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
-9b13bb2450882c3e48a2669050bf51b9
+f301037d201725fe235117f11c3c4bae
   formSess ::
     Foundation.Form
       (GHC.Types.Int, GHC.Base.Maybe Yesod.Core.Types.FileInfo)
@@ -699,7 +699,7 @@ e94a4fce6ff90da2b2ccc29b3df49258
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-fa05dda768a5ee15c0efea7fdfafadea
+eb9b170c3e7a3083f2719d6b883f19e4
   formSess1 ::
     Text.Blaze.Internal.Markup
     -> (GHC.Base.Maybe
@@ -737,7 +737,7 @@ fa05dda768a5ee15c0efea7fdfafadea
                    eta105
                    eta106
                    eta107) -}
-f7e596b33951b79009c0d1250b328719
+a3886e01a4d0d91324ffc499dfce57fc
   formSess10 :: Text.Shakespeare.I18N.SomeMessage Foundation.App
   {- Unfolding: (Text.Shakespeare.I18N.SomeMessage
                    @ Foundation.App
@@ -769,7 +769,7 @@ f7e596b33951b79009c0d1250b328719
   formSess12 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Imagem de campanha: "#) -}
-152151aa3a1c90d3b6ad7a78fed7f51d
+bc4228809ce9b10fa5d67c20b3cd2e56
   formSess13 ::
     Yesod.Form.Types.Field Foundation.Handler Yesod.Core.Types.FileInfo
   {- Unfolding: (Yesod.Form.Types.Field
@@ -798,7 +798,7 @@ f7e596b33951b79009c0d1250b328719
                                           (GHC.Base.Maybe Yesod.Core.Types.FileInfo)>_N)))
                    (Yesod.Form.Fields.fileField1 @ Foundation.Handler)
                    Yesod.Form.Types.Multipart) -}
-5c9c2c368aa3901133dad641be9923ad
+189dd736b0638de14f891a4d3e5be490
   formSess14 ::
     [Data.Text.Internal.Text]
     -> [Yesod.Core.Types.FileInfo]
@@ -825,7 +825,7 @@ f7e596b33951b79009c0d1250b328719
                                 (Yesod.Core.Class.Handler.HandlerSite Foundation.Handler))
                            @ (GHC.Base.Maybe Yesod.Core.Types.FileInfo)
                            (GHC.Base.Just @ Yesod.Core.Types.FileInfo file) } #)) -}
-1b7fcbcb45691358387c33b8d03dd040
+621ffce4ff25d6ac3b5068f025e48052
   formSess15 :: Yesod.Form.Types.FieldSettings Foundation.App
   {- Unfolding: (Yesod.Form.Types.FieldSettings
                    @ Foundation.App
@@ -836,7 +836,7 @@ f7e596b33951b79009c0d1250b328719
                    (GHC.Base.Nothing @ Data.Text.Internal.Text)
                    (GHC.Types.[]
                       @ (Data.Text.Internal.Text, Data.Text.Internal.Text))) -}
-af6724d97c0abc7ff95514e5b7b0a868
+9b8c62003f249bf068ac925854ab4d50
   formSess16 :: Text.Shakespeare.I18N.SomeMessage Foundation.App
   {- Unfolding: (Text.Shakespeare.I18N.SomeMessage
                    @ Foundation.App
@@ -876,7 +876,7 @@ f617d51318d191cc2080c2a0f9ab1734
   formSess19 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Horario da Sessao: "#) -}
-0dfb193f53630a3788637effdfe2ea0e
+c6ba85639a8952a72454a5eb55f69e37
   formSess2 ::
     (Yesod.Core.Class.Handler.HandlerSite
        (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO),
@@ -1059,7 +1059,7 @@ f617d51318d191cc2080c2a0f9ab1734
                                            (Yesod.Core.Types.HandlerT
                                               Foundation.App GHC.Types.IO))],
                                   Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)>_N)))) -}
-36cbb87e71f8e141e3e2955e28fa9b8e
+699ddaee8cb8a40f55f338dbcc061ce2
   formSess20 ::
     Yesod.Form.Types.Field Foundation.Handler GHC.Types.Int
   {- Unfolding: (case Yesod.Form.Fields.$wintField
@@ -1080,7 +1080,7 @@ f617d51318d191cc2080c2a0f9ab1734
                    ww1
                    ww2
                    ww3 }) -}
-6d51c04e8610e605f60e7abd4151244a
+b31f4984ef5b5bdcb4d34a635fca42e1
   formSess3 :: Yesod.Form.Types.FieldSettings Foundation.App
   {- Unfolding: (Yesod.Form.Types.FieldSettings
                    @ Foundation.App
@@ -1115,7 +1115,7 @@ b81187dd1553c734f97126b568d2c711
 195ebc492066c00aded3bde0cb7d13e9
   formSess9 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "hident4"#) -}
-f26d57895dca2cddeb47366b7854866b
+36db81df8fa56308c06a4023864027c2
   formSess_ds ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1143,7 +1143,7 @@ f26d57895dca2cddeb47366b7854866b
                    Handler.Sessao.formSess20
                    Handler.Sessao.formSess15
                    (GHC.Base.Nothing @ GHC.Types.Int)) -}
-37e220f664c914e74441020529144b7a
+9d1f23ccacbef3d6cdb3a40bce76a872
   formSess_ds1 ::
     Yesod.Form.Types.AForm
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -1159,7 +1159,7 @@ f26d57895dca2cddeb47366b7854866b
                       (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteHandlerT[0]
                                 <GHC.Types.IO>_N <Foundation.App>_N)))_R
                    (GHC.Base.Nothing @ (GHC.Base.Maybe Yesod.Core.Types.FileInfo))) -}
-e5c239036310cbfc2766c134286ff1c9
+b53adbbc0c2c3cbad427c81d6c2f7f7c
   getPaginaSessaoR ::
     Model.CinemaId
     -> Model.SessaoId -> Foundation.Handler Text.Blaze.Html.Html
@@ -1167,11 +1167,11 @@ e5c239036310cbfc2766c134286ff1c9
      Unfolding: InlineRule (2, True, True)
                 (\ (w :: Model.CinemaId) (w1 :: Model.SessaoId) ->
                  Handler.Sessao.$wgetPaginaSessaoR w1) -}
-45a5c84706f2726b227431fb546bb8ea
+2d4b3fd5dbdcc5b189d53a5f62094b9c
   getSessaoR ::
     Model.CinemaId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-0893a3424f03d701c4d7452525319285
+083e7ae1ca48d3e5740dc04ca1cd72ac
   postSessaoR ::
     Model.CinemaId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>,
@@ -1187,7 +1187,7 @@ e5c239036310cbfc2766c134286ff1c9
                                     <Foundation.App>_N
                                     <GHC.Types.IO>_N
                                     <Text.Blaze.Html.Html>_N))) -}
-ba546d8cf73957c5b869e58f7220e159
+5cac92d6b12209026e115ae49e5c701c
   postSessaoR1 ::
     Model.CinemaId
     -> Yesod.Core.Types.HandlerData

@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 20:15:16.609554593 UTC
+2018-06-14 20:28:16.535025521 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: 5f95a74190776be38032104d61b26aba
-  ABI hash: e3b823f6436828a1a0907ad42a95c8d7
-  export-list hash: 6393b026be37f3892d70847e5215e81e
-  orphan hash: 1dc58bb34cd7e6aabbb0479253cb8151
+  interface hash: 25eb259e52287e638b29d4343f566401
+  ABI hash: 471bac3cb1f0dd9e305ac09cbcb48477
+  export-list hash: f11915d1ad75af8b2dc1d34e2bd61af2
+  orphan hash: 7e4b0af8f49b3a9c2e729d0934712130
   flag hash: e55c0621b480567136a1040b2b66c368
   sig of: Nothing
   used TH splices: True
@@ -20,9 +20,9 @@ exports:
   Application.makeLogWare
   Application.shutdownApp
 module dependencies: Foundation Handler.Cinema Handler.Common
-                     Handler.Filme Handler.Home Handler.Login Handler.Pokemon
-                     Handler.Sessao Handler.Treinador Handler.Usuario Import
-                     Import.NoFoundation Model Settings Settings.StaticFiles
+                     Handler.Filme Handler.Home Handler.Login Handler.Sessao
+                     Handler.Usuario Import Import.NoFoundation Model Settings
+                     Settings.StaticFiles
 package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
                       adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp
@@ -353,88 +353,72 @@ import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger 008c4dec68abf2ff99fefa4fa21abea3
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.IO d4f077e535c7dff6d64fdb140cef39ad
 import  -/  fast-logger-2.4.10@fast-logger-2.4.10-7GMVhEi1femFXwSQxV5ynm:System.Log.FastLogger.LogStr 2fb92aee958e2818d629552a14b4c735
-import  -/  Foundation 64c6fbf96d33ebd491062dbdf80ca707
-  AdminR 4189d1a9645a0d7ab56c55d8ae2d48ce
-  App a2e01d42946895ffcacf1e7512982110
-  App a0d81851c2c3b97293b91e34ceefd312
-  CadUsuarioR 1139a43a3b733d60f769af3ae536c63e
-  CinemaR 4696d1c9ca74bd13b95668c51f7bef13
-  CinemasR 2ad906c8e2771877a772be8baf8b5198
-  FaviconR 8c1a31911064445b2f17f25f9d036a46
-  FilmeR 532cc7e37cf6ffa64d37c065e3e9c5b0
-  FilmesR ba5b86125926cfb0353ffdda8f9a3a18
-  HomeR 0251977f749a5ae77e1ccf8de469365e
-  ListaCinemaR 8ef01af77ad48a06a69203e6286e9165
-  ListaFilmeR 30b4a2c79485523bebcff7b92ecbf981
-  ListaTreinadorR c44f0bf09ac70722b076c1d29b62fb13
-  LoginR 21315c31bccdf23514ede89dd0176b5a
-  LogoutR 2a8b00a98b306ef555861e2f73b04599
-  PaginaSessaoR 28564037c1525d3128132ff13523802d
-  PerfilR e8b8eb09dfa2fdf139022d9decd87e04
-  PerfilUsuarioR 61e9f5815584316a60c039f668e1eec4
-  PokedexR 94c9727463c455cbb00d04628197e4d1
-  PokemonR 041702e76f84e322d766bb57540a14e6
-  RobotsR a9590bd98142a05ca62a4addfbe38214
-  SessaoR 044825ef72d72007157a6b04be8890e5
-  StaticR 9da7d836cad4b1c570e61c846ce9bc14
-  TreinadorR a76cc87243918d5ccad422178b1fb8a8
-  appConnPool c4e9fdb3a79d4262d28d46f0be0ab2f6
-  appHttpManager a0d81851c2c3b97293b91e34ceefd312
-  appLogger a8782201551f6b51affc08554198e933
-  appSettings 9309753b9e22314054a95df55d97c67f
-  appStatic 9a9915c436b459d64778cc680eaaa0f5
-  resourcesApp 4df8dbd3f4e4ceb95afabb459e7155a0
-import  -/  Handler.Cinema 979eaf00d872f0b95ab865fe7a497550
-  exports: 5d54110c5595826c78709706465c8176
-  getCinemaR 42f6b22f31cc7447d03ee1e131ab8350
-  getCinemasR 221738b83d9a68bb8f23a5639cb3e987
-  getListaCinemaR 642b1d1cbedd37487b7309131d323b87
-  postCinemaR 1e4d1fdb30b37abeb79df97051958e16
-import  -/  Handler.Common 9004ea3c69c373deae0758cc85942105
+import  -/  Foundation 05c84efc913cd7841892726bcf3bf698
+  AdminR a73100b959b0f1a0051b486e30dc7951
+  App 6d8584c917099982d6b22d656767f1ee
+  App ebfb4cac831ce23e338eb81d5d437ce6
+  CadUsuarioR 2b7e77444de4d078d97bd5384d148870
+  CinemaR 21fad7517d8638e587c9d60f11d331b9
+  CinemasR d11d65063aad5f6bf299cfce7ea6ff09
+  FaviconR 49f44a1fdf175120638d35edd987b5c2
+  FilmeR dfae1be1bd058abac175189de24be9e1
+  FilmesR c83644d80d72eea02a6ef19610eb4b5a
+  HomeR 5c613226d610c8357b199c0fef994a62
+  ListaCinemaR 4326fa0d3d0e5d1a5678d735eafd7215
+  ListaFilmeR 9f462d1d3b64cb862eff72bb6645fa08
+  LoginR 846444eadc00b7738af30bbdd6e76151
+  LogoutR 1df517b78426963ad73419a25ef5bb78
+  PaginaSessaoR 01663b50cc550d6b47d57b8352c3add5
+  PerfilUsuarioR 06958eef09b96247a71cdd0bc6376717
+  RobotsR 00a8597b5168a463c0b7385e6fa26dd0
+  SessaoR f13a7a7828967330e945e54b92d31bdf
+  StaticR 8fe6e8af88d595ca1a6f52260191f0f0
+  appConnPool 9abc12e3d8cbdad29c72b6734259f6ab
+  appHttpManager ebfb4cac831ce23e338eb81d5d437ce6
+  appLogger cd0bece1a914cf78514db7c7fc9c2b5c
+  appSettings 1391ad167cfa514ea4f1708cde4685d4
+  appStatic 4bc8ebb9c2e7b585a5ade0229f7dccb3
+  resourcesApp 51b6bda46748df27c9cda84bdd2ede05
+import  -/  Handler.Cinema a191596bb733451684b91dc95eedd790
+  exports: 5da9411b3906366bd3c160af6142cdc6
+  getCinemaR 7f8fc4cee13de73b808c123606c912f3
+  getCinemasR 1f1606fc508ca1db5a8e0d2218846880
+  getListaCinemaR edafec2201c03aa8b7bb46b9070e9fca
+  postCinemaR e4fe82bdc6b5fb4e6bd93d94a82c436c
+  postCinemasR 2d4f31fb93e6b4c81a29beba93847530
+import  -/  Handler.Common 7d2a9f3d14f0fb4fe67d18c5979bc73d
   exports: bda5d49c91d53afe19bbd9dbc347d454
-  getFaviconR 85ce1f78fdae89fa4f3ff07eabe67b3d
-  getRobotsR 05eb0627717e1aa1a9ba2e647ee6b99d
-import  -/  Handler.Filme a56a81b0f22fdefbb3338b459080e258
-  exports: 5361dd479d8aad5f48ad4678342a8d25
-  getFilmeR a583a8eecddf45c0d775f94fa9f21901
-  getFilmesR 2f6efea121195124c0e7f4236cfa070a
-  getListaFilmeR 3f00d26f0c1e234004ef281172b41d72
-  postFilmeR 94cebc34c5ab7041434d8fdd388940e3
-  postFilmesR d1fe7c98101c2b1acf0a9a9f44a76a48
-import  -/  Handler.Home 02f1bffa54b09b954bcb3529fc8cefe0
+  getFaviconR 76b097a5fbc2af9d12000462a9cfd2b9
+  getRobotsR 5f1e665afb579d753a8e42c8dbb6eabc
+import  -/  Handler.Filme 736645fe33cc1053a3ec7c82a560cf2e
+  exports: d4e0cb52daae87ab538d93b663ed80f6
+  getFilmeR fe2cff6bdbd30e5a3628e22370081021
+  getFilmesR 05a9c1659affa61c8cd76dc6841e84b4
+  getListaFilmeR 3c310fff9c25713357baca8655aa662d
+  postFilmeR 7a21aac0c391e968536711f0281348b0
+  postFilmesR 4cb416223c13ea5637a83ae522a8968c
+import  -/  Handler.Home be3e49b9db96c9efa141b494136b2963
   exports: 82e327a962b53534023acc041ad04930
-  getHomeR 84b81596a39eff79d2e7b5dcbd0aa2d1
-import  -/  Handler.Login c988777f865e63db615bf4f32476563b
-  exports: 757dde10e174e5a2c21ee3b6ece3e5e7
-  getAdminR 68c0d318f6179a39cd5e9ea71f1c6be3
-  getLoginR 365cc2c7339257860c0b375e2f532763
-  postLoginR 1edc692e59b6a81845cf9a8684e3edaf
-  postLogoutR 5973c28774ed6310ef469ce0734d9ec1
-import  -/  Handler.Pokemon a5c07b937db34fb453e85c7cec36edc9
-  exports: 356212e66a52267832f4009979efcc5e
-  getPokedexR 16db199b0faad55c51ebd9d3b6afc59d
-  getPokemonR 533ee0348d53d15f47527374964830ff
-  postPokemonR 8792ef4aea6c53bda2717da813d4f45c
-import  -/  Handler.Sessao 5bcaed89028c94ad0ee3f15a818c1cb9
+  getHomeR 70abb76920fec7fb9cfb03410a7d638a
+import  -/  Handler.Login e88fc1d3c1b8f67c496abce646f3ff57
+  exports: 8fc4ef0001c34bd306796cc4c7b9b123
+  getAdminR f4b252258e6ef334076a25a57e78ccbc
+  getLoginR 8066a8a405e43bd078e178aeb7ebfb84
+  postLoginR d82a4d7b1dd97036b0a8d2323fde7291
+  postLogoutR 5cb5b7893c751b1f07861b6c66b49f74
+import  -/  Handler.Sessao d84699f133d93d7ec87503b8a0a5208d
   exports: 1a20af85986b3b0623aa0e172ee1abb1
-  getPaginaSessaoR e5c239036310cbfc2766c134286ff1c9
-  getSessaoR 45a5c84706f2726b227431fb546bb8ea
-  postSessaoR 0893a3424f03d701c4d7452525319285
-import  -/  Handler.Treinador 9744313b51f6847cc2a8e49728fea722
-  exports: 38f0cd9a9a484f525b707cfd0ed4bee2
-  getListaTreinadorR 9a1fcc05439cbd4a4c5e014631da092d
-  getPerfilR 409a2f9b62f6bf1acf4b4e66627d1b27
-  getTreinadorR 0d9519453293b7ab0d4900e16958c522
-  postPerfilR dca8b6ee04c55062dae38013b0635ee6
-  postTreinadorR 1a95b51f78a8fee7078a213f2cd8454d
-import  -/  Handler.Usuario c275534db813d2af7e1df87d076dcda4
-  exports: d3b27c5d3e4b00a98168a837aceaed2c
-  getCadUsuarioR 8f82d0667ca215b49ed210a4105ef0d2
-  getPerfilUsuarioR 084d77a6d88de4fec2c69fa899a97505
-  postCadUsuarioR c077776b88c8d596b9940e40a3ccf57f
-import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
-  exports: ae0b514ccb6b5e96d11fc70f081e9789
-import  -/  Model f3fe301cbc8b355acb80ba14273a550e
+  getPaginaSessaoR b53adbbc0c2c3cbad427c81d6c2f7f7c
+  getSessaoR 2d4b3fd5dbdcc5b189d53a5f62094b9c
+  postSessaoR 083e7ae1ca48d3e5740dc04ca1cd72ac
+import  -/  Handler.Usuario 0fb9384634be157a461316da872d17ea
+  exports: 8795a51a5d3d9af7c3b7b008e8fbea0c
+  getCadUsuarioR f73842abaee3869be00f74538ae41985
+  getPerfilUsuarioR eb89682b6156ed29d9f2afc50722f27b
+  postCadUsuarioR db5e5deb951b93edecc9504205fa4398
+import  -/  Import 0938802c1fa0b3f5ec70e69fe5fc6559
+  exports: a7162b2dd4363f5936a896c4c7971dc5
+import  -/  Model 0101e798ed12d30dca0588c1901d7755
   migrateAll 728cb9e7f2a769294702da28b3d161cf
 import  -/  Settings 59d00f8a01d275eedfa4c2f953795c01
   AppSettings 00a3521109bd86e95bf87471b12220f9
@@ -471,7 +455,7 @@ import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Cor
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.TH 934f6d85ad9bc168b7e3ec511b565ce3
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 850af6a923eca0c28746c7c972883cdd
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static f04923544c94021b30ff15b84da7cb21
-2bcc35997c62d0e71a05ab2f43817611
+14906c05007bfd10733a1fa6c0fa6184
   $fYesodDispatchApp ::
     Yesod.Core.Class.Dispatch.YesodDispatch Foundation.App
   DFunId
@@ -480,7 +464,7 @@ import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yes
                   @ Foundation.App
                   Foundation.$fYesodApp
                   Application.$fYesodDispatchApp_$cyesodDispatch -}
-e70248168477807d4a5d34f0978851a2
+36439c7a4a5aefcec6b76bc65594042f
   $fYesodDispatchApp_$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv Foundation.App
     -> Network.Wai.Application
@@ -860,7 +844,7 @@ de5f9f8ca5a9de276dfd2c52956bcda3
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-9ec252d2a54cf443a5f78cd0f4f2331b
+91a1965dacbdedb84d0686e310c4e254
   $w$cyesodDispatch ::
     Yesod.Core.Types.YesodRunnerEnv Foundation.App
     -> Network.HTTP.Types.Method.Method
@@ -926,12 +910,12 @@ dac3dcebf1d266c88ccdbe4d194611a4
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U> -}
-79638504d587c98a840578931e127d71
+70f313a5107a4bed55743ee467d50ab2
   develMain :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: InlineRule (0, True, True)
                 Application.develMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-871c6762c944a5379ed2a8c1ba62ade2
+ecc827055e6aeaf5c97f4dd7b25893bf
   develMain1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -942,7 +926,7 @@ dac3dcebf1d266c88ccdbe4d194611a4
                    (Sym (GHC.Types.N:IO[0]
                              <(Network.Wai.Handler.Warp.Settings.Settings,
                                Network.Wai.Application)>_R))) -}
-a4ae608d7df2f173620dd058c42b6a03
+b8b2d90fa73ddfa326fdbefcbb425fc1
   develMain10 :: (GHC.Types.Int, GHC.Types.Int)
   {- HasNoCafRefs, Strictness: m,
      Unfolding: ((Application.develMain9, Application.develMain11)) -}
@@ -959,7 +943,7 @@ b95b84dc48e3057784f1127171d7276e
 997c551725d845658efb4380f4bc2fca
   develMain14 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "src/Application.hs"#) -}
-3852336dfb078c0e6cba6005d45585b7
+90aa501da61b4ed659cf40f90b8aaab6
   develMain15 ::
     Settings.AppSettings
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -973,7 +957,7 @@ a3c410235ad9261bc585ffc863b734d4
                    @ GHC.IO.FilePath
                    Yesod.Default.Config2.configSettingsYml
                    (GHC.Types.[] @ GHC.IO.FilePath)) -}
-a7c5595f0bd04c4d8bbb85596d48093c
+9c4b7be35260347ba445c20d4822f0d7
   develMain2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1021,7 +1005,7 @@ a7c5595f0bd04c4d8bbb85596d48093c
 c8244aeaa5991a3955d4a84c1092b8f9
   develMain5 :: Control.Monad.Logger.LogSource
   {- Unfolding: (Data.Text.Show.unpackCString# "yesod"#) -}
-9f78385dcd0f97fc315efdbfe087f3ad
+1c8547fcdbab806a0cfcf63e1704cb19
   develMain6 :: Language.Haskell.TH.Syntax.Loc
   {- Strictness: m,
      Unfolding: (Language.Haskell.TH.Syntax.Loc
@@ -1030,17 +1014,17 @@ c8244aeaa5991a3955d4a84c1092b8f9
                    Application.develMain12
                    Application.develMain10
                    Application.develMain7) -}
-fd060c5d14dc91b7fcdd8bb17afe8c94
+57532c4b6b5679b05bd4399556526a6b
   develMain7 :: (GHC.Types.Int, GHC.Types.Int)
   {- HasNoCafRefs, Strictness: m,
      Unfolding: ((Application.develMain9, Application.develMain8)) -}
 bd70d4cdb442c1d49d7d572b819adb00
   develMain8 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 36#) -}
-b0b52dc142607b707e5835e2f0528684
+1eb6676c848cd9e7973d9c838099546e
   develMain9 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 123#) -}
-bfb2d7b4f34fb62fde6b95e2ce32fc5d
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 121#) -}
+ffbbea50212ff299271bb22b3bf8cb13
   getApplicationDev ::
     GHC.Types.IO
       (Network.Wai.Handler.Warp.Settings.Settings,
@@ -1052,7 +1036,7 @@ bfb2d7b4f34fb62fde6b95e2ce32fc5d
                 (Sym (GHC.Types.N:IO[0]
                           <(Network.Wai.Handler.Warp.Settings.Settings,
                             Network.Wai.Application)>_R)) -}
-36a4f525f580154e7cc75eb2755a388c
+a0f8f5eb6eb83496e0e346a04e93d83c
   getApplicationRepl ::
     GHC.Types.IO
       (GHC.Types.Int, Foundation.App, Network.Wai.Application)
@@ -1062,7 +1046,7 @@ bfb2d7b4f34fb62fde6b95e2ce32fc5d
                   `cast`
                 (Sym (GHC.Types.N:IO[0]
                           <(GHC.Types.Int, Foundation.App, Network.Wai.Application)>_R)) -}
-08542b90c4445309304dd1eae7ec0537
+953f8badf6125174faad7b049653bf74
   getApplicationRepl1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1097,7 +1081,7 @@ bfb2d7b4f34fb62fde6b95e2ce32fc5d
                      ipv7
                        (Yesod.Core.Dispatch.defaultMiddlewaresNoLogging
                           ipv9)) #) } } } } } } }) -}
-e56a8ceec11ead8963a72bf45a2d3976
+1d8a43f90482180703a369d631792b73
   makeFoundation ::
     Settings.AppSettings -> GHC.Types.IO Foundation.App
   {- Arity: 2,
@@ -1107,7 +1091,7 @@ e56a8ceec11ead8963a72bf45a2d3976
                   `cast`
                 (<Settings.AppSettings>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Foundation.App>_R)) -}
-5f0475d71d8b136f1a91762ceaec9bf7
+25a47da413336581e0fc82d7b5cd5f0d
   makeLogWare ::
     Foundation.App -> GHC.Types.IO Network.Wai.Middleware
   {- Arity: 2,
@@ -1117,7 +1101,7 @@ e56a8ceec11ead8963a72bf45a2d3976
                   `cast`
                 (<Foundation.App>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Network.Wai.Middleware>_R)) -}
-b2a06f764f48f2049fcd13a60810f7d2
+a0e4d2b03ddd74381de98ab2783ee1ea
   makeLogWare1 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -1131,14 +1115,14 @@ b2a06f764f48f2049fcd13a60810f7d2
                  case w of ww { Foundation.App ww1 ww2 ww3 ww4 ww6 ->
                  case ww1 of ww7 { Settings.AppSettings ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ->
                  Application.$wmakeLogWare ww13 ww14 ww6 w1 } }) -}
-1b977673efa6398440d0d7c1217b5724
+4bda7da0065e7e101418f4788c9610ab
   shutdownApp :: Foundation.App -> GHC.Types.IO ()
   {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
      Unfolding: InlineRule (0, True, True)
                 Application.shutdownApp1
                   `cast`
                 (<Foundation.App>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-596e8095a1bbbfec7e241d661c8db8e2
+0679478a9d3034b0e8c14d40edb4b3a5
   shutdownApp1 ::
     Foundation.App
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -1156,20 +1140,20 @@ b2a06f764f48f2049fcd13a60810f7d2
      Unfolding: InlineRule (1, True, False)
                 (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# s, GHC.Tuple.() #)) -}
-ba6fafa5bf60b19c1cf67c7dc33ea0d0
+ddce8d643016f5bbbace6244a452f40f
   warpSettings ::
     Foundation.App -> Network.Wai.Handler.Warp.Settings.Settings
   {- Arity: 1,
      Strictness: <L,U(U(A,A,A,1*U,1*U,A,A,A,A,A,A,A,A,A),A,A,A,1*U(U,U))>,
      Unfolding: (\ (foundation :: Foundation.App) ->
                  let {
-                   lvl80 :: Yesod.Core.Types.Logger
+                   lvl67 :: Yesod.Core.Types.Logger
                    = case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
                      ds5 }
                  } in
                  let {
-                   lvl81 :: Network.Wai.Logger.DateCacheGetter
-                   = case lvl80 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
+                   lvl68 :: Network.Wai.Logger.DateCacheGetter
+                   = case lvl67 of wild { Yesod.Core.Types.Logger ds1 ds2 -> ds2 }
                  } in
                  Network.Wai.Handler.Warp.Settings.Settings
                    (case foundation of wild { Foundation.App ds1 ds2 ds3 ds4 ds5 ->
@@ -1186,7 +1170,7 @@ ba6fafa5bf60b19c1cf67c7dc33ea0d0
                       GHC.Types.False -> (# eta, GHC.Tuple.() #)
                       GHC.Types.True
                       -> case Yesod.Core.Class.Yesod.defaultMessageLoggerSource2
-                                lvl81
+                                lvl68
                                 Application.develMain6
                                 Application.develMain5
                                 Control.Monad.Logger.LevelError
@@ -1204,7 +1188,7 @@ ba6fafa5bf60b19c1cf67c7dc33ea0d0
                                                  @ GHC.Types.Char) })) of ww { (#,#) ww1 ww2 ->
                                  System.Log.FastLogger.LogStr.LogStr ww1 ww2 })
                                 eta of ds2 { (#,#) ipv2 ipv3 ->
-                         Yesod.Core.Types.loggerPutStr1 lvl80 ipv3 ipv2 } })
+                         Yesod.Core.Types.loggerPutStr1 lvl67 ipv3 ipv2 } })
                      `cast`
                    (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
                     ->_R <GHC.Exception.SomeException>_R
