@@ -59,7 +59,7 @@ getPaginaSessaoR :: CinemaId -> SessaoId -> Handler Html
 getPaginaSessaoR cid sessid = do 
     sess <- runDB $ get404 sessid
     imagem <- return $ sessaoImagem sess
-    staticDir <- return $ "../static/"
+    staticDir <- return $ "../../../../static/"
     defaultLayout $ do 
         [whamlet|
             <h1>
