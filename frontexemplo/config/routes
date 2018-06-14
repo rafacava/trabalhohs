@@ -5,13 +5,8 @@
 
 /           HomeR       GET
 
-/treinador                     TreinadorR        GET POST
-/perfil/treinador/#TreinadorId PerfilR           GET POST
-/lista/treinador               ListaTreinadorR   GET
 
 
-/pokemon                       PokemonR        GET POST
-/pokedex/#PokemonId            PokedexR        GET
 
 /filme                         FilmeR          GET POST
 /filme/#FilmeId                FilmesR         GET POST
