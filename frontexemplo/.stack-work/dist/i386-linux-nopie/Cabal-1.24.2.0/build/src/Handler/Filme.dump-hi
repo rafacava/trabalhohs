@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-12 20:48:11.69554152 UTC
+2018-06-14 05:46:02.17329707 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Filme 8002
-  interface hash: 20ea8ba9f3257f593359acce285efd1a
-  ABI hash: f8313af3b8b64bdda72aab8ab9fad13c
-  export-list hash: d590f97c52609bc79c543fbf670fcfff
-  orphan hash: bafa308f9f8bf69e4fca1c7eee5e69bb
+  interface hash: 72fd92491955d88062d872b1bb15908b
+  ABI hash: e3065b1a181f6c5c0b7c416a7ab42a5d
+  export-list hash: 5361dd479d8aad5f48ad4678342a8d25
+  orphan hash: f72bf3d51fd20565d3697f9a3a888f7a
   flag hash: 581473958fe447a23d4656a7119025fe
   sig of: Nothing
   used TH splices: True
@@ -349,16 +349,16 @@ import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 3b343b0c6a93bd2115a676898c3d08dd
 import  -/  blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob:Text.Blaze.Internal 0bb5ddca2299bfdcfdde0c32d70b90c0
 import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 1601f2691692d787667a4c2d73c2ba7a
-import  -/  Foundation fcb93ffd9d61229385b5cb477bb7ea49
-  FilmeR 24ee03b456113b952a63d42d809a2f89
-  FilmesR e52c3264bda789e0e58b6ce2718b9ba9
-  Form d83c9e8f23e1a8e07f4aaf9bbc6c11c9
-  Handler 38d9bdf6157526480770a127a6a2608d
-  HomeR 63bb97858ecb78720ccc4861e69537aa
-  ListaFilmeR f0c61087e5b25b6a738b8c51f7837648
-import  -/  Import 1cb9a05ec7bd7ef6ebb68bec4de437c9
-  exports: 9d8570053efaa2a080bf4ef58dae16c0
-import  -/  Model fc1b8c94037637fb21e382fac81afe23
+import  -/  Foundation 64c6fbf96d33ebd491062dbdf80ca707
+  FilmeR 532cc7e37cf6ffa64d37c065e3e9c5b0
+  FilmesR ba5b86125926cfb0353ffdda8f9a3a18
+  Form 064b47048c83667d0293c9860545be25
+  Handler 479ce961ea7dca1b3e1a7f6de24da3ed
+  HomeR 0251977f749a5ae77e1ccf8de469365e
+  ListaFilmeR 30b4a2c79485523bebcff7b92ecbf981
+import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
+  exports: ae0b514ccb6b5e96d11fc70f081e9789
+import  -/  Model f3fe301cbc8b355acb80ba14273a550e
   Filme 95f81c50016c0df1aa8ef4eff0c7a676
   FilmeId ebed9200bb142329989cc7912cdac939
   FilmeNome cb0e9138c133acf95f33324c1c126be4
@@ -445,7 +445,7 @@ fd4080d1328503bae6d546322e3763a7
                      @ GHC.Types.IO
                      @ site
                      Handler.Filme.$s$fApplicativeHandlerT_$dMonad) -}
-485b44ed849fb13a5c1b36cd0ef2ed52
+6f8f424afd93f245b4041a1795e6d5ea
   $s$fFunctorAForm1 ::
     GHC.Base.Monad
       (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
@@ -671,7 +671,7 @@ aa3b34a75b622f3a7cce7dd0e0fb87ed
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Handler.Filme.$s$fMonadBasebHandlerT -}
-144c7f00a9d42657e990d0fd4d8909ad
+180179438092ebcd1954bd65f825383f
   $stextField ::
     Yesod.Form.Types.Field Foundation.Handler Data.Text.Internal.Text
   {- Strictness: m,
@@ -714,7 +714,7 @@ e3af5d493787416d7f6e2aa94594a12c
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4"#) -}
-c1022c8d1d1d26872e24597f40045b9d
+8b0aefcf01e0ea10621ae8099723c9d7
   formArquivo ::
     Foundation.Form
       (Data.Text.Internal.Text, GHC.Types.Int, Data.Text.Internal.Text,
@@ -741,7 +741,7 @@ c1022c8d1d1d26872e24597f40045b9d
                                                <GHC.Types.IO>_N <Foundation.App>_N))
                                      <GHC.Types.IO>_N
                                      <()>_N)_N)_N)) -}
-0aa993176889fc18994ee9d282f18741
+9119c9898c13fe168d6dfc6bfd2d8fee
   formArquivo1 ::
     Text.Blaze.Internal.Markup
     -> (GHC.Base.Maybe
@@ -781,7 +781,7 @@ c1022c8d1d1d26872e24597f40045b9d
                    eta105
                    eta106
                    eta107) -}
-126bef022cb1b5cce5555dc7ee1f004e
+f54546c27682370f90110c0c735e9587
   formArquivo2 ::
     (Yesod.Core.Class.Handler.HandlerSite
        (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO),
@@ -802,7 +802,7 @@ c1022c8d1d1d26872e24597f40045b9d
                    (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO))],
           Yesod.Form.Types.Ints, Yesod.Form.Types.Enctype)
   {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
-84fa4a58be17b203c2ee47c61ae2c234
+a583a8eecddf45c0d775f94fa9f21901
   getFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -814,7 +814,7 @@ c1022c8d1d1d26872e24597f40045b9d
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-f244973200482b37db20431bb8d7cec7
+70312e0a3feffbc5598a71619d381dd0
   getFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1304,7 +1304,7 @@ f244973200482b37db20431bb8d7cec7
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv } }) -}
-95e460774e45d8b20b3c0015cd892cd1
+111e4d1cdd6facb34afd0ddc360a8577
   getFilmeR10 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1321,7 +1321,7 @@ f244973200482b37db20431bb8d7cec7
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Filme.getFilmeR11 eta53) -}
-835e8e67e19ee1f4afb4fbce568e8bd1
+4fd12479cd610abbafac9bb5b059342e
   getFilmeR11 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1395,7 +1395,7 @@ e65cfc05acf0e43c89c6419220e9629a
   getFilmeR14 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "\" method=\"post\" enctype=\""#) -}
-4a790f46e4843a1c47e0250de82740b2
+aaf889b80f87033ec237a67ffca4a8b7
   getFilmeR15 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1412,7 +1412,7 @@ e65cfc05acf0e43c89c6419220e9629a
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Filme.getFilmeR16 eta53) -}
-90e83018b5f94731305805e50f0a17cc
+23c1f8801181828ffb84963d1b7f0b06
   getFilmeR16 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1485,7 +1485,7 @@ e65cfc05acf0e43c89c6419220e9629a
 556b32087605fe3f6cce23e7da7057a9
   getFilmeR19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "\">"#) -}
-844057ee33635d6b745fe749994ca0d0
+4509e3eec212f8f53436dbe1483a3e77
   getFilmeR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1502,7 +1502,7 @@ e65cfc05acf0e43c89c6419220e9629a
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  Handler.Filme.getFilmeR3 eta53) -}
-e18a8a791ea3d8d2b2ffe7a74ff48742
+8fa2994c252c941ff4a9093a0f8afb0f
   getFilmeR20 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -1520,7 +1520,7 @@ e18a8a791ea3d8d2b2ffe7a74ff48742
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta53, Handler.Filme.getFilmeR21 #)) -}
-cd342dde99f9fe6eea259434fe1846aa
+e8351e8c36a5cb7238b885ca74b1d385
   getFilmeR21 ::
     ((),
      Yesod.Core.Types.GWData
@@ -1534,7 +1534,7 @@ cd342dde99f9fe6eea259434fe1846aa
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-ba51b1964a325af660b2e39c95de5791
+05da724a4a6ddcf1e9e98309158ba05e
   getFilmeR22 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -1576,7 +1576,7 @@ ba51b1964a325af660b2e39c95de5791
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-b52919d1f5dd58b13c4313f41ab4cbe0
+529193fb1cb81d3c99ab9687cfba381f
   getFilmeR23 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1606,7 +1606,7 @@ e15355e78600b814d6f4628805d8611e
                    \</div>\n\
                    \</body>\n\
                    \</html>\n"#) -}
-12c0382eb7a6eadedbc1c023c1428905
+ee459ee3b1665a8ec3cc46c505a130e6
   getFilmeR27 ::
     Foundation.Handler (Foundation.Widget, Yesod.Form.Types.Enctype)
   {- Unfolding: (Yesod.Form.Functions.generateFormPost
@@ -1641,7 +1641,7 @@ e15355e78600b814d6f4628805d8611e
                                                   <GHC.Types.IO>_N <Foundation.App>_N))
                                         <GHC.Types.IO>_N
                                         <()>_N)_N)_N))) -}
-39926e69bb6db124b8e7803bec463d7e
+2e48d75cd19837da43fd65b7ddee6bb6
   getFilmeR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -1713,7 +1713,7 @@ c02b630a5b3e9a1fa345624b641aa03e
      Unfolding: (Text.Blaze.Internal.Text Handler.Filme.getFilmeR6) -}
 54e65748bcbe2b47bf80b80849a8cc49
   getFilmeR6 :: Data.Text.Internal.Text
-bcd3825a4c6935291aba12aaf307f2bb
+c95ad6440507132d21967aadc0153050
   getFilmeR7 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -1740,7 +1740,7 @@ bcd3825a4c6935291aba12aaf307f2bb
                        ->_N <[(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                              -> Data.Text.Internal.Text>_N))_R
                    Handler.Filme.getFilmeR8) -}
-a9467c4c2ecf8d455fa163728e481756
+1dd2a747b7b6bd29b648c64eadd94a3c
   getFilmeR8 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -1850,7 +1850,7 @@ a9467c4c2ecf8d455fa163728e481756
                                                         <Foundation.App>_N)))_R)_R)_R))
                       (Sym (Yesod.Core.Types.N:WidgetT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))) -}
-a0a9ae51ba5ddf85845184d3464f330f
+b982a163f2dcaaa2ca1aa2a772f509ae
   getFilmeR9 ::
     Yesod.Core.Types.WidgetT
       Foundation.App
@@ -1891,11 +1891,11 @@ a7158966c4e1a5427aeb9b45724e1105
                    @ ()
                    Handler.Filme.getFilmeR24
                    GHC.Tuple.()) -}
-3cbf14f3f4aa70820da07fa934362047
+2f6efea121195124c0e7f4236cfa070a
   getFilmesR ::
     Model.FilmeId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-a1ed39c48a71a3c4d466a0dd77eb6c77
+5ebea2396384b42b51bb8ce641d98dfc
   getListaFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1907,7 +1907,7 @@ a1ed39c48a71a3c4d466a0dd77eb6c77
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-50acf4e431f694fb731ba989879cdafb
+110fa63fb6f39af4ab9d21f2adc4d4e3
   getListaFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2028,7 +2028,7 @@ a1ed39c48a71a3c4d466a0dd77eb6c77
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-48670e9223abec1295c79c04b9c02165
+8bab2332eb8f0a620c3148b617ba1ac9
   getListaFilmeR10 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2056,7 +2056,7 @@ f22bd6a0aba06fc6221682d3bc1b9f62
                    \</table>\n\
                    \</div>\n\
                    \</body>\n"#) -}
-92277bfdcb26f32f04e5b302e88e2105
+53142066b7ed0776bfac1932d9c9bc49
   getListaFilmeR14 ::
     [Database.Persist.Class.PersistEntity.Entity Model.Filme]
     -> Yesod.Core.Types.HandlerData
@@ -2067,7 +2067,7 @@ f22bd6a0aba06fc6221682d3bc1b9f62
            Yesod.Core.Types.GWData
              (Yesod.Routes.Class.Route Foundation.App)) #)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
-8f415c85ed4bb9404ada5290de9a3593
+abf9bad8805e7e83f715f057bc202b9e
   getListaFilmeR15 ::
     Database.Persist.Sql.Types.Internal.SqlBackend
     -> Yesod.Core.Types.HandlerT
@@ -2185,7 +2185,7 @@ c13c9409fc4caa3ede967b924f89f3de
                    @ Data.Text.Internal.Text
                    @ Data.Text.Internal.Text
                    @~ <Data.Text.Internal.Text>_N) -}
-d666c13c63183114f6c1a7fe15f8e1fe
+4764b6de129921de3b0a574d95a85050
   getListaFilmeR2 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2224,7 +2224,7 @@ d5124c91e3d03c4f85fae4d0ef311ba0
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @ Database.Persist.Sql.Types.Internal.SqlBackend
                    @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
-58127eafc13171f45b907caf3e598ca1
+3faa3587729d1fe9060e241ba9134e1f
   getListaFilmeR3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -2297,7 +2297,7 @@ d5124c91e3d03c4f85fae4d0ef311ba0
                    Handler.Filme.getListaFilmeR6) -}
 baa98757390c912aa0113f9dd9af9062
   getListaFilmeR6 :: Data.Text.Internal.Text
-cf486708d3f36542f58e50f1b85528ed
+85fbdc9b3f7bbd97056496992081414a
   getListaFilmeR7 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2315,7 +2315,7 @@ cf486708d3f36542f58e50f1b85528ed
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta53, Handler.Filme.getListaFilmeR8 #)) -}
-217eb0b734aa9d722963497ff8404e5c
+d0a3226928f19b24d5522278c0b4f6a0
   getListaFilmeR8 ::
     ((),
      Yesod.Core.Types.GWData
@@ -2329,7 +2329,7 @@ cf486708d3f36542f58e50f1b85528ed
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-f4684bf71ec69d964c35f38534fa75f1
+923ad2b3f3757a4a1e9af9f831a154de
   getListaFilmeR9 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -2385,7 +2385,7 @@ a3f6093d55edd2af3a0cbd6efe7e1076
                    @ ()
                    Handler.Filme.getListaFilmeR11
                    GHC.Tuple.()) -}
-69d0172e08c01d4323b8d625379e7d07
+2bc1c1ad9da7031cb1d8b6d9a9364125
   getListaFilmeR_m1 ::
     Control.Monad.Trans.Reader.ReaderT
       Database.Persist.Sql.Types.Internal.SqlBackend
@@ -2412,7 +2412,7 @@ a3f6093d55edd2af3a0cbd6efe7e1076
                    (GHC.Types.[]
                       @ (Database.Persist.Class.PersistEntity.Filter Model.Filme))
                    Handler.Filme.getListaFilmeR16) -}
-08b4aaa7c40d86b15242929f61f2bd20
+94cebc34c5ab7041434d8fdd388940e3
   postFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2424,14 +2424,14 @@ a3f6093d55edd2af3a0cbd6efe7e1076
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-03950dda38ea30fbcb6ea0b966260d2a
+e7b061c6fbafdb0fdfd7660e74028ee7
   postFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, Text.Blaze.Html.Html #)
   {- Arity: 2, Strictness: <L,U><S,U> -}
-c94e165422566d964d106d54051ed92f
+80e34818583e2e6121809e87c5aea6ae
   postFilmesR ::
     Model.FilmeId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U>,
@@ -2485,7 +2485,7 @@ c94e165422566d964d106d54051ed92f
                        ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                       (Sym (Yesod.Core.Types.N:HandlerT[0]
                                 <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N)))) -}
-0367fa8d2153c025c713df3504dc94de
+07a27f9e15e7d394e1777da8b91e337a
   postFilmesR1 ::
     Yesod.Core.Types.HandlerT
       Foundation.App GHC.Types.IO Text.Blaze.Html.Html

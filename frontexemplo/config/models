@@ -18,11 +18,9 @@ Filme
     imagem  Text Maybe
 
 Sessao
-    cid     CinemaId
-    fid     FilmeId
-    datas   Day
     hora    Int
-    min     Int
+    cid     CinemaId
+    imagem  Text Maybe
     
 Pokemon
     nome    Text
