@@ -147,4 +147,6 @@ getListaCinemaR = do
                                                         <td>
                                                             <form action=@{CinemasR cid} method=post>
                                                                 <input type="submit" value="Apagar">
+                                                            <a href=@{SessaoR cid}
+                                                                Nova Sessao
         |]
