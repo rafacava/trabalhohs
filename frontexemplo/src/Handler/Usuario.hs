@@ -46,9 +46,9 @@ getCadUsuarioR = do
                             <p><h3 style="color:black;">Preencha os todos os campos:
                             <div class="container">
                                  <div class="row text-center">
-                                      <form action=@{CadUsuarioR} method=post enctype=#{enctype}>
-                                     ^{widget}
-                                      <input type="submit" value="OK">
+                                    <form action=@{CadUsuarioR} method=post enctype=#{enctype}>
+                                    ^{widget}
+                                    <input type="submit" value="OK">
         |]
 
 postCadUsuarioR :: Handler Html
@@ -90,13 +90,13 @@ getPerfilUsuarioR uid = do
                         <br>
                         <p><h3 style="color:black;">As seguintes ações serão possiveis:
                         <div class="container">
-                        <div class="row text-center">
-                            <br>
-                            <h1> 
-                                Nome: #{usuarioNome usu}
+                            <div class="row text-center">
+                                <br>
+                                <h1> 
+                                    Nome: #{usuarioNome usu}
 
-                            <h2>
-                                E-mail: #{usuarioEmail usu}
+                                <h2>
+                                    E-mail: #{usuarioEmail usu}
 
-                            <a href=@{HomeR}> Voltar
+                                <a href=@{HomeR}> Voltar
              |]

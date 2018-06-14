@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 19:44:33.439460573 UTC
+2018-06-14 20:15:16.609554593 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Application [orphan module] 8002
-  interface hash: 62c2f8ec44fe167cbb1b9b6acd6c3292
+  interface hash: 5f95a74190776be38032104d61b26aba
   ABI hash: e3b823f6436828a1a0907ad42a95c8d7
   export-list hash: 6393b026be37f3892d70847e5215e81e
   orphan hash: 1dc58bb34cd7e6aabbb0479253cb8151
@@ -384,21 +384,21 @@ import  -/  Foundation 64c6fbf96d33ebd491062dbdf80ca707
   appSettings 9309753b9e22314054a95df55d97c67f
   appStatic 9a9915c436b459d64778cc680eaaa0f5
   resourcesApp 4df8dbd3f4e4ceb95afabb459e7155a0
-import  -/  Handler.Cinema 1af21a8003143ffe0b1c8e38d8eb7ab1
-  exports: e0f86153ed9cf542dba84ec529555dfa
-  getCinemaR aeacd0b1f84e02f504e13d9ed32ceca7
+import  -/  Handler.Cinema 979eaf00d872f0b95ab865fe7a497550
+  exports: 5d54110c5595826c78709706465c8176
+  getCinemaR 42f6b22f31cc7447d03ee1e131ab8350
   getCinemasR 221738b83d9a68bb8f23a5639cb3e987
-  getListaCinemaR 7dd0502328ac913d11b6b0ae5785b818
+  getListaCinemaR 642b1d1cbedd37487b7309131d323b87
   postCinemaR 1e4d1fdb30b37abeb79df97051958e16
 import  -/  Handler.Common 9004ea3c69c373deae0758cc85942105
   exports: bda5d49c91d53afe19bbd9dbc347d454
   getFaviconR 85ce1f78fdae89fa4f3ff07eabe67b3d
   getRobotsR 05eb0627717e1aa1a9ba2e647ee6b99d
-import  -/  Handler.Filme 5bdaedf5cc04a22fb00f1d2c0c99d140
+import  -/  Handler.Filme a56a81b0f22fdefbb3338b459080e258
   exports: 5361dd479d8aad5f48ad4678342a8d25
   getFilmeR a583a8eecddf45c0d775f94fa9f21901
   getFilmesR 2f6efea121195124c0e7f4236cfa070a
-  getListaFilmeR 5ebea2396384b42b51bb8ce641d98dfc
+  getListaFilmeR 3f00d26f0c1e234004ef281172b41d72
   postFilmeR 94cebc34c5ab7041434d8fdd388940e3
   postFilmesR d1fe7c98101c2b1acf0a9a9f44a76a48
 import  -/  Handler.Home 02f1bffa54b09b954bcb3529fc8cefe0
@@ -427,10 +427,10 @@ import  -/  Handler.Treinador 9744313b51f6847cc2a8e49728fea722
   getTreinadorR 0d9519453293b7ab0d4900e16958c522
   postPerfilR dca8b6ee04c55062dae38013b0635ee6
   postTreinadorR 1a95b51f78a8fee7078a213f2cd8454d
-import  -/  Handler.Usuario d70b5e1b7afa953f55a5c31935c9b95a
+import  -/  Handler.Usuario c275534db813d2af7e1df87d076dcda4
   exports: d3b27c5d3e4b00a98168a837aceaed2c
-  getCadUsuarioR 36804f8a45b8db9fd3fbe7a0519a9969
-  getPerfilUsuarioR c5a2261dffb39883a95eccb34460e2af
+  getCadUsuarioR 8f82d0667ca215b49ed210a4105ef0d2
+  getPerfilUsuarioR 084d77a6d88de4fec2c69fa899a97505
   postCadUsuarioR c077776b88c8d596b9940e40a3ccf57f
 import  -/  Import 50b1473a637e136306a2ff1fd1a3b8c3
   exports: ae0b514ccb6b5e96d11fc70f081e9789

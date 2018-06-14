@@ -77,6 +77,13 @@ getCinemasR cid = do
         |]
 
 
+
+postCinemasR :: CinemaId -> Handler Html
+postCinemasR cid = do 
+    runDB $ delete cid 
+    redirect ListaCinemaR
+
+
 getListaCinemaR :: Handler Html
 getListaCinemaR = do
     
@@ -118,5 +125,6 @@ getListaCinemaR = do
                                 #{cinemaLocal cinema}
                             
                             <td>
-                                a
+                            <form action=@{CinemasR cid} method=post>
+                                <input type="submit" value="Apagar">
         |]

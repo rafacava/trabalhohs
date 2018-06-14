@@ -41,7 +41,7 @@ getLoginR = do
 
                 <div class="container-fluid">
                     <div class="jumbotron col-sm-6 text-center col-centered">
-                        <h1 style="color:black;">Cadastre um usuario
+                        <h1 style="color:black;">Login
                             <br>
                             <p><h3 style="color:black;">Preencha os todos os campos:
                             <div class="container">

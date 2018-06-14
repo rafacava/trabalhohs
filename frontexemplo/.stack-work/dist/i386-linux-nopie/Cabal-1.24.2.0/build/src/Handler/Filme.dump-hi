@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-14 17:30:07.481207582 UTC
+2018-06-14 20:14:52.379509974 UTC
 
 interface frontexemplo-0.0.0-H0c8pw4HC1z92NDocJz3M4:Handler.Filme 8002
-  interface hash: ce6bfeaeb1a7ecd351bab3a654682b5b
-  ABI hash: 5bdaedf5cc04a22fb00f1d2c0c99d140
+  interface hash: 60b8a74398c95cd095b8d93174e76a4d
+  ABI hash: a56a81b0f22fdefbb3338b459080e258
   export-list hash: 5361dd479d8aad5f48ad4678342a8d25
   orphan hash: f72bf3d51fd20565d3697f9a3a888f7a
   flag hash: 581473958fe447a23d4656a7119025fe
@@ -1895,7 +1895,7 @@ a7158966c4e1a5427aeb9b45724e1105
   getFilmesR ::
     Model.FilmeId -> Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 1, Strictness: <L,U> -}
-5ebea2396384b42b51bb8ce641d98dfc
+3f00d26f0c1e234004ef281172b41d72
   getListaFilmeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1907,7 +1907,7 @@ a7158966c4e1a5427aeb9b45724e1105
                       ->_R Sym (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R))
                      (Sym (Yesod.Core.Types.N:HandlerT[0]
                                <Foundation.App>_N <GHC.Types.IO>_N <Text.Blaze.Html.Html>_N))) -}
-110fa63fb6f39af4ab9d21f2adc4d4e3
+fd3af763b3713843e2da99bd1eab67b9
   getListaFilmeR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -2028,7 +2028,7 @@ a7158966c4e1a5427aeb9b45724e1105
                    `cast`
                  (GHC.Types.N:IO[0] <Text.Blaze.Html.Html>_R)
                    ipv }) -}
-8bab2332eb8f0a620c3148b617ba1ac9
+d0b71799970a776666d7b54298bd70b4
   getListaFilmeR10 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
@@ -2039,23 +2039,26 @@ a7158966c4e1a5427aeb9b45724e1105
                            -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                            -> Data.Text.Internal.Text) ->
                  Handler.Filme.getListaFilmeR_eta1) -}
-984a49ca4bd8fbefc752eed79ac377a5
+6d7208dc29f0992460578eb84477d0a1
   getListaFilmeR11 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.PreEscaped
                    Handler.Filme.getListaFilmeR12) -}
-7088c878df25aec72c56ad2bf5f7f2dd
+17cb74edc6be8b5d94a656587adfc18b
   getListaFilmeR12 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m3,
      Unfolding: (Text.Blaze.Internal.Text
                    Handler.Filme.getListaFilmeR13) -}
-f22bd6a0aba06fc6221682d3bc1b9f62
+6c9bf378fcc4033fd672c45b92fc3cac
   getListaFilmeR13 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "</tbody>\n\
                    \</table>\n\
                    \</div>\n\
-                   \</body>\n"#) -}
+                   \</div>\n\
+                   \</h1>\n\
+                   \</div>\n\
+                   \</div>\n"#) -}
 53142066b7ed0776bfac1932d9c9bc49
   getListaFilmeR14 ::
     [Database.Persist.Class.PersistEntity.Entity Model.Filme]
@@ -2297,7 +2300,7 @@ d5124c91e3d03c4f85fae4d0ef311ba0
                    Handler.Filme.getListaFilmeR6) -}
 baa98757390c912aa0113f9dd9af9062
   getListaFilmeR6 :: Data.Text.Internal.Text
-85fbdc9b3f7bbd97056496992081414a
+576a51b250d87606504965b0c3f5837c
   getListaFilmeR7 ::
     ()
     -> Yesod.Core.Types.HandlerData
@@ -2315,7 +2318,7 @@ baa98757390c912aa0113f9dd9af9062
                                Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta53 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  (# eta53, Handler.Filme.getListaFilmeR8 #)) -}
-d0a3226928f19b24d5522278c0b4f6a0
+046c41b640ebcc63b0058d76fb8bff74
   getListaFilmeR8 ::
     ((),
      Yesod.Core.Types.GWData
@@ -2329,7 +2332,7 @@ d0a3226928f19b24d5522278c0b4f6a0
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-923ad2b3f3757a4a1e9af9f831a154de
+cc963c5b66499923706c902a33e6e02d
   getListaFilmeR9 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
@@ -2378,7 +2381,7 @@ ff4175c93376a9e2623bae088186e7fd
                    @ ()
                    Handler.Filme.getListaFilmeR4
                    GHC.Tuple.()) -}
-a3f6093d55edd2af3a0cbd6efe7e1076
+650d2d70f5c88b9c8503f6991d4056f9
   getListaFilmeR_eta1 :: Text.Blaze.Html.Html
   {- Strictness: m5,
      Unfolding: (Text.Blaze.Internal.Content
